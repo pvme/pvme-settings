@@ -4,7 +4,7 @@ Centralized storage for PVME settings that are used by:
 - [guide-editor](https://github.com/pvme/guide-editor)
 - [pvme.github.io](https://github.com/pvme/pvme.github.io)
 
-The data is collected from various sources and then converted to JSON to be easily accessible through HTTP requests or by a branch:
+The settings are stored as JSON to be easily accessible through HTTP requests:
 
 ![https://i.imgur.com/48gL6eJ.png](https://i.imgur.com/48gL6eJ.png)
 
