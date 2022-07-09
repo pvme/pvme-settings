@@ -6,4 +6,4 @@ Centralised storage for various pvme data that is used by:
 
 The data is collected from various sources and then converted to json to be easily accessible:
 
-![image](https://prnt.sc/KDj-dBbDNZ06)
+![image](https://imgur.com/2JEG3cU)
