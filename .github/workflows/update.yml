@@ -1,9 +1,9 @@
-name: update
+name: spreadsheet-update
 
 on:
   push:
     branches:
-      - updater
+      - master
   schedule:
     - cron: '0 1 * * *' # once per day
 
@@ -27,10 +27,7 @@ jobs:
       - name: Setup pipenv virtual environment
         run: |
           pip install pipenv
-          pipenv install --skip-lock
-
-      - name: Clone pvme-guides repository
-        run: git clone --depth 1 https://github.com/pvme/pvme-guides.git
+          pipenv install --ignore-pipfile
 
       - name: update pvme-spreadsheet
         run: pipenv run python pvme_spreadsheet.py
@@ -39,9 +36,8 @@ jobs:
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
-          BRANCH: master
+          BRANCH: settings/pvme-spreadsheet
           FOLDER: build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Build: ({sha}) {msg}"
-          CLEAR_GLOBS_FILE: ".clear-target-files"
           SQUASH_HISTORY: true
