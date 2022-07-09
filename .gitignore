@@ -11,16 +11,9 @@ __pycache__
 # google docs api
 credentials.json
 
-# tox
-.tox
-.coverage
-
-# mkdocs
-site
-docs/pvme-guides
-
-# pvme-guides repo
+# pvme-guides and pvme-settings repo
 pvme-guides
+pvme-settings
 
 # env file
 .env
