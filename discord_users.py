@@ -56,8 +56,8 @@ if __name__ == '__main__':
     users = []
     for i, user_id in enumerate(unique_users):
         # uncomment for debugging
-        if i == 5:
-            break
+        # if i == 5:
+        #     break
         print(f"{i+1}/{len(unique_users)}")
         user_name = get_user_from_id(user_id)
         users.append({"name": user_name if user_name else "undefined", "id": user_id})
