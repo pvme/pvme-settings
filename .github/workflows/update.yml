@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: '0 1 * * *' # once per day
+    - cron: '*/60 * * * *' # once per day
 
 jobs:
   deploy:
