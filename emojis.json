@@ -164,7 +164,6 @@
   "categories": [
     {
       "name": "Magic Gear",
-      "tag": "magicgear",
       "emojis": [
         {
           "name": "Magic",
@@ -376,8 +375,8 @@
           "emoji_name": "bootsofsubjugation",
           "emoji_id": "1097935380805861497",
           "aliases": [
-            "bootsofsubjugaton",
-            "subjugationboots"
+            "subjugationboots",
+            "bootsofsubjugaton"
           ],
           "server": "37"
         },
@@ -567,10 +566,10 @@
           "emoji_id": "1003947805611655208",
           "aliases": [
             "ganodermictop",
-            "ganodermicponcho",
-            "ganoponcho",
+            "ganodermicbody",
             "ganotop",
-            "ganodermicbody"
+            "ganodermicponcho",
+            "ganoponcho"
           ],
           "server": "31"
         },
@@ -1379,7 +1378,6 @@
     },
     {
       "name": "Magic Abilities",
-      "tag": "magicabils",
       "emojis": [
         {
           "name": "Magic",
@@ -1643,8 +1641,8 @@
           "emoji_name": "gsonicwave",
           "emoji_id": "1095411826839257138",
           "aliases": [
-            "gsonic",
-            "greatersonic"
+            "greatersonic",
+            "gsonic"
           ],
           "server": "37"
         },
@@ -1653,8 +1651,8 @@
           "emoji_name": "gsunshine",
           "emoji_id": "994644352871714836",
           "aliases": [
-            "greatersunshine",
-            "gsun"
+            "gsun",
+            "greatersunshine"
           ],
           "server": "31"
         },
@@ -1948,8 +1946,8 @@
           "emoji_name": "sunshinepf",
           "emoji_id": "994921595489488927",
           "aliases": [
-            "sunpf",
-            "pfsun"
+            "pfsun",
+            "sunpf"
           ],
           "server": "26"
         },
@@ -2025,8 +2023,8 @@
           "emoji_name": "venggroup",
           "emoji_id": "1009570755836641331",
           "aliases": [
-            "groupveng",
             "groupvengance",
+            "groupveng",
             "vengancegroup"
           ],
           "server": "34"
@@ -2087,7 +2085,6 @@
     },
     {
       "name": "Ranged Gear",
-      "tag": "rangedgear",
       "emojis": [
         {
           "name": "Ranged",
@@ -2768,8 +2765,8 @@
           "emoji_name": "rubybakri",
           "emoji_id": "565726489413287956",
           "aliases": [
-            "RubyBakri",
-            "rubybak"
+            "rubybak",
+            "RubyBakri"
           ],
           "server": "16"
         },
@@ -2960,7 +2957,6 @@
     },
     {
       "name": "Ranged Abilities",
-      "tag": "rangedabils",
       "emojis": [
         {
           "name": "Ranged",
@@ -3087,10 +3083,10 @@
           "emoji_name": "mds",
           "emoji_id": "535541259033378827",
           "aliases": [
-            "gdazing",
+            "gdazingshot",
             "greaterdazing",
             "greaterdazingshot",
-            "gdazingshot"
+            "gdazing"
           ],
           "server": "17"
         },
@@ -3249,7 +3245,6 @@
     },
     {
       "name": "Melee Gear",
-      "tag": "meleegear",
       "emojis": [
         {
           "name": "Melee",
@@ -3599,8 +3594,8 @@
           "emoji_name": "dragonclaw",
           "emoji_id": "779048041088024606",
           "aliases": [
-            "dclaw",
-            "dclaws"
+            "dclaws",
+            "dclaw"
           ],
           "server": "10"
         },
@@ -4384,8 +4379,8 @@
           "emoji_name": "vestmentsofhavocboots",
           "emoji_id": "994189291515285544",
           "aliases": [
-            "vestmentboots",
-            "vestmentsboots"
+            "vestmentsboots",
+            "vestmentboots"
           ],
           "server": "31"
         },
@@ -4421,7 +4416,6 @@
     },
     {
       "name": "Melee abilities",
-      "tag": "meleeabils",
       "emojis": [
         {
           "name": "Melee",
@@ -4510,8 +4504,8 @@
           "emoji_name": "bloodtendrils",
           "emoji_id": "535532854327640064",
           "aliases": [
-            "bloodtendril",
-            "bloodtend"
+            "bloodtend",
+            "bloodtendril"
           ],
           "server": "18"
         },
@@ -4776,7 +4770,6 @@
     },
     {
       "name": "Necromancy Gear",
-      "tag": "necrogear",
       "emojis": [
         {
           "name": "Bone rune",
@@ -4817,9 +4810,10 @@
         },
         {
           "name": "Crown of the First Necromancer",
-          "emoji_name": "1142416979957923952",
-          "emoji_id": [],
-          "aliases": []
+          "emoji_name": "firstnecrohelm",
+          "emoji_id": "1142416979957923952",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Foot wraps of the First Necromancer",
@@ -5070,8 +5064,8 @@
           "emoji_name": "soulboundlantern",
           "emoji_id": "1138809230573441064",
           "aliases": [
-            "t95skulllantern",
-            "skulllantern95"
+            "skulllantern95",
+            "t95skulllantern"
           ],
           "server": "40"
         },
@@ -5089,7 +5083,6 @@
     },
     {
       "name": "Necromancy abilities",
-      "tag": "necroabils",
       "emojis": [
         {
           "name": "Necromancy",
@@ -5126,9 +5119,9 @@
           "emoji_name": "commandzombie",
           "emoji_id": "1137809191231295549",
           "aliases": [
+            "comzom",
             "commandzom",
-            "comzombie",
-            "comzom"
+            "comzombie"
           ],
           "server": "39"
         },
@@ -5137,9 +5130,9 @@
           "emoji_name": "commandskeleton",
           "emoji_id": "1137809194423160883",
           "aliases": [
-            "comskeleton",
             "comskele",
-            "commandskele"
+            "commandskele",
+            "comskeleton"
           ],
           "server": "39"
         },
@@ -5158,8 +5151,8 @@
           "emoji_id": "1137809200219684924",
           "aliases": [
             "conjzom",
-            "conjurezom",
-            "conjzombie"
+            "conjzombie",
+            "conjurezom"
           ],
           "server": "39"
         },
@@ -5169,8 +5162,8 @@
           "emoji_id": "1137809204112011274",
           "aliases": [
             "conjskele",
-            "conjskeleton",
-            "conjureskele"
+            "conjureskele",
+            "conjskeleton"
           ],
           "server": "39"
         },
@@ -5204,9 +5197,9 @@
           "emoji_name": "deathspark2",
           "emoji_id": "1143642268193009724",
           "aliases": [
-            "dsparkcharging",
+            "deathsparkcharging",
             "dspark2",
-            "deathsparkcharging"
+            "dsparkcharging"
           ],
           "server": "40"
         },
@@ -5229,8 +5222,8 @@
           "emoji_name": "deflectnecromancy",
           "emoji_id": "1137809111178813471",
           "aliases": [
-            "deflectnecro",
-            "necropray"
+            "necropray",
+            "deflectnecro"
           ],
           "server": "39"
         },
@@ -5239,8 +5232,8 @@
           "emoji_name": "fingerofdeath",
           "emoji_id": "1137809115066937414",
           "aliases": [
-            "fod",
-            "finger"
+            "finger",
+            "fod"
           ],
           "server": "39"
         },
@@ -5361,9 +5354,9 @@
           "emoji_name": "protectfromnecro",
           "emoji_id": "1137941136397324448",
           "aliases": [
-            "protfromnecro",
+            "protnecro",
             "protectfromnecromancy",
-            "protnecro"
+            "protfromnecro"
           ],
           "server": "39"
         },
@@ -5411,9 +5404,10 @@
         },
         {
           "name": "Soul Strike Flank",
-          "emoji_name": "1156683164593430579",
-          "emoji_id": [],
-          "aliases": []
+          "emoji_name": "soulstrikeflank",
+          "emoji_id": "1156683164593430579",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Spectral Scythe (Cast 1)",
@@ -5518,7 +5512,6 @@
     },
     {
       "name": "Other Gear",
-      "tag": "other",
       "emojis": [
         {
           "name": "Augmented flowers (Purple flowers)",
@@ -5608,8 +5601,8 @@
           "emoji_name": "cinderbanes",
           "emoji_id": "513190158355660812",
           "aliases": [
-            "cinders",
-            "Cinderbanes"
+            "Cinderbanes",
+            "cinders"
           ],
           "server": "1"
         },
@@ -5690,8 +5683,8 @@
           "emoji_name": "dragonpick",
           "emoji_id": "1145061199118086215",
           "aliases": [
-            "dpick",
-            "dragonpickaxe"
+            "dragonpickaxe",
+            "dpick"
           ],
           "server": "18"
         },
@@ -5937,7 +5930,6 @@
     },
     {
       "name": "Defence and Constitution Abilities",
-      "tag": "defence",
       "emojis": [
         {
           "name": "Defence",
@@ -6132,8 +6124,8 @@
           "emoji_name": "nat",
           "emoji_id": "535541258131865633",
           "aliases": [
-            "natty",
-            "natinstinct"
+            "natinstinct",
+            "natty"
           ],
           "server": "17"
         },
@@ -6279,7 +6271,6 @@
     },
     {
       "name": "Unlockable Abilities",
-      "tag": "unlock",
       "emojis": [
         {
           "name": "Chaos Roar ability codex",
@@ -6358,8 +6349,8 @@
           "emoji_name": "gdeathsswiftcodex",
           "emoji_id": "1095409580420374568",
           "aliases": [
-            "greaterdeathsswiftnesscodex",
-            "gdscodex"
+            "gdscodex",
+            "greaterdeathsswiftnesscodex"
           ],
           "server": "33"
         },
@@ -6396,8 +6387,8 @@
           "emoji_name": "gsunshinecodex",
           "emoji_id": "1095409577014599701",
           "aliases": [
-            "greatersuncodex",
-            "gsuncodex"
+            "gsuncodex",
+            "greatersuncodex"
           ],
           "server": "33"
         },
@@ -6456,7 +6447,6 @@
     },
     {
       "name": "Ability targetting",
-      "tag": "target",
       "emojis": [
         {
           "name": "Area-target",
@@ -6490,7 +6480,6 @@
     },
     {
       "name": "Jewellery",
-      "tag": "jewel",
       "emojis": [
         {
           "name": "Amulet of the forsaken",
@@ -6778,9 +6767,9 @@
           "emoji_name": "rov",
           "emoji_id": "513201065877831680",
           "aliases": [
-            "vigour",
+            "RoV",
             "ringofvigour",
-            "RoV"
+            "vigour"
           ],
           "server": "15"
         },
@@ -6827,7 +6816,6 @@
     },
     {
       "name": "Auras and Pocket slot",
-      "tag": "auras",
       "emojis": [
         {
           "name": "Berserker aura",
@@ -6840,8 +6828,8 @@
           "emoji_name": "berserkerbloodess",
           "emoji_id": "1132205017546358794",
           "aliases": [
-            "zerkess",
-            "berserkerbloodessence"
+            "berserkerbloodessence",
+            "zerkess"
           ],
           "server": "38"
         },
@@ -7062,7 +7050,6 @@
     },
     {
       "name": "Prayers",
-      "tag": "pray",
       "emojis": [
         {
           "name": "Affliction",
@@ -7176,8 +7163,8 @@
           "emoji_name": "protectfrommissiles",
           "emoji_id": "1052551455078367313",
           "aliases": [
-            "protectrange",
-            "protectmissiles"
+            "protectmissiles",
+            "protectrange"
           ],
           "server": "36"
         },
@@ -7231,7 +7218,6 @@
     },
     {
       "name": "Relics",
-      "tag": "relic",
       "emojis": [
         {
           "name": "Berserkers Fury",
@@ -7332,7 +7318,6 @@
     },
     {
       "name": "Consumables, Currencies, and Combat Support Items",
-      "tag": "consume",
       "emojis": [
         {
           "name": "Adrenaline potion",
@@ -7404,9 +7389,9 @@
           "emoji_name": "ancientshard",
           "emoji_id": "656426717505650708",
           "aliases": [
-            "ancientelvenritualshard",
             "ritualshard",
-            "elvenshard"
+            "elvenshard",
+            "ancientelvenritualshard"
           ],
           "server": "2"
         },
@@ -8426,7 +8411,6 @@
     },
     {
       "name": "Invention Perks",
-      "tag": "perks",
       "emojis": [
         {
           "name": "Invention",
@@ -8878,7 +8862,6 @@
     },
     {
       "name": "Invention Components and Gizmo Shells",
-      "tag": "comps",
       "emojis": [
         {
           "name": "Invention",
@@ -9281,8 +9264,8 @@
           "emoji_name": "noxiouscomp",
           "emoji_id": "513203842473525248",
           "aliases": [
-            "noxcomp",
-            "Noxiouscomp"
+            "Noxiouscomp",
+            "noxcomp"
           ],
           "server": "15"
         },
@@ -9551,7 +9534,6 @@
     },
     {
       "name": "Summoning",
-      "tag": "summon",
       "emojis": [
         {
           "name": "Summoning",
@@ -9771,7 +9753,6 @@
     },
     {
       "name": "Boss/NPCs",
-      "tag": "npcs",
       "emojis": [
         {
           "name": "Ambassador",
@@ -9801,8 +9782,8 @@
           "emoji_name": "araxxi",
           "emoji_id": "513213019543699466",
           "aliases": [
-            "rax",
-            "Araxxi"
+            "Araxxi",
+            "rax"
           ],
           "server": "15"
         },
@@ -9875,8 +9856,8 @@
           "emoji_name": "commanderzilyana",
           "emoji_id": "513212996437409793",
           "aliases": [
-            "CommanderZilyana",
-            "zily"
+            "zily",
+            "CommanderZilyana"
           ],
           "server": "15"
         },
@@ -9892,8 +9873,8 @@
           "emoji_name": "corporealbeast",
           "emoji_id": "513212996726685749",
           "aliases": [
-            "CorporealBeast",
-            "corp"
+            "corp",
+            "CorporealBeast"
           ],
           "server": "15"
         },
@@ -9919,8 +9900,8 @@
           "emoji_name": "supremedagganoth",
           "emoji_id": "513212948798504980",
           "aliases": [
-            "SupremeDagganoth",
-            "supreme"
+            "supreme",
+            "SupremeDagganoth"
           ],
           "server": "15"
         },
@@ -9954,8 +9935,8 @@
           "emoji_name": "gregorovic",
           "emoji_id": "513212998274383914",
           "aliases": [
-            "Gregorovic",
-            "greg"
+            "greg",
+            "Gregorovic"
           ],
           "server": "15"
         },
@@ -10003,8 +9984,8 @@
           "emoji_name": "kriltsutsaroth",
           "emoji_id": "513213018352386058",
           "aliases": [
-            "kril",
-            "KrilTsutsaroth"
+            "KrilTsutsaroth",
+            "kril"
           ],
           "server": "15"
         },
@@ -10280,7 +10261,6 @@
     },
     {
       "name": "Boss Pets",
-      "tag": "pets",
       "emojis": [
         {
           "name": "Ancient artefact",
@@ -10531,9 +10511,10 @@
         },
         {
           "name": "Misos Collar",
-          "emoji_name": "1154123736975417396",
-          "emoji_id": [],
-          "aliases": []
+          "emoji_name": "Misoscollar",
+          "emoji_id": "1154123736975417396",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Nymora's braid",
@@ -10669,7 +10650,6 @@
     },
     {
       "name": "Drops",
-      "tag": "drops",
       "emojis": [
         {
           "name": "Ancient emblem",
@@ -11635,7 +11615,6 @@
     },
     {
       "name": "Slayer Creatures",
-      "tag": "slayercreatures",
       "emojis": [
         {
           "name": "Abyssal beast",
@@ -11863,9 +11842,10 @@
         },
         {
           "name": "Kal'gerion demon",
-          "emoji_name": "1155600607504257024",
-          "emoji_id": [],
-          "aliases": []
+          "emoji_name": "kalgerion_demon",
+          "emoji_id": "1155600607504257024",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Kalphite",
@@ -12032,7 +12012,6 @@
     },
     {
       "name": "Teleports",
-      "tag": "tele",
       "emojis": [
         {
           "name": "Al Kharid lodestone",
@@ -12234,7 +12213,6 @@
     },
     {
       "name": "Clue Scrolls",
-      "tag": "clues",
       "emojis": [
         {
           "name": "Sealed clue scroll (easy)",
@@ -12428,7 +12406,6 @@
     },
     {
       "name": "Miscellaneous",
-      "tag": "misc",
       "emojis": [
         {
           "name": "Abyssal flesh",
@@ -12803,9 +12780,10 @@
         },
         {
           "name": "Dragon limbs",
-          "emoji_name": "1154851356264374292",
-          "emoji_id": [],
-          "aliases": []
+          "emoji_name": "dragonlimbs",
+          "emoji_id": "1154851356264374292",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Drakan's medallion",
@@ -13823,21 +13801,24 @@
         },
         {
           "name": "Ruined dragon armour lump",
-          "emoji_name": "1154851358294421584",
-          "emoji_id": [],
-          "aliases": []
+          "emoji_name": "ruinedarmourlump",
+          "emoji_id": "1154851358294421584",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Ruined dragon armour shard",
-          "emoji_name": "1154851359514972230",
-          "emoji_id": [],
-          "aliases": []
+          "emoji_name": "ruinedarmourshard",
+          "emoji_id": "1154851359514972230",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Ruined dragon armour slice",
-          "emoji_name": "1154851369837142107",
-          "emoji_id": [],
-          "aliases": []
+          "emoji_name": "ruinedarmourslice",
+          "emoji_id": "1154851369837142107",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Volcanic trapper head",
@@ -15423,13 +15404,6 @@
       "server": "33"
     },
     {
-      "name": "Crown of the First Necromancer",
-      "emoji_name": "firstnecrohelm",
-      "emoji_id": "1142416979957923952",
-      "aliases": [],
-      "server": "40"
-    },
-    {
       "name": "Ectoplasm",
       "emoji_name": "ectoplasm",
       "emoji_id": "1151165582650122350",
@@ -15440,55 +15414,6 @@
       "name": "TokHaar-Kal-Mor",
       "emoji_name": "kilnnecro",
       "emoji_id": "1153772314215858247",
-      "aliases": [],
-      "server": "40"
-    },
-    {
-      "name": "Miso\u2019s Collar",
-      "emoji_name": "misoscollar",
-      "emoji_id": "1154123736975417396",
-      "aliases": [],
-      "server": "40"
-    },
-    {
-      "name": "Ruined dragon armour lump",
-      "emoji_name": "ruinedarmourlump",
-      "emoji_id": "1154851358294421584",
-      "aliases": [],
-      "server": "40"
-    },
-    {
-      "name": "Ruined dragon armour shard",
-      "emoji_name": "ruinedarmourshard",
-      "emoji_id": "1154851359514972230",
-      "aliases": [],
-      "server": "40"
-    },
-    {
-      "name": "Ruined dragon armour slice",
-      "emoji_name": "ruinedarmourslice",
-      "emoji_id": "1154851369837142107",
-      "aliases": [],
-      "server": "40"
-    },
-    {
-      "name": "Dragon limbs",
-      "emoji_name": "dragonlimbs",
-      "emoji_id": "1154851356264374292",
-      "aliases": [],
-      "server": "40"
-    },
-    {
-      "name": "Kal\u2019gerion Demon",
-      "emoji_name": "kalgeriondemon",
-      "emoji_id": "1155600607504257024",
-      "aliases": [],
-      "server": "40"
-    },
-    {
-      "name": "Flanking Soul Strike",
-      "emoji_name": "soulstrikeflank",
-      "emoji_id": "1156683164593430579",
       "aliases": [],
       "server": "40"
     }
