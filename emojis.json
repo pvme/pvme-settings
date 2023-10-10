@@ -5103,14 +5103,14 @@
         {
           "name": "Bloat Bloat",
           "emoji_name": "bloat",
-          "emoji_id": "1137809185753550929",
+          "emoji_id": "1159433682403201044",
           "aliases": [],
           "server": "39"
         },
         {
           "name": "Blood Siphon",
           "emoji_name": "bloodsiphon",
-          "emoji_id": "1137809187485782149",
+          "emoji_id": "1159434279311380532",
           "aliases": [],
           "server": "39"
         },
@@ -5139,7 +5139,7 @@
         {
           "name": "Command Vengeful Ghost",
           "emoji_name": "commandghost",
-          "emoji_id": "1137809196864262154",
+          "emoji_id": "1159434409913634816",
           "aliases": [
             "comghost"
           ],
@@ -5159,11 +5159,15 @@
         {
           "name": "Conjure Skeleton Warrior",
           "emoji_name": "conjureskeleton",
-          "emoji_id": "1137809204112011274",
+          "emoji_id": "1159434516658651147",
           "aliases": [
             "conjskele",
             "conjureskele",
-            "conjskeleton"
+            "conjskeleton",
+            "conjurewarrior",
+            "conjwarrior",
+            "conjurewar",
+            "conjwar"
           ],
           "server": "39"
         },
@@ -5213,7 +5217,7 @@
         {
           "name": "Death Skulls",
           "emoji_name": "deathskulls",
-          "emoji_id": "1137809106640572583",
+          "emoji_id": "1159434663903899728",
           "aliases": [],
           "server": "39"
         },
@@ -5230,7 +5234,7 @@
         {
           "name": "Finger of Death",
           "emoji_name": "fingerofdeath",
-          "emoji_id": "1137809115066937414",
+          "emoji_id": "1159434801938432010",
           "aliases": [
             "finger",
             "fod"
@@ -5327,7 +5331,7 @@
         {
           "name": "Living Death",
           "emoji_name": "livingdeath",
-          "emoji_id": "1137809132485890108",
+          "emoji_id": "1159434908486357072",
           "aliases": [
             "ld"
           ],
@@ -5502,9 +5506,10 @@
         {
           "name": "Volley of Souls",
           "emoji_name": "volleyofsouls",
-          "emoji_id": "1137809182364540989",
+          "emoji_id": "1159435029592686642",
           "aliases": [
-            "vos"
+            "vos",
+            "volley"
           ],
           "server": "39"
         }
