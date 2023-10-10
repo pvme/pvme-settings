@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'pvme_spreadsheet/**'
+      - pipeline-debug
+    # paths:
+      # - 'pvme_spreadsheet/**'
 
   schedule:
     - cron: '0 1 * * *' # once per day
