@@ -126,7 +126,7 @@ if __name__ == '__main__':
 
         print(error_text)
 
-        with open('emoji-errors.txt', 'w') as f:
+        with open('emoji_errors.txt', 'w') as f:
             f.write(error_text)
 
         exit(-1)
