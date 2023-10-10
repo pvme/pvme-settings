@@ -37,11 +37,16 @@ jobs:
       - name: update pvme-spreadsheet
         run: python pvme_spreadsheet.py
 
-      - run: |
-          dir
-          cd build
-          dir
-          more pvme_spreadsheet.json
+      - run: dir
+      
+      - run: dir
+        working-directory: pvme_spreadsheet/build
+        
+      - run: cat pvme_spreadsheet.json
+        working-directory: pvme_spreadsheet/build
+
+      
+          
 
       - name: deploy build artifacts
         uses: s0/git-publish-subdir-action@develop
