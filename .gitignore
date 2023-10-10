@@ -8,18 +8,8 @@
 *.pyc
 __pycache__
 
-# google docs api
-credentials.json
-
-# pvme-guides and pvme-settings repo
-pvme-guides
-pvme-settings
-
 # env file
 .env
 
-# pipenv
-# Pipfile.lock
-
-# build files
-build
+# virtual env
+venv
