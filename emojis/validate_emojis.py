@@ -116,8 +116,17 @@ if __name__ == '__main__':
         emojis = EmojiSettings.model_validate_json(text)
 
     except ValidationError as exc:
-        print(f"{'Location':<40}{'Error':<30}\n{'-'*80}")
+        lines = []
+        lines.append(f"{'Location':<40}{'Error':<30}\n{'-'*80}")
         for error in exc.errors():
-            print(f"{'.'.join([str(loc) for loc in error['loc']]):<40}{error['msg']:<30}")
-        print(f"{'='*80}\n")
+            lines.append(f"{'.'.join([str(loc) for loc in error['loc']]):<40}{error['msg']:<30}")
+        lines.append(f"{'='*80}")
+
+        error_text = '\n'.join(lines)
+
+        print(error_text)
+
+        with open('emoji-errors.txt', 'w') as f:
+            f.write(error_text)
+
         exit(-1)

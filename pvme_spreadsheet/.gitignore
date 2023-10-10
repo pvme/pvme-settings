@@ -6,3 +6,6 @@ venv
 
 # google docs api
 credentials.json
+
+# user env variables
+.env

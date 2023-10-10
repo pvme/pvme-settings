@@ -3,13 +3,3 @@
 
 # VS code
 .vscode
-
-# Python
-*.pyc
-__pycache__
-
-# env file
-.env
-
-# virtual env
-venv

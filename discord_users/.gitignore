@@ -7,3 +7,9 @@ users.json
 
 # generated temp venv
 update_users_venv
+
+# user env variables
+.env
+
+# virtualenv environment
+venv
