@@ -1,5 +1,7 @@
+# build dir
 build
 
+# virtual env
 venv
 
 # google docs api
