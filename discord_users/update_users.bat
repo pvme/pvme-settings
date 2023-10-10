@@ -3,13 +3,16 @@ echo off
 rmdir /q/s pvme-guides
 git clone https://github.com/pvme/pvme-guides.git
 
-pipenv install --ignore-pipfile --dev
-pipenv run python discord_users.py
+virtualenv update_users_venv
+call update_users_venv\Scripts\activate
+call pip install -r requirements.txt
+call python discord_users.py
+call deactivate
 
 rmdir /q/s pvme-settings
 git clone -b settings/users https://github.com/pvme/pvme-settings.git
 
-xcopy /y build\users.json pvme-settings
+xcopy /y users.json pvme-settings
 
 cd pvme-settings
 
@@ -21,3 +24,4 @@ git commit --allow-empty -m "update"
 git push
 
 cd ..
+rmdir /q/s update_users_venv
