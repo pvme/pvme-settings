@@ -1,0 +1,9 @@
+# repos
+pvme-guides
+pvme-settings
+
+# generated user file
+users.json
+
+# generated temp venv
+update_users_venv

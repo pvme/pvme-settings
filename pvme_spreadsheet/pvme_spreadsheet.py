@@ -72,7 +72,7 @@ def write_json_lut(json_lut):
     if not os.path.isdir('build'):
         os.mkdir('build')
 
-    with open('build/pvme_spreadsheet.json', 'w') as file:
+    with open('pvme_spreadsheet.json', 'w') as file:
         json.dump(json_lut, file, separators=(',', ':'))
 
 

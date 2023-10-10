@@ -1,0 +1,6 @@
+build
+
+venv
+
+# google docs api
+credentials.json

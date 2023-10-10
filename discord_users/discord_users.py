@@ -44,10 +44,7 @@ def get_unique_users(pvme_guides):
 
 
 def write_users_json(users):
-    if not os.path.isdir('build'):
-        os.mkdir('build')
-
-    with open('build/users.json', 'w', encoding='utf-8') as file:
+    with open('users.json', 'w', encoding='utf-8') as file:
         json.dump(users, file, separators=(',', ':'))
 
 

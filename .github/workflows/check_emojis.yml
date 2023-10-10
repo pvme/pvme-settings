@@ -1,0 +1,39 @@
+name: validate emojis.json
+
+env:
+  SUB_DIR: emojis
+
+defaults:
+  run:
+    working-directory: ${{ env.SUB_DIR }}
+
+on:
+  push:
+    branches:
+      - master
+      - new-structure # todo: remove
+    paths:
+      - '${{ env.SUB_DIR }}/**'
+
+  pull_request:
+    branches:
+      - master
+    paths:
+      - '${{ env.SUB_DIR }}/emojis.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.11'
+
+      - name: Install Python Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Validate emojis.json
+        run: python validate_emojis.py

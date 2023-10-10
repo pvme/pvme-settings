@@ -1,0 +1,54 @@
+name: pvme_spreadsheet.json update
+
+env:
+  SUB_DIR: pvme_spreadsheet
+
+defaults:
+  run:
+    working-directory: ${{ env.SUB_DIR }}
+
+on:
+  push:
+    branches:
+      - master
+      - new-structure # todo: remove
+    paths:
+      - '${{ env.SUB_DIR }}/**'
+
+  schedule:
+    - cron: '0 1 * * *' # once per day
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    env:
+      GS_URL: ${{secrets.GS_URL}}
+      GS_PRIVATE_KEY: ${{secrets.GS_PRIVATE_KEY}}
+      GS_CLIENT_EMAIL: ${{secrets.GS_CLIENT_EMAIL}}
+      GS_TOKEN_URI: ${{secrets.GS_TOKEN_URI}}
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: Setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+
+#      - name: Setup pipenv virtual environment
+#        run: |
+#          pip install pipenv
+#          pipenv install --ignore-pipfile
+#
+#      - name: update pvme-spreadsheet
+#        run: pipenv run python pvme_spreadsheet.py
+#
+#      - name: deploy build artifacts
+#        uses: s0/git-publish-subdir-action@develop
+#        env:
+#          REPO: self
+#          BRANCH: settings/pvme-spreadsheet
+#          FOLDER: build
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          MESSAGE: "Build: ({sha}) {msg}"
+#          SQUASH_HISTORY: true
