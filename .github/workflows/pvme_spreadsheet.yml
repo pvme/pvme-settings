@@ -6,7 +6,7 @@ on:
       - master
       - pipeline-debug
     # paths:
-      # - 'pvme_spreadsheet/**'
+    #   - 'pvme_spreadsheet/**'
 
   schedule:
     - cron: '0 1 * * *' # once per day
@@ -35,18 +35,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: update pvme-spreadsheet
-        run: python pvme_spreadsheet.py
-
-      - run: dir
-      
-      - run: dir
-        working-directory: pvme_spreadsheet/build
-        
-      - run: cat pvme_spreadsheet.json
-        working-directory: pvme_spreadsheet/build
-
-      
-          
+        run: python pvme_spreadsheet.py    
 
       - name: deploy build artifacts
         uses: s0/git-publish-subdir-action@develop
@@ -54,7 +43,7 @@ jobs:
           REPO: self
           BRANCH: settings/pvme-spreadsheet
 #          FOLDER: pvme_spreadsheet/build
-          FOLDER: /pvme_spreadsheet/build
+          FOLDER: pvme_spreadsheet/build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Build: ({sha}) {msg}"
           SQUASH_HISTORY: true
