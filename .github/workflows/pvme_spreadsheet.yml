@@ -11,8 +11,8 @@ on:
   push:
     branches:
       - master
-    paths:
-      - '${{ env.SUB_DIR }}/**'
+    # paths:
+    #   - '${{ env.SUB_DIR }}/**'
 
   schedule:
     - cron: '0 1 * * *' # once per day
