@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - master
-      - pipeline-debug
-    # paths:
-    #   - 'pvme_spreadsheet/**'
+    paths:
+      - 'pvme_spreadsheet/**'
 
   schedule:
     - cron: '0 1 * * *' # once per day
@@ -42,7 +41,6 @@ jobs:
         env:
           REPO: self
           BRANCH: settings/pvme-spreadsheet
-#          FOLDER: pvme_spreadsheet/build
           FOLDER: pvme_spreadsheet/build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Build: ({sha}) {msg}"
