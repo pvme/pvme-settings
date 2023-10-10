@@ -37,7 +37,11 @@ jobs:
       - name: update pvme-spreadsheet
         run: python pvme_spreadsheet.py
 
-      - run: dir
+      - run: |
+          dir
+          cd build
+          dir
+          more pvme_spreadsheet.json
 
       - name: deploy build artifacts
         uses: s0/git-publish-subdir-action@develop
@@ -45,7 +49,7 @@ jobs:
           REPO: self
           BRANCH: settings/pvme-spreadsheet
 #          FOLDER: pvme_spreadsheet/build
-          FOLDER: build
+          FOLDER: /pvme_spreadsheet/build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Build: ({sha}) {msg}"
           SQUASH_HISTORY: true
