@@ -40,3 +40,4 @@ jobs:
         if: failure()
         with:
           message-path: emojis/emoji_errors.txt
+          preformatted: true
