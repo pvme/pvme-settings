@@ -170,7 +170,7 @@
           "emoji_name": "magic",
           "emoji_id": "689504724159823906",
           "aliases": [
-            "Magic"
+            "magic"
           ],
           "server": "20"
         },
@@ -248,36 +248,28 @@
           "name": "Ancient ceremonial boots",
           "emoji_name": "ceremonialboots",
           "emoji_id": "580177522575147018",
-          "aliases": [
-            "CeremonialBoots"
-          ],
+          "aliases": [],
           "server": "5"
         },
         {
           "name": "Ancient ceremonial gloves",
           "emoji_name": "ceremonialgloves",
           "emoji_id": "580177522633736214",
-          "aliases": [
-            "CeremonialGloves"
-          ],
+          "aliases": [],
           "server": "5"
         },
         {
           "name": "Ancient ceremonial legs",
           "emoji_name": "ceremoniallegs",
           "emoji_id": "580177522533335051",
-          "aliases": [
-            "CeremonialLegs"
-          ],
+          "aliases": [],
           "server": "5"
         },
         {
           "name": "Ancient ceremonial mask",
           "emoji_name": "ceremonialmask",
           "emoji_id": "580177522629804062",
-          "aliases": [
-            "CeremonialMask"
-          ],
+          "aliases": [],
           "server": "5"
         },
         {
@@ -312,9 +304,7 @@
           "name": "Anima core legs of Seren",
           "emoji_name": "animalegsseren",
           "emoji_id": "556592073340485639",
-          "aliases": [
-            "AnimalegsSeren"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -389,9 +379,7 @@
           "name": "Celestial handwraps",
           "emoji_name": "celestialhandwraps",
           "emoji_id": "513190158716239885",
-          "aliases": [
-            "Celestialhandwraps"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -604,9 +592,7 @@
           "name": "Gown of Subjugation",
           "emoji_name": "gownofsubjugation",
           "emoji_id": "556592058824130589",
-          "aliases": [
-            "GownofSubjugation"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -685,9 +671,7 @@
           "name": "Hailfire boots",
           "emoji_name": "hailfire",
           "emoji_id": "513190159366488101",
-          "aliases": [
-            "Hailfire"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -852,144 +836,112 @@
           "name": "Air rune",
           "emoji_name": "airrune",
           "emoji_id": "536252658986647589",
-          "aliases": [
-            "Airrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Astral rune",
           "emoji_name": "astralrune",
           "emoji_id": "536252658961481769",
-          "aliases": [
-            "Astralrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Blood rune",
           "emoji_name": "bloodrune",
           "emoji_id": "536252658970001409",
-          "aliases": [
-            "Bloodrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Body rune",
           "emoji_name": "bodyrune",
           "emoji_id": "536252659301089280",
-          "aliases": [
-            "Bodyrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Chaos rune",
           "emoji_name": "chaosrune",
           "emoji_id": "536252659422855188",
-          "aliases": [
-            "Chaosrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Cosmic rune",
           "emoji_name": "cosmicrune",
           "emoji_id": "536252659615924258",
-          "aliases": [
-            "Cosmicrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Death rune",
           "emoji_name": "deathrune",
           "emoji_id": "536252659586433024",
-          "aliases": [
-            "Deathrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Dust rune",
           "emoji_name": "dustrune",
           "emoji_id": "536252659670188042",
-          "aliases": [
-            "Dustrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Earth rune",
           "emoji_name": "earthrune",
           "emoji_id": "536252659808731137",
-          "aliases": [
-            "Earthrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Fire rune",
           "emoji_name": "firerune",
           "emoji_id": "536252659850674186",
-          "aliases": [
-            "Firerune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Lava rune",
           "emoji_name": "lavarune",
           "emoji_id": "536252659938885633",
-          "aliases": [
-            "Lavarune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Law rune",
           "emoji_name": "lawrune",
           "emoji_id": "536252661406760970",
-          "aliases": [
-            "Lawrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Mind rune",
           "emoji_name": "mindrune",
           "emoji_id": "536252659783696387",
-          "aliases": [
-            "Mindrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Mist rune",
           "emoji_name": "mistrune",
           "emoji_id": "536252660244807720",
-          "aliases": [
-            "Mistrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Mud rune",
           "emoji_name": "mudrune",
           "emoji_id": "536252660286881832",
-          "aliases": [
-            "Mudrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Nature rune",
           "emoji_name": "naturerune",
           "emoji_id": "536252660270104591",
-          "aliases": [
-            "Naturerune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
@@ -1005,36 +957,28 @@
           "name": "Smoke rune",
           "emoji_name": "smokerune",
           "emoji_id": "536252660299333632",
-          "aliases": [
-            "Smokerune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Soul rune",
           "emoji_name": "soulrune",
           "emoji_id": "536252660333019136",
-          "aliases": [
-            "Soulrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Steam rune",
           "emoji_name": "steamrune",
           "emoji_id": "536252660370898954",
-          "aliases": [
-            "Steamrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Water rune",
           "emoji_name": "waterrune",
           "emoji_id": "536252660165115905",
-          "aliases": [
-            "Waterrune"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
@@ -1073,18 +1017,14 @@
           "name": "Seasinger's hood",
           "emoji_name": "seasingershood",
           "emoji_id": "556583076050763776",
-          "aliases": [
-            "Seasingershood"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
           "name": "Seasinger's robe bottom",
           "emoji_name": "seasingersrobebottom",
           "emoji_id": "556592058958348298",
-          "aliases": [
-            "Seasingersrobebottom"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -1210,18 +1150,14 @@
           "name": "Staff of Sliske",
           "emoji_name": "sos",
           "emoji_id": "626466320132734976",
-          "aliases": [
-            "Sos"
-          ],
+          "aliases": [],
           "server": "19"
         },
         {
           "name": "Superior seasinger aonori",
           "emoji_name": "superiorseasingeraonori",
           "emoji_id": "556588694979739652",
-          "aliases": [
-            "Superiorseasingeraonori"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -1235,18 +1171,14 @@
           "name": "Superior Zuriel's robe bottom",
           "emoji_name": "superiorzurielsrobebottom",
           "emoji_id": "556591275604836395",
-          "aliases": [
-            "SuperiorZurielsrobebottom"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
           "name": "Superior Zuriel's robe top",
           "emoji_name": "superiorzurielstop",
           "emoji_id": "556586037216804864",
-          "aliases": [
-            "SuperiorZurielstop"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
@@ -1282,7 +1214,7 @@
           "emoji_name": "kilnmage",
           "emoji_id": "1153768065427853354",
           "aliases": [
-            "mageKiln"
+            "magekiln"
           ],
           "server": "8"
         },
@@ -1311,18 +1243,14 @@
           "name": "Virtus robe legs",
           "emoji_name": "virtusrobelegs",
           "emoji_id": "556591276036849682",
-          "aliases": [
-            "Virtusrobelegs"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
           "name": "Virtus robe top",
           "emoji_name": "virtustop",
           "emoji_id": "556586038936600603",
-          "aliases": [
-            "VirtusTop"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
@@ -1382,7 +1310,7 @@
           "emoji_name": "magic",
           "emoji_id": "689504724159823906",
           "aliases": [
-            "Magic"
+            "magic"
           ]
         },
         {
@@ -1424,18 +1352,14 @@
           "name": "Barrage (shadow)",
           "emoji_name": "shadowbarrage",
           "emoji_id": "567727956567261184",
-          "aliases": [
-            "ShadowBarrage"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
           "name": "Barrage (smoke)",
           "emoji_name": "smokebarrage",
           "emoji_id": "567727956588363786",
-          "aliases": [
-            "SmokeBarrage"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -1592,9 +1516,7 @@
           "name": "Enfeeble",
           "emoji_name": "enfeeble",
           "emoji_id": "567727986409734145",
-          "aliases": [
-            "Enfeeble"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -1658,9 +1580,7 @@
           "name": "Heal other",
           "emoji_name": "healother",
           "emoji_id": "567727985851891715",
-          "aliases": [
-            "HealOther"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -1704,9 +1624,7 @@
           "name": "Intercept",
           "emoji_name": "cept",
           "emoji_id": "543478434509357098",
-          "aliases": [
-            "Cept"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
@@ -1799,9 +1717,7 @@
           "name": "Ruby aurora",
           "emoji_name": "rubyaurora",
           "emoji_id": "574292444791963659",
-          "aliases": [
-            "RubyAurora"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -1890,27 +1806,21 @@
           "name": "Spellbook swap (Lunar)",
           "emoji_name": "sbslunars",
           "emoji_id": "565726489467682816",
-          "aliases": [
-            "SBSLunars"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
           "name": "Spellbook swap (Standard)",
           "emoji_name": "sbsstandards",
           "emoji_id": "565726489526534154",
-          "aliases": [
-            "SBSStandards"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
           "name": "Spellbook swap",
           "emoji_name": "sbs",
           "emoji_id": "543875425055670275",
-          "aliases": [
-            "SBS"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
@@ -1924,9 +1834,7 @@
           "name": "Stagger",
           "emoji_name": "stagger",
           "emoji_id": "567727997545611277",
-          "aliases": [
-            "Stagger"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -1934,7 +1842,6 @@
           "emoji_name": "sunshine",
           "emoji_id": "994921119381463070",
           "aliases": [
-            "Sunshine",
             "sun"
           ],
           "server": "19"
@@ -1953,18 +1860,14 @@
           "name": "Surge (air)",
           "emoji_name": "airsurge",
           "emoji_id": "543465115870035999",
-          "aliases": [
-            "AirSurge"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
           "name": "Surge (fire)",
           "emoji_name": "firesurge",
           "emoji_id": "543465116092334083",
-          "aliases": [
-            "FireSurge"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
@@ -2011,8 +1914,7 @@
           "emoji_name": "veng",
           "emoji_id": "543478434953822208",
           "aliases": [
-            "vengance",
-            "Veng"
+            "vengance"
           ],
           "server": "11"
         },
@@ -2040,9 +1942,7 @@
           "name": "Vulnerability",
           "emoji_name": "vuln",
           "emoji_id": "537349530551582720",
-          "aliases": [
-            "Vuln"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
@@ -2155,9 +2055,7 @@
           "name": "Anima core legs of Zamorak",
           "emoji_name": "animalegsamorak",
           "emoji_id": "556592073374171146",
-          "aliases": [
-            "Animalegsamorak"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -2178,9 +2076,7 @@
           "name": "Armadyl chainskirt",
           "emoji_name": "armadyllegs",
           "emoji_id": "556592073340354574",
-          "aliases": [
-            "Armadyllegs"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -2201,18 +2097,14 @@
           "name": "Armadyl gloves",
           "emoji_name": "armagloves",
           "emoji_id": "556588709437243394",
-          "aliases": [
-            "Armagloves"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
           "name": "Armadyl helmet",
           "emoji_name": "armadylhelmet",
           "emoji_id": "556582831527034919",
-          "aliases": [
-            "Armadylhelmet"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
@@ -2326,27 +2218,21 @@
           "name": "Death Lotus chaps",
           "emoji_name": "deathlotuschaps",
           "emoji_id": "556592056995151892",
-          "aliases": [
-            "DeathLotuschaps"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
           "name": "Death lotus chestplate",
           "emoji_name": "deathlotus",
           "emoji_id": "513204675948838922",
-          "aliases": [
-            "DeathLotus"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
           "name": "Death lotus hood",
           "emoji_name": "deathlotushood",
           "emoji_id": "556582802670485505",
-          "aliases": [
-            "DeathLotushood"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
@@ -2369,9 +2255,7 @@
           "name": "Dragonstone bakriminel bolts (e)",
           "emoji_name": "dragonstonebakri",
           "emoji_id": "565726489144852511",
-          "aliases": [
-            "DragonstoneBakri"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -2399,18 +2283,14 @@
           "name": "Elite Robin Hood tights",
           "emoji_name": "eliterobinhoodlegs",
           "emoji_id": "556592057456656399",
-          "aliases": [
-            "EliteRobinHoodlegs"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
           "name": "Elite robin hood tunic",
           "emoji_name": "eliterobinhoodtop",
           "emoji_id": "556585903489810454",
-          "aliases": [
-            "EliteRobinHoodTop"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
@@ -2454,9 +2334,7 @@
           "name": "Flarefrost boots",
           "emoji_name": "flarefrost",
           "emoji_id": "513190159056109588",
-          "aliases": [
-            "Flarefrost"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -2492,8 +2370,7 @@
           "emoji_name": "hydrixbakri",
           "emoji_id": "550834403136503822",
           "aliases": [
-            "hydrixbak",
-            "HydrixBakri"
+            "hydrixbak"
           ],
           "server": "11"
         },
@@ -2633,9 +2510,7 @@
           "name": "Onyx bakriminel bolts (e)",
           "emoji_name": "onyxbakri",
           "emoji_id": "565726489362956308",
-          "aliases": [
-            "OnyxBakri"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -2663,18 +2538,14 @@
           "name": "Pernix chaps",
           "emoji_name": "pernixchaps",
           "emoji_id": "556592058891239424",
-          "aliases": [
-            "PernixChaps"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
           "name": "Pernix Gloves",
           "emoji_name": "pernixgloves",
           "emoji_id": "556588696510529555",
-          "aliases": [
-            "Pernixgloves"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -2763,8 +2634,7 @@
           "emoji_name": "rubybakri",
           "emoji_id": "565726489413287956",
           "aliases": [
-            "rubybak",
-            "RubyBakri"
+            "rubybak"
           ],
           "server": "16"
         },
@@ -2779,9 +2649,7 @@
           "name": "Scrimshaw of cruelty",
           "emoji_name": "cruelty",
           "emoji_id": "513190159546712074",
-          "aliases": [
-            "Cruelty"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -2860,18 +2728,14 @@
           "name": "Superior Morrigan's leather body",
           "emoji_name": "superiormorrigansbody",
           "emoji_id": "556586036885717012",
-          "aliases": [
-            "SuperiorMorrigansBody"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
           "name": "Superior Morrigan's leather chaps",
           "emoji_name": "superiormorriganschaps",
           "emoji_id": "556591276137512961",
-          "aliases": [
-            "SuperiorMorrigansChaps"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -2906,9 +2770,7 @@
           "name": "TokHaar-Kal-Xil",
           "emoji_name": "kilnranged",
           "emoji_id": "602582045541269567",
-          "aliases": [
-            "KilnRanged"
-          ],
+          "aliases": [],
           "server": "20"
         },
         {
@@ -3352,9 +3214,7 @@
           "name": "Anima core legs of Zaros",
           "emoji_name": "animalegszaros",
           "emoji_id": "556592072912797707",
-          "aliases": [
-            "AnimaLegsZaros"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -3438,9 +3298,7 @@
           "name": "Bandos gloves",
           "emoji_name": "bandosgloves",
           "emoji_id": "556588709890228252",
-          "aliases": [
-            "Bandosgloves"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -3454,9 +3312,7 @@
           "name": "Bandos tassets",
           "emoji_name": "bandostassets",
           "emoji_id": "556592056953208852",
-          "aliases": [
-            "Bandostassets"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -3582,9 +3438,7 @@
           "name": "Dragon battleaxe",
           "emoji_name": "dba",
           "emoji_id": "603979368850653216",
-          "aliases": [
-            "DBA"
-          ],
+          "aliases": [],
           "server": "20"
         },
         {
@@ -3686,27 +3540,21 @@
           "name": "Elder rune full helm +5",
           "emoji_name": "elderrunehelm5",
           "emoji_id": "556582802678743040",
-          "aliases": [
-            "Elderrunehelm5"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
           "name": "Elder rune gauntlets +5",
           "emoji_name": "elderrunegauntlets5",
           "emoji_id": "556588710456590336",
-          "aliases": [
-            "Elderrunegauntlets5"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
           "name": "Elder rune platelegs",
           "emoji_name": "elderruneplatelegs",
           "emoji_id": "556591276082987012",
-          "aliases": [
-            "ElderRunePlatelegs"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -3734,18 +3582,14 @@
           "name": "Emberkeen boots",
           "emoji_name": "emberkeen",
           "emoji_id": "513190158707720193",
-          "aliases": [
-            "Emberkeen"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
           "name": "Enhanced excalibur",
           "emoji_name": "enhancedexcalibur",
           "emoji_id": "513200949016264727",
-          "aliases": [
-            "EnhancedExcalibur"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -3850,9 +3694,7 @@
           "name": "Laceration boots",
           "emoji_name": "laceration",
           "emoji_id": "602581988599398400",
-          "aliases": [
-            "Laceration"
-          ],
+          "aliases": [],
           "server": "20"
         },
         {
@@ -3931,9 +3773,7 @@
           "name": "Masterwork platelegs",
           "emoji_name": "masterworklegs",
           "emoji_id": "556592058794770432",
-          "aliases": [
-            "Masterworklegs"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -4031,9 +3871,7 @@
           "name": "Razorback gauntlets",
           "emoji_name": "razorback",
           "emoji_id": "513190159366488065",
-          "aliases": [
-            "Razorback"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -4075,9 +3913,7 @@
           "name": "Scrimshaw of vampyrism",
           "emoji_name": "vampscrim",
           "emoji_id": "513201294262009874",
-          "aliases": [
-            "VampScrim"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -4126,45 +3962,35 @@
           "name": "Superior Statius's platebody",
           "emoji_name": "superiorstatiussbody",
           "emoji_id": "556586036923203584",
-          "aliases": [
-            "SuperiorStatiussBody"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
           "name": "Superior Statius's platelegs",
           "emoji_name": "superiorstatiussplatelegs",
           "emoji_id": "556591276859064340",
-          "aliases": [
-            "SuperiorStatiussPlatelegs"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
           "name": "Superior tetsu kote",
           "emoji_name": "superiortetsukote",
           "emoji_id": "556588695071752202",
-          "aliases": [
-            "Superiortetsukote"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
           "name": "Superior Vesta's chainbody",
           "emoji_name": "superiorvestasbody",
           "emoji_id": "556586037149958175",
-          "aliases": [
-            "SuperiorVestasBody"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
           "name": "Superior Vesta's plateskirt",
           "emoji_name": "superiorvestasplateskirt",
           "emoji_id": "556591275969609748",
-          "aliases": [
-            "SuperiorVestasPlateskirt"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -4178,18 +4004,14 @@
           "name": "Tetsu body",
           "emoji_name": "tetsubody",
           "emoji_id": "556586038911565824",
-          "aliases": [
-            "TetsuBody"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
           "name": "Tetsu helm",
           "emoji_name": "tetsuhelm",
           "emoji_id": "556583076029792256",
-          "aliases": [
-            "Tetsuhelm"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
@@ -4203,9 +4025,7 @@
           "name": "Tetsu platelegs",
           "emoji_name": "tetsuplatelegs",
           "emoji_id": "556591275965546539",
-          "aliases": [
-            "Tetsuplatelegs"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -4219,18 +4039,14 @@
           "name": "TokHaar-Kal-Ket",
           "emoji_name": "kilnmelee",
           "emoji_id": "602582045553590274",
-          "aliases": [
-            "KilnMelee"
-          ],
+          "aliases": [],
           "server": "20"
         },
         {
           "name": "Torva Gloves",
           "emoji_name": "torvagloves",
           "emoji_id": "556588695117889536",
-          "aliases": [
-            "Torvagloves"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -4244,18 +4060,14 @@
           "name": "Torva platebody",
           "emoji_name": "torvaplatebody",
           "emoji_id": "556586038974480424",
-          "aliases": [
-            "TorvaPlatebody"
-          ],
+          "aliases": [],
           "server": "14"
         },
         {
           "name": "Torva platelegs",
           "emoji_name": "torvaplatelegs",
           "emoji_id": "556591275843911710",
-          "aliases": [
-            "Torvaplatelegs"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -4425,18 +4237,14 @@
           "name": "Attack",
           "emoji_name": "attack",
           "emoji_id": "689509250472476758",
-          "aliases": [
-            "Attack"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Strength",
           "emoji_name": "strength",
           "emoji_id": "689509250879324165",
-          "aliases": [
-            "Strength"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
@@ -5534,9 +5342,7 @@
           "name": "Anima core body of Sliske",
           "emoji_name": "sliskebody",
           "emoji_id": "513204700980576266",
-          "aliases": [
-            "SliskeBody"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -5550,18 +5356,14 @@
           "name": "Anima core legs of Sliske",
           "emoji_name": "animalegssliske",
           "emoji_id": "556592073042821122",
-          "aliases": [
-            "AnimalegsSliske"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
           "name": "Atrocious rogue gloves",
           "emoji_name": "atrociousroguegloves",
           "emoji_id": "556588709634375701",
-          "aliases": [
-            "Atrociousroguegloves"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -5604,7 +5406,6 @@
           "emoji_name": "cinderbanes",
           "emoji_id": "513190158355660812",
           "aliases": [
-            "Cinderbanes",
             "cinders"
           ],
           "server": "1"
@@ -5836,9 +5637,7 @@
           "name": "Pneumatic gloves",
           "emoji_name": "pneumaticglove",
           "emoji_id": "556588694711304193",
-          "aliases": [
-            "Pneumaticglove"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -5894,9 +5693,7 @@
           "name": "Static gloves",
           "emoji_name": "staticglove",
           "emoji_id": "556588694757179403",
-          "aliases": [
-            "Staticglove"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -5917,9 +5714,7 @@
           "name": "Tracking gloves",
           "emoji_name": "trackingglove",
           "emoji_id": "556588694765699101",
-          "aliases": [
-            "Trackingglove"
-          ],
+          "aliases": [],
           "server": "13"
         },
         {
@@ -5938,18 +5733,14 @@
           "name": "Defence",
           "emoji_name": "defence",
           "emoji_id": "689509250979987525",
-          "aliases": [
-            "Defence"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Constitution",
           "emoji_name": "constitution",
           "emoji_id": "689509250887712902",
-          "aliases": [
-            "Constitution"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
@@ -6078,18 +5869,14 @@
           "name": "Guthix blessing",
           "emoji_name": "guthixsblessing",
           "emoji_id": "553050196767145995",
-          "aliases": [
-            "GuthixsBlessing"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
           "name": "Ice asylum",
           "emoji_name": "iceasylum",
           "emoji_id": "553050196817215491",
-          "aliases": [
-            "IceAsylum"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
@@ -6103,9 +5890,7 @@
           "name": "Incite",
           "emoji_name": "incite",
           "emoji_id": "553050196725071893",
-          "aliases": [
-            "Incite"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
@@ -6182,9 +5967,7 @@
           "name": "Reprisal",
           "emoji_name": "reprisal",
           "emoji_id": "513190159462694912",
-          "aliases": [
-            "Reprisal"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -6205,27 +5988,21 @@
           "name": "Sacrifice",
           "emoji_name": "sacrifice",
           "emoji_id": "513201065907322880",
-          "aliases": [
-            "Sacrifice"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
           "name": "Shatter",
           "emoji_name": "shatter",
           "emoji_id": "536256673904328704",
-          "aliases": [
-            "Shatter"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
           "name": "Siphon",
           "emoji_name": "siphon",
           "emoji_id": "553050198012854275",
-          "aliases": [
-            "Siphon"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
@@ -6248,9 +6025,7 @@
           "name": "Transfigure",
           "emoji_name": "transfigure",
           "emoji_id": "553050196523876354",
-          "aliases": [
-            "Transfigure"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
@@ -6258,8 +6033,7 @@
           "emoji_name": "tuskas",
           "emoji_id": "513201065513058306",
           "aliases": [
-            "tuska",
-            "Tuskas"
+            "tuska"
           ],
           "server": "15"
         },
@@ -6434,9 +6208,7 @@
           "name": "Reprisal ability codex",
           "emoji_name": "reprisalcodex",
           "emoji_id": "517418828540542977",
-          "aliases": [
-            "Reprisalcodex"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -6571,9 +6343,7 @@
           "name": "Deathtouched bracelet",
           "emoji_name": "dtb",
           "emoji_id": "513190159429271562",
-          "aliases": [
-            "DTB"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -6677,9 +6447,7 @@
           "name": "Hazelmere's Signet Ring",
           "emoji_name": "hsr",
           "emoji_id": "513213693983588362",
-          "aliases": [
-            "HSR"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -6693,9 +6461,7 @@
           "name": "Luck of the dwarves",
           "emoji_name": "lotd",
           "emoji_id": "566453486913323042",
-          "aliases": [
-            "LotD"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -6723,9 +6489,7 @@
           "name": "Reaper necklace",
           "emoji_name": "reaper",
           "emoji_id": "513190159412494367",
-          "aliases": [
-            "Reaper"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -6753,9 +6517,7 @@
           "name": "Ring of death",
           "emoji_name": "rod",
           "emoji_id": "513190159462825984",
-          "aliases": [
-            "RoD"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -6770,7 +6532,6 @@
           "emoji_name": "rov",
           "emoji_id": "513201065877831680",
           "aliases": [
-            "RoV",
             "ringofvigour",
             "vigour"
           ],
@@ -6840,27 +6601,21 @@
           "name": "Book (Ancient)(Zaros)",
           "emoji_name": "zarosbook",
           "emoji_id": "574290439461404682",
-          "aliases": [
-            "ZarosBook"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
           "name": "Book of balance (Guthix)",
           "emoji_name": "guthixbook",
           "emoji_id": "574290439356809216",
-          "aliases": [
-            "GuthixBook"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
           "name": "Book of chaos (Zamorak)",
           "emoji_name": "zambook",
           "emoji_id": "574290439461404672",
-          "aliases": [
-            "ZamBook"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -6874,18 +6629,14 @@
           "name": "Book of war (Bandos)",
           "emoji_name": "bandosbook",
           "emoji_id": "574290439473987628",
-          "aliases": [
-            "BandosBook"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
           "name": "Book of wisdom (Saradomin)",
           "emoji_name": "sarabook",
           "emoji_id": "574290439482638346",
-          "aliases": [
-            "SaraBook"
-          ],
+          "aliases": [],
           "server": "12"
         },
         {
@@ -6960,9 +6711,7 @@
           "name": "Scrimshaw of cruelty",
           "emoji_name": "cruelty",
           "emoji_id": "513190159546712074",
-          "aliases": [
-            "Cruelty"
-          ]
+          "aliases": []
         },
         {
           "name": "Scrimshaw of the elements",
@@ -6974,9 +6723,7 @@
           "name": "Scrimshaw of vampyrism",
           "emoji_name": "vampscrim",
           "emoji_id": "513201294262009874",
-          "aliases": [
-            "VampScrim"
-          ]
+          "aliases": []
         },
         {
           "name": "Scripture of Bik",
@@ -7058,9 +6805,7 @@
           "name": "Affliction",
           "emoji_name": "affliction",
           "emoji_id": "513190158468907008",
-          "aliases": [
-            "Affliction"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -7095,36 +6840,28 @@
           "name": "Deflect magic",
           "emoji_name": "deflectmage",
           "emoji_id": "544195487926845462",
-          "aliases": [
-            "DeflectMage"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
           "name": "Deflect melee",
           "emoji_name": "deflectmelee",
           "emoji_id": "544195488447201300",
-          "aliases": [
-            "DeflectMelee"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
           "name": "Deflect missiles",
           "emoji_name": "deflectrange",
           "emoji_id": "544195488317046812",
-          "aliases": [
-            "DeflectRange"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
           "name": "Desolation",
           "emoji_name": "desolation",
           "emoji_id": "513190159018098713",
-          "aliases": [
-            "Desolation"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -7138,9 +6875,7 @@
           "name": "Malevolence",
           "emoji_name": "malevolence",
           "emoji_id": "513190159416557573",
-          "aliases": [
-            "Malevolence"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -7212,9 +6947,7 @@
           "name": "Wrath",
           "emoji_name": "wrath",
           "emoji_id": "848803062700703784",
-          "aliases": [
-            "Wrath"
-          ],
+          "aliases": [],
           "server": "14"
         }
       ]
@@ -7701,9 +7434,7 @@
           "name": "Fellstalk incense sticks",
           "emoji_name": "fellstalksticks",
           "emoji_id": "690987265421213746",
-          "aliases": [
-            "FellstalkSticks"
-          ],
+          "aliases": [],
           "server": "8"
         },
         {
@@ -7763,9 +7494,7 @@
           "name": "Irit incense sticks",
           "emoji_name": "iritsticks",
           "emoji_id": "690987265371144202",
-          "aliases": [
-            "IritSticks"
-          ],
+          "aliases": [],
           "server": "8"
         },
         {
@@ -7788,18 +7517,14 @@
           "name": "Kwuarm incense sticks",
           "emoji_name": "kwuarmsticks",
           "emoji_id": "565726489341984779",
-          "aliases": [
-            "KwuarmSticks"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
           "name": "Lantadyme incense sticks",
           "emoji_name": "lantasticks",
           "emoji_id": "565726489404899368",
-          "aliases": [
-            "LantaSticks"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -7869,9 +7594,7 @@
           "name": "Marks of war",
           "emoji_name": "marksofwar",
           "emoji_id": "704701746869567551",
-          "aliases": [
-            "MarksofWar"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -8098,18 +7821,14 @@
           "name": "Ranarr incense sticks",
           "emoji_name": "ranarrsticks",
           "emoji_id": "690987265186594857",
-          "aliases": [
-            "RanarrSticks"
-          ],
+          "aliases": [],
           "server": "8"
         },
         {
           "name": "Reaper points",
           "emoji_name": "reaperpoints",
           "emoji_id": "704657943194501140",
-          "aliases": [
-            "Reaperpoints"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -8139,9 +7858,7 @@
           "name": "Sailfish",
           "emoji_name": "sailfish",
           "emoji_id": "565726489363087360",
-          "aliases": [
-            "Sailfish"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -8162,9 +7879,7 @@
           "name": "Saradomin brew",
           "emoji_name": "brew",
           "emoji_id": "565726489400573962",
-          "aliases": [
-            "Brew"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -8208,9 +7923,7 @@
           "name": "Spirit weed incense sticks",
           "emoji_name": "spiritsticks",
           "emoji_id": "565726489136463894",
-          "aliases": [
-            "SpiritSticks"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -8245,9 +7958,7 @@
           "name": "Summoning flask",
           "emoji_name": "summflask",
           "emoji_id": "565726489438322688",
-          "aliases": [
-            "SummFlask"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -8296,9 +8007,7 @@
           "name": "Super prayer renewal potion",
           "emoji_name": "superprayerrenewal",
           "emoji_id": "547603714681339915",
-          "aliases": [
-            "SuperPrayerRenewal"
-          ],
+          "aliases": [],
           "server": "11"
         },
         {
@@ -8419,9 +8128,7 @@
           "name": "Invention",
           "emoji_name": "invention",
           "emoji_id": "689509250946695292",
-          "aliases": [
-            "Invention"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
@@ -8870,9 +8577,7 @@
           "name": "Invention",
           "emoji_name": "invention",
           "emoji_id": "689509250946695292",
-          "aliases": [
-            "Invention"
-          ]
+          "aliases": []
         },
         {
           "name": "Ancient armour gizmo",
@@ -8920,9 +8625,7 @@
           "name": "Armadyl component",
           "emoji_name": "armadylcomp",
           "emoji_id": "513190158477033474",
-          "aliases": [
-            "Armadylcomp"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -8999,9 +8702,7 @@
           "name": "Clockwork component",
           "emoji_name": "clockworkcomp",
           "emoji_id": "513206171549696000",
-          "aliases": [
-            "Clockworkcomp"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -9113,9 +8814,7 @@
           "name": "Explosive component",
           "emoji_name": "explosivecomp",
           "emoji_id": "513190158917566485",
-          "aliases": [
-            "Explosivecomp"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -9206,9 +8905,7 @@
           "name": "Ilujankan component",
           "emoji_name": "ilujankancomp",
           "emoji_id": "513190158674427906",
-          "aliases": [
-            "Ilujankancomp"
-          ],
+          "aliases": [],
           "server": "1"
         },
         {
@@ -9222,9 +8919,7 @@
           "name": "Junk",
           "emoji_name": "junk",
           "emoji_id": "583435544286068736",
-          "aliases": [
-            "Junk"
-          ],
+          "aliases": [],
           "server": "20"
         },
         {
@@ -9267,7 +8962,6 @@
           "emoji_name": "noxiouscomp",
           "emoji_id": "513203842473525248",
           "aliases": [
-            "Noxiouscomp",
             "noxcomp"
           ],
           "server": "15"
@@ -9367,9 +9061,7 @@
           "name": "Saradomin component",
           "emoji_name": "saradomincomp",
           "emoji_id": "583435429785632769",
-          "aliases": [
-            "Saradomincomp"
-          ],
+          "aliases": [],
           "server": "21"
         },
         {
@@ -9542,9 +9234,7 @@
           "name": "Summoning",
           "emoji_name": "summoning",
           "emoji_id": "583430259064569856",
-          "aliases": [
-            "Summoning"
-          ],
+          "aliases": [],
           "server": "19"
         },
         {
@@ -9667,18 +9357,14 @@
           "name": "Pack mammoth",
           "emoji_name": "mammoth",
           "emoji_id": "513195712146702337",
-          "aliases": [
-            "Mammoth"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
           "name": "Pack yak",
           "emoji_name": "yak",
           "emoji_id": "513195712201228289",
-          "aliases": [
-            "Yak"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -9699,9 +9385,7 @@
           "name": "Spirit terrorbird",
           "emoji_name": "terrorbird",
           "emoji_id": "513195712243171358",
-          "aliases": [
-            "Terrorbird"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -9715,27 +9399,21 @@
           "name": "Steel of legends scroll",
           "emoji_name": "titanscroll",
           "emoji_id": "513195712209485854",
-          "aliases": [
-            "TitanScroll"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
           "name": "Steel titan",
           "emoji_name": "titan",
           "emoji_id": "513195724738002944",
-          "aliases": [
-            "Titan"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
           "name": "War tortoise",
           "emoji_name": "tortoise",
           "emoji_id": "513195712222068737",
-          "aliases": [
-            "Tortoise"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -9761,9 +9439,7 @@
           "name": "Ambassador",
           "emoji_name": "ambassador",
           "emoji_id": "583430542809235458",
-          "aliases": [
-            "Ambassador"
-          ],
+          "aliases": [],
           "server": "19"
         },
         {
@@ -9785,7 +9461,6 @@
           "emoji_name": "araxxi",
           "emoji_id": "513213019543699466",
           "aliases": [
-            "Araxxi",
             "rax"
           ],
           "server": "15"
@@ -9801,27 +9476,21 @@
           "name": "Barrows (Dharok)",
           "emoji_name": "dharokhead",
           "emoji_id": "513222840162582541",
-          "aliases": [
-            "Dharokhead"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
           "name": "Beastmaster Durzag",
           "emoji_name": "beastmasterdurzag",
           "emoji_id": "513212996948983809",
-          "aliases": [
-            "BeastmasterDurzag"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
           "name": "Black Stone Dragon",
           "emoji_name": "bsd",
           "emoji_id": "583430542326759435",
-          "aliases": [
-            "BSD"
-          ],
+          "aliases": [],
           "server": "19"
         },
         {
@@ -9849,9 +9518,7 @@
           "name": "Chaos Elemental",
           "emoji_name": "chaoselemental",
           "emoji_id": "513222840414109706",
-          "aliases": [
-            "ChaosElemental"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -9859,8 +9526,7 @@
           "emoji_name": "commanderzilyana",
           "emoji_id": "513212996437409793",
           "aliases": [
-            "zily",
-            "CommanderZilyana"
+            "zily"
           ],
           "server": "15"
         },
@@ -9876,8 +9542,7 @@
           "emoji_name": "corporealbeast",
           "emoji_id": "513212996726685749",
           "aliases": [
-            "corp",
-            "CorporealBeast"
+            "corp"
           ],
           "server": "15"
         },
@@ -9893,8 +9558,7 @@
           "emoji_name": "dagannothrex",
           "emoji_id": "513222840351195147",
           "aliases": [
-            "rex",
-            "DagannothRex"
+            "rex"
           ],
           "server": "16"
         },
@@ -9903,8 +9567,7 @@
           "emoji_name": "supremedagganoth",
           "emoji_id": "513212948798504980",
           "aliases": [
-            "supreme",
-            "SupremeDagganoth"
+            "supreme"
           ],
           "server": "15"
         },
@@ -9919,18 +9582,14 @@
           "name": "General Graardor",
           "emoji_name": "graardor",
           "emoji_id": "513212997598969856",
-          "aliases": [
-            "Graardor"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
           "name": "Giant mole",
           "emoji_name": "giantmole",
           "emoji_id": "513213159180337152",
-          "aliases": [
-            "GiantMole"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -9938,8 +9597,7 @@
           "emoji_name": "gregorovic",
           "emoji_id": "513212998274383914",
           "aliases": [
-            "greg",
-            "Gregorovic"
+            "greg"
           ],
           "server": "15"
         },
@@ -9947,9 +9605,7 @@
           "name": "Har Aken",
           "emoji_name": "haraken",
           "emoji_id": "513212948781596682",
-          "aliases": [
-            "HarAken"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -9963,9 +9619,7 @@
           "name": "Helwyr",
           "emoji_name": "helwyr",
           "emoji_id": "513213019635843100",
-          "aliases": [
-            "Helwyr"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -9987,7 +9641,6 @@
           "emoji_name": "kriltsutsaroth",
           "emoji_id": "513213018352386058",
           "aliases": [
-            "KrilTsutsaroth",
             "kril"
           ],
           "server": "15"
@@ -9996,18 +9649,14 @@
           "name": "Kalphite King",
           "emoji_name": "kalphiteking",
           "emoji_id": "513212971409866765",
-          "aliases": [
-            "KalphiteKing"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
           "name": "Kalphite Queen",
           "emoji_name": "kalphitequeen",
           "emoji_id": "513212971024121895",
-          "aliases": [
-            "KalphiteQueen"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -10021,9 +9670,7 @@
           "name": "King Black Dragon",
           "emoji_name": "kbd",
           "emoji_id": "513213018054852648",
-          "aliases": [
-            "KBD"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -10031,8 +9678,7 @@
           "emoji_name": "kreearra",
           "emoji_id": "513212996353261568",
           "aliases": [
-            "kree",
-            "KreeArra"
+            "kree"
           ],
           "server": "15"
         },
@@ -10047,9 +9693,7 @@
           "name": "Legiones",
           "emoji_name": "legion",
           "emoji_id": "513213018444922900",
-          "aliases": [
-            "Legion"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -10077,9 +9721,7 @@
           "name": "Nex",
           "emoji_name": "nex",
           "emoji_id": "513213159071547395",
-          "aliases": [
-            "Nex"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -10121,9 +9763,7 @@
           "name": "Rise of the Six (Guthan)",
           "emoji_name": "guthan",
           "emoji_id": "513226730002055169",
-          "aliases": [
-            "Guthan"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -10144,9 +9784,7 @@
           "name": "Seiryu",
           "emoji_name": "seiryu",
           "emoji_id": "583430543321071626",
-          "aliases": [
-            "Seiryu"
-          ],
+          "aliases": [],
           "server": "19"
         },
         {
@@ -10181,9 +9819,7 @@
           "name": "Telos",
           "emoji_name": "telos",
           "emoji_id": "513212949033123840",
-          "aliases": [
-            "Telos"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -10191,8 +9827,7 @@
           "emoji_name": "twinfury",
           "emoji_id": "513212995892019211",
           "aliases": [
-            "twins",
-            "TwinFury"
+            "twins"
           ],
           "server": "15"
         },
@@ -10200,9 +9835,7 @@
           "name": "Twin furies (Nymora)",
           "emoji_name": "twinfury",
           "emoji_id": "513213159209828373",
-          "aliases": [
-            "TwinFury"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -10218,18 +9851,14 @@
           "name": "TzTok Jad",
           "emoji_name": "tztokjad",
           "emoji_id": "513222840955174933",
-          "aliases": [
-            "TzTokJad"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
           "name": "Vindicta",
           "emoji_name": "vindicta",
           "emoji_id": "513212949385445376",
-          "aliases": [
-            "Vindicta"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -10507,9 +10136,7 @@
           "name": "Mallory",
           "emoji_name": "mallory",
           "emoji_id": "513212580148543489",
-          "aliases": [
-            "Mallory"
-          ],
+          "aliases": [],
           "server": "15"
         },
         {
@@ -10572,9 +10199,7 @@
           "name": "Reeves",
           "emoji_name": "reeves",
           "emoji_id": "513226730111238145",
-          "aliases": [
-            "Reeves"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -10909,27 +10534,21 @@
           "name": "Dormant seren godbow",
           "emoji_name": "dormantsgb",
           "emoji_id": "517418300481863681",
-          "aliases": [
-            "DormantSGB"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
           "name": "Dormant staff of sliske",
           "emoji_name": "dormantsos",
           "emoji_id": "517418300578201600",
-          "aliases": [
-            "DormantSOS"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
           "name": "Dormant zaros godsword",
           "emoji_name": "dormantzgs",
           "emoji_id": "517418300548972554",
-          "aliases": [
-            "DormantZGS"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -11356,9 +10975,7 @@
           "name": "Reprisal ability codex",
           "emoji_name": "reprisalcodex",
           "emoji_id": "517418828540542977",
-          "aliases": [
-            "Reprisalcodex"
-          ]
+          "aliases": []
         },
         {
           "name": "Royal frame",
@@ -11497,9 +11114,7 @@
           "name": "Spider leg",
           "emoji_name": "spiderleg",
           "emoji_id": "513224678807044096",
-          "aliases": [
-            "Spiderleg"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -12600,9 +12215,7 @@
           "name": "Bond",
           "emoji_name": "bond",
           "emoji_id": "513213538463121408",
-          "aliases": [
-            "Bond"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -12868,9 +12481,7 @@
           "name": "Farming",
           "emoji_name": "farming",
           "emoji_id": "513213693790519307",
-          "aliases": [
-            "Farming"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
@@ -12991,9 +12602,7 @@
           "name": "Herblore",
           "emoji_name": "herblore",
           "emoji_id": "689554435583508558",
-          "aliases": [
-            "Herblore"
-          ],
+          "aliases": [],
           "server": "3"
         },
         {
@@ -13750,9 +13359,7 @@
           "name": "Treasure Hunter",
           "emoji_name": "treasurehunter",
           "emoji_id": "513225181783654413",
-          "aliases": [
-            "TreasureHunter"
-          ],
+          "aliases": [],
           "server": "16"
         },
         {
