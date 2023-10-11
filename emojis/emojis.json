@@ -8580,10 +8580,12 @@
           "aliases": []
         },
         {
-          "name": "Ancient armour gizmo",
+          "name": "Ancient armour gizmo shell",
           "emoji_name": "ancientarmourgizmo",
           "emoji_id": "697405383769194516",
-          "aliases": [],
+          "aliases": [
+            "ancientarmourgizmoshell"
+          ],
           "server": "10"
         },
         {
@@ -8594,10 +8596,12 @@
           "server": "10"
         },
         {
-          "name": "Ancient tool gizmo",
+          "name": "Ancient tool gizmo shell",
           "emoji_name": "ancienttoolgizmo",
           "emoji_id": "1088041619653152858",
-          "aliases": [],
+          "aliases": [
+            "ancienttoolgizmoshell"
+          ],
           "server": "10"
         },
         {
@@ -8608,7 +8612,7 @@
           "server": "10"
         },
         {
-          "name": "Ancient weapon gizmo",
+          "name": "Ancient weapon gizmo shell",
           "emoji_name": "ancientweapongizmo",
           "emoji_id": "1088041624803745862",
           "aliases": [],
@@ -9245,7 +9249,7 @@
           "server": "37"
         },
         {
-          "name": "Blood reaver",
+          "name": "Blood reaver pouch",
           "emoji_name": "reaverpouch",
           "emoji_id": "839903693837959228",
           "aliases": [],
@@ -9310,7 +9314,7 @@
           "server": "29"
         },
         {
-          "name": "Kal'gerion demon",
+          "name": "Kal'gerion demon pouch",
           "emoji_name": "kalgpouch",
           "emoji_id": "921410226484301925",
           "aliases": [],
