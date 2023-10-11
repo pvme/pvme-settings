@@ -166,13 +166,6 @@
       "name": "Magic Gear",
       "emojis": [
         {
-          "name": "Magic",
-          "emoji_name": "magic",
-          "emoji_id": "689504724159823906",
-          "aliases": [],
-          "server": "20"
-        },
-        {
           "name": "Abyssal orb",
           "emoji_name": "abyssalorb",
           "emoji_id": "860891495041073152",
@@ -381,13 +374,6 @@
           "server": "1"
         },
         {
-          "name": "Channeler's ring",
-          "emoji_name": "channellerring",
-          "emoji_id": "839903943404027914",
-          "aliases": [],
-          "server": "14"
-        },
-        {
           "name": "Chaotic staff",
           "emoji_name": "chaoticstaff",
           "emoji_id": "925794592643743815",
@@ -459,13 +445,6 @@
           "emoji_id": "925794592849281094",
           "aliases": [],
           "server": "29"
-        },
-        {
-          "name": "Dragon rider amulet",
-          "emoji_name": "drider",
-          "emoji_id": "656785090994503700",
-          "aliases": [],
-          "server": "2"
         },
         {
           "name": "Elite seasinger kiba",
@@ -787,13 +766,6 @@
           "server": "25"
         },
         {
-          "name": "Maniacal aura",
-          "emoji_name": "mani",
-          "emoji_id": "643505153709965322",
-          "aliases": [],
-          "server": "1"
-        },
-        {
           "name": "Merciless kiteshield",
           "emoji_name": "merciless",
           "emoji_id": "1102553021457645579",
@@ -996,13 +968,6 @@
           "server": "34"
         },
         {
-          "name": "Scrimshaw of the elements",
-          "emoji_name": "elementsscrim",
-          "emoji_id": "841409588959510539",
-          "aliases": [],
-          "server": "13"
-        },
-        {
           "name": "Scrimshaw of sacrifice",
           "emoji_name": "sacrificescrim",
           "emoji_id": "1023150750915899402",
@@ -1038,13 +1003,6 @@
           "emoji_id": "1003947814218383432",
           "aliases": [],
           "server": "31"
-        },
-        {
-          "name": "Seers' ring",
-          "emoji_name": "seersring",
-          "emoji_id": "643162129645699078",
-          "aliases": [],
-          "server": "23"
         },
         {
           "name": "Seismic singularity",
@@ -1307,7 +1265,8 @@
           "name": "Magic",
           "emoji_name": "magic",
           "emoji_id": "689504724159823906",
-          "aliases": []
+          "aliases": [],
+          "server": "20"
         },
         {
           "name": "Air Strike",
@@ -1981,13 +1940,6 @@
       "name": "Ranged Gear",
       "emojis": [
         {
-          "name": "Ranged",
-          "emoji_name": "range",
-          "emoji_id": "580168050121113623",
-          "aliases": [],
-          "server": "8"
-        },
-        {
           "name": "Achto Tempest boots",
           "emoji_name": "achtotempestboots",
           "emoji_id": "583428621692305429",
@@ -2058,13 +2010,6 @@
           "emoji_id": "643507040248922130",
           "aliases": [],
           "server": "25"
-        },
-        {
-          "name": "Archers' ring",
-          "emoji_name": "archerring",
-          "emoji_id": "643162129603493901",
-          "aliases": [],
-          "server": "23"
         },
         {
           "name": "Armadyl chainskirt",
@@ -2601,13 +2546,6 @@
           "server": "29"
         },
         {
-          "name": "Reckless aura",
-          "emoji_name": "reckless",
-          "emoji_id": "643505179378974748",
-          "aliases": [],
-          "server": "1"
-        },
-        {
           "name": "Red chinchompa",
           "emoji_name": "redchin",
           "emoji_id": "1109432592945659904",
@@ -2638,13 +2576,6 @@
           "emoji_id": "643162817419149353",
           "aliases": [],
           "server": "23"
-        },
-        {
-          "name": "Scrimshaw of cruelty",
-          "emoji_name": "cruelty",
-          "emoji_id": "513190159546712074",
-          "aliases": [],
-          "server": "1"
         },
         {
           "name": "Seercull",
@@ -2697,13 +2628,7 @@
           "aliases": [],
           "server": "28"
         },
-        {
-          "name": "Stalker's ring",
-          "emoji_name": "stalkerring",
-          "emoji_id": "839903943601029120",
-          "aliases": [],
-          "server": "14"
-        },
+
         {
           "name": "Strykebow",
           "emoji_name": "strykebow",
@@ -2818,7 +2743,8 @@
           "emoji_id": "580168050121113623",
           "aliases": [
             "ranged"
-          ]
+          ],
+          "server": "8"
         },
         {
           "name": "Binding shot",
@@ -3101,13 +3027,6 @@
       "name": "Melee Gear",
       "emojis": [
         {
-          "name": "Melee",
-          "emoji_name": "melee",
-          "emoji_id": "1096130867279171706",
-          "aliases": [],
-          "server": "20"
-        },
-        {
           "name": "Abyssal armour spikes",
           "emoji_name": "abyssalarmourspike",
           "emoji_id": "1004107347259555981",
@@ -3310,13 +3229,6 @@
           "server": "12"
         },
         {
-          "name": "Berserker aura",
-          "emoji_name": "berserker",
-          "emoji_id": "643505116347105290",
-          "aliases": [],
-          "server": "1"
-        },
-        {
           "name": "Blade of Avaryss",
           "emoji_name": "avaryssblade",
           "emoji_id": "643161612383158296",
@@ -3329,13 +3241,6 @@
           "emoji_id": "643161612819365888",
           "aliases": [],
           "server": "22"
-        },
-        {
-          "name": "Champion's ring",
-          "emoji_name": "championring",
-          "emoji_id": "839903943630520350",
-          "aliases": [],
-          "server": "14"
         },
         {
           "name": "Chaotic claw",
@@ -3895,13 +3800,6 @@
           "server": "23"
         },
         {
-          "name": "Scrimshaw of vampyrism",
-          "emoji_name": "vampscrim",
-          "emoji_id": "513201294262009874",
-          "aliases": [],
-          "server": "15"
-        },
-        {
           "name": "Statius's platebody",
           "emoji_name": "statiusbody",
           "emoji_id": "643162730827874324",
@@ -4180,13 +4078,6 @@
           "server": "31"
         },
         {
-          "name": "Warrior ring",
-          "emoji_name": "warriorring",
-          "emoji_id": "643162130002214912",
-          "aliases": [],
-          "server": "23"
-        },
-        {
           "name": "Zamorak godsword",
           "emoji_name": "zamorakgodsword",
           "emoji_id": "860891314463834152",
@@ -4216,7 +4107,8 @@
           "name": "Melee",
           "emoji_name": "melee",
           "emoji_id": "1096130867279171706",
-          "aliases": []
+          "aliases": [],
+          "server": "20"
         },
         {
           "name": "Attack",
@@ -6280,7 +6172,8 @@
           "name": "Archers' ring",
           "emoji_name": "archerring",
           "emoji_id": "643162129603493901",
-          "aliases": []
+          "aliases": [],
+          "server": "23"
         },
         {
           "name": "Asylum surgeon's ring",
@@ -6316,13 +6209,15 @@
           "name": "Champion's ring",
           "emoji_name": "championring",
           "emoji_id": "839903943630520350",
-          "aliases": []
+          "aliases": [],
+          "server": "14"
         },
         {
           "name": "Channeler's ring",
           "emoji_name": "channellerring",
           "emoji_id": "839903943404027914",
-          "aliases": []
+          "aliases": [],
+          "server": "14"
         },
         {
           "name": "Deathtouched bracelet",
@@ -6349,7 +6244,8 @@
           "name": "Dragon rider amulet",
           "emoji_name": "drider",
           "emoji_id": "656785090994503700",
-          "aliases": []
+          "aliases": [],
+          "server": "2"
         },
         {
           "name": "Essence of Finality (or)",
@@ -6533,7 +6429,8 @@
           "name": "Seers' ring",
           "emoji_name": "seersring",
           "emoji_id": "643162129645699078",
-          "aliases": []
+          "aliases": [],
+          "server": "23"
         },
         {
           "name": "Sixth-Age circuit",
@@ -6546,7 +6443,8 @@
           "name": "Stalker's ring",
           "emoji_name": "stalkerring",
           "emoji_id": "839903943601029120",
-          "aliases": []
+          "aliases": [],
+          "server": "14"
         },
         {
           "name": "TokKul-Zo",
@@ -6559,7 +6457,8 @@
           "name": "Warrior ring",
           "emoji_name": "warriorring",
           "emoji_id": "643162130002214912",
-          "aliases": []
+          "aliases": [],
+          "server": "23"
         }
       ]
     },
@@ -6570,7 +6469,8 @@
           "name": "Berserker aura",
           "emoji_name": "berserker",
           "emoji_id": "643505116347105290",
-          "aliases": []
+          "aliases": [],
+          "server": "1"
         },
         {
           "name": "Berserker blood essence",
@@ -6670,7 +6570,8 @@
           "name": "Maniacal aura",
           "emoji_name": "mani",
           "emoji_id": "643505153709965322",
-          "aliases": []
+          "aliases": [],
+          "server": "1"
         },
         {
           "name": "Pantheon aura",
@@ -6690,25 +6591,29 @@
           "name": "Reckless aura",
           "emoji_name": "reckless",
           "emoji_id": "643505179378974748",
-          "aliases": []
+          "aliases": [],
+          "server": "1"
         },
         {
           "name": "Scrimshaw of cruelty",
           "emoji_name": "cruelty",
           "emoji_id": "513190159546712074",
-          "aliases": []
+          "aliases": [],
+          "server": "1"
         },
         {
           "name": "Scrimshaw of the elements",
           "emoji_name": "elementsscrim",
           "emoji_id": "841409588959510539",
-          "aliases": []
+          "aliases": [],
+          "server": "13"
         },
         {
           "name": "Scrimshaw of vampyrism",
           "emoji_name": "vampscrim",
           "emoji_id": "513201294262009874",
-          "aliases": []
+          "aliases": [],
+          "server": "15"
         },
         {
           "name": "Scripture of Bik",
@@ -8042,12 +7947,6 @@
           "server": "19"
         },
         {
-          "name": "Supreme overload salve",
-          "emoji_name": "ovlsalve",
-          "emoji_id": "642709927265304608",
-          "aliases": []
-        },
-        {
           "name": "Teci",
           "emoji_name": "teci",
           "emoji_id": "641332337451204608",
@@ -8060,12 +7959,6 @@
           "emoji_id": "643168594493964298",
           "aliases": [],
           "server": "24"
-        },
-        {
-          "name": "Vampyric blood essence",
-          "emoji_name": "vampbloodess",
-          "emoji_id": "895991792946782259",
-          "aliases": []
         },
         {
           "name": "Vis wax",
@@ -8558,12 +8451,6 @@
     {
       "name": "Invention Components and Gizmo Shells",
       "emojis": [
-        {
-          "name": "Invention",
-          "emoji_name": "invention",
-          "emoji_id": "689509250946695292",
-          "aliases": []
-        },
         {
           "name": "Ancient armour gizmo shell",
           "emoji_name": "ancientarmourgizmo",
@@ -10751,12 +10638,6 @@
           "server": "23"
         },
         {
-          "name": "Greater Concentrated blast ability codex",
-          "emoji_name": "gconccodex",
-          "emoji_id": "1095411706395635782",
-          "aliases": []
-        },
-        {
           "name": "Heart of the Archer",
           "emoji_name": "archerheart",
           "emoji_id": "855865893715705857",
@@ -10894,12 +10775,6 @@
           "server": "37"
         },
         {
-          "name": "Mazcab ability codex",
-          "emoji_name": "mazcabcodex",
-          "emoji_id": "643162636447645714",
-          "aliases": []
-        },
-        {
           "name": "Merethiel's stave",
           "emoji_name": "merethielstaff",
           "emoji_id": "643168594494226432",
@@ -10947,24 +10822,6 @@
           "emoji_id": "643166362361004042",
           "aliases": [],
           "server": "24"
-        },
-        {
-          "name": "Praesul codex",
-          "emoji_name": "pcodex",
-          "emoji_id": "643166740833894400",
-          "aliases": []
-        },
-        {
-          "name": "Purple mushroom",
-          "emoji_name": "purplemushroom",
-          "emoji_id": "643168594565267466",
-          "aliases": []
-        },
-        {
-          "name": "Reprisal ability codex",
-          "emoji_name": "reprisalcodex",
-          "emoji_id": "517418828540542977",
-          "aliases": []
         },
         {
           "name": "Royal frame",
