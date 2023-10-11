@@ -3940,7 +3940,7 @@
           "server": "24"
         },
         {
-          "name": "Torva platebody",
+          "name": "Augmented torva platebody",
           "emoji_name": "torvaplatebody",
           "emoji_id": "556586038974480424",
           "aliases": [],
@@ -3982,8 +3982,8 @@
           "server": "17"
         },
         {
-          "name": "Trimmed masterwork platebody",
-          "emoji_name": "tmwbody",
+          "name": "Trimmed masterwork platebody spiked",
+          "emoji_name": "tmwbodyspiked",
           "emoji_id": "643847118196441088",
           "aliases": [],
           "server": "2"
@@ -9700,7 +9700,7 @@
         },
         {
           "name": "Twin Furies (Avaryss)",
-          "emoji_name": "twinfury",
+          "emoji_name": "twinfuryavaryss",
           "emoji_id": "513212995892019211",
           "aliases": [
             "twins"
@@ -9709,7 +9709,7 @@
         },
         {
           "name": "Twin furies (Nymora)",
-          "emoji_name": "twinfury",
+          "emoji_name": "twinfurynymora",
           "emoji_id": "513213159209828373",
           "aliases": [],
           "server": "16"
@@ -13851,13 +13851,6 @@
       "server": "5"
     },
     {
-      "name": "dragonriderhelm",
-      "emoji_name": "dragonriderhelm",
-      "emoji_id": "580177561032720415",
-      "aliases": [],
-      "server": "5"
-    },
-    {
       "name": "bloodmalevlegs",
       "emoji_name": "bloodmalevlegs",
       "emoji_id": "580177561175457802",
@@ -13889,13 +13882,6 @@
       "name": "bloodsireniclegs",
       "emoji_name": "bloodsireniclegs",
       "emoji_id": "580177561204686858",
-      "aliases": [],
-      "server": "5"
-    },
-    {
-      "name": "dragonriderbody",
-      "emoji_name": "dragonriderbody",
-      "emoji_id": "580177561347293185",
       "aliases": [],
       "server": "5"
     },
@@ -14061,8 +14047,8 @@
       "server": "6"
     },
     {
-      "name": "shadowdrygoremacemh",
-      "emoji_name": "shadowdrygoremacemh",
+      "name": "shadowdrygoremaceoh",
+      "emoji_name": "shadowdrygoremaceoh",
       "emoji_id": "580176957430431744",
       "aliases": [],
       "server": "6"
@@ -14197,27 +14183,6 @@
       "name": "bloodnoxstaff",
       "emoji_name": "bloodnoxstaff",
       "emoji_id": "580408868702781453",
-      "aliases": [],
-      "server": "6"
-    },
-    {
-      "name": "bloodnoxbow",
-      "emoji_name": "bloodnoxbow",
-      "emoji_id": "581180345530187796",
-      "aliases": [],
-      "server": "6"
-    },
-    {
-      "name": "bloodseiswand",
-      "emoji_name": "bloodseiswand",
-      "emoji_id": "581180345894961182",
-      "aliases": [],
-      "server": "6"
-    },
-    {
-      "name": "bloodpwand",
-      "emoji_name": "bloodpwand",
-      "emoji_id": "581180345932840990",
       "aliases": [],
       "server": "6"
     },
@@ -14673,13 +14638,6 @@
       "name": "barrowscore",
       "emoji_name": "barrowscore",
       "emoji_id": "615617138488639541",
-      "aliases": [],
-      "server": "8"
-    },
-    {
-      "name": "shadowkhopeshoh",
-      "emoji_name": "shadowkhopeshoh",
-      "emoji_id": "615620239970795578",
       "aliases": [],
       "server": "8"
     },
