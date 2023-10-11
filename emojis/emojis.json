@@ -169,9 +169,7 @@
           "name": "Magic",
           "emoji_name": "magic",
           "emoji_id": "689504724159823906",
-          "aliases": [
-            "magic"
-          ],
+          "aliases": [],
           "server": "20"
         },
         {
@@ -1309,9 +1307,7 @@
           "name": "Magic",
           "emoji_name": "magic",
           "emoji_id": "689504724159823906",
-          "aliases": [
-            "magic"
-          ]
+          "aliases": []
         },
         {
           "name": "Air Strike",
@@ -1988,9 +1984,7 @@
           "name": "Ranged",
           "emoji_name": "range",
           "emoji_id": "580168050121113623",
-          "aliases": [
-            "ranged"
-          ],
+          "aliases": [],
           "server": "8"
         },
         {
@@ -3615,15 +3609,6 @@
             "gop"
           ],
           "server": "13"
-        },
-        {
-          "name": "Gloves of passage",
-          "emoji_name": "glovesofpassage",
-          "emoji_id": "556588694862037012",
-          "aliases": [
-            "glovespassage",
-            "gop"
-          ]
         },
         {
           "name": "Goliath gloves",
