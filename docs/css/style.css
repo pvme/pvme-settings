@@ -1,0 +1,37 @@
+/* body{
+  padding:20px 20px;
+} */
+  
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  padding:8px; 
+  color:#ccc;
+}
+
+.disc-emoji {
+  width: 1.375em;
+  height: 1.375em !important;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/* table {
+  table-layout: fixed;
+  word-wrap: break-word;
+} */
+
+html {
+  overflow-y: scroll;
+}
+
+.max-height-container {
+  max-height: 400px; /* Set your desired maximum height in pixels */
+}
