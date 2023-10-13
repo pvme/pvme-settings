@@ -35,10 +35,11 @@ function populateEmojis(emojis) {
     // newRow.insertCell(-1).innerHTML = `<code><:${emoji.emoji_name}:${emoji.emoji_id}></code>`;
     // newRow.insertCell(-1).innerHTML = `<pre class="pre-scrollable"><code><:${emoji.emoji_name}:${emoji.emoji_id}></code></pre>`;
     newRow.insertCell(-1).innerHTML = `<code><:${emoji.emoji_name}:${emoji.emoji_id}></code>`;
-    newRow.insertCell(-1).innerHTML = emoji.category;
-    newRow.insertCell(-1).innerHTML = emoji.server;
+    // newRow.insertCell(-1).innerHTML = emoji.category;
+    newRow.insertCell(-1).innerHTML = `${emoji.category}<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)" style="float:right;"><i class="bi bi-clipboard"></i></button>`;
+    // newRow.insertCell(-1).innerHTML = emoji.server;
     // newRow.insertCell(-1).innerHTML = `<button type="button" id="copyEmoji" class="btn btn-primary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)"><i class="bi bi-clipboard"></i></button>`;
-    newRow.insertCell(-1).innerHTML = `<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)"><i class="bi bi-clipboard"></i></button>`;
+    // newRow.insertCell(-1).innerHTML = `<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)"><i class="bi bi-clipboard"></i></button>`;
   }
 
   const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
@@ -88,26 +89,17 @@ function copyEmojiToClipboard(button) {
   navigator.clipboard.writeText(emojiID);
 }
 
+function selectSearchEmoji() {
+  let searchBox = document.getElementById('searchEmoji');
+  searchBox.focus();
+  searchBox.select();  
+}
+
 
 $(document).ready(function () {
-  populateTables();
+  
   // populateRandom();
-
-  // $(document).keydown(function(event) {
-  //   $("search").focus();
-  // });
-
-
-  // Handle tab clicks
-  $('.nav-link').on('click', function() {
-    // Get the ID of the active tab
-    // var activeTabId = $(this).attr('aria-controls');
-    var activeTabId = $(this).attr('id');
-    // console.log($(this).attr('id'));
-
-    // Update the URL with the active tab's ID
-    history.pushState(null, null, '#' + activeTabId);
-  });
+  
 
   // Check for the active tab in the URL on page load
   var selectedTab = window.location.hash;
@@ -116,8 +108,21 @@ $(document).ready(function () {
     // Activate the tab based on the URL hash
     // $('.nav-link[href="' + hash + '"]').tab('show');
     // console.log(selectedTab);
+    // selectSearchEmoji();
     $(selectedTab).tab('show');
   }
+
+  // Update the URL with the active tab's ID
+  $('.nav-link').on('click', function() {
+    
+    history.pushState(null, null, '#' + $(this).attr('id'));
+    // selectSearchEmoji();
+    
+  });
+
+  $('.nav-link').on('select', function() {
+    console.log('hi');
+  });
 
   $(".search").keyup(function () {
     var searchTerm = $(".search").val();
@@ -155,4 +160,6 @@ $(document).ready(function () {
       $(".no-result").hide();
     }
   });
+
+  populateTables();
 });
