@@ -3,6 +3,7 @@ Centralized storage for PVME settings that are used by:
 - [rotation-builder](https://github.com/pvme/rotation-builder)
 - [guide-editor](https://github.com/pvme/guide-editor)
 - [pvme.github.io](https://github.com/pvme/pvme.github.io)
+- [preset-maker](https://github.com/pvme/preset-maker)
 
 The settings are stored as JSON to be easily accessible through HTTP requests:
 
