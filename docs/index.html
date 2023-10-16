@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PVME Settings">
     <title>PVME Settings</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -14,21 +16,21 @@
   <div class="container max-height-container">
     <nav>
       <div class="nav nav-tabs mt-3" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-emojis-tab" data-bs-toggle="tab" data-bs-target="#nav-emojis" type="button" role="tab" aria-controls="nav-emojis" aria-selected="true">Emojis</button>
-        <button class="nav-link" id="nav-servers-tab" data-bs-toggle="tab" data-bs-target="#nav-servers" type="button" role="tab" aria-controls="nav-servers" aria-selected="false">Servers</button>
+        <button class="nav-link active" id="emojis" data-bs-toggle="tab" data-bs-target="#nav-emojis" type="button" role="tab" aria-controls="nav-emojis" aria-selected="true">Emojis</button>
+        <button class="nav-link" id="servers" data-bs-toggle="tab" data-bs-target="#nav-servers" type="button" role="tab" aria-controls="nav-servers" aria-selected="false">Servers</button>
       </div>
     </nav>
     <div class="tab-content" id="nav-tab-content">
-      <div class="tab-pane show active" id="nav-emojis" role="tabpanel" aria-labelledby="nav-emojis-tab" tabindex="0">
+      <div class="tab-pane show active" id="nav-emojis" role="tabpanel" aria-labelledby="emojis" tabindex="0">
         <div class="input-group mt-3">
           <input type="text" class="search form-control" id="searchEmoji" placeholder="Search Emoji" style="max-width:23em">
           <span class="input-group-text counter" style="min-width:7em">0 emojis</span>
         </div>
-        <table id="emojiTable" class="table table-hover results">
+        <table id="emojiTable" class="table table-hover results" style="table-layout: fixed;">
           <thead>
             <tr>
-              <th scope="col">Emoji</th>
-              <th scope="col">Name</th>
+              <th scope="col" style="width: 25%;">Emoji</th>
+              <!-- <th scope="col">Name</th> -->
               <th scope="col">Emoji ID</th>
               <th scope="col">Category</th>
               <!-- <th scope="col" style="width:3em">Emoji</th>
@@ -44,11 +46,15 @@
           </tbody>
         </table>  
       </div>
-      <div class="tab-pane" id="nav-servers" role="tabpanel" aria-labelledby="nav-servers-tab" tabindex="0">
-        <table id="serverTable" class="table table-hover table-striped">
+      <div class="tab-pane" id="nav-servers" role="tabpanel" aria-labelledby="servers" tabindex="0">
+        <!-- <div class="input-group mt-3">
+          <input type="text" class="search form-control" id="searchServer" placeholder="Search Server" style="max-width:23em">
+          <span class="input-group-text counter" style="min-width:7em">0 servers</span>
+        </div> -->
+        <table id="serverTable" class="table table-hover table-striped" style="">
           <thead>
             <tr>
-              <th scope="col">Server</th>
+              <th scope="col">#</th>
               <th scope="col">Emojis</th>
               <th scope="col">Discord</th>
             </tr>
@@ -78,11 +84,11 @@
     jQuery(document).ready(function ($) {
         
         // let selectedTab = window.location.hash;
-        let selectedTab = '#nav-servers-tab'
+        let selectedTab = '#servers'
         console.log(selectedTab);
         // $('.nav-link[href="' + selectedTab + '"]' ).trigger('click');
         // $('.nav-link[href="' + selectedTab + '"]').tab('show');
-        $('#nav-servers-tab').tab('show');
+        $('#servers').tab('show');
     })
   </script> -->
   </body>

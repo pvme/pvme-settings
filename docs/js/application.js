@@ -21,7 +21,7 @@ function populateServers(servers) {
     let newRow = table.insertRow(-1);
     newRow.insertCell(-1).innerHTML = serverID;
     newRow.insertCell(-1).innerHTML = serverData.emojis.join(' ');
-    newRow.insertCell(-1).innerHTML = `<a class="btn btn-primary" href="${serverData.url}" role="button" target="_blank">Join</a>`;
+    newRow.insertCell(-1).innerHTML = `<a class="btn btn-primary btn-sm" href="${serverData.url} style="float: right;"" role="button" target="_blank">Join</a>`;
   }
 }
 
@@ -29,17 +29,14 @@ function populateEmojis(emojis) {
   var table = document.getElementById("emojiTable");
   for (const emoji of emojis) {
     let newRow = table.insertRow(-1);
-    newRow.insertCell(-1).innerHTML = `<img  title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.png?v=1">`;
-    newRow.insertCell(-1).innerHTML = emoji.name;
-    // newRow.insertCell(-1).innerHTML = `<code><:${emoji.emoji_name}:${emoji.emoji_id}></code><button type="button" id="copyEmoji" class="btn btn-dark btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)" style="float: right;"><i class="bi bi-clipboard"></i></button>`;
-    // newRow.insertCell(-1).innerHTML = `<code><:${emoji.emoji_name}:${emoji.emoji_id}></code>`;
-    // newRow.insertCell(-1).innerHTML = `<pre class="pre-scrollable"><code><:${emoji.emoji_name}:${emoji.emoji_id}></code></pre>`;
+    newRow.insertCell(-1).innerHTML = `<img  title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.png?v=1">&nbsp;&nbsp;${emoji.name}`;
+    // newRow.insertCell(-1).innerHTML = `<img  title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.png?v=1">`;
+    // newRow.insertCell(-1).innerHTML = emoji.name;
     newRow.insertCell(-1).innerHTML = `<code><:${emoji.emoji_name}:${emoji.emoji_id}></code>`;
-    // newRow.insertCell(-1).innerHTML = emoji.category;
-    newRow.insertCell(-1).innerHTML = `${emoji.category}<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)" style="float:right;"><i class="bi bi-clipboard"></i></button>`;
-    // newRow.insertCell(-1).innerHTML = emoji.server;
-    // newRow.insertCell(-1).innerHTML = `<button type="button" id="copyEmoji" class="btn btn-primary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)"><i class="bi bi-clipboard"></i></button>`;
-    // newRow.insertCell(-1).innerHTML = `<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)"><i class="bi bi-clipboard"></i></button>`;
+    
+    // newRow.insertCell(-1).innerHTML = `${emoji.category}<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)" style="float:right;"><i class="bi bi-clipboard"></i></button>`;
+    // newRow.insertCell(-1).innerHTML = `${emoji.category}<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)" style="float:right;">Copy</button>`;
+    newRow.insertCell(-1).innerHTML = `${emoji.category}<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)" style="float:right;">Copy</button>`;
   }
 
   const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
@@ -99,34 +96,44 @@ function selectSearchEmoji() {
 $(document).ready(function () {
   
   // populateRandom();
-  
+  populateTables();
 
   // Check for the active tab in the URL on page load
   var selectedTab = window.location.hash;
   if (selectedTab) {
     // console.log(selectedTab);
+    // console.log(selectedTab);
     // Activate the tab based on the URL hash
     // $('.nav-link[href="' + hash + '"]').tab('show');
     // console.log(selectedTab);
     // selectSearchEmoji();
+    
     $(selectedTab).tab('show');
+
+    if (selectedTab === '#emojis') selectSearchEmoji();
   }
 
   // Update the URL with the active tab's ID
-  $('.nav-link').on('click', function() {
+  $('.nav-link').click(function() {
+    var id = $(this).attr('hash')
+    console.log({id});
     
     history.pushState(null, null, '#' + $(this).attr('id'));
     // selectSearchEmoji();
     
   });
 
-  $('.nav-link').on('select', function() {
-    console.log('hi');
-  });
+  
+  // Automatically select search box when clicking emoji tab
+  // $('#emojis').click( function() {
+  //   console.log('hi0');
+  // });
+
+  // automatically select search
 
   $(".search").keyup(function () {
     var searchTerm = $(".search").val();
-    var listItem = $(".results tbody").children("tr");
+    // var listItem = $(".results tbody").children("tr");
     var searchSplit = searchTerm.replace(/ /g, "'):containsi('");
 
     $.extend($.expr[":"], {
@@ -146,7 +153,7 @@ $(document).ready(function () {
         $(this).attr("visible", "false");
       });
 
-    $(".results tbody tr:containsi('" + searchSplit + "')").each(function (e) {
+    $(".results tbody tr:containsi('" + searchSplit + "')").each(function () {
       
       $(this).attr("visible", "true");
     });
@@ -159,7 +166,5 @@ $(document).ready(function () {
     } else {
       $(".no-result").hide();
     }
-  });
-
-  populateTables();
+  }); 
 });
