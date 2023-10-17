@@ -21,7 +21,7 @@ function populateServers(servers) {
     let newRow = table.insertRow(-1);
     newRow.insertCell(-1).innerHTML = serverID;
     newRow.insertCell(-1).innerHTML = serverData.emojis.join(' ');
-    newRow.insertCell(-1).innerHTML = `<a class="btn btn-primary btn-sm" href="${serverData.url} style="float: right;"" role="button" target="_blank">Join</a>`;
+    newRow.insertCell(-1).innerHTML = `<a class="btn btn-primary btn-sm" href="${serverData.url} align="center" role="button" target="_blank">Join</a>`;
   }
 }
 
@@ -29,13 +29,8 @@ function populateEmojis(emojis) {
   var table = document.getElementById("emojiTable");
   for (const emoji of emojis) {
     let newRow = table.insertRow(-1);
-    newRow.insertCell(-1).innerHTML = `<img  title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.png?v=1">&nbsp;&nbsp;${emoji.name}`;
-    // newRow.insertCell(-1).innerHTML = `<img  title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.png?v=1">`;
-    // newRow.insertCell(-1).innerHTML = emoji.name;
+    newRow.insertCell(-1).innerHTML = `<img  title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.webp?v=1">&nbsp;&nbsp;${emoji.name}`;
     newRow.insertCell(-1).innerHTML = `<code><:${emoji.emoji_name}:${emoji.emoji_id}></code>`;
-    
-    // newRow.insertCell(-1).innerHTML = `${emoji.category}<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)" style="float:right;"><i class="bi bi-clipboard"></i></button>`;
-    // newRow.insertCell(-1).innerHTML = `${emoji.category}<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)" style="float:right;">Copy</button>`;
     newRow.insertCell(-1).innerHTML = `${emoji.category}<button type="button" id="copyEmoji" class="btn btn-secondary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" onclick="copyEmojiToClipboard(this)" style="float:right;">Copy</button>`;
   }
 
@@ -43,6 +38,8 @@ function populateEmojis(emojis) {
   popoverTriggerList.map(function (popoverTriggerEl) {
     return new bootstrap.Popover(popoverTriggerEl);
   });
+
+  updateEmojiTableResultCount(emojis.length);
 }
 
 async function populateTables() {
@@ -68,7 +65,7 @@ async function populateTables() {
       
       if (emoji.server in servers) {
         // this check is for any emojis that are not stored in a server
-        servers[emoji.server].emojis.push(`<img title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.png?v=1">`);
+        servers[emoji.server].emojis.push(`<img title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.webp?v=1">`);
       }
 
     }
@@ -90,6 +87,10 @@ function selectSearchEmoji() {
   let searchBox = document.getElementById('searchEmoji');
   searchBox.focus();
   searchBox.select();  
+}
+
+function updateEmojiTableResultCount(resultCount) {
+  $(".counter").text(resultCount + " emojis");
 }
 
 
@@ -158,8 +159,9 @@ $(document).ready(function () {
       $(this).attr("visible", "true");
     });
 
-    var jobCount = $('.results tbody tr[visible="true"]').length;
-    $(".counter").text(jobCount + " item");
+    const resultCount = $('.results tbody tr[visible="true"]').length;
+    updateEmojiTableResultCount(resultCount);
+    $(".counter").text(jobCount + " emojis");
 
     if (jobCount == "0") {
       $(".no-result").show();
