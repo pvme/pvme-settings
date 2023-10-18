@@ -2,12 +2,12 @@
   padding:20px 20px;
 } */
   
-.results tr[visible='false'],
+#table-emojis tr[visible='false'],
 .no-result{
   display:none;
 }
 
-.results tr[visible='true']{
+#table-emojis tr[visible='true']{
   display:table-row;
 }
 
