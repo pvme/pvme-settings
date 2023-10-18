@@ -1,21 +1,5 @@
-// import { hello } from './github.js';
+import { rawGithubJSONRequest } from './github.js';
 
-
-async function rawGithubGetRequest(url) {
-  const res = await fetch(url, {
-      method: 'GET'
-  });
-  
-  if (!res.ok)
-      throw new Error(await res.text());
-
-  return res;
-}
-
-async function rawGithubJSONRequest(url) {
-  const res = await rawGithubGetRequest(url);
-  return await res.json();
-}
 
 function populateServers(servers) {
   const table = document.getElementById("table-servers");
