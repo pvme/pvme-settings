@@ -15,7 +15,7 @@ async function rawGithubJSONRequest(url) {
 }
 
 function populateServers(servers) {
-  var table = document.getElementById("serverTable");
+  const table = document.getElementById("table-servers");
   
   for (const [serverID, serverData] of Object.entries(servers)) {
     let newRow = table.insertRow(-1);
@@ -26,7 +26,7 @@ function populateServers(servers) {
 }
 
 function populateEmojis(emojis) {
-  var table = document.getElementById("emojiTable");
+  const table = document.getElementById("table-emojis");
   for (const emoji of emojis) {
     let newRow = table.insertRow(-1);
     newRow.insertCell(-1).innerHTML = `<img  title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.webp?v=1">&nbsp;&nbsp;${emoji.name}`;
@@ -84,62 +84,49 @@ function copyEmojiToClipboard(button) {
 }
 
 function selectSearchEmoji() {
-  let searchBox = document.getElementById('searchEmoji');
+  const searchBox = document.getElementById('search-emojis');
   searchBox.focus();
   searchBox.select();  
 }
 
 function updateEmojiTableResultCount(resultCount) {
-  $(".counter").text(resultCount + " emojis");
+  $(".counter").text(`${resultCount} emojis`);
 }
 
-
-$(document).ready(function () {
-  
-  // populateRandom();
-  populateTables();
-
-  // Check for the active tab in the URL on page load
-  var selectedTab = window.location.hash;
+function selectTabOnPageLoad() {
+  /* Select tab when loading page with pvme.io/pvme-settings#emojis. */
+  const selectedTab = window.location.hash;
   if (selectedTab) {
-    // console.log(selectedTab);
-    // console.log(selectedTab);
-    // Activate the tab based on the URL hash
-    // $('.nav-link[href="' + hash + '"]').tab('show');
-    // console.log(selectedTab);
-    // selectSearchEmoji();
-    
     $(selectedTab).tab('show');
 
     if (selectedTab === '#emojis') selectSearchEmoji();
   }
+}
 
-  // Update the URL with the active tab's ID
+
+$(document).ready(function () {
+  populateTables();
+
+  selectTabOnPageLoad();
+
+  // Update the URL with the active tab ID
   $('.nav-link').click(function() {
-    var id = $(this).attr('hash')
-    console.log({id});
-    
-    history.pushState(null, null, '#' + $(this).attr('id'));
-    // selectSearchEmoji();
-    
+    const id = $(this).attr('id')
+    history.pushState(null, null, `#${id}`);   
   });
-
   
   // Automatically select search box when clicking emoji tab
-  // $('#emojis').click( function() {
-  //   console.log('hi0');
-  // });
+  $('#emojis').click(function() {
+    selectSearchEmoji();
+  });
 
-  // automatically select search
-
-  $(".search").keyup(function () {
-    var searchTerm = $(".search").val();
-    // var listItem = $(".results tbody").children("tr");
+  $("#search-emojis").keyup(function () {
+    var searchTerm = $("#search-emojis").val();
     var searchSplit = searchTerm.replace(/ /g, "'):containsi('");
-
+    
+    console.log(searchSplit);
     $.extend($.expr[":"], {
       containsi: function (elem, i, match, array) {
-        
         return (
           (elem.textContent || elem.innerText || "")
             .toLowerCase()
@@ -155,15 +142,15 @@ $(document).ready(function () {
       });
 
     $(".results tbody tr:containsi('" + searchSplit + "')").each(function () {
-      
       $(this).attr("visible", "true");
     });
+    
 
     const resultCount = $('.results tbody tr[visible="true"]').length;
     updateEmojiTableResultCount(resultCount);
-    $(".counter").text(jobCount + " emojis");
+    // $(".counter").text(jobCount + " emojis");
 
-    if (jobCount == "0") {
+    if (resultCount == "0") {
       $(".no-result").show();
     } else {
       $(".no-result").hide();
