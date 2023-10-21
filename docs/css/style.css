@@ -1,0 +1,28 @@
+#table-emojis tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+#table-emojis tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  padding:8px; 
+  color:#ccc;
+}
+
+.disc-emoji {
+  width: 1.375em;
+  height: 1.375em !important;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+/* .max-height-container {
+  max-height: 400px; 
+} */

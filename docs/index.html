@@ -1,1 +1,65 @@
-woah
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PVME Settings">
+    <title>PVME Settings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex flex-row pt-1">
+        <div class="align-self-center"><img width="60" height="60" src="https://pvme.io/assets/logo-no-bg.png"></div>
+        <div class="align-self-center"><h1 class="display-6 p-2">Settings</h1></div>
+        <div class="align-self-center vr m-2" style="height: 30px;"></div>
+        <nav class="align-self-center p-2">
+          <div class="nav nav-pills" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="emojis" data-bs-toggle="tab" data-bs-target="#nav-emojis" type="button" role="tab" aria-controls="nav-emojis" aria-selected="true">Emojis</button>
+            <button class="nav-link" id="servers" data-bs-toggle="tab" data-bs-target="#nav-servers" type="button" role="tab" aria-controls="nav-servers" aria-selected="false">Servers</button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="tab-content" id="nav-tab-content">
+        <div class="tab-pane show active" id="nav-emojis" role="tabpanel" aria-labelledby="emojis" tabindex="0">
+          <div class="input-group mt-3">
+            <input type="text" class="search form-control" id="search-emojis" placeholder="Search Emoji" style="max-width:23em">
+            <span class="input-group-text" id="count-emojis" style="min-width:7em">0 emojis</span>
+          </div>
+          <table id="table-emojis" class="table table-hover" style="table-layout: fixed;">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 25%;">Emoji</th>
+                <th scope="col">Emoji ID</th>
+                <th scope="col">Category</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>  
+        </div>
+        <div class="tab-pane" id="nav-servers" role="tabpanel" aria-labelledby="servers" tabindex="0">
+          <table id="table-servers" class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Server</th>
+                <th scope="col">Emojis</th>
+                <th scope="col">Discord</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>  
+        </div>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script type="module" src="js/application.js"></script>
+  </body>
+</html>
