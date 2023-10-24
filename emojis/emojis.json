@@ -4855,6 +4855,15 @@
           "server": "39"
         },
         {
+          "name": "Conjure Undead Army",
+          "emoji_name": "conjurearmy",
+          "emoji_id": "1166094935066423348",
+          "aliases": [
+            "conjarmy"
+          ],
+          "server": "13"
+        },
+        {
           "name": "Conjure Vengeful Ghost",
           "emoji_name": "conjureghost",
           "emoji_id": "1137809206423060632",
@@ -6983,7 +6992,8 @@
           "emoji_id": "1134866724043358218",
           "aliases": [
             "goldaccumulator"
-          ]
+          ],
+          "server": "1"
         },
         {
           "name": "Aggression flask",
@@ -7349,6 +7359,13 @@
           "emoji_id": "689530593901412578",
           "aliases": [],
           "server": "3"
+        },
+        {
+          "name": "Headhunter's thrill",
+          "emoji_name": "headhuntersthrill",
+          "emoji_id": "1134960074608095252",
+          "aliases": [],
+          "server": "2"
         },
         {
           "name": "Herb bag",
@@ -12473,11 +12490,18 @@
           "server": "34"
         },
         {
-          "name": "Hunter cape",
+          "name": "Hunter master cape",
           "emoji_name": "huntercape",
           "emoji_id": "1014248192386273310",
           "aliases": [],
           "server": "34"
+        },
+        {
+          "name": "Hunter cape",
+          "emoji_name": "hunterskillcape",
+          "emoji_id": "1162535342163902505",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Hydrix",
@@ -12547,6 +12571,13 @@
           "emoji_id": "764086050959392778",
           "aliases": [],
           "server": "15"
+        },
+        {
+          "name": "Ascension Keystone Primus",
+          "emoji_name": "keystoneprimus",
+          "emoji_id": "1161265528057380904",
+          "aliases": [],
+          "server": "40"
         },
         {
           "name": "Koi Scales",
