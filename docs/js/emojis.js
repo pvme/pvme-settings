@@ -9,7 +9,8 @@ export function populateEmojis(emojis) {
         <td><img  title="${emoji.emoji_name}" class="disc-emoji" src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.webp?v=1">&nbsp;&nbsp;${emoji.name}</td>
         <td><code>${emojiID}</code></td>
         <td>${emoji.category}</td>
-        <td>${emoji.server}<button type="button" id="copy-emoji-${index}" class="btn btn-primary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!" style="float:right;">Copy</button></td>
+        <td>${emoji.server}</td>
+        <td><button type="button" id="copy-emoji-${index}" class="btn btn-primary btn-sm" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied!""><i class="bi bi-clipboard"></i></button></td>
       </tr>
     `);
 
