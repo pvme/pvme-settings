@@ -6,7 +6,7 @@ export function populateServers(servers) {
       <tr>
         <td>${serverID}</td>
         <td>${serverData.emojis.join(' ')}</td>
-        <td><a class="btn btn-primary btn-sm" href="${serverData.url} align="center" role="button" target="_blank">Join</a></td>
+        <td><a class="btn btn-primary btn-sm" href="${serverData.url}" align="center" role="button" target="_blank">Join</a></td>
       </tr>
     `);
   }
