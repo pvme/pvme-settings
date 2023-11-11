@@ -3814,11 +3814,18 @@
           "server": "11"
         },
         {
-          "name": "Strength cape",
-          "emoji_name": "strcape",
+          "name": "Strength master cape",
+          "emoji_name": "strmastercape",
           "emoji_id": "689503815296352308",
           "aliases": [],
           "server": "11"
+        },
+        {
+          "name": "Strength cape",
+          "emoji_name": "strcape",
+          "emoji_id": "1172654837616353320",
+          "aliases": [],
+          "server": "5"
         },
         {
           "name": "Superior Dragon claw",
