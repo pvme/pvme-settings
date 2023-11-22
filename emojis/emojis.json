@@ -5012,6 +5012,16 @@
           "server": "39"
         },
         {
+          "name": "Invoke Lord of Bones",
+          "emoji_name": "invokelordofbones",
+          "emoji_id": "1176968330582700174",
+          "aliases": [
+            "invbones",
+            "invokebones"
+          ],
+          "server": "6"
+        },
+        {
           "name": "Lesser Bone Shield",
           "emoji_name": "lesserboneshield",
           "emoji_id": "1137809125590450276",
@@ -12008,6 +12018,13 @@
           "emoji_id": "1006128080433193041",
           "aliases": [],
           "server": "8"
+        },
+        {
+          "name": "Balista",
+          "emoji_name": "balista",
+          "emoji_id": "1176968204883603497",
+          "aliases": [],
+          "server": "5"
         },
         {
           "name": "Battlestaff",
