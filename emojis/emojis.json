@@ -1627,11 +1627,11 @@
         {
           "name": "Omnipower igneous",
           "emoji_name": "omnipowerigneous",
-          "emoji_id": "959089455560540200",
+          "emoji_id": "1179505745654448208",
           "aliases": [
             "igneousomnipower"
           ],
-          "server": "30"
+          "server": "6"
         },
         {
           "name": "Prism of Loyalty",
@@ -4919,6 +4919,16 @@
           "emoji_id": "1159434663903899728",
           "aliases": [],
           "server": "39"
+        },
+        {
+          "name": "Igneous Death Skulls",
+          "emoji_name": "deathskullsigneous",
+          "emoji_id": "1179505729367969863",
+          "aliases": [
+            "igneousskulls",
+            "igneousdeathskulls"
+          ],
+          "server": "6"
         },
         {
           "name": "Deflect Necromancy",
