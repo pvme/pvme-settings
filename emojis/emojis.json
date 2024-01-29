@@ -159,6 +159,10 @@
     {
       "server": "40",
       "url": "https://discord.gg/s5RJtenWFE"
+    },
+    {
+      "server": "41",
+      "url": "https://discord.gg/tkCz7VbhDu"
     }
   ],
   "categories": [
@@ -445,6 +449,102 @@
           "emoji_id": "925794592849281094",
           "aliases": [],
           "server": "29"
+        },
+        {
+          "name": "Dracolich Coif",
+          "emoji_name": "dracolichcoif",
+          "emoji_id": "1179716885265252382",
+          "aliases": [
+            "dracocoif"
+          ],
+          "server": "17"
+        },
+        {
+          "name": "Dracolich Body",
+          "emoji_name": "dracolichbody",
+          "emoji_id": "1179717045412180019",
+          "aliases": [
+            "dracobody"
+          ],
+          "server": "19"
+        },
+        {
+          "name": "Dracolich Boots",
+          "emoji_name": "dracolichboots",
+          "emoji_id": "1179717039867314226",
+          "aliases": [
+            "dracoboots"
+          ],
+          "server": "19"
+        },
+        {
+          "name": "Dracolich Chaps",
+          "emoji_name": "dracolichchaps",
+          "emoji_id": "1179717051305177158",
+          "aliases": [
+            "dracochaps"
+          ],
+          "server": "19"
+        },
+        {
+          "name": "Dracolich Gloves",
+          "emoji_name": "dracolichgloves",
+          "emoji_id": "1179717057298825296",
+          "aliases": [
+            "dracogloves"
+          ],
+          "server": "19"
+        },
+        {
+          "name": "Elite Dracolich Coif",
+          "emoji_name": "edracocoif",
+          "emoji_id": "1179717359934640168",
+          "aliases": [
+            "elitedracocoif",
+            "elitedracolichcoif",
+            "edracolichcoif"
+          ],
+          "server": "23"
+        },
+        {
+          "name": "Elite Dracolich Body",
+          "emoji_name": "edracobody",
+          "emoji_id": "1179717430436704306",
+          "aliases": [
+            "edracolichbody",
+            "elitedracobody",
+            "elitedracolichbody"
+          ],
+          "server": "24"
+        },
+        {
+          "name": "Elite Dracolich Boots",
+          "emoji_name": "edracoboots",
+          "emoji_id": "1179717602151514123",
+          "aliases": [
+            "elitedracoboots",
+            "elitedracolichboots"
+          ],
+          "server": "41"
+        },
+        {
+          "name": "Elite Dracolich Chaps",
+          "emoji_name": "edracochaps",
+          "emoji_id": "1179717529015427146",
+          "aliases": [
+            "edracolichchaps",
+            "elitedracolichchaps"
+          ],
+          "server": "30"
+        },
+        {
+          "name": "Elite Dracolich Gloves",
+          "emoji_name": "edracogloves",
+          "emoji_id": "1179717613769728100",
+          "aliases": [
+            "dracogloves"
+          ],
+          "server": "41"
         },
         {
           "name": "Elite seasinger kiba",
@@ -4676,6 +4776,15 @@
             "deathwardenrobetopt90"
           ],
           "server": "40"
+        },
+        {
+          "name": "Deathwarden Nexus",
+          "emoji_name": "deathwardennexus",
+          "emoji_id": "1179716442816532540",
+          "aliases": [
+            "wardennexus"
+          ],
+          "server": "14"
         },
         {
           "name": "Death guard (tier 60)",
@@ -14894,6 +15003,16 @@
       "emoji_id": "1153772314215858247",
       "aliases": [],
       "server": "40"
+    },
+    {
+      "name": "Zemouregal's nexus",
+      "emoji_name": "zemouregalsnexus",
+      "emoji_id": "1179716261681307728",
+      "aliases": [
+        "zemonexus",
+        "zemosnexus"
+      ],
+      "server": "8"
     }
   ]
 }
