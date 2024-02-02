@@ -7189,6 +7189,13 @@
           "server": "2"
         },
         {
+          "name": "Attuned portent of degradation III",
+          "emoji_name": "degradation3",
+          "emoji_id": "1202196405125664808",
+          "aliases": [],
+          "server": "41"
+        },
+        {
           "name": "Attuned portent of restoration X",
           "emoji_name": "attunedportentofrestorationx",
           "emoji_id": "1027212535121850400",
