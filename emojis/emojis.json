@@ -6211,6 +6211,15 @@
           "server": "33"
         },
         {
+          "name": "Invoke Lord of Bones incantation codex",
+          "emoji_name": "invokelordofbonesdex",
+          "emoji_id": "1004453776389853216",
+          "aliases": [
+            "bonesdex"
+          ],
+          "server": "41"
+        },
+        {
           "name": "Limitless ability codex",
           "emoji_name": "limitlesscodex",
           "emoji_id": "1004453778302439525",
