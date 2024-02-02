@@ -4035,7 +4035,14 @@
           "server": "20"
         },
         {
-          "name": "Torva Gloves",
+          "name": "Torva full helm",
+          "emoji_name": "torvahelm",
+          "emoji_id": "992155940914724934",
+          "aliases": [],
+          "server": "31"
+        },
+        {
+          "name": "Torva gloves",
           "emoji_name": "torvagloves",
           "emoji_id": "556588695117889536",
           "aliases": [],
@@ -4571,6 +4578,13 @@
           "server": "39"
         },
         {
+          "name": "Ectoplasm",
+          "emoji_name": "ectoplasm",
+          "emoji_id": "1151165582650122350",
+          "aliases": [],
+          "server": "40"
+        },
+        {
           "name": "Flesh rune",
           "emoji_name": "fleshrune",
           "emoji_id": "1138808695703207967",
@@ -4878,6 +4892,20 @@
             "skulllantern95",
             "t95skulllantern"
           ],
+          "server": "40"
+        },
+        {
+          "name": "Spectral spirit shield",
+          "emoji_name": "spectralspiritshield",
+          "emoji_id": "1148977577059430461",
+          "aliases": [],
+          "server": "20"
+        },
+        {
+          "name": "TokHaar-Kal-Mor",
+          "emoji_name": "kilnnecro",
+          "emoji_id": "1153772314215858247",
+          "aliases": [],
           "server": "40"
         },
         {
@@ -5475,6 +5503,13 @@
           "server": "37"
         },
         {
+          "name": "Defence master cape",
+          "emoji_name": "defencecape",
+          "emoji_id": "1005552207824953456",
+          "aliases": [],
+          "server": "33"
+        },
+        {
           "name": "Demon slayer boots",
           "emoji_name": "demonslayerboots",
           "emoji_id": "1004325691510231041",
@@ -5525,6 +5560,27 @@
             "dpick"
           ],
           "server": "18"
+        },
+        {
+          "name": "Dragon Rider boots",
+          "emoji_name": "dragonriderboots",
+          "emoji_id": "1030802339868725259",
+          "aliases": [],
+          "server": "35"
+        },
+        {
+          "name": "Dragon Rider chaps",
+          "emoji_name": "dragonriderchaps",
+          "emoji_id": "580177561187909683",
+          "aliases": [],
+          "server": "5"
+        },
+        {
+          "name": "Dragon Rider gloves",
+          "emoji_name": "dragonridergloves",
+          "emoji_id": "1030802337972883466",
+          "aliases": [],
+          "server": "35"
         },
         {
           "name": "Dragon Rider helm",
@@ -10637,20 +10693,6 @@
           "server": "35"
         },
         {
-          "name": "Dragon Rider boots",
-          "emoji_name": "dragonriderboots",
-          "emoji_id": "1030802339868725259",
-          "aliases": [],
-          "server": "35"
-        },
-        {
-          "name": "Dragon Rider gloves",
-          "emoji_name": "dragonridergloves",
-          "emoji_id": "1030802337972883466",
-          "aliases": [],
-          "server": "35"
-        },
-        {
           "name": "Elder Trove (Bik, T1)",
           "emoji_name": "eldertrovebikt1",
           "emoji_id": "869284271502803075",
@@ -13110,7 +13152,7 @@
           "server": "28"
         },
         {
-          "name": "Ranged cape",
+          "name": "Ranged master cape",
           "emoji_name": "rangedcape",
           "emoji_id": "1043953722633498754",
           "aliases": [],
@@ -13441,6 +13483,13 @@
           "emoji_id": "1097515642749468752",
           "aliases": [],
           "server": "37"
+        },
+        {
+          "name": "Vital spark drop enhancer",
+          "emoji_name": "sparkenhancer",
+          "emoji_id": "1151164471813865623",
+          "aliases": [],
+          "server": "20"
         },
         {
           "name": "Vitalis",
@@ -14063,13 +14112,6 @@
       "name": "barrowstectlegs",
       "emoji_name": "barrowstectlegs",
       "emoji_id": "580177561175457812",
-      "aliases": [],
-      "server": "5"
-    },
-    {
-      "name": "dragonriderchaps",
-      "emoji_name": "dragonriderchaps",
-      "emoji_id": "580177561187909683",
       "aliases": [],
       "server": "5"
     },
@@ -14963,20 +15005,6 @@
       "server": "16"
     },
     {
-      "name": "Spectral spirit shield",
-      "emoji_name": "spectralspiritshield",
-      "emoji_id": "1148977577059430461",
-      "aliases": [],
-      "server": "20"
-    },
-    {
-      "name": "Vital spark drop enhancer",
-      "emoji_name": "sparkenhancer",
-      "emoji_id": "1151164471813865623",
-      "aliases": [],
-      "server": "20"
-    },
-    {
       "name": "bp",
       "emoji_name": "bp",
       "emoji_id": "641305524884733970",
@@ -15003,34 +15031,6 @@
       "emoji_id": "690136117269626888",
       "aliases": [],
       "server": "25"
-    },
-    {
-      "name": "torvahelm",
-      "emoji_name": "torvahelm",
-      "emoji_id": "992155940914724934",
-      "aliases": [],
-      "server": "31"
-    },
-    {
-      "name": "defencecape",
-      "emoji_name": "defencecape",
-      "emoji_id": "1005552207824953456",
-      "aliases": [],
-      "server": "33"
-    },
-    {
-      "name": "Ectoplasm",
-      "emoji_name": "ectoplasm",
-      "emoji_id": "1151165582650122350",
-      "aliases": [],
-      "server": "40"
-    },
-    {
-      "name": "TokHaar-Kal-Mor",
-      "emoji_name": "kilnnecro",
-      "emoji_id": "1153772314215858247",
-      "aliases": [],
-      "server": "40"
     }
   ]
 }
