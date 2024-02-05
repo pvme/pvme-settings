@@ -6688,6 +6688,13 @@
       "name": "Auras and Pocket slot",
       "emojis": [
         {
+          "name": "Aegis aura",
+          "emoji_name": "aegis",
+          "emoji_id": "1204128299241177148",
+          "aliases": [],
+          "server": "41"
+        },
+        {
           "name": "Berserker aura",
           "emoji_name": "berserker",
           "emoji_id": "643505116347105290",
