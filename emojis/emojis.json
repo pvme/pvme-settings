@@ -4617,8 +4617,10 @@
         {
           "name": "Crown of the First Necromancer",
           "emoji_name": "firstnecrohelm",
-          "emoji_id": "1142416979957923952",
-          "aliases": [],
+          "emoji_id": "1206668678062674004",
+          "aliases": [
+            "crownofthefirstnecromancer"
+          ],
           "server": "40"
         },
         {
