@@ -665,6 +665,15 @@
           "server": "37"
         },
         {
+          "name": "Ibans Staff",
+          "emoji_name": "ibansstaff",
+          "emoji_id": "1215929543068618752",
+          "aliases": [
+            "ibans"
+          ],
+          "server": "41"
+        },
+        {
           "name": "Igneous Kal-Mej",
           "emoji_name": "igneouskalmej",
           "emoji_id": "1153772938252787793",
@@ -798,6 +807,13 @@
           "emoji_id": "643161591210049556",
           "aliases": [],
           "server": "22"
+        },
+        {
+          "name": "Penance Trident",
+          "emoji_name": "penancetrident",
+          "emoji_id": "1215806147165032598",
+          "aliases": [],
+          "server": "41"
         },
         {
           "name": "Polypore staff",
@@ -2826,6 +2842,17 @@
           "emoji_id": "580177522587729940",
           "aliases": [],
           "server": "5"
+        },
+        {
+          "name": "Zamorak Bow",
+          "emoji_name": "zammybow",
+          "emoji_id": "1215929540908679208",
+          "aliases": [
+            "zbow",
+            "zammybow",
+            "zamorakbow"
+          ],
+          "server": "41"
         },
         {
           "name": "Zaryte bow",
@@ -7000,6 +7027,13 @@
           "server": "1"
         },
         {
+          "name": "Piety",
+          "emoji_name": "piety",
+          "emoji_id": "1215399597581533264",
+          "aliases": [],
+          "server": "41"
+        },
+        {
           "name": "Protect from Magic",
           "emoji_name": "protectfrommagic",
           "emoji_id": "1052551456835768351",
@@ -7035,6 +7069,13 @@
             "itemprotect"
           ],
           "server": "34"
+        },
+        {
+          "name": "Rigour",
+          "emoji_name": "rigour",
+          "emoji_id": "1215399596239618118",
+          "aliases": [],
+          "server": "41"
         },
         {
           "name": "Soul Link",
@@ -8450,6 +8491,34 @@
           "emoji_id": "712073088589627505",
           "aliases": [],
           "server": "11"
+        },
+        {
+          "name": "Eruptive",
+          "emoji_name": "eruptive",
+          "emoji_id": "1214364892895907941",
+          "aliases": [
+            "er1",
+            "er"
+          ],
+          "server": "41"
+        },
+        {
+          "name": "Eruptive2",
+          "emoji_name": "eruptive2",
+          "emoji_id": "1214416336797564959",
+          "aliases": [
+            "er2"
+          ],
+          "server": "41"
+        },
+        {
+          "name": "Eruptive4",
+          "emoji_name": "eruptive4",
+          "emoji_id": "1214416401561952296",
+          "aliases": [
+            "er4"
+          ],
+          "server": "41"
         },
         {
           "name": "Flanking4",
