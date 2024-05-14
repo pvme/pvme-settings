@@ -6710,6 +6710,13 @@
           "emoji_id": "643162130002214912",
           "aliases": [],
           "server": "23"
+        },
+        {
+          "name": "Zorgoth's soul ring",
+          "emoji_name": "zorgothsring",
+          "emoji_id": "1232124265826877574",
+          "aliases": [],
+          "server": "41"
         }
       ]
     },
@@ -6795,6 +6802,13 @@
           "emoji_id": "643505652571963417",
           "aliases": [],
           "server": "8"
+        },
+        {
+          "name": "Equilibrium aura",
+          "emoji_name": "equilibriumaura",
+          "emoji_id": "1233722649834684416",
+          "aliases": [],
+          "server": "41"
         },
         {
           "name": "Erethdor's grimoire",
