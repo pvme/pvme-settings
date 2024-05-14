@@ -1603,6 +1603,20 @@
           "server": "11"
         },
         {
+          "name": "Lesser Concentrated blast",
+          "emoji_name": "lesserconc",
+          "emoji_id": "1217207445101744189",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Lesser Sonic Wave",
+          "emoji_name": "lessersonic",
+          "emoji_id": "1217207446225813555",
+          "aliases": [],
+          "server": "41"
+        },
+        {
           "name": "Magic imbue",
           "emoji_name": "magicimbue",
           "emoji_id": "923249598640832543",
@@ -3039,6 +3053,20 @@
           "emoji_id": "535541258429661215",
           "aliases": [],
           "server": "17"
+        },
+        {
+          "name": "Lesser Dazing Shot",
+          "emoji_name": "lesserdazing",
+          "emoji_id": "1217207447748608131",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Lesser Needle Strike",
+          "emoji_name": "lesserneedle",
+          "emoji_id": "1217207449082138636",
+          "aliases": [],
+          "server": "41"
         },
         {
           "name": "Needle strike",
@@ -4485,6 +4513,20 @@
           "emoji_id": "535532879132885025",
           "aliases": [],
           "server": "18"
+        },
+        {
+          "name": "Lesser Havoc",
+          "emoji_name": "lesserhavoc",
+          "emoji_id": "1217207450273448137",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Lesser Smash",
+          "emoji_name": "lessersmash",
+          "emoji_id": "1217207451536068628",
+          "aliases": [],
+          "server": "41"
         },
         {
           "name": "Massacre",
@@ -12681,6 +12723,13 @@
           "server": "34"
         },
         {
+          "name": "Frost Blades",
+          "emoji_name": "frostblades",
+          "emoji_id": "1219291286578794627",
+          "aliases": [],
+          "server": "41"
+        },
+        {
           "name": "Fury shark head",
           "emoji_name": "furysharkhead",
           "emoji_id": "1104718189369241631",
@@ -13105,6 +13154,13 @@
           "emoji_id": "918517285176623104",
           "aliases": [],
           "server": "28"
+        },
+        {
+          "name": "Primordial Ice",
+          "emoji_name": "primordialice",
+          "emoji_id": "1219291285358120990",
+          "aliases": [],
+          "server": "41"
         },
         {
           "name": "Produce points",
