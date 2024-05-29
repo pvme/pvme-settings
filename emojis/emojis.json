@@ -12689,15 +12689,6 @@
           "server": "36"
         },
         {
-          "name": "Evolving Toxin",
-          "emoji_name": "evolvingtoxin",
-          "emoji_id": "1016651068882550885",
-          "aliases": [
-            "bikstacks"
-          ],
-          "server": "34"
-        },
-        {
           "name": "Expensive spices",
           "emoji_name": "spices",
           "emoji_id": "662038182807732255",
@@ -15222,7 +15213,9 @@
       "name": "Evolving Toxin",
       "emoji_name": "evolvingtoxin",
       "emoji_id": "1240756218012893244",
-      "aliases": [],
+      "aliases": [
+        "bikstacks"
+      ],
       "server": "41"
     },
     {
