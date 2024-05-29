@@ -4980,6 +4980,16 @@
           "server": "40"
         },
         {
+          "name": "Occulist's Ring",
+          "emoji_name": "occulistring",
+          "emoji_id": "1245442140318863490",
+          "aliases": [
+            "occulists",
+            "occulistsring"
+          ],
+          "server": "41"
+        },
+        {
           "name": "Omni guard",
           "emoji_name": "omniguard",
           "emoji_id": "1138809234922934282",
@@ -8400,6 +8410,20 @@
           "emoji_id": "712073087809617931",
           "aliases": [],
           "server": "11"
+        },
+        {
+          "name": "Bulwark",
+          "emoji_name": "bulwark",
+          "emoji_id": "1242028183608365126",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Bulwark4",
+          "emoji_name": "bulwark4",
+          "emoji_id": "1242028174062391347",
+          "aliases": [],
+          "server": "41"
         },
         {
           "name": "Caroming1",
@@ -15172,6 +15196,34 @@
       "emoji_id": "690136117269364768",
       "aliases": [],
       "server": "25"
+    },
+    {
+      "name": "Barrelchest Anchor",
+      "emoji_name": "barrelchestanchor",
+      "emoji_id": "1242027649312755822",
+      "aliases": [],
+      "server": "41"
+    },
+    {
+      "name": "Icy Chill",
+      "emoji_name": "icychill",
+      "emoji_id": "1240756221024403526",
+      "aliases": [],
+      "server": "41"
+    },
+    {
+      "name": "Icy Precision",
+      "emoji_name": "icyprecision",
+      "emoji_id": "1240756219187171419",
+      "aliases": [],
+      "server": "41"
+    },
+    {
+      "name": "Evolving Toxin",
+      "emoji_name": "evolvingtoxin",
+      "emoji_id": "1240756218012893244",
+      "aliases": [],
+      "server": "41"
     },
     {
       "name": "bagrada2",
