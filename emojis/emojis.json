@@ -1389,7 +1389,7 @@
         {
           "name": "Chain",
           "emoji_name": "chain",
-          "emoji_id": "535533833056026624",
+          "emoji_id": "1257440203401068566",
           "aliases": [],
           "server": "18"
         },
@@ -1520,7 +1520,7 @@
         {
           "name": "Greater chain",
           "emoji_name": "gchain",
-          "emoji_id": "787904334495088672",
+          "emoji_id": "1257440278512537740",
           "aliases": [],
           "server": "15"
         },
@@ -1946,7 +1946,7 @@
         {
           "name": "Wrack",
           "emoji_name": "wrack",
-          "emoji_id": "856662355952795658",
+          "emoji_id": "1257439366708592651",
           "aliases": [],
           "server": "9"
         },
@@ -1962,7 +1962,7 @@
         {
           "name": "Wrack and ruin",
           "emoji_name": "wrackandruin",
-          "emoji_id": "856662355912032256",
+          "emoji_id": "1257439387474722836",
           "aliases": [
             "superwrack"
           ],
@@ -6025,7 +6025,7 @@
         {
           "name": "Essence of Finality (Ability)",
           "emoji_name": "eofspec",
-          "emoji_id": "746403211908481184",
+          "emoji_id": "1257438999794946099",
           "aliases": [],
           "server": "10"
         },
@@ -12921,7 +12921,7 @@
         {
           "name": "Inner Power (self status)",
           "emoji_name": "innerpower",
-          "emoji_id": "1006128091422265454",
+          "emoji_id": "1257438330698858626",
           "aliases": [],
           "server": "8"
         },
