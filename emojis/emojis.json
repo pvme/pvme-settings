@@ -6023,6 +6023,13 @@
           "server": "36"
         },
         {
+          "name": "Essence Corruption",
+          "emoji_name": "essencecorruption",
+          "emoji_id": "1266418936820404295",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Essence of Finality (Ability)",
           "emoji_name": "eofspec",
           "emoji_id": "1257438999794946099",
@@ -6729,6 +6736,13 @@
           "server": "28"
         },
         {
+          "name": "Roar of Awakening",
+          "emoji_name": "roarofawakening",
+          "emoji_id": "1266417538045317121",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Seers' ring",
           "emoji_name": "seersring",
           "emoji_id": "643162129645699078",
@@ -6939,6 +6953,13 @@
           "aliases": [],
           "server": "15"
         },
+        {
+          "name": "Scripture of Amascut",
+          "emoji_name": "scriptureofamascut",
+          "emoji_id": "1266417822188437569",
+          "aliases": [],
+          "server": "41"
+        },        
         {
           "name": "Scripture of Bik",
           "emoji_name": "scriptureofbik",
@@ -7271,6 +7292,13 @@
           "aliases": [],
           "server": "28"
         },
+        {
+          "name": "Shard of Genesis Essence",
+          "emoji_name": "shardofgenesisessence",
+          "emoji_id": "1266418218264694954",
+          "aliases": [],
+          "server": "41"
+        },        
         {
           "name": "Slayer Introspection",
           "emoji_name": "slayerintrospection",
@@ -9245,6 +9273,13 @@
           "server": "20"
         },
         {
+          "name": "Ode to Deceit",
+          "emoji_name": "odetodeceit",
+          "emoji_id": "1266417683058917517",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Organic parts",
           "emoji_name": "organicparts",
           "emoji_id": "583434337182154764",
@@ -10773,6 +10808,13 @@
           "aliases": [],
           "server": "27"
         },
+        {
+          "name": "Divine Rage prayer codex",
+          "emoji_name": "divineragecodex",
+          "emoji_id": "1266418376733888593",
+          "aliases": [],
+          "server": "41"
+        },        
         {
           "name": "Divine sigil",
           "emoji_name": "divinesigil",
