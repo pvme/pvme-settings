@@ -802,6 +802,13 @@
           "server": "9"
         },
         {
+          "name": "Ode to Deceit",
+          "emoji_name": "odetodeceit",
+          "emoji_id": "1266417683058917517",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Orb of the Cywir elders",
           "emoji_name": "cywirorb",
           "emoji_id": "643161591210049556",
@@ -943,6 +950,13 @@
           ],
           "server": "38"
         },
+        {
+          "name": "Roar of Awakening",
+          "emoji_name": "roarofawakening",
+          "emoji_id": "1266417538045317121",
+          "aliases": [],
+          "server": "41"
+        },        
         {
           "name": "Smoke rune",
           "emoji_name": "smokerune",
@@ -3789,6 +3803,13 @@
           "server": "38"
         },
         {
+          "name": "Masterwork 2h sword",
+          "emoji_name": "masterwork2hsword",
+          "emoji_id": "1274330676061278334",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Masterwork boots",
           "emoji_name": "masterworkboots",
           "emoji_id": "643847030824894477",
@@ -5805,6 +5826,13 @@
           "server": "37"
         },
         {
+          "name": "Pickaxe of Life and Death",
+          "emoji_name": "pickaxeoflifeanddeath",
+          "emoji_id": "1274331139594522645",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Pneumatic gloves",
           "emoji_name": "pneumaticglove",
           "emoji_id": "556588694711304193",
@@ -6021,13 +6049,6 @@
           "emoji_id": "1073883122069934182",
           "aliases": [],
           "server": "36"
-        },
-        {
-          "name": "Essence Corruption",
-          "emoji_name": "essencecorruption",
-          "emoji_id": "1266418936820404295",
-          "aliases": [],
-          "server": "41"
         },        
         {
           "name": "Essence of Finality (Ability)",
@@ -6257,6 +6278,13 @@
           ],
           "server": "33"
         },
+        {
+          "name": "Divine Rage prayer codex",
+          "emoji_name": "divineragecodex",
+          "emoji_id": "1266418376733888593",
+          "aliases": [],
+          "server": "41"
+        },        
         {
           "name": "Dragon Slayer ability codex",
           "emoji_name": "dragonslayercodex",
@@ -6734,13 +6762,6 @@
           "emoji_id": "900765150695550976",
           "aliases": [],
           "server": "28"
-        },
-        {
-          "name": "Roar of Awakening",
-          "emoji_name": "roarofawakening",
-          "emoji_id": "1266417538045317121",
-          "aliases": [],
-          "server": "41"
         },        
         {
           "name": "Seers' ring",
@@ -7018,6 +7039,13 @@
           "server": "19"
         },
         {
+          "name": "Underworld Grimoire 4",
+          "emoji_name": "underworldgrimoire4",
+          "emoji_id": "1274331251301683260",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Vampyrism aura",
           "emoji_name": "vampaura",
           "emoji_id": "643505653079343144",
@@ -7291,13 +7319,6 @@
           "emoji_id": "895999229737185280",
           "aliases": [],
           "server": "28"
-        },
-        {
-          "name": "Shard of Genesis Essence",
-          "emoji_name": "shardofgenesisessence",
-          "emoji_id": "1266418218264694954",
-          "aliases": [],
-          "server": "41"
         },        
         {
           "name": "Slayer Introspection",
@@ -9271,13 +9292,6 @@
           "emoji_id": "607288026229506058",
           "aliases": [],
           "server": "20"
-        },
-        {
-          "name": "Ode to Deceit",
-          "emoji_name": "odetodeceit",
-          "emoji_id": "1266417683058917517",
-          "aliases": [],
-          "server": "41"
         },        
         {
           "name": "Organic parts",
@@ -10807,13 +10821,6 @@
           "emoji_id": "884739993527013426",
           "aliases": [],
           "server": "27"
-        },
-        {
-          "name": "Divine Rage prayer codex",
-          "emoji_name": "divineragecodex",
-          "emoji_id": "1266418376733888593",
-          "aliases": [],
-          "server": "41"
         },        
         {
           "name": "Divine sigil",
@@ -11365,6 +11372,13 @@
           "aliases": [],
           "server": "31"
         },
+        {
+          "name": "Shard of Genesis Essence",
+          "emoji_name": "shardofgenesisessence",
+          "emoji_id": "1266418218264694954",
+          "aliases": [],
+          "server": "41"
+        },        
         {
           "name": "Sliskean essence",
           "emoji_name": "sliskeess",
@@ -12723,6 +12737,13 @@
           ],
           "server": "38"
         },
+        {
+          "name": "Essence Corruption",
+          "emoji_name": "essencecorruption",
+          "emoji_id": "1266418936820404295",
+          "aliases": [],
+          "server": "41"
+        },        
         {
           "name": "Everlasting Incense",
           "emoji_name": "everlastingincense",
