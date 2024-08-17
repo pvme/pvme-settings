@@ -3789,6 +3789,13 @@
           "server": "38"
         },
         {
+          "name": "Masterwork 2h sword",
+          "emoji_name": "masterwork2hsword",
+          "emoji_id": "1274330676061278334",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Masterwork boots",
           "emoji_name": "masterworkboots",
           "emoji_id": "643847030824894477",
@@ -5805,6 +5812,13 @@
           "server": "37"
         },
         {
+          "name": "Pickaxe of Life and Death",
+          "emoji_name": "pickaxeoflifeanddeath",
+          "emoji_id": "1274331139594522645",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Pneumatic gloves",
           "emoji_name": "pneumaticglove",
           "emoji_id": "556588694711304193",
@@ -7017,6 +7031,13 @@
           "aliases": [],
           "server": "19"
         },
+        {
+          "name": "Underworld Grimoire 4",
+          "emoji_name": "underworldgrimoire4",
+          "emoji_id": "1274331251301683260",
+          "aliases": [],
+          "server": "41"
+        },        
         {
           "name": "Vampyrism aura",
           "emoji_name": "vampaura",
