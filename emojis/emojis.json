@@ -3936,6 +3936,13 @@
           "server": "2"
         },
         {
+          "name": "Primal abyssal armour spikes",
+          "emoji_name": "primalabyssalarmourspikes",
+          "emoji_id": "1276946271424479234",
+          "aliases": [],
+          "server": "41"
+        },        
+        {
           "name": "Razorback gauntlets",
           "emoji_name": "razorback",
           "emoji_id": "513190159366488065",
