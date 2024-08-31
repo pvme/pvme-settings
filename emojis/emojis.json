@@ -7774,6 +7774,13 @@
           "server": "35"
         },
         {
+          "name": "Extreme necromancy potion",
+          "emoji_name": "extremenecro",
+          "emoji_id": "1246044583453003786",
+          "aliases": [],
+          "server": "41"
+        },
+        {
           "name": "Extreme prayer",
           "emoji_name": "extremeprayer",
           "emoji_id": "1102897785881235606",
