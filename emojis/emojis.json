@@ -2231,7 +2231,8 @@
           "emoji_name": "deathsporearrows",
           "emoji_id": "900758234527301642",
           "aliases": [
-            "deathspores"
+            "deathspores",
+            "dspore"
           ],
           "server": "28"
         },
