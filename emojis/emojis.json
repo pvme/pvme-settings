@@ -163,7 +163,11 @@
     {
       "server": "41",
       "url": "https://discord.gg/tkCz7VbhDu"
-    }
+    },
+    {
+      "server": "42",
+      "url": "https://discord.gg/dtqQdvVeQK"
+    }    
   ],
   "categories": [
     {
@@ -10045,6 +10049,13 @@
           "server": "34"
         },
         {
+          "name": "Nakatra",
+          "emoji_name": "nakatra",
+          "emoji_id": "1278853591221669911",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Nex",
           "emoji_name": "nex",
           "emoji_id": "513213159071547395",
@@ -10136,6 +10147,13 @@
           "server": "8"
         },
         {
+          "name": "SolakHead",
+          "emoji_name": "solakhead",
+          "emoji_id": "1278853652752367687",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Solak roots",
           "emoji_name": "roots",
           "emoji_id": "848803062684581929",
@@ -10195,6 +10213,13 @@
           "aliases": [],
           "server": "8"
         },
+        {
+          "name": "Vorkath",
+          "emoji_name": "vorkath",
+          "emoji_id": "1278853696159088833",
+          "aliases": [],
+          "server": "42"
+        },        
         {
           "name": "War",
           "emoji_name": "war",
