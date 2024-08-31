@@ -6569,6 +6569,13 @@
           "server": "14"
         },
         {
+          "name": "Conjurer's raising amulet",
+          "emoji_name": "conjuresamulet",
+          "emoji_id": "1254471154362744862",
+          "aliases": [],
+          "server": "41"
+        },
+        {
           "name": "Deathtouched bracelet",
           "emoji_name": "dtb",
           "emoji_id": "513190159429271562",
@@ -6609,6 +6616,55 @@
           "emoji_id": "923248842068074527",
           "aliases": [],
           "server": "29"
+        },
+        {
+          "name": "Essence of Finality (black)",
+          "emoji_name": "eofblacku",
+          "emoji_id": "1260022289731158146",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Essence of Finality (blue)",
+          "emoji_name": "eofblueu",
+          "emoji_id": "1260022291388174366",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Essence of Finality (green)",
+          "emoji_name": "eofgreenu",
+          "emoji_id": "1260022283771314238",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Essence of Finality (pink)",
+          "emoji_name": "eofpinku",
+          "emoji_id": "1260022282969940071",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Essence of Finality (purple)",
+          "emoji_name": "eofpurpleu",
+          "emoji_id": "1260022282076553268",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Essence of Finality (red)",
+          "emoji_name": "eofredu",
+          "emoji_id": "1260022281229434951",
+          "aliases": [],
+          "server": "41"
+        },
+        {
+          "name": "Essence of Finality (yellow)",
+          "emoji_name": "eofyellowu",
+          "emoji_id": "1260022280046645349",
+          "aliases": [],
+          "server": "41"
         },
         {
           "name": "SWH EoF",
@@ -8421,6 +8477,13 @@
           "emoji_id": "689509250946695292",
           "aliases": [],
           "server": "3"
+        },
+        {
+          "name": "Absorbative1",
+          "emoji_name": "absorbative1",
+          "emoji_id": "1257432264279851119",
+          "aliases": [],
+          "server": "41"
         },
         {
           "name": "Absorbative4",
