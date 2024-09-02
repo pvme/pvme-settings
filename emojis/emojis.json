@@ -5077,6 +5077,8 @@
             "commandphantom",
             "commandphant"
           ],
+          "server": "42"
+        },
         {
           "name": "Command Putrid Zombie",
           "emoji_name": "commandzombie",
