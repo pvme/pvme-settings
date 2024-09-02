@@ -5068,6 +5068,16 @@
           "server": "39"
         },
         {
+          "name": "Command Armoured Phantom",
+          "emoji_name": "commandphantom",
+          "emoji_id": "1280109200432959528",
+          "aliases": [
+            "comphantom",
+            "comphant",
+            "commandphantom",
+            "commandphant"
+          ],
+        {
           "name": "Command Putrid Zombie",
           "emoji_name": "commandzombie",
           "emoji_id": "1137809191231295549",
@@ -5097,6 +5107,18 @@
             "comghost"
           ],
           "server": "39"
+        },
+        {
+          "name": "Conjure Armoured Phantom",
+          "emoji_name": "conjurephantom",
+          "emoji_id": "1280109199069806604",
+          "aliases": [
+            "conjphant",
+            "conjphantom",
+            "conjurephantom",
+            "conjurephant"
+          ],
+          "server": "42"
         },
         {
           "name": "Conjure Putrid Zombie",
