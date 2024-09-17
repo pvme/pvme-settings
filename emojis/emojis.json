@@ -7221,6 +7221,20 @@
           "server": "1"
         },
         {
+          "name": "Divine Rage",
+          "emoji_name": "divinerage",
+          "emoji_id": "1285372247665803264",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Eclipsed Soul",
+          "emoji_name": "eclipsedsoul",
+          "emoji_id": "1285372688457797672",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Fortitude",
           "emoji_name": "fortitude",
           "emoji_id": "537341748180025365",
@@ -12444,6 +12458,13 @@
           "server": "30"
         },
         {
+          "name": "Abyssal Parasite",
+          "emoji_name": "abyssalparasite",
+          "emoji_id": "1285348334869151754",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Achievement",
           "emoji_name": "achiev",
           "emoji_id": "641342351532621824",
@@ -12799,6 +12820,13 @@
           "server": "34"
         },
         {
+          "name": "Dracolich infusion",
+          "emoji_name": "dracolichinfusion",
+          "emoji_id": "1285348459876057138",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Dragon arrowheads",
           "emoji_name": "darrowtips",
           "emoji_id": "643507099602780200",
@@ -12943,6 +12971,13 @@
           "server": "37"
         },
         {
+          "name": "Gate corruption stacks",
+          "emoji_name": "gatecorruptionstacks",
+          "emoji_id": "1285370887138181172",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Geothermal Burn",
           "emoji_name": "geothermalburn",
           "emoji_id": "1039862832382099466",
@@ -13077,6 +13112,13 @@
           "aliases": [],
           "server": "24"
         },
+        {
+          "name": "Icthlarin's Aid",
+          "emoji_name": "icthlarinsaid",
+          "emoji_id": "1285381057121751131",
+          "aliases": [],
+          "server": "42"
+        },         
         {
           "name": "Incandescent energy",
           "emoji_name": "incand",
