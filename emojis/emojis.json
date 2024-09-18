@@ -4718,8 +4718,8 @@
         },
         {
           "name": "Crown of the First Necromancer",
-          "emoji_name": "firstnecrohelm",
-          "emoji_id": "1206668678062674004",
+          "emoji_name": "firstnecrocrown",
+          "emoji_id": "1206671120623870013",
           "aliases": [
             "crownofthefirstnecromancer"
           ],
@@ -8045,6 +8045,13 @@
           "aliases": [],
           "server": "33"
         },
+        {
+          "name": "Numbing root",
+          "emoji_name": "numbingroot",
+          "emoji_id": "1285852547453685781",
+          "aliases": [],
+          "server": "42"
+        },        
         {
           "name": "Ogre flask (Thermal)",
           "emoji_name": "thermalflask",
