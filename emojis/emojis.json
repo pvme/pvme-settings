@@ -13323,6 +13323,13 @@
           "server": "34"
         },
         {
+          "name": "Nature's Blessing",
+          "emoji_name": "naturesblessing",
+          "emoji_id": "1287085135967031443",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Nature's sentinel helm",
           "emoji_name": "naturesentinelhead",
           "emoji_id": "1104717297219797052",
