@@ -391,7 +391,7 @@
         {
           "name": "Cryptbloom helm",
           "emoji_name": "cryptbloomhelm",
-          "emoji_id": "892819107123195956",
+          "emoji_id": "1334336169336373339",
           "aliases": [
             "crypthelm"
           ],
@@ -399,8 +399,8 @@
         },
         {
           "name": "Cryptbloom top",
-          "emoji_name": "cryptbloombody",
-          "emoji_id": "892819107253194762",
+          "emoji_name": "cryptbloomtop",
+          "emoji_id": "1334336168363561041",
           "aliases": [
             "cryptbody"
           ],
@@ -408,8 +408,8 @@
         },
         {
           "name": "Cryptbloom bottoms",
-          "emoji_name": "cryptbloomlegs",
-          "emoji_id": "892819107223851058",
+          "emoji_name": "cryptbloombottoms",
+          "emoji_id": "1334336167432159283",
           "aliases": [
             "cryptlegs"
           ],
@@ -418,7 +418,7 @@
         {
           "name": "Cryptbloom boots",
           "emoji_name": "cryptbloomboots",
-          "emoji_id": "892819107236433930",
+          "emoji_id": "1334336165150457986",
           "aliases": [
             "cryptboots"
           ],
@@ -427,7 +427,7 @@
         {
           "name": "Cryptbloom gloves",
           "emoji_name": "cryptbloomgloves",
-          "emoji_id": "892819106879922179",
+          "emoji_id": "1334336166476120114",
           "aliases": [
             "cryptgloves"
           ],
@@ -3426,6 +3426,13 @@
           "server": "29"
         },
         {
+          "name": "Consecrated keris",
+          "emoji_name": "consecratedkeris",
+          "emoji_id": "1334318846202478615",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Corrupted defender",
           "emoji_name": "corrupteddefender",
           "emoji_id": "923248842000957480",
@@ -3946,6 +3953,13 @@
           "emoji_id": "1276946271424479234",
           "aliases": [],
           "server": "41"
+        },
+        {
+          "name": "Primed keris",
+          "emoji_name": "primedkeris",
+          "emoji_id": "1334318822269780028",
+          "aliases": [],
+          "server": "42"
         },        
         {
           "name": "Razorback gauntlets",
@@ -9744,6 +9758,13 @@
           "server": "37"
         },
         {
+          "name": "Healing Aura",
+          "emoji_name": "unicornscroll",
+          "emoji_id": "1334315463462617098",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Hellhound",
           "emoji_name": "hellhoundpouch",
           "emoji_id": "921410226475925514",
@@ -9857,6 +9878,13 @@
           "aliases": [],
           "server": "15"
         },
+        {
+          "name": "Unicorn stallion pouch",
+          "emoji_name": "unicornpouch",
+          "emoji_id": "1334314016344113163",
+          "aliases": [],
+          "server": "42"
+        },        
         {
           "name": "War tortoise",
           "emoji_name": "tortoise",
@@ -11536,6 +11564,13 @@
           "server": "23"
         },
         {
+          "name": "Spectral lens",
+          "emoji_name": "spectrallens",
+          "emoji_id": "1334309383831818342",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Spectral sigil",
           "emoji_name": "spectralsigil",
           "emoji_id": "643161640162033666",
@@ -11974,6 +12009,13 @@
           "aliases": [],
           "server": "32"
         },
+        {
+          "name": "Profane Scabarite",
+          "emoji_name": "profanescabarite",
+          "emoji_id": "1333926854666621019",
+          "aliases": [],
+          "server": "42"
+        },        
         {
           "name": "Ripper Demon",
           "emoji_name": "ripperdemon",
