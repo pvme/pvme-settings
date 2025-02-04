@@ -391,7 +391,7 @@
         {
           "name": "Cryptbloom helm",
           "emoji_name": "cryptbloomhelm",
-          "emoji_id": "892819107123195956",
+          "emoji_id": "1334336169336373339",
           "aliases": [
             "crypthelm"
           ],
@@ -399,8 +399,8 @@
         },
         {
           "name": "Cryptbloom top",
-          "emoji_name": "cryptbloombody",
-          "emoji_id": "892819107253194762",
+          "emoji_name": "cryptbloomtop",
+          "emoji_id": "1334336168363561041",
           "aliases": [
             "cryptbody"
           ],
@@ -408,8 +408,8 @@
         },
         {
           "name": "Cryptbloom bottoms",
-          "emoji_name": "cryptbloomlegs",
-          "emoji_id": "892819107223851058",
+          "emoji_name": "cryptbloombottoms",
+          "emoji_id": "1334336167432159283",
           "aliases": [
             "cryptlegs"
           ],
@@ -418,7 +418,7 @@
         {
           "name": "Cryptbloom boots",
           "emoji_name": "cryptbloomboots",
-          "emoji_id": "892819107236433930",
+          "emoji_id": "1334336165150457986",
           "aliases": [
             "cryptboots"
           ],
@@ -427,7 +427,7 @@
         {
           "name": "Cryptbloom gloves",
           "emoji_name": "cryptbloomgloves",
-          "emoji_id": "892819106879922179",
+          "emoji_id": "1334336166476120114",
           "aliases": [
             "cryptgloves"
           ],
