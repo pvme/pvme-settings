@@ -7263,6 +7263,20 @@
           "server": "1"
         },
         {
+          "name": "Overcharge",
+          "emoji_name": "overcharge",
+          "emoji_id": "1344313901189431296",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Overpowering Force",
+          "emoji_name": "overpoweringforce",
+          "emoji_id": "1344313902808174712",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "Piety",
           "emoji_name": "piety",
           "emoji_id": "1215399597581533264",
@@ -7340,6 +7354,13 @@
           "emoji_id": "583429936606347280",
           "aliases": [],
           "server": "19"
+        },
+        {
+          "name": "Ultimate Strength",
+          "emoji_name": "ultimatestrength",
+          "emoji_id": "1344313898068738151",
+          "aliases": [],
+          "server": "42"
         },
         {
           "name": "Wrath",
