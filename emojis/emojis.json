@@ -983,6 +983,13 @@
           "server": "3"
         },
         {
+          "name": "Time rune",
+          "emoji_name": "timerune",
+          "emoji_id": "1356369700694523954",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Water rune",
           "emoji_name": "waterrune",
           "emoji_id": "536252660165115905",
@@ -1450,6 +1457,13 @@
           ],
           "server": "1"
         },
+        {
+          "name": "Crumble Undead",
+          "emoji_name": "crumbleundead",
+          "emoji_id": "1351696446646390824",
+          "aliases": [],
+          "server": "42"
+        },        
         {
           "name": "Crystal Mask",
           "emoji_name": "crystalmask",
@@ -5647,6 +5661,20 @@
           "server": "20"
         },
         {
+          "name": "Constitution cape",
+          "emoji_name": "hpcape",
+          "emoji_id": "1286789844533641217",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Construction cape",
+          "emoji_name": "constructioncape",
+          "emoji_id": "1286789846291058809",
+          "aliases": [],
+          "server": "42"
+        },         
+        {
           "name": "Crystal hatchet",
           "emoji_name": "crystalhatchet",
           "emoji_id": "1097515676505227274",
@@ -5655,6 +5683,13 @@
           ],
           "server": "37"
         },
+        {
+          "name": "Crystal skillchompa",
+          "emoji_name": "crystalskillchompa",
+          "emoji_id": "1286710321142169641",
+          "aliases": [],
+          "server": "42"
+        },        
         {
           "name": "Defence master cape",
           "emoji_name": "defencecape",
@@ -5897,6 +5932,13 @@
           "aliases": [],
           "server": "14"
         },
+        {
+          "name": "Rock-crushing scrimshaw",
+          "emoji_name": "rockcrushingscrim",
+          "emoji_id": "1286709052755148862",
+          "aliases": [],
+          "server": "42"
+        },        
         {
           "name": "Sana's fyrtorch",
           "emoji_name": "sanasfyrtorch",
@@ -12315,6 +12357,13 @@
           "aliases": [],
           "server": "35"
         },
+        {
+          "name": "North-western Anachronia Teleport",
+          "emoji_name": "nwanachronia",
+          "emoji_id": "1354420110772928512",
+          "aliases": [],
+          "server": "42"
+        },        
         {
           "name": "War's Retreat Teleport",
           "emoji_name": "warsretreatteleport",
