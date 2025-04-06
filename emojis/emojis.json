@@ -1913,6 +1913,13 @@
           "server": "26"
         },
         {
+          "name": "Temporal Anomaly",
+          "emoji_name": "temporalanomaly",
+          "emoji_id": "1357545000577011782",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "Tsunami",
           "emoji_name": "tsunami",
           "emoji_id": "535533809995874304",
