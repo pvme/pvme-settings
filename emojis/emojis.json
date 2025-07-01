@@ -7391,6 +7391,13 @@
           "server": "20"
         },
         {
+          "name": "Steel Skin",
+          "emoji_name": "steelskin",
+          "emoji_id": "1365820216545902642",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "Torment",
           "emoji_name": "torment",
           "emoji_id": "583429936958930964",
@@ -8244,6 +8251,15 @@
             "burialpowder"
           ],
           "server": "31"
+        },
+        {
+          "name": "Powder of defence",
+          "emoji_name": "powderofdefence",
+          "emoji_id": "1383112489092382810",
+          "aliases": [
+            "defencepowder"
+          ],
+          "server": "42"
         },
         {
           "name": "Powder of item protection",
@@ -12356,6 +12372,13 @@
           "emoji_id": "1032552311429529661",
           "aliases": [],
           "server": "35"
+        },
+        {
+          "name": "Eastern Anachronia Teleport",
+          "emoji_name": "easternanachronia",
+          "emoji_id": "1387839803818512516",
+          "aliases": [],
+          "server": "42"
         },
         {
           "name": "Home teleport",
