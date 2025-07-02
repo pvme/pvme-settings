@@ -783,6 +783,13 @@
           "server": "25"
         },
         {
+          "name": "Masterwork staff",
+          "emoji_name": "masterworkstaff",
+          "emoji_id": "1359114222398603365",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "Merciless kiteshield",
           "emoji_name": "merciless",
           "emoji_id": "1102553021457645579",
@@ -2550,6 +2557,13 @@
           "aliases": [],
           "server": "8"
         },
+        {
+          "name": "Masterwork bow",
+          "emoji_name": "masterworkbow",
+          "emoji_id": "1359114183186321575",
+          "aliases": [],
+          "server": "42"
+        },        
         {
           "name": "Mechanised chinchompa",
           "emoji_name": "mechchin",
@@ -6894,6 +6908,13 @@
           "emoji_id": "513190159462825984",
           "aliases": [],
           "server": "1"
+        },
+        {
+          "name": "Ring of retribution",
+          "emoji_name": "ringofretribution",
+          "emoji_id": "1387866560210931722",
+          "aliases": [],
+          "server": "42"
         },
         {
           "name": "Ring of stone",
@@ -14589,6 +14610,13 @@
       "emoji_id": "580177522726273024",
       "aliases": [],
       "server": "5"
+    },
+    {
+      "name": "Soulbound lantern (Barrows)",
+      "emoji_name": "barrowssoulbound",
+      "emoji_id": "1365390498369372230",
+      "aliases": [],
+      "server": "42"
     },
     {
       "name": "3acore",
