@@ -783,6 +783,41 @@
           "server": "25"
         },
         {
+          "name": "Masterwork magic boots",
+          "emoji_name": "mwmboots",
+          "emoji_id": "1388314910311841862",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Masterwork magic gloves",
+          "emoji_name": "mwmgloves",
+          "emoji_id": "1388314905085477057",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Masterwork magic hat",
+          "emoji_name": "mwmhat",
+          "emoji_id": "1388314911742099576",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Masterwork magic robe bottom",
+          "emoji_name": "mwmrobebottom",
+          "emoji_id": "1388314906671059015",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Masterwork magic robe top",
+          "emoji_name": "mwmrobetop",
+          "emoji_id": "1388314908638183514",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "Masterwork staff",
           "emoji_name": "masterworkstaff",
           "emoji_id": "1359114222398603365",
