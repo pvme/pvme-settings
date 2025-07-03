@@ -345,7 +345,7 @@
         },
         {
           "name": "Blast diffusion boots",
-          "emoji_name": "detoboots",
+          "emoji_name": "blastdiffusion",
           "emoji_id": "602581956072439828",
           "aliases": [],
           "server": "20"
@@ -3681,11 +3681,9 @@
         },
         {
           "name": "Ek-ZekKil",
-          "emoji_name": "zekkil",
+          "emoji_name": "ezk",
           "emoji_id": "903244090953588787",
-          "aliases": [
-            "ezk"
-          ],
+          "aliases": [],
           "server": "28"
         },
         {
@@ -6257,11 +6255,12 @@
         },
         {
           "name": "Natural instinct",
-          "emoji_name": "nat",
+          "emoji_name": "naturalinstinct",
           "emoji_id": "535541258131865633",
           "aliases": [
-            "natinstinct",
-            "natty"
+            "natinstinct,
+            "natty",
+            "nat"
           ],
           "server": "17"
         },
@@ -6742,7 +6741,7 @@
           "server": "2"
         },
         {
-          "name": "Ek-ZekKil EoF",
+          "name": "Essence of Finality amulet (or)",
           "emoji_name": "eofor",
           "emoji_id": "745279787471470713",
           "aliases": [],
@@ -6791,7 +6790,7 @@
           "server": "41"
         },
         {
-          "name": "Armadyl battlestaff EoF",
+          "name": "Essence of Finality amulet (red)",
           "emoji_name": "eofredu",
           "emoji_id": "1260022281229434951",
           "aliases": [],
@@ -8345,17 +8344,23 @@
           "server": "29"
         },
         {
-          "name": "Powerburst of Acceleration",
-          "emoji_name": "accel",
+          "name": "Powerburst of acceleration",
+          "emoji_name": "powerburstofacceleration",
           "emoji_id": "756236265472524418",
-          "aliases": [],
+          "aliases": [
+            "accel",
+            "accelpot"
+          ],
           "server": "10"
         },
         {
           "name": "Powerburst of masterstroke",
-          "emoji_name": "masterstroke",
+          "emoji_name": "powerburstofmasterstroke",
           "emoji_id": "651849969338286096",
-          "aliases": [],
+          "aliases": [
+            "masterstroke",
+            "masterstrokepot"
+          ],
           "server": "20"
         },
         {
@@ -8367,9 +8372,13 @@
         },
         {
           "name": "Powerburst of vitality",
-          "emoji_name": "vitality",
+          "emoji_name": "powerburstofvitality",
           "emoji_id": "654618235097972737",
-          "aliases": [],
+          "aliases": [
+            "vitality",
+            "vitpot",
+            "vit"
+          ],
           "server": "20"
         },
         {
@@ -13380,10 +13389,12 @@
           "server": "15"
         },
         {
-          "name": "Ascension Keystone Primus",
-          "emoji_name": "keystoneprimus",
+          "name": "Ascension Keystone",
+          "emoji_name": "ascensionkeystone",
           "emoji_id": "1161265528057380904",
-          "aliases": [],
+          "aliases": [
+            "keystone"
+          ],
           "server": "40"
         },
         {
