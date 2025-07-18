@@ -958,7 +958,9 @@
           "name": "Roar of Awakening",
           "emoji_name": "roarofawakening",
           "emoji_id": "1266417538045317121",
-          "aliases": [],
+          "aliases": [
+            "roa"
+          ],
           "server": "41"
         },        
         {
@@ -4435,7 +4437,9 @@
           "name": "Chaos Roar",
           "emoji_name": "chaosroar",
           "emoji_id": "994644356671737966",
-          "aliases": [],
+          "aliases": [
+            "croar"
+          ],
           "server": "31"
         },
         {
