@@ -958,7 +958,9 @@
           "name": "Roar of Awakening",
           "emoji_name": "roarofawakening",
           "emoji_id": "1266417538045317121",
-          "aliases": [],
+          "aliases": [
+            "roa"
+          ],
           "server": "41"
         },        
         {
@@ -4435,7 +4437,9 @@
           "name": "Chaos Roar",
           "emoji_name": "chaosroar",
           "emoji_id": "994644356671737966",
-          "aliases": [],
+          "aliases": [
+            "croar"
+          ],
           "server": "31"
         },
         {
@@ -5349,7 +5353,8 @@
           "emoji_id": "1176968330582700174",
           "aliases": [
             "invbones",
-            "invokebones"
+            "invokebones",
+            "lob"
           ],
           "server": "6"
         },
@@ -7535,7 +7540,8 @@
           "emoji_name": "adrenrenewal",
           "emoji_id": "736298121704767538",
           "aliases": [
-            "adrenalinerenewal"
+            "adrenalinerenewal",
+            "arenewal"
           ],
           "server": "20"
         },
@@ -7544,7 +7550,8 @@
           "emoji_name": "adrenrenewalflask",
           "emoji_id": "736298313980182541",
           "aliases": [
-            "adrenalinerenewalflask"
+            "adrenalinerenewalflask",
+            "arenewalflask"
           ],
           "server": "10"
         },
