@@ -345,7 +345,7 @@
         },
         {
           "name": "Blast diffusion boots",
-          "emoji_name": "detoboots",
+          "emoji_name": "blastdiffusion",
           "emoji_id": "602581956072439828",
           "aliases": [],
           "server": "20"
@@ -781,6 +781,48 @@
           "emoji_id": "690848914949144616",
           "aliases": [],
           "server": "25"
+        },
+        {
+          "name": "Masterwork magic boots",
+          "emoji_name": "mwmboots",
+          "emoji_id": "1388314910311841862",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Masterwork magic gloves",
+          "emoji_name": "mwmgloves",
+          "emoji_id": "1388314905085477057",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Masterwork magic hat",
+          "emoji_name": "mwmhat",
+          "emoji_id": "1388314911742099576",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Masterwork magic robe bottom",
+          "emoji_name": "mwmrobebottom",
+          "emoji_id": "1388314906671059015",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Masterwork magic robe top",
+          "emoji_name": "mwmrobetop",
+          "emoji_id": "1388314908638183514",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Masterwork staff",
+          "emoji_name": "masterworkstaff",
+          "emoji_id": "1359114222398603365",
+          "aliases": [],
+          "server": "42"
         },
         {
           "name": "Merciless kiteshield",
@@ -2553,6 +2595,13 @@
           "server": "8"
         },
         {
+          "name": "Masterwork bow",
+          "emoji_name": "masterworkbow",
+          "emoji_id": "1359114183186321575",
+          "aliases": [],
+          "server": "42"
+        },        
+        {
           "name": "Mechanised chinchompa",
           "emoji_name": "mechchin",
           "emoji_id": "641669268722810881",
@@ -3634,11 +3683,9 @@
         },
         {
           "name": "Ek-ZekKil",
-          "emoji_name": "zekkil",
+          "emoji_name": "ezk",
           "emoji_id": "903244090953588787",
-          "aliases": [
-            "ezk"
-          ],
+          "aliases": [],
           "server": "28"
         },
         {
@@ -6213,11 +6260,12 @@
         },
         {
           "name": "Natural instinct",
-          "emoji_name": "nat",
+          "emoji_name": "naturalinstinct",
           "emoji_id": "535541258131865633",
           "aliases": [
             "natinstinct",
-            "natty"
+            "natty",
+            "nat"
           ],
           "server": "17"
         },
@@ -6698,7 +6746,7 @@
           "server": "2"
         },
         {
-          "name": "Ek-ZekKil EoF",
+          "name": "Essence of Finality amulet (or)",
           "emoji_name": "eofor",
           "emoji_id": "745279787471470713",
           "aliases": [],
@@ -6747,7 +6795,7 @@
           "server": "41"
         },
         {
-          "name": "Armadyl battlestaff EoF",
+          "name": "Essence of Finality amulet (red)",
           "emoji_name": "eofredu",
           "emoji_id": "1260022281229434951",
           "aliases": [],
@@ -6899,6 +6947,13 @@
           "emoji_id": "513190159462825984",
           "aliases": [],
           "server": "1"
+        },
+        {
+          "name": "Ring of retribution",
+          "emoji_name": "ringofretribution",
+          "emoji_id": "1387866560210931722",
+          "aliases": [],
+          "server": "42"
         },
         {
           "name": "Ring of stone",
@@ -7394,6 +7449,13 @@
           "emoji_id": "615613924506599497",
           "aliases": [],
           "server": "20"
+        },
+        {
+          "name": "Steel Skin",
+          "emoji_name": "steelskin",
+          "emoji_id": "1365820216545902642",
+          "aliases": [],
+          "server": "42"
         },
         {
           "name": "Torment",
@@ -8253,6 +8315,15 @@
           "server": "31"
         },
         {
+          "name": "Powder of defence",
+          "emoji_name": "powderofdefence",
+          "emoji_id": "1383112489092382810",
+          "aliases": [
+            "defencepowder"
+          ],
+          "server": "42"
+        },
+        {
           "name": "Powder of item protection",
           "emoji_name": "powderofitemprotection",
           "emoji_id": "1043953716908269598",
@@ -8280,17 +8351,23 @@
           "server": "29"
         },
         {
-          "name": "Powerburst of Acceleration",
-          "emoji_name": "accel",
+          "name": "Powerburst of acceleration",
+          "emoji_name": "powerburstofacceleration",
           "emoji_id": "756236265472524418",
-          "aliases": [],
+          "aliases": [
+            "accel",
+            "accelpot"
+          ],
           "server": "10"
         },
         {
           "name": "Powerburst of masterstroke",
-          "emoji_name": "masterstroke",
+          "emoji_name": "powerburstofmasterstroke",
           "emoji_id": "651849969338286096",
-          "aliases": [],
+          "aliases": [
+            "masterstroke",
+            "masterstrokepot"
+          ],
           "server": "20"
         },
         {
@@ -8302,9 +8379,13 @@
         },
         {
           "name": "Powerburst of vitality",
-          "emoji_name": "vitality",
+          "emoji_name": "powerburstofvitality",
           "emoji_id": "654618235097972737",
-          "aliases": [],
+          "aliases": [
+            "vitality",
+            "vitpot",
+            "vit"
+          ],
           "server": "20"
         },
         {
@@ -12365,6 +12446,13 @@
           "server": "35"
         },
         {
+          "name": "Eastern Anachronia Teleport",
+          "emoji_name": "easternanachronia",
+          "emoji_id": "1387839803818512516",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "Home teleport",
           "emoji_name": "hometeleport",
           "emoji_id": "1032540077764653076",
@@ -13308,10 +13396,12 @@
           "server": "15"
         },
         {
-          "name": "Ascension Keystone Primus",
-          "emoji_name": "keystoneprimus",
+          "name": "Ascension Keystone",
+          "emoji_name": "ascensionkeystone",
           "emoji_id": "1161265528057380904",
-          "aliases": [],
+          "aliases": [
+            "keystone"
+          ],
           "server": "40"
         },
         {
@@ -14573,6 +14663,13 @@
       "emoji_id": "580177522726273024",
       "aliases": [],
       "server": "5"
+    },
+    {
+      "name": "Soulbound lantern (Barrows)",
+      "emoji_name": "barrowssoulbound",
+      "emoji_id": "1365390498369372230",
+      "aliases": [],
+      "server": "42"
     },
     {
       "name": "3acore",
