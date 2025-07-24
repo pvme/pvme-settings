@@ -1497,7 +1497,8 @@
           "emoji_name": "corruptblast",
           "emoji_id": "513190159194259467",
           "aliases": [
-            "corrblast"
+            "corrblast",
+            "cblast"
           ],
           "server": "1"
         },
@@ -1838,7 +1839,9 @@
           "name": "Smoke cloud",
           "emoji_name": "smokecloud",
           "emoji_id": "856635090641879050",
-          "aliases": [],
+          "aliases": [
+            "sc"
+          ],
           "server": "9"
         },
         {
@@ -2503,7 +2506,9 @@
           "name": "Ful arrows",
           "emoji_name": "fularrow",
           "emoji_id": "971025696958853180",
-          "aliases": [],
+          "aliases": [
+            "ful"
+          ],
           "server": "30"
         },
         {
@@ -2938,7 +2943,9 @@
           "name": "Wen arrows",
           "emoji_name": "wenarrow",
           "emoji_id": "971025697046925362",
-          "aliases": [],
+          "aliases": [
+            "wen"
+          ],
           "server": "30"
         },
         {
@@ -3006,7 +3013,8 @@
           "emoji_name": "corruptshot",
           "emoji_id": "535541306294796299",
           "aliases": [
-            "corrshot"
+            "corrshot",
+            "cshot"
           ],
           "server": "17"
         },
@@ -3109,7 +3117,8 @@
           "emoji_name": "gdeathsswift",
           "emoji_id": "994644354536837121",
           "aliases": [
-            "greaterdeathsswift"
+            "greaterdeathsswift",
+            "gswift"
           ],
           "server": "31"
         },
@@ -5290,7 +5299,9 @@
           "name": "Death Skulls",
           "emoji_name": "deathskulls",
           "emoji_id": "1159434663903899728",
-          "aliases": [],
+          "aliases": [
+            "skulls"
+          ],
           "server": "39"
         },
         {
