@@ -1497,7 +1497,7 @@
           "emoji_name": "corruptblast",
           "emoji_id": "513190159194259467",
           "aliases": [
-            "corrblast"
+            "corrblast",
             "cblast"
           ],
           "server": "1"
@@ -3013,7 +3013,7 @@
           "emoji_name": "corruptshot",
           "emoji_id": "535541306294796299",
           "aliases": [
-            "corrshot"
+            "corrshot",
             "cshot"
           ],
           "server": "17"
@@ -3117,7 +3117,7 @@
           "emoji_name": "gdeathsswift",
           "emoji_id": "994644354536837121",
           "aliases": [
-            "greaterdeathsswift"
+            "greaterdeathsswift",
             "gswift"
           ],
           "server": "31"
