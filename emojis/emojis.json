@@ -1605,7 +1605,10 @@
           "name": "Greater chain caroming",
           "emoji_name": "gchaincaroming",
           "emoji_id": "867678153882861568",
-          "aliases": [],
+          "aliases": [
+            "cgchain",
+            "carominggchain"
+          ],
           "server": "26"
         },
         {
@@ -3134,7 +3137,8 @@
           "emoji_name": "gricocaroming",
           "emoji_id": "867678153966878740",
           "aliases": [
-            "carominggrico"
+            "carominggrico",
+            "cgrico"
           ],
           "server": "26"
         },
