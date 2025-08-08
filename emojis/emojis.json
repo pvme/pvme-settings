@@ -5047,7 +5047,8 @@
           "emoji_name": "deathguard90",
           "emoji_id": "1138809243143766118",
           "aliases": [
-            "t90deathguard"
+            "t90deathguard",
+            "deathguard"
           ],
           "server": "40"
         },
@@ -5405,7 +5406,8 @@
           "emoji_name": "invokedeath",
           "emoji_id": "1137809121983336548",
           "aliases": [
-            "invdeath"
+            "invdeath",
+            "invoke"
           ],
           "server": "39"
         },
