@@ -5528,7 +5528,8 @@
           "emoji_name": "spectralscythe",
           "emoji_id": "1137809145706319892",
           "aliases": [
-            "specscythe"
+            "specscythe",
+            "scythe1"
           ],
           "server": "39"
         },
@@ -5537,7 +5538,8 @@
           "emoji_name": "spectralscythe2",
           "emoji_id": "1137809149690916945",
           "aliases": [
-            "specscythe2"
+            "specscythe2",
+            "scythe2"
           ],
           "server": "39"
         },
@@ -5546,7 +5548,8 @@
           "emoji_name": "spectralscythe3",
           "emoji_id": "1137809152043925505",
           "aliases": [
-            "specscythe3"
+            "specscythe3",
+            "scythe3"
           ],
           "server": "39"
         },
@@ -5591,7 +5594,8 @@
           "emoji_name": "threadsoffate",
           "emoji_id": "1137809172335951933",
           "aliases": [
-            "tof"
+            "tof",
+            "threads"
           ],
           "server": "39"
         },
