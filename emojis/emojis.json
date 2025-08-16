@@ -1264,6 +1264,40 @@
           "server": "8"
         },
         {
+          "name": "Mask of Tumeken's resplendence",
+          "emoji_name": "tumekenmask",
+          "emoji_id": "1400500771987918940",
+          "aliases": [],
+          "server": "43"
+        },
+        {
+          "name": "Robe top of Tumeken's resplendence",
+          "emoji_name": "tumekenrobetop",
+          "emoji_id": "1400500746377625790",
+          "aliases": [],
+          "server": "43"
+        },
+        {
+          "name": "Robe bottom of Tumeken's resplendence",
+          "emoji_name": "tumekenrobebottom",
+          "emoji_id": "1400500691772112956",
+          "aliases": [],
+          "server": "43"
+        },
+        {
+          "name": "Gloves of Tumeken's resplendence",
+          "emoji_name": "tumekengloves",
+          "emoji_id": "1400500717701042267",
+          "aliases": [],
+          "server": "43"
+        },
+          "name": "Boots of Tumeken's resplendence",
+          "emoji_name": "tumekenboots",
+          "emoji_id": "1400500655986184335",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Virtus book",
           "emoji_name": "vbook",
           "emoji_id": "656785078160195615",
