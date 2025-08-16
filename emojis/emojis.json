@@ -5005,6 +5005,13 @@
           ],
           "server": "14"
         },
+        {
+          "name": "The Devourer's Nexus",
+          "emoji_name": "devourersnexus",
+          "emoji_id": "1400511690281320498",
+          "aliases": [],
+          "server": "20"
+        },
        {
          "name": "Zemouregal's nexus",
          "emoji_name": "zemouregalsnexus",
@@ -5121,6 +5128,13 @@
             "occulistsring"
           ],
           "server": "41"
+        },
+        {
+          "name": "Devourer's Guard",
+          "emoji_name": "devourersguard",
+          "emoji_id": "1400511720455143539",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Omni guard",
