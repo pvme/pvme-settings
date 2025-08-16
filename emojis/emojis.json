@@ -4297,6 +4297,13 @@
           "server": "2"
         },
         {
+          "name": "Tumeken's Light",
+          "emoji_name": "tumekenslight",
+          "emoji_id": "1400511651014250596",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Verac's brassard",
           "emoji_name": "veracbody",
           "emoji_id": "854475442190549042",
