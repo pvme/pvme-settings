@@ -12829,7 +12829,7 @@
           "server": "8"
         },
         {
-          "name": "Apmeken's Burden",
+          "name": "Apmeken's Burden (status)",
           "emoji_name": "apmekensburden",
           "emoji_id": "1402579857648390224",
           "aliases": [],
@@ -13484,6 +13484,13 @@
             "instantkill"
           ],
           "server": "38"
+        },
+        {
+          "name": "Interceptor (status)",
+          "emoji_name": "interceptor",
+          "emoji_id": "1402585098527965275",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Ironman",
