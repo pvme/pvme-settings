@@ -10146,6 +10146,13 @@
       "name": "Boss/NPCs",
       "emojis": [
         {
+          "name": "Amascut's head",
+          "emoji_name": "amascuthead",
+          "emoji_id": "1400943309576470589",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Ambassador",
           "emoji_name": "ambassador",
           "emoji_id": "583430542809235458",
@@ -12822,6 +12829,13 @@
           "server": "8"
         },
         {
+          "name": "Apmeken's Burden",
+          "emoji_name": "apmekensburden",
+          "emoji_id": "1402579857648390224",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Archaeology",
           "emoji_name": "archaeology",
           "emoji_id": "941211288665739274",
@@ -12997,6 +13011,13 @@
           "emoji_id": "1037460757505384518",
           "aliases": [],
           "server": "35"
+        },
+        {
+          "name": "Carapace (status)",
+          "emoji_name": "carapace",
+          "emoji_id": "1402585081624924210",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Chi",
