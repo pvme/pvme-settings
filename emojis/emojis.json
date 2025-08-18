@@ -1264,6 +1264,41 @@
           "server": "8"
         },
         {
+          "name": "Mask of Tumeken's resplendence",
+          "emoji_name": "tumekenmask",
+          "emoji_id": "1400500771987918940",
+          "aliases": [],
+          "server": "43"
+        },
+        {
+          "name": "Robe top of Tumeken's resplendence",
+          "emoji_name": "tumekenrobetop",
+          "emoji_id": "1400500746377625790",
+          "aliases": [],
+          "server": "43"
+        },
+        {
+          "name": "Robe bottom of Tumeken's resplendence",
+          "emoji_name": "tumekenrobebottom",
+          "emoji_id": "1400500691772112956",
+          "aliases": [],
+          "server": "43"
+        },
+        {
+          "name": "Gloves of Tumeken's resplendence",
+          "emoji_name": "tumekengloves",
+          "emoji_id": "1400500717701042267",
+          "aliases": [],
+          "server": "43"
+        },
+        {
+          "name": "Boots of Tumeken's resplendence",
+          "emoji_name": "tumekenboots",
+          "emoji_id": "1400500655986184335",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Virtus book",
           "emoji_name": "vbook",
           "emoji_id": "656785078160195615",
@@ -1637,6 +1672,13 @@
           "emoji_id": "567727985851891715",
           "aliases": [],
           "server": "16"
+        },
+        {
+          "name": "Heal Group",
+          "emoji_name": "healgroup",
+          "emoji_id": "1404462300722626642",
+          "aliases": [],
+          "server": "42"
         },
         {
           "name": "High Level Alchemy",
@@ -4297,6 +4339,13 @@
           "server": "2"
         },
         {
+          "name": "Tumeken's Light",
+          "emoji_name": "tumekenslight",
+          "emoji_id": "1400511651014250596",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Verac's brassard",
           "emoji_name": "veracbody",
           "emoji_id": "854475442190549042",
@@ -5005,6 +5054,13 @@
           ],
           "server": "14"
         },
+        {
+          "name": "The Devourer's Nexus",
+          "emoji_name": "devourersnexus",
+          "emoji_id": "1400511690281320498",
+          "aliases": [],
+          "server": "43"
+        },
        {
          "name": "Zemouregal's nexus",
          "emoji_name": "zemouregalsnexus",
@@ -5121,6 +5177,13 @@
             "occulistsring"
           ],
           "server": "41"
+        },
+        {
+          "name": "Devourer's Guard",
+          "emoji_name": "devourersguard",
+          "emoji_id": "1400511720455143539",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Omni guard",
@@ -7384,6 +7447,34 @@
           "emoji_id": "537341748180025365",
           "aliases": [],
           "server": "17"
+        },
+        {
+          "name": "Leech Magic Strength",
+          "emoji_name": "leechmagicstrength",
+          "emoji_id": "1392980672980975717",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Leech Melee Strength",
+          "emoji_name": "leechmeleestrength",
+          "emoji_id": "1392980732602875914",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Leech Necromancy Strength",
+          "emoji_name": "leechnecromancystrength",
+          "emoji_id": "1392985027201208350",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Leech Ranged Strength",
+          "emoji_name": "leechrangedstrength",
+          "emoji_id": "1392980767050567742",
+          "aliases": [],
+          "server": "42"
         },
         {
           "name": "Malevolence",
@@ -10091,6 +10182,13 @@
       "name": "Boss/NPCs",
       "emojis": [
         {
+          "name": "Amascut's head",
+          "emoji_name": "amascuthead",
+          "emoji_id": "1400943309576470589",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Ambassador",
           "emoji_name": "ambassador",
           "emoji_id": "583430542809235458",
@@ -12767,6 +12865,13 @@
           "server": "8"
         },
         {
+          "name": "Apmeken's Burden (status)",
+          "emoji_name": "apmekensburden",
+          "emoji_id": "1402579857648390224",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Archaeology",
           "emoji_name": "archaeology",
           "emoji_id": "941211288665739274",
@@ -12944,6 +13049,13 @@
           "server": "35"
         },
         {
+          "name": "Carapace (status)",
+          "emoji_name": "carapace",
+          "emoji_id": "1402585081624924210",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Chi",
           "emoji_name": "portschi",
           "emoji_id": "1039863287099174912",
@@ -13005,6 +13117,13 @@
           "emoji_id": "854335415523868723",
           "aliases": [],
           "server": "13"
+        },
+        {
+          "name": "Corruption (status)",
+          "emoji_name": "corruption",
+          "emoji_id": "1402610315480535050",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Crit buff",
@@ -13185,6 +13304,13 @@
           "server": "27"
         },
         {
+          "name": "Flamebound Rival",
+          "emoji_name": "flameboundrival",
+          "emoji_id": "1404885709034229922",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "Fletching",
           "emoji_name": "fletching",
           "emoji_id": "1039864817881722960",
@@ -13299,6 +13425,13 @@
           "server": "8"
         },
         {
+          "name": "Healing in Strength (status)",
+          "emoji_name": "healinginstrength",
+          "emoji_id": "1402585055297273896",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Herblore",
           "emoji_name": "herblore",
           "emoji_id": "689554435583508558",
@@ -13408,6 +13541,13 @@
             "instantkill"
           ],
           "server": "38"
+        },
+        {
+          "name": "Interceptor (status)",
+          "emoji_name": "interceptor",
+          "emoji_id": "1402585098527965275",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Ironman",
@@ -13544,6 +13684,13 @@
             "farmerhat"
           ],
           "server": "37"
+        },
+        {
+          "name": "Modesty (status)",
+          "emoji_name": "modesty",
+          "emoji_id": "1402583151322071091",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Miner's journal",
@@ -13876,6 +14023,13 @@
           "emoji_id": "994206062498549780",
           "aliases": [],
           "server": "31"
+        },
+        {
+          "name": "Shadow Link (status)",
+          "emoji_name": "shadowlink",
+          "emoji_id": "1403076345084379337",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Slayer Codex",
