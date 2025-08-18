@@ -1673,6 +1673,13 @@
           "server": "16"
         },
         {
+          "name": "Heal Group",
+          "emoji_name": "healgroup",
+          "emoji_id": "1404462300722626642",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "High Level Alchemy",
           "emoji_name": "highalch",
           "emoji_id": "937093290631786496",
@@ -7441,6 +7448,34 @@
           "server": "17"
         },
         {
+          "name": "Leech Magic Strength",
+          "emoji_name": "leechmagicstrength",
+          "emoji_id": "1392980672980975717",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Leech Melee Strength",
+          "emoji_name": "leechmeleestrength",
+          "emoji_id": "1392980732602875914",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Leech Necromancy Strength",
+          "emoji_name": "leechnecromancystrength",
+          "emoji_id": "1392985027201208350",
+          "aliases": [],
+          "server": "42"
+        },
+        {
+          "name": "Leech Ranged Strength",
+          "emoji_name": "leechrangedstrength",
+          "emoji_id": "1392980767050567742",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "Malevolence",
           "emoji_name": "malevolence",
           "emoji_id": "513190159416557573",
@@ -13083,6 +13118,13 @@
           "server": "13"
         },
         {
+          "name": "Corruption (status)",
+          "emoji_name": "corruption",
+          "emoji_id": "1402610315480535050",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Crit buff",
           "emoji_name": "critbuff",
           "emoji_id": "1279516151423963166",
@@ -13261,6 +13303,13 @@
           "server": "27"
         },
         {
+          "name": "Flamebound Rival",
+          "emoji_name": "flameboundrival",
+          "emoji_id": "1404885709034229922",
+          "aliases": [],
+          "server": "42"
+        },
+        {
           "name": "Fletching",
           "emoji_name": "fletching",
           "emoji_id": "1039864817881722960",
@@ -13373,6 +13422,13 @@
           "emoji_id": "1006128087555133520",
           "aliases": [],
           "server": "8"
+        },
+        {
+          "name": "Healing in Strength (status)",
+          "emoji_name": "healinginstrength",
+          "emoji_id": "1402585055297273896",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Herblore",
@@ -13627,6 +13683,13 @@
             "farmerhat"
           ],
           "server": "37"
+        },
+        {
+          "name": "Modesty (status)",
+          "emoji_name": "modesty",
+          "emoji_id": "1402583151322071091",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Miner's journal",
@@ -13959,6 +14022,13 @@
           "emoji_id": "994206062498549780",
           "aliases": [],
           "server": "31"
+        },
+        {
+          "name": "Shadow Link (status)",
+          "emoji_name": "shadowlink",
+          "emoji_id": "1403076345084379337",
+          "aliases": [],
+          "server": "43"
         },
         {
           "name": "Slayer Codex",
