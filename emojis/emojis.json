@@ -167,6 +167,10 @@
     {
       "server": "42",
       "url": "https://discord.gg/dtqQdvVeQK"
+    },
+    {
+      "server": "43",
+      "url": "https://discord.gg/wrwXwPNPXg"
     }    
   ],
   "categories": [
@@ -2564,6 +2568,13 @@
           "server": "9"
         },
         {
+          "name": "Gloomfire bow",
+          "emoji_name": "gloomfirebow",
+          "emoji_id": "1446178203608809472",
+          "aliases": [],
+          "server": "43"
+        },        
+        {
           "name": "Hexhunter bow",
           "emoji_name": "hexhunterbow",
           "emoji_id": "581180369911414794",
@@ -4864,6 +4875,15 @@
           ],
           "server": "40"
         },
+        {
+          "name": "Visage of the First Necromancer",
+          "emoji_name": "visageofthefirstnecromancer",
+          "emoji_id": "1446178019159838720",
+          "aliases": [
+            "necrovisage"
+          ],
+          "server": "43"
+        },        
         {
           "name": "Crown of the First Necromancer",
           "emoji_name": "firstnecrocrown",
