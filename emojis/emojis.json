@@ -6729,12 +6729,19 @@
       "name": "Jewellery",
       "emojis": [
         {
+          "name": "Am-hej",
+          "emoji_name": "amhej",
+          "emoji_id": "1448070604937891921",
+          "aliases": [],
+          "server": "43"
+        },
+        {
           "name": "Amulet of the forsaken",
           "emoji_name": "amuletoftheforsaken",
           "emoji_id": "855865893934334012",
           "aliases": [],
           "server": "12"
-        },
+        },        
         {
           "name": "Amulet of souls (or)",
           "emoji_name": "aosor",
