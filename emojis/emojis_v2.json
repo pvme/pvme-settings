@@ -1,4 +1,178 @@
 {
+  "servers": [
+    {
+      "server": "1",
+      "url": "https://discord.gg/4zPux5ZYPR"
+    },
+    {
+      "server": "2",
+      "url": "https://discord.gg/yF6qEghN8g"
+    },
+    {
+      "server": "3",
+      "url": "https://discord.gg/hZ32VCNXZq"
+    },
+    {
+      "server": "4",
+      "url": "https://discord.gg/RQK3RYhjE2"
+    },
+    {
+      "server": "5",
+      "url": "https://discord.gg/Z3b7f8ZuGf"
+    },
+    {
+      "server": "6",
+      "url": "https://discord.gg/grB6y4umcX"
+    },
+    {
+      "server": "7",
+      "url": "https://discord.gg/BjFNzcM8XV"
+    },
+    {
+      "server": "8",
+      "url": "https://discord.gg/Ahr3SSVaXu"
+    },
+    {
+      "server": "9",
+      "url": "https://discord.gg/Kxb2VHqUN4"
+    },
+    {
+      "server": "10",
+      "url": "https://discord.gg/7SFQU7qQSU"
+    },
+    {
+      "server": "11",
+      "url": "https://discord.gg/7zNDdyHnhG"
+    },
+    {
+      "server": "12",
+      "url": "https://discord.gg/rWm9zKMzws"
+    },
+    {
+      "server": "13",
+      "url": "https://discord.gg/ehRdc6EP2y"
+    },
+    {
+      "server": "14",
+      "url": "https://discord.gg/fmM2TbngUa"
+    },
+    {
+      "server": "15",
+      "url": "https://discord.gg/Bn9xy2TscX"
+    },
+    {
+      "server": "16",
+      "url": "https://discord.gg/sEmu2zFFsT"
+    },
+    {
+      "server": "17",
+      "url": "https://discord.gg/U8evchMGKY"
+    },
+    {
+      "server": "18",
+      "url": "https://discord.gg/juvwhufmjS"
+    },
+    {
+      "server": "19",
+      "url": "https://discord.gg/hrsd9nP7ac"
+    },
+    {
+      "server": "20",
+      "url": "https://discord.gg/j5tqGU5euu"
+    },
+    {
+      "server": "21",
+      "url": "https://discord.gg/aXuaA7D35u"
+    },
+    {
+      "server": "22",
+      "url": "https://discord.gg/shbW8vBUeb"
+    },
+    {
+      "server": "23",
+      "url": "https://discord.gg/TkcjaBUUFn"
+    },
+    {
+      "server": "24",
+      "url": "https://discord.gg/6pCsN8xVym"
+    },
+    {
+      "server": "25",
+      "url": "https://discord.gg/YvNqvTtPuN"
+    },
+    {
+      "server": "26",
+      "url": "https://discord.gg/Y6zm4yJWgE"
+    },
+    {
+      "server": "27",
+      "url": "https://discord.gg/rctWwxNshD"
+    },
+    {
+      "server": "28",
+      "url": "https://discord.gg/2hBZKznkVs"
+    },
+    {
+      "server": "29",
+      "url": "https://discord.gg/efK9udaPW5"
+    },
+    {
+      "server": "30",
+      "url": "https://discord.gg/YVmRdGvCJC"
+    },
+    {
+      "server": "31",
+      "url": "https://discord.gg/JJzF8Fzd5y"
+    },
+    {
+      "server": "32",
+      "url": "https://discord.gg/tVZpetvGcE"
+    },
+    {
+      "server": "33",
+      "url": "https://discord.gg/fJ4kYeywjG"
+    },
+    {
+      "server": "34",
+      "url": "https://discord.gg/5aHfVfZYBE"
+    },
+    {
+      "server": "35",
+      "url": "https://discord.gg/e97TWdBJtf"
+    },
+    {
+      "server": "36",
+      "url": "https://discord.gg/4gqknz65Q9"
+    },
+    {
+      "server": "37",
+      "url": "https://discord.gg/thJ5DEqtXc"
+    },
+    {
+      "server": "38",
+      "url": "https://discord.gg/4QWGjNS4DU"
+    },
+    {
+      "server": "39",
+      "url": "https://discord.gg/FHTfRCBwU2"
+    },
+    {
+      "server": "40",
+      "url": "https://discord.gg/s5RJtenWFE"
+    },
+    {
+      "server": "41",
+      "url": "https://discord.gg/tkCz7VbhDu"
+    },
+    {
+      "server": "42",
+      "url": "https://discord.gg/dtqQdvVeQK"
+    },
+    {
+      "server": "43",
+      "url": "https://discord.gg/wrwXwPNPXg"
+    }    
+  ],
   "categories": [
     {
       "name": "Magic Gear",
