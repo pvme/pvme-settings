@@ -17527,16 +17527,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Fellstalk incense sticks (stack of 100)",
-          "id": "fellstalksticks100",
-          "image": "nK9EU1V.png",
-          "preset_slot": 0,
-          "preset_type": "item",
-          "id_aliases": [
-            "fellstalkincensesticks100"
-          ]
-        },
-        {
           "name": "Fire orb",
           "id": "fireorb1noted",
           "image": "A6r373m.png",
@@ -18068,16 +18058,6 @@
           "image": "oQdFuSm.png",
           "preset_slot": 0,
           "preset_type": "item"
-        },
-        {
-          "name": "Irit incense sticks (stack of 100)",
-          "id": "iritsticks100",
-          "image": "oEYAJZf.png",
-          "preset_slot": 0,
-          "preset_type": "item",
-          "id_aliases": [
-            "iritincensesticks100"
-          ]
         },
         {
           "name": "Iron stone spirit",
@@ -20160,13 +20140,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Supreme overload salve (6)",
-          "id": "supremesalve",
-          "image": "HsYQ0qt.png",
-          "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
           "name": "Supreme ranging potion (6)",
           "id": "supremerangingpotion6",
           "image": "AkEN37H.png",
@@ -20282,13 +20255,6 @@
             "grimpagestack",
             "grimpage10"
           ]
-        },
-        {
-          "name": "Torstol incense sticks",
-          "id": "torstolincensesticks",
-          "image": "7JcYAKS.png",
-          "preset_slot": 0,
-          "preset_type": "item"
         },
         {
           "name": "Torstol potion (unfinished)",
@@ -21497,7 +21463,7 @@
         },
         {
           "name": "Shadow nihil",
-          "emoji_name": "shadownihil",
+          "id": "shadownihil",
           "emoji_id": "854475441946230855",
           "aliases": [],
           "server": "12",
@@ -21506,7 +21472,7 @@
         },
         {
           "name": "Smoke nihil",
-          "emoji_name": "smokenihil",
+          "id": "smokenihil",
           "emoji_id": "854475442227642388",
           "aliases": [],
           "server": "12",
@@ -21534,13 +21500,6 @@
           "emoji_server": "28",
           "image": "sxdlwRm.png",
           "preset_type": "relic"
-        },
-        {
-          "name": "Law rune (stack of 100)",
-          "id": "lawrune100",
-          "image": "MLCntzy.png",
-          "preset_type": "item",
-          "preset_slot": 0
         },
         {
           "name": "Black stone arrows (20)",
@@ -21626,13 +21585,6 @@
           "preset_slot": 0
         },
         {
-          "name": "Kwuarm incense sticks (stack)",
-          "id": "kwuarmsticks100",
-          "image": "ARLol7s.png",
-          "preset_type": "item",
-          "preset_slot": 0
-        },
-        {
           "name": "Lantadyme incense sticks (stack)",
           "id": "lantadymesticks100",
           "id_aliases": [
@@ -21675,13 +21627,6 @@
             "powderofprotection2"
           ],
           "image": "3SbxYpW.png",
-          "preset_type": "item",
-          "preset_slot": 0
-        },
-        {
-          "name": "Spirit weed incense sticks (stack)",
-          "id": "spiritsticks100",
-          "image": "YWaDJIE.png",
           "preset_type": "item",
           "preset_slot": 0
         },
