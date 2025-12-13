@@ -4357,6 +4357,13 @@
           "server": "43"
         },
         {
+          "name": "Varanus's Mercy",
+          "emoji_name": "varanussmercy",
+          "emoji_id": "1448697873603498045",
+          "aliases": [],
+          "server": "43"
+        },        
+        {
           "name": "Verac's brassard",
           "emoji_name": "veracbody",
           "emoji_id": "854475442190549042",
@@ -12313,6 +12320,13 @@
           "aliases": [],
           "server": "32"
         },
+        {
+          "name": "Nodon spike harness",
+          "emoji_name": "nodonspikeharness",
+          "emoji_id": "1449363594495135776",
+          "aliases": [],
+          "server": "43"
+        },        
         {
           "name": "Profane Scabarite",
           "emoji_name": "profanescabarite",
