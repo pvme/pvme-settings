@@ -4431,6 +4431,14 @@
           "emoji_server": "29"
         },
         {
+          "name": "Nodon spike harness",
+          "id": "nodonspikeharness",
+          "emoji_id": "1449363594495135776",
+          "emoji_server": "43",
+          "preset_slot": 9,
+          "preset_type": "item"
+        },        
+        {
           "name": "Noxious scythe",
           "id": "noxscythe",
           "id_aliases": [
@@ -4781,6 +4789,14 @@
           "preset_slot": 4,
           "preset_type": "item"
         },
+        {
+          "name": "Varanus's Mercy",
+          "id": "varanussmercy",
+          "emoji_id": "1448697873603498045",
+          "emoji_server": "43",
+          "preset_slot": 4,
+          "preset_type": "item"
+        },        
         {
           "name": "Verac's brassard",
           "id": "veracbody",
@@ -7287,6 +7303,14 @@
     {
       "name": "Jewellery",
       "emojis": [
+        {
+          "name": "Am-hej",
+          "id": "amhej",
+          "emoji_id": "1448070604937891921",
+          "emoji_server": "43",
+          "preset_slot": 10,
+          "preset_type": "item"
+        },        
         {
           "name": "Amulet of the forsaken",
           "id": "amuletoftheforsaken",
