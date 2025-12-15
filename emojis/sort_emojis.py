@@ -19,7 +19,7 @@ def main():
         )
 
     with OUTPUT_FILE.open("w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
     print("Emojis alphabetised within each category.")
 
