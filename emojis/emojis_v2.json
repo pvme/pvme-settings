@@ -20850,7 +20850,6 @@
           "name": "Essence of Finality amulet",
           "id": "eofu",
           "id_aliases": [
-            "eofu",
             "essenceoffinalityu"
           ],
           "emoji_id": "787526151978614824",
@@ -21181,8 +21180,7 @@
           "id_aliases": [
             "rubybolts",
             "rubybak",
-            "rubybaks",
-            "rubybakri"
+            "rubybaks"
           ],
           "emoji_id": "565726489413287956",
           "emoji_server": "16",
@@ -21551,7 +21549,7 @@
           "id_aliases": [
             "comphantom",
             "comphant",
-            "commandphantom",
+            "commandarmouredphantom",
             "commandphant"
           ],
           "emoji_id": "1280109200432959528",
@@ -21563,7 +21561,7 @@
           "id_aliases": [
             "conjphant",
             "conjphantom",
-            "conjurephantom",
+            "conjurearmouredphantom",
             "conjurephant"
           ],
           "emoji_id": "1280109199069806604",
