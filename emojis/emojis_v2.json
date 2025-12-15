@@ -7275,6 +7275,14 @@
         "name": "Jewellery",
         "emojis": [
         {
+          "name": "Am-hej",
+          "id": "amhej",
+          "emoji_id": "1448070604937891921",
+          "emoji_server": "43",
+          "preset_slot": 10,
+          "preset_type": "item"
+        },
+        {
             "name": "Amulet of the forsaken",
             "id": "amuletoftheforsaken",
             "emoji_id": "855865893934334012",
