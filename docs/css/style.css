@@ -26,3 +26,33 @@ html {
 /* .max-height-container {
   max-height: 400px; 
 } */
+
+.copyable {
+  cursor: pointer;
+}
+
+.copyable:hover {
+  filter: brightness(1.2);
+}
+
+.badge-discord {
+  background-color: rgba(88, 101, 242, 0.15);
+  color: #cfd5ff;
+  border: 1px solid rgba(88, 101, 242, 0.35);
+}
+
+.badge-pvme {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #d0d0d0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copyable:hover .badge-discord,
+.badge-discord.copyable:hover {
+  background-color: rgba(88, 101, 242, 0.22);
+}
+
+.copyable:hover .badge-pvme,
+.badge-pvme.copyable:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
