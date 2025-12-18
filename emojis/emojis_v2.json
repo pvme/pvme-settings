@@ -971,6 +971,19 @@
             ]
         },
         {
+            "name": "Legatus's Emberstaff",
+            "id": "legatusemberstaff",
+            "emoji_id": "1451134746280329357",
+            "emoji_server": "43",
+            "image": "3FGehihU1j.png",
+            "preset_slot": 4,
+            "preset_type": "item",
+            "id_aliases": [
+                "emberstaff",
+                "legatus"
+            ]
+        },
+        {
             "name": "Masterwork magic boots",
             "id": "mwmboots",
             "emoji_id": "1388314910311841862",
