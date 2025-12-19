@@ -180,7 +180,9 @@
             "name": "Abyssal orb",
             "id": "abyssalorb",
             "emoji_id": "860891495041073152",
-            "emoji_server": "9"
+            "emoji_server": "9",
+            "preset_slot": 5,
+            "preset_type": "item",
         },
         {
             "name": "Abyssal wand",
