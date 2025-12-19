@@ -2475,7 +2475,9 @@
             "name": "Armadyl crossbow",
             "id": "acbmh",
             "emoji_id": "643162838466035712",
-            "emoji_server": "23"
+            "emoji_server": "23",
+            "preset_slot": 4,
+            "preset_type": "item"
         },
         {
             "name": "Armadyl gloves",
@@ -3039,13 +3041,17 @@
             "name": "Off-hand Armadyl crossbow",
             "id": "acboh",
             "emoji_id": "643162838709305384",
-            "emoji_server": "23"
+            "emoji_server": "23",
+            "preset_slot": 5,
+            "preset_type": "item"
         },
         {
             "name": "Off-hand ascension Crossbow",
             "id": "ascoh",
             "emoji_id": "513190159362031631",
-            "emoji_server": "1"
+            "emoji_server": "1",
+            "preset_slot": 5,
+            "preset_type": "item"
         },
         {
             "name": "Off-hand blightbound crossbow",
@@ -3063,7 +3069,9 @@
             "name": "Off-hand chaotic crossbow",
             "id": "chaoticcbowoh",
             "emoji_id": "851514430633803786",
-            "emoji_server": "14"
+            "emoji_server": "14",
+            "preset_slot": 5,
+            "preset_type": "item"
         },
         {
             "name": "Off-hand Shadow glaive",
