@@ -182,7 +182,7 @@
             "emoji_id": "860891495041073152",
             "emoji_server": "9",
             "preset_slot": 5,
-            "preset_type": "item",
+            "preset_type": "item"
         },
         {
             "name": "Abyssal wand",
@@ -10677,7 +10677,7 @@
             "name": "Blood reaver",
             "id": "bloodreaver",
             "emoji_id": "929773044296216666",
-            "emoji_server": "29",
+            "emoji_server": "29"
         },
         {
             "name": "Chaos Elemental",
