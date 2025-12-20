@@ -5,6 +5,7 @@
 
 #table-emojis tr[visible='true']{
   display:table-row;
+  vertical-align: middle;
 }
 
 .counter{
