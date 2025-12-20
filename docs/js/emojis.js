@@ -1,38 +1,103 @@
 export function populateEmojis(emojis) {
+  const ITEM_TYPE_LABELS = {
+    0: 'Inventory',
+    1: 'Helm',
+    2: 'Body',
+    3: 'Legs',
+    4: 'Main-hand weapon',
+    5: 'Off-hand weapon',
+    6: 'Gloves',
+    7: 'Boots',
+    8: 'Aura',
+    9: 'Ammo',
+    10: 'Necklace',
+    11: 'Ring',
+    12: 'Cape',
+    13: 'Pocket',
+  };
+
   const table = $("#table-emojis tbody");
   table.empty();
 
   emojis.forEach((emoji) => {
-    const imageUrl = getEmojiImageUrl(emoji);
     const aliasesText = emoji.id_aliases?.length
       ? emoji.id_aliases.join(', ')
       : '–';
 
-    table.append(`
-      <tr visible="true">
-        <td>
-          <div class="d-flex align-items-center gap-2">
-            ${imageUrl ? `<img class="disc-emoji" src="${imageUrl}">` : ''}
-            <span>${emoji.name}</span>
+  table.append(`
+    <tr visible="true">
+      <!-- Identity -->
+      <td>
+        <div class="d-flex flex-column gap-1">
+          <strong>${emoji.name}</strong>
+
+          <div ${copyCell(emoji.id)}>
+            <small class="text-muted">ID:</small>
+            <code>${emoji.id}</code>
           </div>
-        </td>
 
-        <td ${copyCell(emoji.id)}>
-          <code>${emoji.id}</code>
-        </td>
-
-        <td ${copyCell(aliasesText !== '–' ? aliasesText : null)}>
-          <code>${aliasesText}</code>
-        </td>
-
-        <td>
-          <div class="d-flex gap-2 flex-wrap">
-            ${renderDiscordBadge(emoji)}
-            ${renderPvmeImageBadge(emoji)}
+          <div ${copyCell(aliasesText !== '–' ? aliasesText : null)}>
+            <small class="text-muted">Aliases: ${aliasesText}</small>
           </div>
-        </td>
-      </tr>
-    `);
+        </div>
+      </td>
+
+      <!-- Discord Emoji -->
+      <td>
+        <div class="d-flex flex-column gap-1">
+          ${emoji.emoji_id ? `
+            <img
+              class="disc-emoji"
+              src="https://cdn.discordapp.com/emojis/${emoji.emoji_id}.png"
+              width="32"
+              height="32"
+            >
+            <div ${copyCell("<:" + emoji.id + ":" + emoji.emoji_id + ">")}>
+              <code>${emoji.emoji_id}</code>
+            </div>
+            <small class="text-muted">Server ${emoji.emoji_server}</small>
+          ` : '–'}
+        </div>
+      </td>
+
+      <!-- PvME Image -->
+      <td>
+        <div class="d-flex flex-column gap-1">
+          ${emoji.image ? `
+            <img
+              src="https://img.pvme.io/images/${emoji.image}"
+              width="32"
+              height="32"
+            >
+            <div ${copyCell("https://img.pvme.io/images/" + emoji.image)}>
+              <code>${emoji.image}</code>
+            </div>
+          ` : '–'}
+        </div>
+      </td>
+
+      <!-- Preset Data -->
+      <td>
+        <div class="d-flex flex-column gap-1">
+          ${emoji.preset_slot != null ? `
+            <small>
+              <strong>
+                ${ITEM_TYPE_LABELS[emoji.preset_slot] ?? `Slot ${emoji.preset_slot}`}
+              </strong>
+            </small>
+          ` : ''}
+
+          ${emoji.preset_type ? `
+            <small class="text-muted">
+              Type: ${emoji.preset_type}
+            </small>
+          ` : ''}
+        </div>
+      </td>
+    </tr>
+  `);
+
+
   });
 
   enableCopyHandlers();
@@ -88,16 +153,6 @@ function renderPvmeImageBadge(emoji) {
 }
 
 /* ---------- helpers ---------- */
-
-function getEmojiImageUrl(emoji) {
-  if (emoji.emoji_id) {
-    return `https://cdn.discordapp.com/emojis/${emoji.emoji_id}.png`;
-  }
-  if (emoji.image) {
-    return `https://img.pvme.io/images/${emoji.image}`;
-  }
-  return null;
-}
 
 function copyCell(value) {
   if (!value) return '';
