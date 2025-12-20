@@ -180,7 +180,9 @@
             "name": "Abyssal orb",
             "id": "abyssalorb",
             "emoji_id": "860891495041073152",
-            "emoji_server": "9"
+            "emoji_server": "9",
+            "preset_slot": 5,
+            "preset_type": "item",
         },
         {
             "name": "Abyssal wand",
@@ -10420,10 +10422,14 @@
             "emoji_server": "19"
         },
         {
-            "name": "Blood reaver pouch",
+            "name": "Binding contract (blood reaver)",
             "id": "reaverpouch",
+            "id_aliases": [ "reaver" ],
             "emoji_id": "839903693837959228",
-            "emoji_server": "14"
+            "emoji_server": "14",
+            "preset_slot": 0,
+            "image": "sxnDQng.png",
+            "preset_type": "familiar"
         },
         {
             "name": "Blood reaver scroll (Blood siphon)",
@@ -10672,8 +10678,6 @@
             "id": "bloodreaver",
             "emoji_id": "929773044296216666",
             "emoji_server": "29",
-            "image": "sxnDQng.png",
-            "preset_type": "familiar"
         },
         {
             "name": "Chaos Elemental",
@@ -16250,13 +16254,6 @@
             "id": "bigbookopiracy",
             "image": "Ho60PPT.png",
             "preset_slot": 13,
-            "preset_type": "item"
-        },
-        {
-            "name": "Binding contract (blood reaver)",
-            "id": "reaver",
-            "image": "BQXFPFu.png",
-            "preset_slot": 0,
             "preset_type": "item"
         },
         {
