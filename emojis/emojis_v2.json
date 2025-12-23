@@ -7034,6 +7034,7 @@
         {
             "name": "Resonance",
             "id": "res",
+            "id_aliases": [ "reso", "resonance" ],
             "emoji_id": "535541258844635148",
             "emoji_server": "17"
         },
