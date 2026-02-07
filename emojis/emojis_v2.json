@@ -6932,6 +6932,9 @@
         {
             "name": "Essence of Finality (Ability)",
             "id": "eofspec",
+            "id_aliases": [
+                "espec"
+            ],
             "emoji_id": "1257438999794946099",
             "emoji_server": "10"
         },
@@ -22008,7 +22011,9 @@
             "preset_slot": 4,
             "preset_type": "item",
             "id_aliases": [
-                "vdagger"
+                "vdagger",
+                "varanus",
+                "mercy"
             ]            
         },
         {
