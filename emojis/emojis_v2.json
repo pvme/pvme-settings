@@ -3826,8 +3826,8 @@
             "emoji_server": "44"
         },
         {
-            "name": "imbue_gales",
-            "id": "imbue_gales",
+            "name": "galeshot",
+            "id": "galeshot",
             "id_aliases": [
                 "imbuegales",
                 "gales"
@@ -5329,8 +5329,8 @@
             "emoji_server": "41"
         },
         {
-            "name": "Lesser Smash",
-            "id": "lessersmash",
+            "name": "OLDLesser Smash",
+            "id": "OLDlessersmash",
             "emoji_id": "1217207451536068628",
             "emoji_server": "41"
         },
@@ -5410,16 +5410,16 @@
             "emoji_server": "26"
         },
         {
-            "name": "Smash",
-            "id": "smash",
+            "name": "OLDSmash",
+            "id": "OLDsmash",
             "emoji_id": "535532879820619786",
             "emoji_server": "18"
         },
         {
-            "name": "Smash (Gloves of passage)",
-            "id": "smashgop",
+            "name": "OLD Smash (Gloves of passage)",
+            "id": "OLDsmashgop",
             "id_aliases": [
-                "smashpassage"
+                "OLDsmashpassage"
             ],
             "emoji_id": "994929821727604808",
             "emoji_server": "31"
@@ -5480,6 +5480,15 @@
             "emoji_id": "1478062904732418159",
             "emoji_server": "45"
         },
+        {
+            "name": "rend",
+            "id": "rend",
+            "id_aliases": [
+                "smash"
+            ],
+            "emoji_id": "1478166426190741584",
+            "emoji_server": "45"
+        },    
         {
             "name": "meteor_strike",
             "id": "meteor_strike",
