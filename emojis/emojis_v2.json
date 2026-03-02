@@ -4229,6 +4229,9 @@
         {
             "name": "Dragon 2h sword",
             "id": "dragon2hsword",
+            "id_aliases": [
+                "d2h"
+            ]
             "emoji_id": "1048592040507744257",
             "emoji_server": "36"
         },
@@ -5469,7 +5472,8 @@
             "name": "adaptive_strike",
             "id": "adaptive_strike",
             "id_aliases": [
-                "adaptivestrike"
+                "adaptivestrike",
+                "adaptive"
             ],
             "emoji_id": "1478062906057949417",
             "emoji_server": "45"
