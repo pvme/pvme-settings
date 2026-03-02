@@ -2387,12 +2387,19 @@
         {
             "name": "magma_temptest",
             "id": "magma_temptest",
+            "id_aliases": [
+                "magma",
+                "magmatempest"
+            ],
             "emoji_id": "1478063454173532242",
             "emoji_server": "46"
         },
         {
             "name": "sunshine",
             "id": "sunshine",
+            "id_aliases": [
+                "sun"
+            ],
             "emoji_id": "1478063258555650159",
             "emoji_server": "46"
         },
@@ -2405,24 +2412,41 @@
         {
             "name": "gsonic",
             "id": "gsonic",
+            "id_aliases": [
+                "greatersonic",
+                "greatersonicwave"
+            ],
             "emoji_id": "1478063117211668584",
             "emoji_server": "46"
         },
         {
             "name": "corruption_blast",
             "id": "corruption_blast",
+            "id_aliases": [
+                "cblast",
+                "corruptionblast"
+            ],
             "emoji_id": "1478063113659093075",
             "emoji_server": "46"
         },
         {
             "name": "gconc",
             "id": "gconc",
+            "id_aliases": [
+                "greaterconc",
+                "greaterconcentrated",
+                "greaterconcentratedblast"
+            ],
             "emoji_id": "1478063111104757760",
             "emoji_server": "46"
         },
         {
             "name": "conc",
             "id": "conc",
+            "id_aliases": [
+                "concentratedblast",
+                "concblast"
+            ],
             "emoji_id": "1478063109712121856",
             "emoji_server": "46"
         },
@@ -2435,6 +2459,9 @@
         {
             "name": "gchain",
             "id": "gchain",
+            "id_aliases": [
+                "greaterchain"
+            ],
             "emoji_id": "1478063106914779166",
             "emoji_server": "46"
         },
@@ -2447,6 +2474,12 @@
         {
             "name": "magic_basic",
             "id": "magic_basic",
+            "id_aliases": [
+                "magicbasic",
+                "magicauto",
+                "automagic",
+                "basicmagic"
+            ],
             "emoji_id": "1478063104146411713",
             "emoji_server": "46"
         }]
@@ -3777,30 +3810,52 @@
         {
             "name": "ricochet",
             "id": "ricochet",
+            "id_aliases": [
+                "rico"
+            ],
             "emoji_id": "1478061867288100885",
             "emoji_server": "44"
         },
         {
             "name": "imbue_shadows",
             "id": "imbue_shadows",
+            "id_aliases": [
+                "imbueshadows"
+            ],
             "emoji_id": "1478061866193518744",
             "emoji_server": "44"
         },
         {
             "name": "imbue_gales",
             "id": "imbue_gales",
+            "id_aliases": [
+                "imbuegales",
+                "gales"
+            ],
             "emoji_id": "1478061864943616122",
             "emoji_server": "44"
         },
         {
             "name": "piercing_shot",
             "id": "piercing_shot",
+            "id_aliases": [
+                "pierce",
+                "piercing",
+                "piercingshot"
+            ],
             "emoji_id": "1478061863723073636",
             "emoji_server": "44"
         },
         {
             "name": "deaths_swiftness",
             "id": "deaths_swiftness",
+            "id_aliases": [
+                "ds",
+                "swiftness",
+                "deathswift",
+                "deathsswiftness",
+                "deathswiftness"
+            ],
             "emoji_id": "1478061862405931120",
             "emoji_server": "44"
         },
@@ -3813,6 +3868,12 @@
         {
             "name": "ranged_basic",
             "id": "ranged_basic",
+            "id_aliases": [
+                "rangedauto",
+                "rangedbasic",
+                "autoranged",
+                "basicranged"
+            ],
             "emoji_id": "1478061858622537809",
             "emoji_server": "44"
         },
@@ -3825,6 +3886,9 @@
         {
             "name": "snapshot",
             "id": "snapshot",
+            "id_aliases": [
+                "snap"
+            ],
             "emoji_id": "1478061855732666439",
             "emoji_server": "44"
         }
@@ -5381,18 +5445,32 @@
         {
             "name": "chaos_roar",
             "id": "chaos_roar",
+            "id_aliases": [
+                "croar",
+                "roar",
+                "chaosroar"
+            ],
             "emoji_id": "1478062908767211640",
             "emoji_server": "45"
         },
         {
             "name": "melee_basic",
             "id": "melee_basic",
+            "id_aliases": [
+                "meleebasic",
+                "basicmelee",
+                "meleeauto",
+                "automelee"
+            ],
             "emoji_id": "1478062907295010906",
             "emoji_server": "45"
         },
         {
             "name": "adaptive_strike",
             "id": "adaptive_strike",
+            "id_aliases": [
+                "adaptivestrike"
+            ],
             "emoji_id": "1478062906057949417",
             "emoji_server": "45"
         },
@@ -5405,6 +5483,10 @@
         {
             "name": "meteor_strike",
             "id": "meteor_strike",
+            "id_aliases": [
+                "meteor",
+                "meteorstrike"
+            ],
             "emoji_id": "1478070401702821938",
             "emoji_server": "45"
         },
