@@ -3830,8 +3830,7 @@
             "id": "galeshot",
             "id_aliases": [
                 "imbuegales",
-                "gales",
-                "imbue_gales"
+                "gales"
             ],
             "emoji_id": "1478061864943616122",
             "emoji_server": "44"
