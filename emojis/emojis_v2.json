@@ -3679,14 +3679,14 @@
             "emoji_server": "17"
         },
         {
-            "name": "Piercing shot",
-            "id": "piercing",
+            "name": "OLDPiercing shot",
+            "id": "OLDpiercing",
             "emoji_id": "535541258538450944",
             "emoji_server": "17"
         },
         {
-            "name": "Piercing shot energising",
-            "id": "piercingenergising",
+            "name": "OLDPiercing shot energising",
+            "id": "OLDpiercingenergising",
             "id_aliases": [
                 "epierce"
             ],
@@ -3793,8 +3793,8 @@
             "emoji_server": "44"
         },
         {
-            "name": "honing_shots",
-            "id": "goning_shots",
+            "name": "piercing_shot",
+            "id": "piercing_shot",
             "emoji_id": "1478061863723073636",
             "emoji_server": "44"
         },
