@@ -1840,7 +1840,8 @@
             "name": "OLDChain caroming",
             "id": "OLDchaincaroming",
             "emoji_id": "867678153962684426",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "pTZcXk4VsS.png"
         },
         {
             "name": "OLDCombust",
@@ -1855,7 +1856,8 @@
             "name": "OLDCombust lunge",
             "id": "OLDcombustlunge",
             "emoji_id": "867678153992437790",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "QJKkJIteUb.png"
         },
         {
             "name": "OLDConcentrated blast",
@@ -1898,7 +1900,8 @@
             "name": "Deep impact flank",
             "id": "deepimpactflank",
             "emoji_id": "867678153611018261",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "WZXtxyBprQ.png"
         },
         {
             "name": "Detonate",
@@ -1971,7 +1974,8 @@
                 "OLDcarominggchain"
             ],
             "emoji_id": "867678153882861568",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "9HOO7a4UJ7.png"
         },
         {
             "name": "OLDGreater Sonic Wave",
@@ -2099,7 +2103,8 @@
                 "igneousomnipower"
             ],
             "emoji_id": "1179505745654448208",
-            "emoji_server": "6"
+            "emoji_server": "6",
+            "image": "LVErbGkfjL.png"
         },
         {
             "name": "Prism of Loyalty",
@@ -2314,7 +2319,8 @@
                 "namiincite"
             ],
             "emoji_id": "958989794757730307",
-            "emoji_server": "30"
+            "emoji_server": "30",
+            "image": "4jjZF3zxtb.png"
         },
         {
             "name": "Vengeance",
@@ -3554,7 +3560,8 @@
             "name": "Binding shot flank",
             "id": "bindingshotflank",
             "emoji_id": "867678153400647701",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "jeVMzioItQ.png"
         },
         {
             "name": "Bombard",
@@ -3591,7 +3598,8 @@
                 "OLDigneousdeadshot"
             ],
             "emoji_id": "959089455283728386",
-            "emoji_server": "30"
+            "emoji_server": "30",
+            "image": "2XnQdMo0os.png"
         },
         {
             "name": "OLD Death's swiftness",
@@ -3685,7 +3693,8 @@
                 "cgrico"
             ],
             "emoji_id": "867678153966878740",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "zzB1qNdZC0.png"
         },
         {
             "name": "Greater ricochet (swift gloves)",
@@ -3757,7 +3766,8 @@
             "name": "OLD Ricochet caroming",
             "id": "OLDricocaroming",
             "emoji_id": "867678153635004447",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "3QeZDM2lUh.png"
         },
         {
             "name": "Rout",
@@ -5169,7 +5179,8 @@
             "name": "Backhand flank",
             "id": "backhandflank",
             "emoji_id": "867678153854025779",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "ru24yoUgwh.png"
         },
         {
             "name": "Balanced strike",
@@ -5374,7 +5385,8 @@
                 "igneousoverpower"
             ],
             "emoji_id": "959089455640215633",
-            "emoji_server": "30"
+            "emoji_server": "30",
+            "image": "qz5yOGGCuT.png"
         },
         {
             "name": "Pulverise",
@@ -6215,7 +6227,8 @@
                 "igneousdeathskulls"
             ],
             "emoji_id": "1179505729367969863",
-            "emoji_server": "6"
+            "emoji_server": "6",
+            "image": "ivM8WNLCTd.png"
         },
         {
             "name": "Deflect Necromancy",
@@ -6414,7 +6427,8 @@
                 "flanknecro"
             ],
             "emoji_id": "1156683164593430579",
-            "emoji_server": "40"
+            "emoji_server": "40",
+            "image": "8TP3YlGrCz.png"
         },
         {
             "name": "Spectral Scythe (Cast 1)",
@@ -7144,7 +7158,8 @@
             "name": "Anticipate clear headed",
             "id": "anticlearheaded",
             "emoji_id": "867678154071998464",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "HgerlsajsL.png"
         },
         {
             "name": "Anticipate reflexes",
@@ -7153,7 +7168,8 @@
                 "anticipatereflexes"
             ],
             "emoji_id": "998692900135252078",
-            "emoji_server": "31"
+            "emoji_server": "31",
+            "image": "ExStMQ6n0o.png"
         },
         {
             "name": "Barricade",
@@ -7168,7 +7184,8 @@
             "name": "Barricade turtling",
             "id": "cadeturtling",
             "emoji_id": "867678153883516958",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "Ef5u24TnCg.png"
         },
         {
             "name": "Bash",
