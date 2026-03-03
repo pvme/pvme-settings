@@ -1898,7 +1898,8 @@
             "name": "Deep impact flank",
             "id": "deepimpactflank",
             "emoji_id": "867678153611018261",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "WZXtxyBprQ.png"
         },
         {
             "name": "Detonate",
@@ -2099,7 +2100,8 @@
                 "igneousomnipower"
             ],
             "emoji_id": "1179505745654448208",
-            "emoji_server": "6"
+            "emoji_server": "6",
+            "image": "LVErbGkfjL.png"
         },
         {
             "name": "Prism of Loyalty",
@@ -2314,7 +2316,8 @@
                 "namiincite"
             ],
             "emoji_id": "958989794757730307",
-            "emoji_server": "30"
+            "emoji_server": "30",
+            "image": "4jjZF3zxtb.png"
         },
         {
             "name": "Vengeance",
@@ -2379,17 +2382,17 @@
             "emoji_server": "9"
         },
         {
-            "name": "magma_tempest_target",
-            "id": "magma_tempest_target",
+            "name": "magmatempesttarget",
+            "id": "magmatempesttarget",
             "emoji_id": "1478063118302052352",
             "emoji_server": "46"
         },
         {
-            "name": "magma_temptest",
-            "id": "magma_temptest",
+            "name": "magmatemptest",
+            "id": "magmatemptest",
             "id_aliases": [
                 "magma",
-                "magmatempest"
+                "magma_tempest"
             ],
             "emoji_id": "1478063454173532242",
             "emoji_server": "46"
@@ -2420,11 +2423,11 @@
             "emoji_server": "46"
         },
         {
-            "name": "corruption_blast",
-            "id": "corruption_blast",
+            "name": "corruptionblast",
+            "id": "corruptionblast",
             "id_aliases": [
                 "cblast",
-                "corruptionblast"
+                "corruption_blast"
             ],
             "emoji_id": "1478063113659093075",
             "emoji_server": "46"
@@ -2457,6 +2460,13 @@
             "emoji_server": "46"
         },
         {
+            "name": "combustlunging",
+            "id": "combustlunging",
+            "emoji_id": "1478475691094839416",
+            "emoji_server": "46",
+            "image": "QJKkJIteUb.png"
+        },
+        {
             "name": "gchain",
             "id": "gchain",
             "id_aliases": [
@@ -2466,16 +2476,33 @@
             "emoji_server": "46"
         },
         {
+            "name": "gchaincaroming",
+            "id": "gchaincaroming",
+            "id_aliases": [
+                "greaterchaincaroming"
+            ],
+            "emoji_id": "1478476224023105577",
+            "emoji_server": "46",
+            "image": "9HOO7a4UJ7.png"
+        },
+        {
             "name": "chain",
             "id": "chain",
             "emoji_id": "1478063105182269460",
             "emoji_server": "46"
         },
         {
-            "name": "magic_basic",
-            "id": "magic_basic",
+            "name": "chaincaroming",
+            "id": "chaincaroming",
+            "emoji_id": "1478475692583948298",
+            "emoji_server": "46",
+            "image": "pTZcXk4VsS.png"
+        },
+        {
+            "name": "magicbasic",
+            "id": "magicbasic",
             "id_aliases": [
-                "magicbasic",
+                "magic_basic",
                 "magicauto",
                 "automagic",
                 "basicmagic"
@@ -3554,7 +3581,8 @@
             "name": "Binding shot flank",
             "id": "bindingshotflank",
             "emoji_id": "867678153400647701",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "jeVMzioItQ.png"
         },
         {
             "name": "Bombard",
@@ -3826,10 +3854,20 @@
             "emoji_server": "44"
         },
         {
-            "name": "imbue_shadows",
-            "id": "imbue_shadows",
+            "name": "ricochetcaroming",
+            "id": "ricochetcaroming",
             "id_aliases": [
-                "imbueshadows"
+                "ricocaroming"
+            ],
+            "emoji_id": "1478453164087840778",
+            "emoji_server": "44",
+            "image": "3QeZDM2lUh.png"
+        },
+        {
+            "name": "imbueshadows",
+            "id": "imbueshadows",
+            "id_aliases": [
+                "imbue_shadows"
             ],
             "emoji_id": "1478061866193518744",
             "emoji_server": "44"
@@ -3845,24 +3883,24 @@
             "emoji_server": "44"
         },
         {
-            "name": "piercing_shot",
-            "id": "piercing_shot",
+            "name": "piercingshot",
+            "id": "piercingshot",
             "id_aliases": [
                 "pierce",
                 "piercing",
-                "piercingshot"
+                "piercing_shot"
             ],
             "emoji_id": "1478061863723073636",
             "emoji_server": "44"
         },
         {
-            "name": "deaths_swiftness",
-            "id": "deaths_swiftness",
+            "name": "deathsswiftness",
+            "id": "deathsswiftness",
             "id_aliases": [
                 "ds",
                 "swiftness",
                 "deathswift",
-                "deathsswiftness",
+                "deaths_swiftness",
                 "deathswiftness"
             ],
             "emoji_id": "1478061862405931120",
@@ -3875,11 +3913,18 @@
             "emoji_server": "44"
         },
         {
-            "name": "ranged_basic",
-            "id": "ranged_basic",
+            "name": "deadshotigneous",
+            "id": "deadshotigneous",
+            "emoji_id": "1478453135646261248",
+            "emoji_server": "44",
+            "image": "2XnQdMo0os.png"
+        },
+        {
+            "name": "rangedbasic",
+            "id": "rangedbasic",
             "id_aliases": [
                 "rangedauto",
-                "rangedbasic",
+                "ranged_basic",
                 "autoranged",
                 "basicranged"
             ],
@@ -5169,7 +5214,8 @@
             "name": "Backhand flank",
             "id": "backhandflank",
             "emoji_id": "867678153854025779",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "ru24yoUgwh.png"
         },
         {
             "name": "Balanced strike",
@@ -5374,7 +5420,8 @@
                 "igneousoverpower"
             ],
             "emoji_id": "959089455640215633",
-            "emoji_server": "30"
+            "emoji_server": "30",
+            "image": "qz5yOGGCuT.png"
         },
         {
             "name": "Pulverise",
@@ -5455,21 +5502,21 @@
             "emoji_server": "45"
         },
         {
-            "name": "chaos_roar",
-            "id": "chaos_roar",
+            "name": "chaosroar",
+            "id": "chaosroar",
             "id_aliases": [
                 "croar",
                 "roar",
-                "chaosroar"
+                "chaos_roar"
             ],
             "emoji_id": "1478062908767211640",
             "emoji_server": "45"
         },
         {
-            "name": "melee_basic",
-            "id": "melee_basic",
+            "name": "meleebasic",
+            "id": "meleebasic",
             "id_aliases": [
-                "meleebasic",
+                "melee_basic",
                 "basicmelee",
                 "meleeauto",
                 "automelee"
@@ -5478,10 +5525,10 @@
             "emoji_server": "45"
         },
         {
-            "name": "adaptive_strike",
-            "id": "adaptive_strike",
+            "name": "adaptivestrike",
+            "id": "adaptivestrike",
             "id_aliases": [
-                "adaptivestrike",
+                "adaptive_strike",
                 "adaptive"
             ],
             "emoji_id": "1478062906057949417",
@@ -5503,11 +5550,11 @@
             "emoji_server": "45"
         },    
         {
-            "name": "meteor_strike",
-            "id": "meteor_strike",
+            "name": "meteorstrike",
+            "id": "meteorstrike",
             "id_aliases": [
                 "meteor",
-                "meteorstrike"
+                "meteor_strike"
             ],
             "emoji_id": "1478070401702821938",
             "emoji_server": "45"
@@ -6215,7 +6262,8 @@
                 "igneousdeathskulls"
             ],
             "emoji_id": "1179505729367969863",
-            "emoji_server": "6"
+            "emoji_server": "6",
+            "image": "ivM8WNLCTd.png"
         },
         {
             "name": "Deflect Necromancy",
@@ -6414,7 +6462,8 @@
                 "flanknecro"
             ],
             "emoji_id": "1156683164593430579",
-            "emoji_server": "40"
+            "emoji_server": "40",
+            "image": "8TP3YlGrCz.png"
         },
         {
             "name": "Spectral Scythe (Cast 1)",
@@ -7144,7 +7193,8 @@
             "name": "Anticipate clear headed",
             "id": "anticlearheaded",
             "emoji_id": "867678154071998464",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "HgerlsajsL.png"
         },
         {
             "name": "Anticipate reflexes",
@@ -7153,7 +7203,8 @@
                 "anticipatereflexes"
             ],
             "emoji_id": "998692900135252078",
-            "emoji_server": "31"
+            "emoji_server": "31",
+            "image": "ExStMQ6n0o.png"
         },
         {
             "name": "Barricade",
@@ -7168,7 +7219,8 @@
             "name": "Barricade turtling",
             "id": "cadeturtling",
             "emoji_id": "867678153883516958",
-            "emoji_server": "26"
+            "emoji_server": "26",
+            "image": "Ef5u24TnCg.png"
         },
         {
             "name": "Bash",
