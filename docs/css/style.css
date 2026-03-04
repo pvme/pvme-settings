@@ -3,13 +3,22 @@
   display:none;
 }
 
+#table-emojis tr[visible='false'],
+.no-result{
+  display:none;
+}
+
 #table-emojis tr[visible='true']{
   display:table-row;
-  vertical-align: middle;
+}
+
+#table-emojis td,
+#table-emojis th {
+  vertical-align: top;
 }
 
 .counter{
-  padding:8px; 
+  padding:8px;
   color:#ccc;
 }
 
@@ -25,7 +34,7 @@ html {
 }
 
 /* .max-height-container {
-  max-height: 400px; 
+  max-height: 400px;
 } */
 
 .copyable {
