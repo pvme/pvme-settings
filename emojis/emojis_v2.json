@@ -2516,6 +2516,8 @@
             "id": "runic_charge",
             "id_aliases": [
                 "rcharge"
+                "runic"
+                "runiccharge"
             ],
             "emoji_id": "1478063122345361562",
             "emoji_server": "46"
