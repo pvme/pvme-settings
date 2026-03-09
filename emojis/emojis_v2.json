@@ -5639,7 +5639,9 @@
                 "necrovisage"
             ],
             "emoji_id": "1446178019159838720",
-            "emoji_server": "43"
+            "emoji_server": "43",
+            "preset_slot": 1,
+            "preset_type": "item"
         },
         {
             "name": "Crown of the First Necromancer",
