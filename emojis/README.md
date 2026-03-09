@@ -67,6 +67,24 @@ Each emoji is defined as a structured object with a stable, unique identifier.
 | emoji_id     | emoji_id and/or image | Discord emoji ID                      |
 | emoji_server | Yes                   | Discord server ID                     |
 | image        | emoji_id and/or image | Image filename hosted at img.pvme.io  |
-| preset_slot  | No                    | Equipment / inventory slot index      |
-| preset_type  | No                    | item, relic, or familiar              |
+| [preset_slot](#preset-slot-reference)  | No | Equipment / inventory slot index |
+| preset_type  | No                    | `item` / `relic` / `familiar`         |
 | id_aliases   | No                    | Alternative IDs for matching          |
+
+## Preset slot reference
+
+| `preset_slot` | Equipment Slot |
+|---|---|
+| 1 | Helm |
+| 2 | Body |
+| 3 | Legs |
+| 4 | Main-hand weapon |
+| 5 | Off-hand weapon |
+| 6 | Gloves |
+| 7 | Boots |
+| 8 | Aura |
+| 9 | Ammo |
+| 10 | Necklace |
+| 11 | Ring |
+| 12 | Cape |
+| 13 | Pocket |
