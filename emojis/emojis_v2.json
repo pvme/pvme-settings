@@ -22401,7 +22401,7 @@
             "preset_slot": 0,
             "preset_type": "item"
         },
-                {
+        {
             "name": "Steel dagger",
             "id": "steeldagger",
             "image": "Z5C3h7aTBy.png",
@@ -22409,7 +22409,7 @@
             "preset_type": "item"
         },
         {
-            "name": "Steel off hand dagger",
+            "name": "Steel off-hand dagger",
             "id": "steeloffhanddagger",
             "image": "ynnlOAT3M5.png",
             "preset_slot": 0,
