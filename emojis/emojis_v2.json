@@ -22430,6 +22430,13 @@
             "preset_type": "item"
         },
         {
+            "name": "Lucky charm (Zamorakian Undercity)",
+            "id": "ed4luckycharm",
+            "image": "TCMttN6VBU.png",
+            "preset_slot": 0,
+            "preset_type": "item"
+        },
+        {
             "name": "Yu'biusk clay",
             "id": "yubiuskclay",
             "image": "ccO5sxnLpT.png",
