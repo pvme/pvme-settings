@@ -22402,6 +22402,41 @@
             "preset_type": "item"
         },
         {
+            "name": "Steel dagger",
+            "id": "steeldagger",
+            "image": "Z5C3h7aTBy.png",
+            "preset_slot": 0,
+            "preset_type": "item"
+        },
+        {
+            "name": "Steel off hand dagger",
+            "id": "steeloffhanddagger",
+            "image": "ynnlOAT3M5.png",
+            "preset_slot": 0,
+            "preset_type": "item"
+        },
+                {
+            "name": "Steel hatchet",
+            "id": "steelhatchet",
+            "image": "AyAyyWjVyZ.png",
+            "preset_slot": 0,
+            "preset_type": "item"
+        },
+        {
+            "name": "Steel pickaxe",
+            "id": "steelpickaxe",
+            "image": "3QAJnVJAzQ.png",
+            "preset_slot": 0,
+            "preset_type": "item"
+        },
+        {
+            "name": "Lucky charm (Zamorakian Undercity)",
+            "id": "ed4luckycharm",
+            "image": "TCMttN6VBU.png",
+            "preset_slot": 0,
+            "preset_type": "item"
+        },
+        {
             "name": "Yu'biusk clay",
             "id": "yubiuskclay",
             "image": "ccO5sxnLpT.png",
