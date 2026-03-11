@@ -10885,12 +10885,6 @@
             "emoji_server": "15"
         },
         {
-            "name": "Ripper demon",
-            "id": "ripperpouch",
-            "emoji_id": "703581275453128714",
-            "emoji_server": "10"
-        },
-        {
             "name": "Soul Food scroll",
             "id": "hellhoundscroll",
             "emoji_id": "922417969731088435",
@@ -12804,9 +12798,7 @@
             "name": "Ripper Demon",
             "id": "ripperdemon",
             "emoji_id": "1004107343123976284",
-            "emoji_server": "32",
-            "image": "Gg4oxrm.png",
-            "preset_type": "familiar"
+            "emoji_server": "32"
         },
         {
             "name": "Ripper dinosaur",
@@ -16640,10 +16632,12 @@
         },
         {
             "name": "Binding contract (ripper demon)",
-            "id": "ripper",
-            "image": "OQ4ZaK3.png",
-            "preset_slot": 0,
-            "preset_type": "item"
+            "id": "ripperpouch",
+            "id_aliases": [ "ripper" ],
+            "image": "Gg4oxrm.png",
+            "preset_type": "familiar",
+            "emoji_id": "703581275453128714",
+            "emoji_server": "10"
         },
         {
             "name": "Binding contracts",
