@@ -2820,7 +2820,8 @@
             "preset_slot": 4,
             "preset_type": "item",
             "id_aliases": [
-                "decibow"
+                "decibow",
+                "deci"
             ]
         },
         {
@@ -21372,9 +21373,6 @@
         {
             "name": "Decimate",
             "id": "decimate",
-            "id_aliases": [
-                "deci"
-            ],
             "emoji_id": "535532879325822986",
             "emoji_server": "18",
             "preset_type": "ability"
