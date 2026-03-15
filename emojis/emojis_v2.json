@@ -6400,12 +6400,12 @@
             "emoji_server": "39"
         },
         {
-            "name": "Necromancy (Auto)",
-            "id": "necroauto",
+            "name": "Necromancy Basic",
+            "id": "necrobasic",
             "id_aliases": [
-                "necromancyauto"
+                "necromancybasic"
             ],
-            "emoji_id": "1137809137401602109",
+            "emoji_id": "1482849360462086244",
             "emoji_server": "39"
         },
         {
