@@ -5417,7 +5417,8 @@
             "name": "Overpower",
             "id": "overpower",
             "emoji_id": "535532879334080517",
-            "emoji_server": "18"
+            "emoji_server": "18",
+            "id_aliases": [ "op" ]
         },
         {
             "name": "Overpower igneous",
