@@ -8646,7 +8646,8 @@
             "id": "adrenrenewal",
             "id_aliases": [
                 "adrenalinerenewal",
-                "arenewal"
+                "arenewal",
+                "apot"
             ],
             "emoji_id": "736298121704767538",
             "emoji_server": "20"
