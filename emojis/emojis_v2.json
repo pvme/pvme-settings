@@ -10792,7 +10792,7 @@
             "emoji_server": "19"
         },
         {
-            "name": "Binding contract (blood reaver)",
+            "name": "Blood reaver",
             "id": "reaverpouch",
             "id_aliases": [ "reaver" ],
             "emoji_id": "839903693837959228",
@@ -16625,27 +16625,20 @@
             "preset_type": "familiar"
         },
         {
-            "name": "Binding contract (kal'gerion demon)",
+            "name": "Kal'gerion demon",
             "id": "kalg",
             "image": "5dumsv0.png",
             "preset_slot": 0,
             "preset_type": "item"
         },
         {
-            "name": "Binding contract (ripper demon)",
+            "name": "Ripper demon",
             "id": "ripperpouch",
             "id_aliases": [ "ripper" ],
             "image": "Gg4oxrm.png",
             "preset_type": "familiar",
             "emoji_id": "703581275453128714",
             "emoji_server": "10"
-        },
-        {
-            "name": "Binding contracts",
-            "id": "contracts",
-            "image": "KkIYNhk.png",
-            "preset_slot": 0,
-            "preset_type": "item"
         },
         {
             "name": "Black dragon leather",
@@ -22263,6 +22256,7 @@
         {
             "name": "Binding contract (stack of 200)",
             "id": "bindingcontract200",
+            "id_aliases": [ "contracts" ],
             "image": "KkIYNhk.png",
             "preset_slot": 0,
             "preset_type": "item"
