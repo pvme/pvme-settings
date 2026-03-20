@@ -5417,7 +5417,8 @@
             "name": "Overpower",
             "id": "overpower",
             "emoji_id": "535532879334080517",
-            "emoji_server": "18"
+            "emoji_server": "18",
+            "id_aliases": [ "op" ]
         },
         {
             "name": "Overpower igneous",
@@ -8646,7 +8647,8 @@
             "id": "adrenrenewal",
             "id_aliases": [
                 "adrenalinerenewal",
-                "arenewal"
+                "arenewal",
+                "apot"
             ],
             "emoji_id": "736298121704767538",
             "emoji_server": "20"
