@@ -17,7 +17,7 @@ The settings are stored as JSON to be easily accessible through HTTP requests:
 | [channels.json](https://raw.githubusercontent.com/pvme/pvme-settings/pvme-discord/channels.json)                              | Channel names and ID's from the [PVME Discord](https://discord.gg/6djqFVN) with their corresponding files in [pvme-guides](https://github.com/pvme/pvme-guides).            |
 | [roles.json](https://raw.githubusercontent.com/pvme/pvme-settings/pvme-discord/roles.json)                                    | Role names and role ID's from [PVME Discord](https://discord.gg/6djqFVN).                                                                                                   |
 | [pvme_spreadsheet.json](https://raw.githubusercontent.com/pvme/pvme-settings/settings/pvme-spreadsheet/pvme_spreadsheet.json) | Data from [PVME spreadsheet](https://docs.google.com/spreadsheets/d/1OGM9MBUG2bQVbHxlm86Xfs60soFcjINSOrPv1WL3Vgw/edit#gid=1210777994) accessed as `data['Perks']['E'][32]`. |
-| [emojis.json](https://raw.githubusercontent.com/pvme/pvme-settings/master/emojis/emojis.json) | Emojis in [PVME Discord](https://discord.gg/6djqFVN).                                                                                                                                                              |
+| [emojis_v2.json](https://raw.githubusercontent.com/pvme/pvme-settings/master/emojis/emojis_v2.json) | Emojis in [PVME Discord](https://discord.gg/6djqFVN).                                                                                                                                                            |
 
 # Development
 
