@@ -5066,6 +5066,17 @@
             "preset_type": "item"
         },
         {
+            "name": "Vampyrism gloves",
+            "id": "vampyrismgloves",
+            "emoji_id": "1487224784428335255",
+            "emoji_server": "43",
+            "preset_slot": 6,
+            "preset_type": "item"
+            "id_aliases": [
+                "vampgloves"
+            ]
+        },            
+        {
             "name": "Verac's brassard",
             "id": "veracbody",
             "emoji_id": "854475442190549042",
