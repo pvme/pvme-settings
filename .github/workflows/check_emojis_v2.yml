@@ -10,6 +10,10 @@ permissions:
   contents: read
   pull-requests: write
 
+defaults:
+  run:
+    working-directory: emojis
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -30,7 +34,7 @@ jobs:
         id: validate
         run: |
           set +e
-          output=$(python emojis/validate_emojis_v2.py 2>&1)
+          output=$(python validate_emojis_v2.py 2>&1)
           status=$?
 
           echo "status=$status" >> $GITHUB_OUTPUT
