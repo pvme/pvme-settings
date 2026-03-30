@@ -4882,13 +4882,13 @@
           "emoji_server": "18"
         },
         {
-          "name": "Havoc",
+          "name": "OLD Havoc",
           "id": "havoc",
           "emoji_id": "535532879300526080",
           "emoji_server": "18"
         },
         {
-          "name": "Havoc (Gloves of passage)",
+          "name": "OLD Havoc (Gloves of passage)",
           "id": "havocgop",
           "id_aliases": ["havocpassage"],
           "emoji_id": "994920849117282365",
@@ -5048,11 +5048,16 @@
           "emoji_server": "45"
         },
         {
-          "name": "rend",
+          "name": "Rend",
           "id": "rend",
           "id_aliases": ["smash"],
           "emoji_id": "1478166426190741584",
           "emoji_server": "45"
+        },
+        {
+          "name": "Rend (Gloves of passage)",
+          "id": "rendgop",
+          "image": "U9zaLqjdom.png"
         },
         {
           "name": "meteorstrike",
