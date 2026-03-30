@@ -5057,8 +5057,7 @@
         {
           "name": "Rend (Gloves of passage)",
           "id": "rendgop",
-          "image": "U9zaLqjdom.png",
-          "preset_slot": 0
+          "image": "U9zaLqjdom.png"
         },
         {
           "name": "meteorstrike",
