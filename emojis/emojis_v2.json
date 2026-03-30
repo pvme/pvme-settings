@@ -5057,7 +5057,9 @@
         {
           "name": "Rend (Gloves of passage)",
           "id": "rendgop",
-          "image": "U9zaLqjdom.png"
+          "image": "U9zaLqjdom.png",
+          "emoji_id": "1488133579614588948",
+          "emoji_server": "45"
         },
         {
           "name": "meteorstrike",
