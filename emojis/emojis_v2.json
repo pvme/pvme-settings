@@ -1602,7 +1602,8 @@
           "name": "Animate dead",
           "id": "animatedead",
           "emoji_id": "856635090453135382",
-          "emoji_server": "9"
+          "emoji_server": "9",
+          "preset_type": "aspect"
         },
         {
           "name": "Asphyxiate",
@@ -1925,6 +1926,13 @@
           "image": "dmbWhGZAOE.png"
         },
         {
+          "name": "Penance (aspect)",
+          "id": "penanceaspect",
+          "emoji_id": "1494069332584693810",
+          "emoji_server": "43",
+          "preset_type": "aspect"
+        },
+        {
           "name": "Prism of Loyalty",
           "id": "prismofloyalty",
           "emoji_id": "1016651066684756070",
@@ -2107,7 +2115,8 @@
           "name": "Temporal Anomaly",
           "id": "temporalanomaly",
           "emoji_id": "1357545000577011782",
-          "emoji_server": "42"
+          "emoji_server": "42",
+          "preset_type": "aspect"
         },
         {
           "name": "Tsunami",
@@ -2123,6 +2132,13 @@
           "emoji_id": "958989794757730307",
           "emoji_server": "30",
           "image": "7FgAlOHiua.png"
+        },
+        {
+          "name": "Vampyrism (aspect)",
+          "id": "vampyrismaspect",
+          "emoji_id": "1494069423047442573",
+          "emoji_server": "43",
+          "preset_type": "aspect"
         },
         {
           "name": "Vengeance",
@@ -5619,7 +5635,8 @@
           "name": "Darkness",
           "id": "darkness",
           "emoji_id": "1137809209782698024",
-          "emoji_server": "39"
+          "emoji_server": "39",
+          "preset_type": "aspect"
         },
         {
           "name": "Death Spark",
