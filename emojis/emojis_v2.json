@@ -1926,6 +1926,13 @@
           "image": "dmbWhGZAOE.png"
         },
         {
+          "name": "Penance (aspect)",
+          "id": "penanceaspect",
+          "emoji_id": "1494069332584693810",
+          "emoji_server": "43",
+          "preset_type": "aspect"
+        },
+        {
           "name": "Prism of Loyalty",
           "id": "prismofloyalty",
           "emoji_id": "1016651066684756070",
@@ -2125,6 +2132,13 @@
           "emoji_id": "958989794757730307",
           "emoji_server": "30",
           "image": "7FgAlOHiua.png"
+        },
+        {
+          "name": "Vampyrism (aspect)",
+          "id": "vampyrismaspect",
+          "emoji_id": "1494069423047442573",
+          "emoji_server": "43",
+          "preset_type": "aspect"
         },
         {
           "name": "Vengeance",
