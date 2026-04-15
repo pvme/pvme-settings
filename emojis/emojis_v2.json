@@ -1602,7 +1602,8 @@
           "name": "Animate dead",
           "id": "animatedead",
           "emoji_id": "856635090453135382",
-          "emoji_server": "9"
+          "emoji_server": "9",
+          "preset_type": "aspect"
         },
         {
           "name": "Asphyxiate",
@@ -2107,7 +2108,8 @@
           "name": "Temporal Anomaly",
           "id": "temporalanomaly",
           "emoji_id": "1357545000577011782",
-          "emoji_server": "42"
+          "emoji_server": "42",
+          "preset_type": "aspect"
         },
         {
           "name": "Tsunami",
@@ -5619,7 +5621,8 @@
           "name": "Darkness",
           "id": "darkness",
           "emoji_id": "1137809209782698024",
-          "emoji_server": "39"
+          "emoji_server": "39",
+          "preset_type": "aspect"
         },
         {
           "name": "Death Spark",
