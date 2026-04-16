@@ -2699,7 +2699,7 @@
           "emoji_id": "556592057456656399",
           "emoji_server": "12",
           "image": "kvckrC8.png",
-          "preset_slot": "legs",
+          "preset_slot": 3,
           "preset_type": "item",
           "id_aliases": ["erobinhoodlegs"]
         },
