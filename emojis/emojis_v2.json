@@ -1596,7 +1596,8 @@
           "name": "Air Strike",
           "id": "airstrike",
           "emoji_id": "895600427930910730",
-          "emoji_server": "28"
+          "emoji_server": "28",
+          "preset_type": "spell"
         },
         {
           "name": "Animate dead",
@@ -1615,37 +1616,43 @@
           "name": "Barrage (blood)",
           "id": "bloodbarrage",
           "emoji_id": "537338981747261446",
-          "emoji_server": "17"
+          "emoji_server": "17",
+          "preset_type": "spell"
         },
         {
           "name": "Barrage (ice)",
           "id": "icebarrage",
           "emoji_id": "537340400185245701",
-          "emoji_server": "17"
+          "emoji_server": "17",
+          "preset_type": "spell"
         },
         {
           "name": "Barrage (shadow)",
           "id": "shadowbarrage",
           "emoji_id": "567727956567261184",
-          "emoji_server": "16"
+          "emoji_server": "16",
+          "preset_type": "spell"
         },
         {
           "name": "Barrage (smoke)",
           "id": "smokebarrage",
           "emoji_id": "567727956588363786",
-          "emoji_server": "16"
+          "emoji_server": "16",
+          "preset_type": "spell"
         },
         {
           "name": "Blitz (blood)",
           "id": "bloodblitz",
           "emoji_id": "535616247807868938",
-          "emoji_server": "17"
+          "emoji_server": "17",
+          "preset_type": "spell"
         },
         {
           "name": "Blitz (ice)",
           "id": "iceblitz",
           "emoji_id": "535613865912696883",
-          "emoji_server": "17"
+          "emoji_server": "17",
+          "preset_type": "spell"
         },
         {
           "name": "Borrowed power",
@@ -1657,25 +1664,29 @@
           "name": "Burst (blood)",
           "id": "bloodburst",
           "emoji_id": "841419289714098246",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "preset_type": "spell"
         },
         {
           "name": "Burst (ice)",
           "id": "iceburst",
           "emoji_id": "841419289797197824",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "preset_type": "spell"
         },
         {
           "name": "Burst (shadow)",
           "id": "shadowburst",
           "emoji_id": "841419289461260329",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "preset_type": "spell"
         },
         {
           "name": "Burst (smoke)",
           "id": "smokeburst",
           "emoji_id": "841419289793265664",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "preset_type": "spell"
         },
         {
           "name": "OLDChain",
@@ -1719,7 +1730,8 @@
           "name": "Crumble Undead",
           "id": "crumbleundead",
           "emoji_id": "1351696446646390824",
-          "emoji_server": "42"
+          "emoji_server": "42",
+          "preset_type": "spell"
         },
         {
           "name": "Crystal Mask",
@@ -1765,7 +1777,8 @@
           "name": "Emerald Aurora",
           "id": "emeraldaurora",
           "emoji_id": "914077639784935424",
-          "emoji_server": "28"
+          "emoji_server": "28",
+          "preset_type": "spell"
         },
         {
           "name": "Enfeeble",
@@ -1784,7 +1797,8 @@
           "id": "exsanguinate",
           "id_aliases": ["exsang"],
           "emoji_id": "856635090745950258",
-          "emoji_server": "9"
+          "emoji_server": "9",
+          "preset_type": "spell"
         },
         {
           "name": "OLDGreater Concentrated Blast",
@@ -1861,7 +1875,8 @@
           "name": "Incite fear",
           "id": "incitefear",
           "emoji_id": "856635090783567902",
-          "emoji_server": "9"
+          "emoji_server": "9",
+          "preset_type": "spell"
         },
         {
           "name": "Intercept",
@@ -1954,7 +1969,8 @@
           "name": "Polypore Strike",
           "id": "polyporestrike",
           "emoji_id": "859483781487394826",
-          "emoji_server": "9"
+          "emoji_server": "9",
+          "preset_type": "spell"
         },
         {
           "name": "Remote Farm",
@@ -1966,37 +1982,43 @@
           "name": "Ruby aurora",
           "id": "rubyaurora",
           "emoji_id": "574292444791963659",
-          "emoji_server": "12"
+          "emoji_server": "12",
+          "preset_type": "spell"
         },
         {
           "name": "Rush (blood)",
           "id": "bloodrush",
           "emoji_id": "839903691329896479",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "preset_type": "spell"
         },
         {
           "name": "Rush (ice)",
           "id": "icerush",
           "emoji_id": "839903691234607136",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "preset_type": "spell"
         },
         {
           "name": "Rush (shadow)",
           "id": "shadowrush",
           "emoji_id": "839903691679072307",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "preset_type": "spell"
         },
         {
           "name": "Rush (smoke)",
           "id": "smokerush",
           "emoji_id": "839903691678810173",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "preset_type": "spell"
         },
         {
           "name": "Sapphire Aurora",
           "id": "sapphireaurora",
           "emoji_id": "995711033480069130",
-          "emoji_server": "31"
+          "emoji_server": "31",
+          "preset_type": "spell"
         },
         {
           "name": "Shield dome",
@@ -2085,13 +2107,15 @@
           "name": "Surge (air)",
           "id": "airsurge",
           "emoji_id": "543465115870035999",
-          "emoji_server": "11"
+          "emoji_server": "11",
+          "preset_type": "spell"
         },
         {
           "name": "Surge (fire)",
           "id": "firesurge",
           "emoji_id": "543465116092334083",
-          "emoji_server": "11"
+          "emoji_server": "11",
+          "preset_type": "spell"
         },
         {
           "name": "Surge",
