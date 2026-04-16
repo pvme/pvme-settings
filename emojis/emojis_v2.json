@@ -2699,7 +2699,7 @@
           "emoji_id": "556592057456656399",
           "emoji_server": "12",
           "image": "kvckrC8.png",
-          "preset_slot": "legs",
+          "preset_slot": 3,
           "preset_type": "item",
           "id_aliases": ["erobinhoodlegs"]
         },
@@ -2867,6 +2867,46 @@
           "preset_slot": 4,
           "preset_type": "item"
         },
+        {
+          "name": "Masterwork ranged body",
+          "id": "mwrbody",
+          "emoji_id": "1487224497391276082",
+          "emoji_server": "43",
+          "preset_slot": 2,
+          "preset_type": "item"
+        },
+        {
+          "name": "Masterwork ranged boots",
+          "id": "mwrboots",
+          "emoji_id": "1487224178829426941",
+          "emoji_server": "43",
+          "preset_slot": 7,
+          "preset_type": "item"
+        },        
+        {
+          "name": "Masterwork ranged chaps",
+          "id": "mwrchaps",
+          "emoji_id": "1487224419888664587",
+          "emoji_server": "43",
+          "preset_slot": 3,
+          "preset_type": "item"
+        },        
+        {
+          "name": "Masterwork ranged cowl",
+          "id": "mwrcowl",
+          "emoji_id": "1487224588621320296",
+          "emoji_server": "43",
+          "preset_slot": 1,
+          "preset_type": "item"
+        },
+        {
+          "name": "Masterwork ranged vambraces",
+          "id": "mwrvambraces",
+          "emoji_id": "1487224300963495966",
+          "emoji_server": "43",
+          "preset_slot": 6,
+          "preset_type": "item"
+        },        
         {
           "name": "Mechanised chinchompa",
           "id": "mechchin",
