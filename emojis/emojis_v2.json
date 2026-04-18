@@ -9539,6 +9539,12 @@
           "emoji_server": "19"
         },
         {
+          "name": "Ecliptic component",
+          "id": "ecliptic",
+          "emoji_id": "1480620316467400714",
+          "emoji_server": "42"
+        },        
+        {
           "name": "Enhancing component",
           "id": "enhancingcomp",
           "emoji_id": "583434584113283072",
@@ -9677,6 +9683,12 @@
           "emoji_server": "21"
         },
         {
+          "name": "Manufactured component",
+          "id": "manufacturedcomp",
+          "emoji_id": "1495031880964374688",
+          "emoji_server": "43"
+        },        
+        {
           "name": "Metallic parts",
           "id": "metallicparts",
           "emoji_id": "583434336553140224",
@@ -9690,11 +9702,17 @@
           "emoji_server": "15"
         },
         {
-          "name": "Ocenaic component",
+          "name": "Oceanic component",
           "id": "oceaniccomp",
           "emoji_id": "607288026229506058",
           "emoji_server": "20"
         },
+        {
+          "name": "Offcut component",
+          "id": "offcutcomp",
+          "emoji_id": "1495031942918180974",
+          "emoji_server": "43"
+        },        
         {
           "name": "Organic parts",
           "id": "organicparts",
