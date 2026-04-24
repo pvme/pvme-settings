@@ -10233,6 +10233,12 @@
           "emoji_server": "16"
         },
         {
+          "name": "Fragment of Tumeken",
+          "id": "tumekensfragment",
+          "emoji_id": "1497247315835224116",
+          "emoji_server": "43"
+        },        
+        {
           "name": "General Graardor",
           "id": "graardor",
           "emoji_id": "513212997598969856",
@@ -10349,6 +10355,12 @@
           "emoji_id": "1023150757148622921",
           "emoji_server": "34"
         },
+        {
+          "name": "Modest crocodile demon",
+          "id": "modestcrocodile",
+          "emoji_id": "1497224428101173489",
+          "emoji_server": "43"
+        },        
         {
           "name": "Nakatra",
           "id": "nakatra",
