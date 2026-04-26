@@ -1,13 +1,17 @@
-// check-duplicate-emoji-ids.js
+// check-duplicate-emojis.js
 // Usage:
-// node check-duplicate-emoji-ids.js ../emojis_v2.json
+// node check-duplicate-emojis.js ../emojis_v2.json
+//
+// Tightened fuzzy detection:
+// Only surfaces likely duplicate entities,
+// not tiers / ranks / doses / perk levels / variants.
 
 const fs = require("fs");
 
 const file = process.argv[2];
 
 if (!file) {
-  console.error("Usage: node check-duplicate-emoji-ids.js <file>");
+  console.error("Usage: node check-duplicate-emojis.js <file>");
   process.exit(1);
 }
 
@@ -21,47 +25,139 @@ function lineNumberFromIndex(index) {
   return text.slice(0, index).split("\n").length;
 }
 
-function normalise(value) {
-  return String(value).trim().toLowerCase();
+function normalise(v) {
+  return String(v || "")
+    .trim()
+    .toLowerCase();
+}
+
+function softNormalise(v) {
+  return normalise(v)
+    .replace(/['’]/g, "")
+    .replace(/[^a-z0-9]+/g, "")
+    .replace(/pouch/g, "")
+    .replace(/scrolls?/g, "")
+    .replace(/stack/g, "")
+    .replace(/noted/g, "")
+    .replace(/charged/g, "")
+    .replace(/\d+/g, "");
 }
 
 // -------------------------------------
-// Pre-scan all quoted strings in file
-// so repeated values get real line numbers
+// Ignore patterns
+// -------------------------------------
+function isTierVariant(name) {
+  const n = normalise(name);
+
+  return (
+    /\(\s*tier\s*\d+/i.test(n) ||
+    /\+\s*\d+/.test(n) ||
+    /\(\d+\)/.test(n) ||
+    /\bcast\s*\d+\b/.test(n) ||
+    (/\b\d+\b/.test(n) &&
+      (n.includes("ring") ||
+        n.includes("gloves") ||
+        n.includes("boots") ||
+        n.includes("sword") ||
+        n.includes("quiver") ||
+        n.includes("amulet")))
+  );
+}
+
+function isDoseVariant(name) {
+  const n = normalise(name);
+
+  return (
+    /\(\d+\)/.test(n) ||
+    /\(\d+\s*dose/.test(n) ||
+    /\bflask\b/.test(n) ||
+    /\bpotion\b/.test(n) ||
+    /\bbrew\b/.test(n)
+  );
+}
+
+function isPerkVariant(name) {
+  const n = normalise(name);
+
+  return /\d+$/.test(n);
+}
+
+function isCosmeticVariant(name) {
+  const n = normalise(name);
+
+  return (
+    n.includes("(red)") ||
+    n.includes("(blue)") ||
+    n.includes("(green)") ||
+    n.includes("(yellow)") ||
+    n.includes("(orange)") ||
+    n.includes("(purple)") ||
+    n.includes("(black)") ||
+    n.includes("(melee)") ||
+    n.includes("(ranged)") ||
+    n.includes("(magic)") ||
+    n.includes("(c)")
+  );
+}
+
+function isStackVariant(name, id) {
+  const n = normalise(name);
+  const x = normalise(id);
+
+  return (
+    n.includes("(stack") ||
+    n.includes("(noted") ||
+    x.endsWith("stack") ||
+    x.endsWith("noted") ||
+    x.endsWith("1k") ||
+    x.endsWith("10k") ||
+    x.endsWith("100") ||
+    x.endsWith("500") ||
+    x.endsWith("1000")
+  );
+}
+
+function shouldIgnore(name, id) {
+  return (
+    isTierVariant(name) ||
+    isDoseVariant(name) ||
+    isPerkVariant(name) ||
+    isCosmeticVariant(name) ||
+    isStackVariant(name, id)
+  );
+}
+
+// -------------------------------------
+// Occurrence lines
 // -------------------------------------
 const occurrenceMap = new Map();
 
-function recordOccurrences() {
+(function scan() {
   const regex = /"([^"]+)"/g;
   let match;
 
   while ((match = regex.exec(text)) !== null) {
-    const value = match[1];
-    const key = normalise(value);
+    const value = normalise(match[1]);
 
-    if (!occurrenceMap.has(key)) {
-      occurrenceMap.set(key, []);
+    if (!occurrenceMap.has(value)) {
+      occurrenceMap.set(value, []);
     }
 
-    occurrenceMap.get(key).push(lineNumberFromIndex(match.index));
+    occurrenceMap.get(value).push(lineNumberFromIndex(match.index));
   }
-}
-
-recordOccurrences();
+})();
 
 function findLine(value) {
   const key = normalise(value);
-  const lines = occurrenceMap.get(key);
+  const arr = occurrenceMap.get(key);
 
-  if (!lines || !lines.length) {
-    return "?";
-  }
+  if (!arr || !arr.length) return "?";
 
-  return lines.shift();
+  return arr.shift();
 }
 
 // -------------------------------------
-// Gather entries recursively
+// Gather entries
 // -------------------------------------
 const entries = [];
 
@@ -85,120 +181,58 @@ function walk(node) {
 walk(json);
 
 // -------------------------------------
-// Build key map
+// Fuzzy duplicate map
 // -------------------------------------
-const map = new Map();
-const selfAliases = [];
+const groups = new Map();
 
-function add(key, type, line, entry) {
-  if (!key) return;
+for (const e of entries) {
+  const name = e.name || "";
+  const id = e.id || "";
 
-  const normalisedKey = normalise(key);
+  if (!name || !id) continue;
+  if (shouldIgnore(name, id)) continue;
 
-  if (!map.has(normalisedKey)) {
-    map.set(normalisedKey, []);
-  }
+  const key = softNormalise(name);
 
-  map.get(normalisedKey).push({
-    raw: key,
-    type, // id / alias
-    line,
-    ownerId: entry.id ? normalise(entry.id) : "(no-id)",
-    ownerName: entry.name || "(no name)",
+  if (!key || key.length < 5) continue;
+
+  if (!groups.has(key)) groups.set(key, []);
+  groups.get(key).push({
+    name,
+    id,
+    line: findLine(id),
   });
 }
 
-for (const entry of entries) {
-  if (entry.id) {
-    add(entry.id, "id", findLine(entry.id), entry);
-  }
-
-  if (Array.isArray(entry.id_aliases)) {
-    for (const alias of entry.id_aliases) {
-      const aliasLine = findLine(alias);
-
-      if (entry.id && normalise(alias) === normalise(entry.id)) {
-        selfAliases.push({
-          key: alias,
-          line: aliasLine,
-          id: entry.id,
-          name: entry.name || "(no name)",
-        });
-      }
-
-      add(alias, "alias", aliasLine, entry);
-    }
-  }
-}
-
-// -------------------------------------
-// Remove self aliases from clash logic
-// but still report separately
-// -------------------------------------
-const realClashes = [...map.entries()]
-  .map(([key, rows]) => {
-    const filtered = rows.filter(
-      (row) => !(row.type === "alias" && row.ownerId === key),
-    );
-
-    return [key, filtered];
-  })
+const fuzzy = [...groups.entries()]
   .filter(([, rows]) => rows.length > 1)
   .sort((a, b) => a[0].localeCompare(b[0]));
-
-const realExtraClashes = realClashes.reduce(
-  (sum, [, rows]) => sum + (rows.length - 1),
-  0,
-);
 
 // -------------------------------------
 // Output
 // -------------------------------------
 console.log("Summary");
 console.log("-------");
-console.log(`Entries scanned          : ${entries.length}`);
-console.log(`Real duplicate keys      : ${realClashes.length}`);
-console.log(`Real extra clashes       : ${realExtraClashes}`);
-console.log(`Redundant self-aliases   : ${selfAliases.length}`);
+console.log(`Entries scanned        : ${entries.length}`);
+console.log(`Likely duplicate groups: ${fuzzy.length}`);
 console.log("");
 
-if (selfAliases.length) {
-  console.log("Redundant self-aliases");
-  console.log("----------------------");
+if (!fuzzy.length) {
+  console.log("No likely fuzzy duplicates found.");
+  process.exit(0);
+}
 
-  const sorted = [...selfAliases].sort(
-    (a, b) => Number(a.line) - Number(b.line),
-  );
+console.log("Likely fuzzy duplicates");
+console.log("-----------------------");
 
-  for (const item of sorted) {
-    console.log(`${item.key} alias matches own id (line ${item.line})`);
+for (const [key, rows] of fuzzy) {
+  console.log(key);
+
+  for (const row of rows) {
+    console.log(`  - ${row.name} | id=${row.id} | line ${row.line}`);
   }
 
   console.log("");
 }
 
-if (realClashes.length) {
-  console.log("Real duplicate clashes");
-  console.log("----------------------");
-
-  for (const [key, rows] of realClashes) {
-    const [first, ...rest] = rows;
-
-    console.log(`${key} (${first.type}, line ${first.line})`);
-
-    for (const row of rest) {
-      console.log(`  clashes with ${row.raw} ${row.type} (line ${row.line})`);
-    }
-
-    console.log("");
-  }
-
-  process.exit(1);
-}
-
-if (selfAliases.length) {
-  process.exit(1);
-}
-
-console.log("No duplicate ids or aliases found.");
-process.exit(0);
+process.exit(1);

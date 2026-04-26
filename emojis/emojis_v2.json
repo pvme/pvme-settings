@@ -314,20 +314,32 @@
         {
           "name": "Anima core body of Seren",
           "id": "animabodyseren",
+          "id_aliases": ["serenbody"],
           "emoji_id": "923248695846273054",
-          "emoji_server": "28"
+          "emoji_server": "28",
+          "image": "84rL2dv.png",
+          "preset_slot": 2,
+          "preset_type": "item"
         },
         {
           "name": "Anima core helm of Seren",
           "id": "animahelmseren",
+          "id_aliases": ["serenhelm"],
           "emoji_id": "643120081764745279",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "image": "VMQ89aP.png",
+          "preset_slot": 1,
+          "preset_type": "item"
         },
         {
           "name": "Anima core legs of Seren",
           "id": "animalegsseren",
+          "id_aliases": ["serenlegs"],
           "emoji_id": "556592073340485639",
-          "emoji_server": "12"
+          "emoji_server": "12",
+          "image": "I5QHqtm.png",
+          "preset_slot": 3,
+          "preset_type": "item"
         },
         {
           "name": "Arcane spirit shield",
@@ -626,10 +638,14 @@
           "preset_type": "item"
         },
         {
-          "name": "Gown of Subjugation",
+          "name": "Gown of subjugation",
           "id": "gownofsubjugation",
+          "id_aliases": ["subjugationgown", "subjgown"],
           "emoji_id": "556592058824130589",
-          "emoji_server": "12"
+          "emoji_server": "12",
+          "image": "OprqhH8.png",
+          "preset_slot": 3,
+          "preset_type": "item"
         },
         {
           "name": "Grasping rune pouch (black)",
@@ -2389,8 +2405,12 @@
         {
           "name": "Anima core helm of Zamorak",
           "id": "animahelmzam",
+          "id_aliases": ["animacorehelmofzamorak", "zamhelm"],
           "emoji_id": "643120081446109203",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "image": "DpKvhTI.png",
+          "preset_slot": 1,
+          "preset_type": "item"
         },
         {
           "name": "Anima core legs of Zamorak",
@@ -2660,22 +2680,48 @@
           "preset_type": "item"
         },
         {
-          "name": "Elite Dracolich Body",
-          "id": "edracobody",
+          "name": "Elite Dracolich boots",
+          "id": "edracoboots",
           "id_aliases": [
+            "elitedracoboots",
+            "elitedracolichboots",
+            "edracolichboots"
+          ],
+          "emoji_id": "1179717602151514123",
+          "emoji_server": "41",
+          "image": "07vxUMy.png",
+          "preset_slot": 7,
+          "preset_type": "item"
+        },
+        {
+          "name": "Elite Dracolich hauberk",
+          "id": "edracolichhauberk",
+          "id_aliases": [
+            "edracobody",
             "edracolichbody",
             "elitedracobody",
             "elitedracolichbody"
           ],
           "emoji_id": "1179717430436704306",
-          "emoji_server": "24"
+          "emoji_server": "24",
+          "image": "M5jOHR3.png",
+          "preset_slot": 2,
+          "preset_type": "item"
         },
         {
-          "name": "Elite Dracolich Boots",
-          "id": "edracoboots",
-          "id_aliases": ["elitedracoboots", "elitedracolichboots"],
-          "emoji_id": "1179717602151514123",
-          "emoji_server": "41"
+          "name": "Elite Dracolich vambraces",
+          "id": "edracolichvambs",
+          "id_aliases": [
+            "edracogloves",
+            "edracolichgloves",
+            "elitedracolichgloves",
+            "elitedracogloves"
+          ],
+          "emoji_id": "1179717613769728100",
+          "emoji_server": "41",
+          "image": "zJ2WxLa.png",
+          "preset_slot": 6,
+          "preset_type": "item"
         },
         {
           "name": "Elite Dracolich Chaps",
@@ -2686,17 +2732,6 @@
           "image": "VGqlhJd.png",
           "preset_slot": 3,
           "preset_type": "item"
-        },
-        {
-          "name": "Elite Dracolich Gloves",
-          "id": "edracogloves",
-          "id_aliases": [
-            "edracolichgloves",
-            "elitedracolichgloves",
-            "elitedracogloves"
-          ],
-          "emoji_id": "1179717613769728100",
-          "emoji_server": "41"
         },
         {
           "name": "Eldritch crossbow",
@@ -2737,10 +2772,18 @@
           "id_aliases": ["erobinhoodlegs"]
         },
         {
-          "name": "Elite robin hood tunic",
-          "id": "eliterobinhoodtop",
+          "name": "Elite Robin Hood tunic",
+          "id": "eliterobinhoodtunic",
+          "id_aliases": [
+            "erobinhoodbody",
+            "erobinhoodtunic",
+            "eliterobinhoodtop"
+          ],
           "emoji_id": "556585903489810454",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "image": "m1pJrXk.png",
+          "preset_slot": 2,
+          "preset_type": "item"
         },
         {
           "name": "Elite sirenic chaps",
@@ -4030,8 +4073,12 @@
         {
           "name": "Dragon Rider Lance",
           "id": "dragonriderlance",
+          "id_aliases": ["drl", "driderlance"],
           "emoji_id": "643161541931171872",
-          "emoji_server": "22"
+          "emoji_server": "22",
+          "image": "lEdBw7C.png",
+          "preset_slot": 4,
+          "preset_type": "item"
         },
         {
           "name": "Dragon scimitar",
@@ -4126,7 +4173,7 @@
         },
         {
           "name": "Enhanced excalibur",
-          "id": "enhancedexcalibur",
+          "id": "regaugenhancedexcalibur",
           "emoji_id": "513200949016264727",
           "emoji_server": "15"
         },
@@ -4192,15 +4239,23 @@
         },
         {
           "name": "Khopesh of elidinis",
-          "id": "khopeshoh",
+          "id": "khopeshofelidinis",
+          "id_aliases": ["khopeshoh", "ohkhopesh"],
           "emoji_id": "513206794752098327",
-          "emoji_server": "15"
+          "emoji_server": "15",
+          "image": "PLSz3Aa.png",
+          "preset_slot": 5,
+          "preset_type": "item"
         },
         {
           "name": "Khopesh of tumeken",
-          "id": "khopeshmh",
+          "id": "khopeshoftumeken",
+          "id_aliases": ["khopesh", "khopeshmh", "mhkhopesh"],
           "emoji_id": "513206794844110858",
-          "emoji_server": "15"
+          "emoji_server": "15",
+          "image": "MBpJ07N.png",
+          "preset_slot": 4,
+          "preset_type": "item"
         },
         {
           "name": "Korasi's Sword",
@@ -6001,14 +6056,22 @@
         {
           "name": "Anima core helm of Sliske",
           "id": "animahelmsliske",
+          "id_aliases": ["sliskehelm"],
           "emoji_id": "643120082398085158",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "image": "jxHhKUO.png",
+          "preset_slot": 1,
+          "preset_type": "item"
         },
         {
           "name": "Anima core legs of Sliske",
           "id": "animalegssliske",
+          "id_aliases": ["sliskelegs"],
           "emoji_id": "556592073042821122",
-          "emoji_server": "12"
+          "emoji_server": "12",
+          "image": "0HQcba9.png",
+          "preset_slot": 3,
+          "preset_type": "item"
         },
         {
           "name": "Atrocious rogue gloves",
@@ -7185,7 +7248,7 @@
           "preset_type": "item"
         },
         {
-          "name": "Luck of the dwarves",
+          "name": "Luck of the Dwarves",
           "id": "lotd",
           "emoji_id": "566453486913323042",
           "emoji_server": "16",
@@ -7406,7 +7469,10 @@
           "name": "Dark Magic aura",
           "id": "darkmagic",
           "emoji_id": "643505652571963417",
-          "emoji_server": "8"
+          "emoji_server": "8",
+          "image": "yfe6JbK.png",
+          "preset_slot": 8,
+          "preset_type": "item"
         },
         {
           "name": "Equilibrium aura",
@@ -7862,7 +7928,7 @@
           "preset_type": "relic"
         },
         {
-          "name": "Luck of the Dwarves",
+          "name": "Luck of the Dwarves (Relic)",
           "id": "lotdrelic",
           "emoji_id": "987267727980912701",
           "emoji_server": "31",
@@ -8374,14 +8440,22 @@
         {
           "name": "Lucky Charm (Dragonkin Laboratory)",
           "id": "ed2luckycharm",
+          "id_aliases": ["luckyed2", "luckycharmed2"],
           "emoji_id": "841409588694876222",
-          "emoji_server": "13"
+          "emoji_server": "13",
+          "image": "3nHNM45.png",
+          "preset_slot": 0,
+          "preset_type": "item"
         },
         {
           "name": "Lucky Charm (Shadow Reef)",
           "id": "ed3luckycharm",
+          "id_aliases": ["luckyed3", "luckycharmed3"],
           "emoji_id": "841409588938276874",
-          "emoji_server": "13"
+          "emoji_server": "13",
+          "image": "TLxeJa2.png",
+          "preset_slot": 0,
+          "preset_type": "item"
         },
         {
           "name": "Lucky Charm (Temple of Aminishi)",
@@ -8389,7 +8463,7 @@
           "emoji_id": "841409588561707009",
           "emoji_server": "13",
           "preset_type": "item",
-          "id_aliases": ["luckycharmed1"]
+          "id_aliases": ["luckycharmed1", "luckyed1"]
         },
         {
           "name": "Manuscript of Bik",
@@ -9919,10 +9993,13 @@
           "name": "Blood reaver scroll (Blood siphon)",
           "id": "reaverscroll",
           "emoji_id": "1022562484378419284",
-          "emoji_server": "34"
+          "emoji_server": "34",
+          "image": "Fq5eKsl.png",
+          "preset_slot": 0,
+          "preset_type": "item"
         },
         {
-          "name": "Crit-i-Kal scroll",
+          "name": "Kal'gerion Demon scroll (Crit-i-Kal)",
           "id": "kalgscroll",
           "emoji_id": "841409588954923049",
           "emoji_server": "13"
@@ -9981,9 +10058,13 @@
         {
           "name": "Kal'gerion demon pouch",
           "id": "kalgpouch",
+          "id_aliases": ["kalg"],
           "emoji_id": "921410226484301925",
           "emoji_server": "28",
-          "preset_type": "familiar"
+          "preset_type": "familiar",
+          "image": "5dumsv0.png",
+          "preset_slot": 0,
+          "preset_type": "item"
         },
         {
           "name": "Mammoth feast",
@@ -10039,7 +10120,7 @@
           "emoji_server": "15"
         },
         {
-          "name": "Waterfiend",
+          "name": "Waterfiend pouch",
           "id": "waterfiendpouch",
           "emoji_id": "892342109942743070",
           "emoji_server": "27",
@@ -11283,8 +11364,12 @@
         {
           "name": "Key to the crossing",
           "id": "keytothecrossing",
+          "id_aliases": ["crossingkey"],
           "emoji_id": "1048592046409138217",
-          "emoji_server": "36"
+          "emoji_server": "36",
+          "image": "b9nVW5t.png",
+          "preset_slot": 0,
+          "preset_type": "item"
         },
         {
           "name": "King black dragon head",
@@ -12108,8 +12193,12 @@
         {
           "name": "Eastern Anachronia Teleport",
           "id": "easternanachronia",
+          "id_aliases": ["easternanachroniateleport"],
           "emoji_id": "1387839803818512516",
-          "emoji_server": "42"
+          "emoji_server": "42",
+          "image": "93sRx4RSK3.png",
+          "preset_slot": 0,
+          "preset_type": "item"
         },
         {
           "name": "Home teleport",
@@ -13078,9 +13167,41 @@
         },
         {
           "name": "Master archaeologist's jacket",
-          "id": "archoutfitjacket",
+          "id": "masterarchaeologistsjacket",
+          "id_aliases": ["archoutfitjacket"],
           "emoji_id": "900765150691360768",
-          "emoji_server": "28"
+          "emoji_server": "28",
+          "image": "CeH68i3.png",
+          "preset_slot": 2,
+          "preset_type": "item"
+        },
+        {
+          "name": "Master archaeologist's boots",
+          "id": "masterarchaeologistsboots",
+          "image": "uUxhha9.png",
+          "preset_slot": 7,
+          "preset_type": "item"
+        },
+        {
+          "name": "Master archaeologist's gloves",
+          "id": "masterarchaeologistsgloves",
+          "image": "rZTzwbE.png",
+          "preset_slot": 6,
+          "preset_type": "item"
+        },
+        {
+          "name": "Master archaeologist's hat",
+          "id": "masterarchaeologistshat",
+          "image": "RbVMH0O.png",
+          "preset_slot": 1,
+          "preset_type": "item"
+        },
+        {
+          "name": "Master archaeologist's trousers",
+          "id": "masterarchaeologiststrousers",
+          "image": "e7lRM02.png",
+          "preset_slot": 3,
+          "preset_type": "item"
         },
         {
           "name": "Magic cape",
@@ -15354,48 +15475,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Anima core body of seren",
-          "id": "serenbody",
-          "image": "84rL2dv.png",
-          "preset_slot": 2,
-          "preset_type": "item"
-        },
-        {
-          "name": "Anima core helm of seren",
-          "id": "serenhelm",
-          "image": "VMQ89aP.png",
-          "preset_slot": 1,
-          "preset_type": "item"
-        },
-        {
-          "name": "Anima core helm of sliske",
-          "id": "sliskehelm",
-          "image": "jxHhKUO.png",
-          "preset_slot": 1,
-          "preset_type": "item"
-        },
-        {
-          "name": "Anima core helm of zamorak",
-          "id": "zamhelm",
-          "image": "DpKvhTI.png",
-          "preset_slot": 1,
-          "preset_type": "item"
-        },
-        {
-          "name": "Anima core legs of seren",
-          "id": "serenlegs",
-          "image": "I5QHqtm.png",
-          "preset_slot": 3,
-          "preset_type": "item"
-        },
-        {
-          "name": "Anima core legs of sliske",
-          "id": "sliskelegs",
-          "image": "0HQcba9.png",
-          "preset_slot": 3,
-          "preset_type": "item"
-        },
-        {
           "name": "Antipoison++",
           "id": "antipsn++",
           "image": "ap5QY9d.png",
@@ -15549,13 +15628,6 @@
           "preset_type": "familiar"
         },
         {
-          "name": "Kal'gerion demon",
-          "id": "kalg",
-          "image": "5dumsv0.png",
-          "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
           "name": "Ripper demon",
           "id": "ripperpouch",
           "id_aliases": ["ripper"],
@@ -15657,14 +15729,6 @@
           "image": "vUv3qt5.png",
           "preset_slot": 4,
           "preset_type": "item"
-        },
-        {
-          "name": "Blood Reaver scroll (Blood Siphon)",
-          "id": "reaverscrolls",
-          "image": "Fq5eKsl.png",
-          "preset_slot": 0,
-          "preset_type": "item",
-          "id_aliases": ["bloodreaverscrolls"]
         },
         {
           "name": "Blue charm",
@@ -15791,12 +15855,6 @@
           "image": "CZaNoVfVAh.png",
           "preset_slot": 0,
           "preset_type": "item"
-        },
-        {
-          "name": "Bunyip pouch",
-          "id": "bunyippouch",
-          "image": "ThhI7qf.png",
-          "preset_type": "familiar"
         },
         {
           "name": "Buttons (noted)",
@@ -15999,13 +16057,6 @@
           "id": "lengohbarrows",
           "image": "sGpDkY1T5h.png",
           "preset_slot": 5,
-          "preset_type": "item"
-        },
-        {
-          "name": "Dark magic aura",
-          "id": "darkmagicaura",
-          "image": "yfe6JbK.png",
-          "preset_slot": 8,
           "preset_type": "item"
         },
         {
@@ -16282,13 +16333,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Dragon Rider lance",
-          "id": "driderlance",
-          "image": "lEdBw7C.png",
-          "preset_slot": 4,
-          "preset_type": "item"
-        },
-        {
           "name": "Dragon bane 2h sword",
           "id": "dbane2h",
           "image": "Hv713Z2.png",
@@ -16388,13 +16432,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Eastern anachronia teleport",
-          "id": "easternanachroniateleport",
-          "image": "93sRx4RSK3.png",
-          "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
           "name": "Ectophial",
           "id": "ectophial",
           "image": "mqsH3xe.png",
@@ -16490,34 +16527,6 @@
           "id": "ecbshadow",
           "image": "ezPKDEr.png",
           "preset_slot": 4,
-          "preset_type": "item"
-        },
-        {
-          "name": "Elite Dracolich boots",
-          "id": "edracolichboots",
-          "image": "07vxUMy.png",
-          "preset_slot": 7,
-          "preset_type": "item"
-        },
-        {
-          "name": "Elite Dracolich hauberk",
-          "id": "edracolichhauberk",
-          "image": "M5jOHR3.png",
-          "preset_slot": 2,
-          "preset_type": "item"
-        },
-        {
-          "name": "Elite Dracolich vambraces",
-          "id": "edracolichvambs",
-          "image": "zJ2WxLa.png",
-          "preset_slot": 6,
-          "preset_type": "item"
-        },
-        {
-          "name": "Elite Robin Hood tunic",
-          "id": "erobinhoodbody",
-          "image": "m1pJrXk.png",
-          "preset_slot": 2,
           "preset_type": "item"
         },
         {
@@ -16923,13 +16932,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Gown of subjugation",
-          "id": "subjgown",
-          "image": "OprqhH8.png",
-          "preset_slot": 3,
-          "preset_type": "item"
-        },
-        {
           "name": "Grand Exchange Teleport",
           "id": "grandexchangeteleport",
           "image": "HV7LkNR.png",
@@ -17291,22 +17293,20 @@
           "preset_type": "item"
         },
         {
-          "name": "Kal'gerion Demon scroll (Crit-i-Kal) (stack of 20)",
-          "id": "kalgscrollsstack20",
-          "image": "PiXX0t3.png",
-          "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
           "name": "Kal'gerion Demon scroll (Crit-i-Kal) (stack of 100)",
           "id": "kalgscrollsstack",
           "image": "vIatvqA.png",
           "preset_slot": 0,
           "preset_type": "item",
-          "id_aliases": ["kalgscrolls100", "kalgscrollsstack100", "kalgscrolls"]
+          "id_aliases": [
+            "kalgscrollsstack20",
+            "kalgscrolls100",
+            "kalgscrollsstack100",
+            "kalgscrolls"
+          ]
         },
         {
-          "name": "Kal'gerion Demon scroll (Crit-i-Kal)",
+          "name": "Kal'gerion Demon scroll (Crit-i-Kal) (stack of 500)",
           "id": "kalgscrolls500",
           "image": "hjoH9xr.png",
           "preset_slot": 0,
@@ -17341,24 +17341,10 @@
           "preset_type": "item"
         },
         {
-          "name": "Key to the Crossing",
-          "id": "crossingkey",
-          "image": "b9nVW5t.png",
-          "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
           "name": "Khazard teleport",
           "id": "khazardteleport",
           "image": "MiKyECQ.png",
           "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
-          "name": "Khopesh of Elidinis",
-          "id": "ohkhopesh",
-          "image": "PLSz3Aa.png",
-          "preset_slot": 5,
           "preset_type": "item"
         },
         {
@@ -17394,13 +17380,6 @@
           "id": "ohkhopeshshadow",
           "image": "JGaKP1Y.png",
           "preset_slot": 5,
-          "preset_type": "item"
-        },
-        {
-          "name": "Khopesh of Tumeken",
-          "id": "khopesh",
-          "image": "MBpJ07N.png",
-          "preset_slot": 4,
           "preset_type": "item"
         },
         {
@@ -17527,20 +17506,6 @@
           "name": "Lighthouse Teleport",
           "id": "lighthouseteleport",
           "image": "81jSXdP.png",
-          "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
-          "name": "Lucky charm (Dragonkin Laboratory)",
-          "id": "luckyed2",
-          "image": "3nHNM45.png",
-          "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
-          "name": "Lucky charm (Shadow Reef)",
-          "id": "luckyed3",
-          "image": "TLxeJa2.png",
           "preset_slot": 0,
           "preset_type": "item"
         },
@@ -17678,41 +17643,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Master Archaeologist's jacket",
-          "id": "masterarchaeologistsjacket",
-          "image": "CeH68i3.png",
-          "preset_slot": 2,
-          "preset_type": "item"
-        },
-        {
-          "name": "Master archaeologist's boots",
-          "id": "masterarchaeologistsboots",
-          "image": "uUxhha9.png",
-          "preset_slot": 7,
-          "preset_type": "item"
-        },
-        {
-          "name": "Master archaeologist's gloves",
-          "id": "masterarchaeologistsgloves",
-          "image": "rZTzwbE.png",
-          "preset_slot": 6,
-          "preset_type": "item"
-        },
-        {
-          "name": "Master archaeologist's hat",
-          "id": "masterarchaeologistshat",
-          "image": "RbVMH0O.png",
-          "preset_slot": 1,
-          "preset_type": "item"
-        },
-        {
-          "name": "Master archaeologist's trousers",
-          "id": "masterarchaeologiststrousers",
-          "image": "e7lRM02.png",
-          "preset_slot": 3,
-          "preset_type": "item"
-        },
-        {
           "name": "Master camouflage body",
           "id": "mastercamouflagebody",
           "image": "i8Lc9aI.png",
@@ -17823,12 +17753,6 @@
           "image": "WeCXPfh.png",
           "preset_slot": 0,
           "preset_type": "item"
-        },
-        {
-          "name": "Meerkats pouch",
-          "id": "meerkatspouch",
-          "image": "zIwiuqt.png",
-          "preset_type": "familiar"
         },
         {
           "name": "Melee Mainhand",
@@ -19914,6 +19838,7 @@
         {
           "name": "Magpie pouch",
           "id": "magpiepouch",
+          "id_aliases": ["magpie"],
           "image": "4XhgCbFbSc.png",
           "preset_type": "familiar"
         },
@@ -19961,6 +19886,7 @@
         {
           "name": "Bunyip",
           "id": "bunyip",
+          "id_aliases": ["bunyippouch"],
           "image": "hpjldw8.png",
           "preset_type": "familiar"
         },
@@ -19985,6 +19911,7 @@
         {
           "name": "Meerkats",
           "id": "meerkats",
+          "id_aliases": ["meerkatspouch"],
           "image": "cOwxYnD.png",
           "preset_type": "familiar"
         },
@@ -19998,12 +19925,6 @@
           "name": "Unicorn stallion",
           "id": "unicornstallion",
           "image": "hUZsPCkSXt.png",
-          "preset_type": "familiar"
-        },
-        {
-          "name": "Magpie",
-          "id": "magpie",
-          "image": "4XhgCbFbSc.png",
           "preset_type": "familiar"
         },
         {
@@ -20220,9 +20141,9 @@
           "preset_slot": 0
         },
         {
-          "name": "Enhanced Excalibur",
-          "id": "excal",
-          "id_aliases": ["enhexcal"],
+          "name": "Augmented enhanced Excalibur",
+          "id": "enhancedexcalibur",
+          "id_aliases": ["excal", "enhexcal"],
           "emoji_id": "641337999170207763",
           "emoji_server": "11",
           "image": "nC5xTAR.png",
@@ -20773,7 +20694,11 @@
         {
           "name": "Blood Reaver scroll (Blood Siphon) (stack)",
           "id": "reaverscrollsstack",
-          "id_aliases": ["reaverscrolls500", "bloodreaverscrollsstack"],
+          "id_aliases": [
+            "reaverscrolls500",
+            "bloodreaverscrollsstack",
+            "bloodreaverscrolls"
+          ],
           "image": "3o2DaTu.png",
           "preset_type": "item",
           "preset_slot": 0
