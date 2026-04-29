@@ -3032,8 +3032,10 @@
         {
           "name": "Off-hand ascension Crossbow",
           "id": "ascoh",
+          "id_aliases": ["ohasc"],
           "emoji_id": "513190159362031631",
           "emoji_server": "1",
+          "image": "tSwe20M.png",
           "preset_slot": 5,
           "preset_type": "item"
         },
@@ -3050,6 +3052,8 @@
         {
           "name": "Off-hand chaotic crossbow",
           "id": "chaoticcbowoh",
+          "id_aliases": ["ohchaoticcbow"],
+          "image": "74JuHDf.png",
           "emoji_id": "851514430633803786",
           "emoji_server": "14",
           "preset_slot": 5,
@@ -4459,8 +4463,12 @@
         {
           "name": "Off-hand Drygore Longsword",
           "id": "drygorelongoh",
+          "id_aliases": ["ohlong"],
           "emoji_id": "852939843767369783",
-          "emoji_server": "13"
+          "emoji_server": "13",
+          "image": "NBRRXkx.png",
+          "preset_slot": 5,
+          "preset_type": "item"
         },
         {
           "name": "Off-hand drygore mace",
@@ -4784,10 +4792,14 @@
           "preset_type": "item"
         },
         {
-          "name": "Veracs plateskirt",
-          "id": "veraclegs",
+          "name": "Verac's plateskirt",
+          "id": "veracskirt",
+          "id_aliases": ["veraclegs"],
           "emoji_id": "854475442135236618",
-          "emoji_server": "12"
+          "emoji_server": "12",
+          "image": "E0XJIgg.png",
+          "preset_slot": 3,
+          "preset_type": "item"
         },
         {
           "name": "Vesta's spear",
@@ -7269,8 +7281,12 @@
         {
           "name": "Phoenix Necklace",
           "id": "phoenixnecklace",
+          "id_aliases": ["pneck"],
           "emoji_id": "852939844007231508",
-          "emoji_server": "13"
+          "emoji_server": "13",
+          "image": "ZjwLwcR.png",
+          "preset_slot": 10,
+          "preset_type": "item"
         },
         {
           "name": "Pontifex shadow ring",
@@ -7568,8 +7584,12 @@
         {
           "name": "Scrimshaw of vampyrism",
           "id": "vampscrim",
+          "id_aliases": ["vamp"],
           "emoji_id": "513201294262009874",
-          "emoji_server": "15"
+          "emoji_server": "15",
+          "image": "bMTAHDe.png",
+          "preset_slot": 13,
+          "preset_type": "item"
         },
         {
           "name": "Scripture of Amascut",
@@ -10011,11 +10031,19 @@
           "emoji_server": "10"
         },
         {
-          "name": "Dust cloud scroll",
+          "name": "Smoke Devil scroll (Dust Cloud)",
           "id": "dustcloud",
           "id_aliases": ["smokedevilspec"],
           "emoji_id": "1109432587086200953",
           "emoji_server": "12"
+        },
+        {
+          "name": "Smoke Devil scroll (Dust Cloud) (stack)",
+          "id": "dustcloudstack",
+          "id_aliases": ["smokedevilscroll5000"],
+          "image": "6WSkKO7.png",
+          "preset_slot": 0,
+          "preset_type": "item"
         },
         {
           "name": "Ghast pouch",
@@ -10062,9 +10090,8 @@
           "emoji_id": "921410226484301925",
           "emoji_server": "28",
           "preset_type": "familiar",
-          "image": "5dumsv0.png",
-          "preset_slot": 0,
-          "preset_type": "item"
+          "image": "4oLwaZJ.png",
+          "preset_slot": 0
         },
         {
           "name": "Mammoth feast",
@@ -10075,8 +10102,11 @@
         {
           "name": "Pack yak",
           "id": "yak",
+          "id_aliases": ["packyak", "packyakpouch"],
           "emoji_id": "513195712201228289",
-          "emoji_server": "15"
+          "emoji_server": "15",
+          "image": "pIteWAi.png",
+          "preset_type": "familiar"
         },
         {
           "name": "Spirit terrorbird",
@@ -10087,31 +10117,45 @@
         {
           "name": "Smoke devil",
           "id": "smokedevil",
+          "id_aliases": ["smokedevilpouch"],
           "emoji_id": "1109432590865281126",
           "emoji_server": "12",
           "image": "v6Q4ZEl.png",
           "preset_type": "familiar"
         },
         {
-          "name": "Steel of legends scroll",
+          "name": "Steel Titan scroll (Steel of Legends)",
           "id": "titanscroll",
           "emoji_id": "513195712209485854",
-          "emoji_server": "15"
+          "emoji_server": "15",
+          "preset_slot": 0,
+          "preset_type": "item"
+        },
+        {
+          "name": "Steel Titan scroll (Steel of Legends) (stack)",
+          "id": "titanscrolls",
+          "id_aliases": ["titanscrollstack"],
+          "image": "jxIRcnj.png",
+          "preset_slot": 0,
+          "preset_type": "item"
         },
         {
           "name": "Steel titan",
           "id": "titan",
+          "id_aliases": ["titanpouch"],
           "emoji_id": "513195724738002944",
-          "emoji_server": "15"
+          "emoji_server": "15",
+          "image": "hOgzyPZ.png",
+          "preset_type": "familiar"
         },
         {
           "name": "Unicorn stallion pouch",
           "id": "unicornpouch",
+          "id_aliases": ["unicornstallion", "unipouch"],
           "emoji_id": "1334314016344113163",
           "emoji_server": "42",
-          "image": "mZ9MKRK.png",
-          "preset_type": "familiar",
-          "id_aliases": ["unipouch"]
+          "image": "hUZsPCkSXt.png",
+          "preset_type": "familiar"
         },
         {
           "name": "War tortoise",
@@ -11951,7 +11995,7 @@
           "emoji_server": "42"
         },
         {
-          "name": "Ripper Demon",
+          "name": "Ripper Demon (slayer)",
           "id": "ripperdemon",
           "emoji_id": "1004107343123976284",
           "emoji_server": "32"
@@ -12193,12 +12237,8 @@
         {
           "name": "Eastern Anachronia Teleport",
           "id": "easternanachronia",
-          "id_aliases": ["easternanachroniateleport"],
           "emoji_id": "1387839803818512516",
-          "emoji_server": "42",
-          "image": "93sRx4RSK3.png",
-          "preset_slot": 0,
-          "preset_type": "item"
+          "emoji_server": "42"
         },
         {
           "name": "Home teleport",
@@ -13573,9 +13613,12 @@
         {
           "name": "Slayer Codex",
           "id": "slayercodex",
-          "id_aliases": ["slayerdex"],
+          "id_aliases": ["slayerdex", "scodex"],
           "emoji_id": "1097517249499254875",
-          "emoji_server": "37"
+          "emoji_server": "37",
+          "image": "MivUk5T.png",
+          "preset_slot": 13,
+          "preset_type": "item"
         },
         {
           "name": "Spirit of battle",
@@ -17910,14 +17953,21 @@
           "preset_type": "item"
         },
         {
-          "name": "North-western anachronia teleport",
+          "name": "Eastern anachronia teleport (item)",
+          "id": "easternanachroniateleport",
+          "image": "93sRx4RSK3.png",
+          "preset_slot": 0,
+          "preset_type": "item"
+        },
+        {
+          "name": "North-western anachronia teleport (item)",
           "id": "nwanachroniateleport",
           "image": "XLJvjJIgx1.png",
           "preset_slot": 0,
           "preset_type": "item"
         },
         {
-          "name": "Northern lost grove teleport",
+          "name": "Northern lost grove teleport (item)",
           "id": "northernlostgroveteleport",
           "image": "A6NgrUVPcC.png",
           "preset_slot": 0,
@@ -18001,20 +18051,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Off-hand Chaotic crossbow",
-          "id": "ohchaoticcbow",
-          "image": "74JuHDf.png",
-          "preset_slot": 5,
-          "preset_type": "item"
-        },
-        {
-          "name": "Off-hand ascension crossbow",
-          "id": "ohasc",
-          "image": "tSwe20M.png",
-          "preset_slot": 5,
-          "preset_type": "item"
-        },
-        {
           "name": "Off-hand blightbound crossbow (Third Age)",
           "id": "ohbbc3a",
           "image": "jCrpnVJ.png",
@@ -18046,13 +18082,6 @@
           "name": "Off-hand blightbound crossbow (shadow)",
           "id": "ohbbcshadow",
           "image": "oC4Iyno.png",
-          "preset_slot": 5,
-          "preset_type": "item"
-        },
-        {
-          "name": "Off-hand drygore longsword",
-          "id": "ohlong",
-          "image": "NBRRXkx.png",
           "preset_slot": 5,
           "preset_type": "item"
         },
@@ -18125,12 +18154,6 @@
           "image": "S5KrnxO.png",
           "preset_slot": 0,
           "preset_type": "item"
-        },
-        {
-          "name": "Pack yak pouch",
-          "id": "packyakpouch",
-          "image": "HDVqGWL.png",
-          "preset_type": "familiar"
         },
         {
           "name": "Passage of the Abyss (green)",
@@ -18242,13 +18265,6 @@
           "id": "phoenixlairteleport",
           "image": "pMN6RTG.png",
           "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
-          "name": "Phoenix necklace",
-          "id": "pneck",
-          "image": "ZjwLwcR.png",
-          "preset_slot": 10,
           "preset_type": "item"
         },
         {
@@ -18596,13 +18612,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Scrimshaw of Vampyrism",
-          "id": "vamp",
-          "image": "bMTAHDe.png",
-          "preset_slot": 13,
-          "preset_type": "item"
-        },
-        {
           "name": "Seren godbow (Third Age)",
           "id": "sgb3a",
           "image": "2HVcqMJ.png",
@@ -18729,13 +18738,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Slayer codex",
-          "id": "scodex",
-          "image": "MivUk5T.png",
-          "preset_slot": 13,
-          "preset_type": "item"
-        },
-        {
           "name": "Slayer master cape",
           "id": "slayermastercape",
           "image": "X6FOTd8.png",
@@ -18772,19 +18774,6 @@
           "image": "II0OpzwZdZ.png",
           "preset_slot": 0,
           "preset_type": "item"
-        },
-        {
-          "name": "Smoke Devil scroll (Dust Cloud)",
-          "id": "smokedevilscroll5000",
-          "image": "6WSkKO7.png",
-          "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
-          "name": "Smoke devil pouch",
-          "id": "smokedevilpouch",
-          "image": "FmyhIY5.png",
-          "preset_type": "familiar"
         },
         {
           "name": "Sophanem Dungeon teleport",
@@ -18898,24 +18887,11 @@
           "preset_type": "item"
         },
         {
-          "name": "Steel Titan scroll (Steel of Legends)",
-          "id": "titanscrolls",
-          "image": "jxIRcnj.png",
-          "preset_slot": 0,
-          "preset_type": "item"
-        },
-        {
           "name": "Steel studs (noted)",
           "id": "steelstudsnoted",
           "image": "ooMMGEuSJA.png",
           "preset_slot": 0,
           "preset_type": "item"
-        },
-        {
-          "name": "Steel titan pouch",
-          "id": "titanpouch",
-          "image": "hOgzyPZ.png",
-          "preset_type": "familiar"
         },
         {
           "name": "Sticky bombs",
@@ -19500,13 +19476,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Verac's plateskirt",
-          "id": "veracskirt",
-          "image": "E0XJIgg.png",
-          "preset_slot": 3,
-          "preset_type": "item"
-        },
-        {
           "name": "Virtus gloves",
           "id": "virtusgloves",
           "image": "CVmSxkv.png",
@@ -19891,12 +19860,6 @@
           "preset_type": "familiar"
         },
         {
-          "name": "Kal'gerion Demon",
-          "id": "kalgdemon",
-          "image": "4oLwaZJ.png",
-          "preset_type": "familiar"
-        },
-        {
           "name": "Legendary Pet (Scavenge)",
           "id": "legendpetscav",
           "image": "KWIawjY.png",
@@ -19913,18 +19876,6 @@
           "id": "meerkats",
           "id_aliases": ["meerkatspouch"],
           "image": "cOwxYnD.png",
-          "preset_type": "familiar"
-        },
-        {
-          "name": "Pack Yak",
-          "id": "packyak",
-          "image": "pIteWAi.png",
-          "preset_type": "familiar"
-        },
-        {
-          "name": "Unicorn stallion",
-          "id": "unicornstallion",
-          "image": "hUZsPCkSXt.png",
           "preset_type": "familiar"
         },
         {
