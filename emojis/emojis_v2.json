@@ -1025,7 +1025,6 @@
           "emoji_id": "536252658986647589",
           "emoji_server": "3",
           "image": "9Nngfvj.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -1035,7 +1034,6 @@
           "emoji_id": "536252658961481769",
           "emoji_server": "3",
           "image": "PxjiQ9K.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -1044,7 +1042,6 @@
           "emoji_id": "536252658970001409",
           "emoji_server": "3",
           "image": "DmJhw50.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -1053,7 +1050,6 @@
           "emoji_id": "536252659301089280",
           "emoji_server": "3",
           "image": "orRGsqY.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -1062,7 +1058,6 @@
           "emoji_id": "536252659422855188",
           "emoji_server": "3",
           "image": "VmHx4CQ.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -1072,7 +1067,6 @@
           "emoji_id": "536252659615924258",
           "emoji_server": "3",
           "image": "7HrRTp8.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -1081,7 +1075,6 @@
           "emoji_id": "536252659586433024",
           "emoji_server": "3",
           "image": "0V4quVU.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -1091,7 +1084,6 @@
           "emoji_id": "536252659670188042",
           "emoji_server": "3",
           "image": "vxUw7gQ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -1100,7 +1092,6 @@
           "emoji_id": "536252659808731137",
           "emoji_server": "3",
           "image": "AnzJigr.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -1110,7 +1101,6 @@
           "emoji_id": "536252659850674186",
           "emoji_server": "3",
           "image": "Moq1ANC.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -1126,7 +1116,6 @@
           "emoji_id": "536252661406760970",
           "emoji_server": "3",
           "image": "ILev8dS.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -1136,7 +1125,6 @@
           "emoji_id": "536252659783696387",
           "emoji_server": "3",
           "image": "2zOitRL.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -1151,7 +1139,6 @@
           "emoji_id": "536252660286881832",
           "emoji_server": "3",
           "image": "6GTypln.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -1195,7 +1182,6 @@
           "emoji_id": "536252660333019136",
           "emoji_server": "3",
           "image": "hXWHlfs.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -1211,7 +1197,6 @@
           "emoji_id": "1356369700694523954",
           "emoji_server": "42",
           "image": "uhPTmJEBGW.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -1220,7 +1205,6 @@
           "emoji_id": "536252660165115905",
           "emoji_server": "3",
           "image": "WnPH1nm.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -5243,7 +5227,6 @@
           "emoji_id": "1138808701029982319",
           "emoji_server": "39",
           "image": "oYa48lq.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -5252,7 +5235,6 @@
           "emoji_id": "1151165582650122350",
           "emoji_server": "40",
           "image": "Dy2NfTt.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -5261,7 +5243,6 @@
           "emoji_id": "1138808695703207967",
           "emoji_server": "39",
           "image": "cgW4gGD.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -5270,7 +5251,6 @@
           "emoji_id": "1138808692087730206",
           "emoji_server": "39",
           "image": "4pGOeox.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -5279,7 +5259,6 @@
           "emoji_id": "1138808705362710680",
           "emoji_server": "39",
           "image": "1dkkbuM.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8060,7 +8039,6 @@
           "emoji_id": "1027212535121850400",
           "emoji_server": "34",
           "image": "SRVgAXl.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8105,7 +8083,6 @@
           "emoji_id": "1000328247441104917",
           "emoji_server": "31",
           "image": "UEC7TLp.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8156,7 +8133,6 @@
           "emoji_id": "656844963522281473",
           "emoji_server": "2",
           "image": "Dgtgp4n.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8215,7 +8191,6 @@
           "emoji_id": "869283142350041098",
           "emoji_server": "9",
           "image": "GTwVqeC.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8319,7 +8294,6 @@
           "emoji_id": "1097526501571821588",
           "emoji_server": "37",
           "image": "QrKIHKX.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8329,7 +8303,6 @@
           "emoji_id": "1097529794742194209",
           "emoji_server": "37",
           "image": "XVBSWOO.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8383,7 +8356,6 @@
           "emoji_id": "689530593901412578",
           "emoji_server": "3",
           "image": "iXpGYQo.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8401,7 +8373,6 @@
           "emoji_id": "1134863720128974940",
           "emoji_server": "1",
           "image": "egmZjv0.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8416,7 +8387,6 @@
           "emoji_id": "690987265371144202",
           "emoji_server": "8",
           "image": "oEYAJZf.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["iritincensesticks"]
         },
@@ -8441,7 +8411,6 @@
           "emoji_id": "565726489341984779",
           "emoji_server": "16",
           "image": "Ba7yju8.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["kwuarmincencesticks"]
         },
@@ -8464,7 +8433,6 @@
           "emoji_id": "841409588694876222",
           "emoji_server": "13",
           "image": "3nHNM45.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8474,7 +8442,6 @@
           "emoji_id": "841409588938276874",
           "emoji_server": "13",
           "image": "TLxeJa2.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8491,7 +8458,6 @@
           "emoji_id": "869284373701226626",
           "emoji_server": "27",
           "image": "Vy8HemN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8500,7 +8466,6 @@
           "emoji_id": "869284373898334238",
           "emoji_server": "27",
           "image": "C2vtuGN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8509,7 +8474,6 @@
           "emoji_id": "869284373747343460",
           "emoji_server": "27",
           "image": "LB3wWGx.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8518,7 +8482,6 @@
           "emoji_id": "869284373906735114",
           "emoji_server": "27",
           "image": "Eq4sihp.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8577,7 +8540,6 @@
           "emoji_id": "1285852547453685781",
           "emoji_server": "42",
           "image": "k1f7oSp.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8598,7 +8560,6 @@
           "emoji_id": "798285651387613194",
           "emoji_server": "9",
           "image": "R4tRepk.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8635,7 +8596,6 @@
           "emoji_id": "1005552213529215076",
           "emoji_server": "33",
           "image": "cMT0FGmJeS.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8645,7 +8605,6 @@
           "emoji_id": "925366289629859860",
           "emoji_server": "29",
           "image": "TFvRsJF.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8666,7 +8625,6 @@
           "emoji_id": "878739200407654431",
           "emoji_server": "27",
           "image": "uIF03Iz.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8697,7 +8655,6 @@
           "emoji_id": "928221126360969226",
           "emoji_server": "29",
           "image": "XjIho2f.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8756,7 +8713,6 @@
           "emoji_id": "690987265186594857",
           "emoji_server": "8",
           "image": "YihChFF.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8771,7 +8727,6 @@
           "emoji_id": "1006481325076787240",
           "emoji_server": "33",
           "image": "xE7wk4H.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8780,7 +8735,6 @@
           "emoji_id": "689530594412986389",
           "emoji_server": "3",
           "image": "kyuxyj3.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8789,7 +8743,6 @@
           "emoji_id": "565726489363087360",
           "emoji_server": "16",
           "image": "qocLc4k.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -8848,7 +8801,6 @@
           "emoji_id": "565726489136463894",
           "emoji_server": "16",
           "image": "8RLFr9n.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -8959,7 +8911,6 @@
           "emoji_id": "643168594493964298",
           "emoji_server": "24",
           "image": "wD7BGd2.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["torngrimoirepage"]
         },
@@ -9416,7 +9367,6 @@
           "emoji_id": "1009423860875153559",
           "emoji_server": "34",
           "image": "3thTwM7.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -9426,7 +9376,6 @@
           "emoji_id": "689501925770919981",
           "emoji_server": "11",
           "image": "0d9nkK4.png",
-          "preset_slot": 0,
           "preset_type": "item"
         }
       ]
@@ -10015,7 +9964,6 @@
           "emoji_id": "1022562484378419284",
           "emoji_server": "34",
           "image": "Fq5eKsl.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -10042,7 +9990,6 @@
           "id": "dustcloudstack",
           "id_aliases": ["smokedevilscroll5000"],
           "image": "6WSkKO7.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -10090,8 +10037,7 @@
           "emoji_id": "921410226484301925",
           "emoji_server": "28",
           "preset_type": "familiar",
-          "image": "4oLwaZJ.png",
-          "preset_slot": 0
+          "image": "4oLwaZJ.png"
         },
         {
           "name": "Mammoth feast",
@@ -10128,7 +10074,6 @@
           "id": "titanscroll",
           "emoji_id": "513195712209485854",
           "emoji_server": "15",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -10136,7 +10081,6 @@
           "id": "titanscrolls",
           "id_aliases": ["titanscrollstack"],
           "image": "jxIRcnj.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -11412,7 +11356,6 @@
           "emoji_id": "1048592046409138217",
           "emoji_server": "36",
           "image": "b9nVW5t.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -11577,7 +11520,6 @@
           "emoji_id": "892819585470980126",
           "emoji_server": "28",
           "image": "JujxNhC.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -11680,7 +11622,6 @@
           "emoji_id": "656426807893032963",
           "emoji_server": "25",
           "image": "qDohEMPwiw.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -12422,7 +12363,6 @@
           "id": "easycluestack",
           "id_aliases": ["easyclues"],
           "image": "3tsGSBD.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -12430,7 +12370,6 @@
           "id": "easyclue",
           "emoji_id": "1123586950989885510",
           "emoji_server": "38",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -12438,7 +12377,6 @@
           "id": "eliteclue",
           "emoji_id": "1123586941057769552",
           "emoji_server": "38",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -12446,15 +12384,13 @@
           "id": "eliteclues",
           "id_aliases": ["elitecluestack"],
           "image": "eyWoLsP.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Sealed clue scroll (hard)",
           "id": "hardclue",
           "emoji_id": "1123586945273049109",
           "emoji_server": "38",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -12462,38 +12398,33 @@
           "id": "hardclues",
           "id_aliases": ["hardcluestack"],
           "image": "Y3W9y2M.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Sealed clue scroll (master)",
           "id": "masterclue",
           "emoji_id": "1123586937245151303",
           "emoji_server": "38",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Sealed clue scroll (master) (stack)",
           "id": "masterclues",
           "image": "TwrsJae.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Sealed clue scroll (medium)",
           "id": "mediumclue",
           "emoji_id": "1123586948905324637",
           "emoji_server": "38",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Sealed clue scroll (medium) (stack)",
           "id": "mediumclues",
           "image": "kCt8i0F.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         }
       ]
     },
@@ -13115,7 +13046,6 @@
           "emoji_id": "994189299681607800",
           "emoji_server": "31",
           "image": "U8R9vg2.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -13166,7 +13096,6 @@
           "emoji_id": "1161265528057380904",
           "emoji_server": "40",
           "image": "zcGK9BZ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -13492,7 +13421,6 @@
           "emoji_id": "1137735861937655900",
           "emoji_server": "2",
           "image": "gKUbd5X.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -13681,7 +13609,6 @@
           "emoji_id": "1027212537411932160",
           "emoji_server": "34",
           "image": "yzalFZq.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -14001,8 +13928,7 @@
           "emoji_id": "565726489404899368",
           "emoji_server": "16",
           "image": "LfpiRjg.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Adamantite stone spirit",
@@ -14011,8 +13937,7 @@
           "emoji_id": "643506831909584896",
           "emoji_server": "25",
           "image": "RacwiPqSAD.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Crystal key",
@@ -14020,8 +13945,7 @@
           "id_aliases": ["ckey"],
           "emoji_id": "643171300134617100",
           "emoji_server": "25",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         }
       ]
     },
@@ -15308,7 +15232,6 @@
           "name": "Accursed ashes (noted)",
           "id": "accursedashes1noted",
           "image": "JiBstmM4RU.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15364,21 +15287,18 @@
           "name": "Active clue",
           "id": "activeclue",
           "image": "beq0RtH.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Adrenaline renewal flask (6)",
           "id": "renewal6",
           "image": "Swtl8pP.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Adrenaline renewal potion (4)",
           "id": "renewal4",
           "image": "IqAjWRF.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15392,14 +15312,12 @@
           "name": "Aggression flask (6)",
           "id": "aggro6",
           "image": "nTRsMW1.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Aggression potion (4)",
           "id": "aggro4",
           "image": "NdYvdGN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15407,7 +15325,6 @@
           "id": "aggroverload",
           "id_aliases": ["aggrovl"],
           "image": "RsOriXw.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "emoji_id": "689551388576972805",
           "emoji_server": "3"
@@ -15423,14 +15340,12 @@
           "name": "Agility potion (1) (noted)",
           "id": "agil1dosenoted",
           "image": "RxKcNSdYM9.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Air rune (stack)",
           "id": "airrune1k",
           "image": "IOehGlx.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15514,14 +15429,12 @@
           "name": "Ancient casket",
           "id": "ancientcasket",
           "image": "9OY88KDlTo.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Antipoison++",
           "id": "antipsn++",
           "image": "ap5QY9d.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15549,14 +15462,12 @@
           "name": "Archaeology teleport",
           "id": "archaeologyteleport",
           "image": "WYm7p9h.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Ardougne teleport",
           "id": "ardytele100",
           "image": "PreONox.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15599,7 +15510,6 @@
           "name": "Ascension shard",
           "id": "ascshard",
           "image": "honJ2pK.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15620,7 +15530,6 @@
           "name": "Bandit Camp Teleport",
           "id": "banditcampteleport",
           "image": "VLdEZ1R.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15634,21 +15543,18 @@
           "name": "Barrows totems",
           "id": "barrowstotems",
           "image": "gIfjnhJ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Basic ghostly ink",
           "id": "basicghostlyink",
           "image": "Y4A09W9.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Basic ritual candle",
           "id": "basicritualcandle",
           "image": "1lBPmJ2.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15683,7 +15589,6 @@
           "name": "Black dragon leather",
           "id": "blackdragonleather",
           "image": "o1fn8Bv.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15777,7 +15682,6 @@
           "name": "Blue charm",
           "id": "bluecharm1",
           "image": "oL7B8YM.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15791,7 +15695,6 @@
           "name": "Blue firelighter",
           "id": "bluefirelighter",
           "image": "SNyIwF1.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15840,7 +15743,6 @@
           "name": "Bowstring (noted)",
           "id": "bowstring1noted",
           "image": "Ubd1rYIggd.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15861,7 +15763,6 @@
           "name": "Brimhaven tablet",
           "id": "brimhaventablet",
           "image": "uRrpo3Y.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15896,35 +15797,30 @@
           "name": "Bullseye lantern",
           "id": "bullseyelantern",
           "image": "CZaNoVfVAh.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Buttons (noted)",
           "id": "buttonsnoted",
           "image": "F9ZNCqT04p.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Calcified fungus soup",
           "id": "calcifiedfungussoup",
           "image": "exlOdpw.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Camelot teleport",
           "id": "camelottele100",
           "image": "9vEqmlE.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Cannonballs",
           "id": "cballs",
           "image": "GrfjyE2.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15952,14 +15848,12 @@
           "name": "Chaos rune (stack)",
           "id": "chaosrune1k",
           "image": "o8E0y1O.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Charming potion flask (6)",
           "id": "charmingflask",
           "image": "hvGFXFI.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15973,7 +15867,6 @@
           "name": "Clocktower Teleport",
           "id": "clocktowerteleport",
           "image": "HcAGnHy.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -15994,7 +15887,6 @@
           "name": "Combat training dummy",
           "id": "mtx",
           "image": "yWv57LC.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16008,14 +15900,12 @@
           "name": "Cosmic accumulator",
           "id": "cosmicaccumulator",
           "image": "GZUPqgW709.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Cosmic altar teleport",
           "id": "cosmicaltarteleport",
           "image": "bURJ0uQ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16036,14 +15926,12 @@
           "name": "Crimson charm",
           "id": "crimsoncharm1",
           "image": "m6W15K7.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Crushed nest",
           "id": "crushednest",
           "image": "JzxQM2m.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16071,21 +15959,18 @@
           "name": "Curly root",
           "id": "curlyroot",
           "image": "FN0XHFS.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Dagannoth Kings teleport",
           "id": "dksteleport",
           "image": "WybIH5cKeP.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Damaged armour (noted)",
           "id": "damagedarmournoted",
           "image": "qzQyPALQRN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16119,7 +16004,6 @@
           "name": "Death rune (stack)",
           "id": "deathrune10k",
           "image": "gxmlPbx.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16196,7 +16080,6 @@
           "name": "Deathspore arrow tips",
           "id": "deathsporearrowtips1",
           "image": "jHCeJqk.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16238,7 +16121,6 @@
           "name": "Decorated cooking urn (nr)",
           "id": "decoratedcookingurn(nr)",
           "image": "cx7cvZh.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16322,14 +16204,12 @@
           "name": "Disk of returning",
           "id": "diskofreturning",
           "image": "z0Yiyhk.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Distraction & Diversion reset token (weekly)",
           "id": "weeklytoken",
           "image": "fOJHeIX.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16343,7 +16223,6 @@
           "name": "Dominion mines (stack of 4)",
           "id": "minesstack4",
           "image": "ghUXVss.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["mines4", "4mines"]
         },
@@ -16351,7 +16230,6 @@
           "name": "Dorgesh-kaan sphere",
           "id": "dorgesh-kaansphere",
           "image": "tyIGCLl.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16386,7 +16264,6 @@
           "name": "Dragon bones (noted)",
           "id": "dragonbones1noted",
           "image": "atFi2uJiaO.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16428,7 +16305,6 @@
           "name": "Dreadnips (stack)",
           "id": "dreadnipstack",
           "image": "PzFKnJF.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["nipstack", "dreadnipsstack"]
         },
@@ -16443,42 +16319,36 @@
           "name": "Dwarf weed incense sticks (stack of 100)",
           "id": "dwarfincensesticks100",
           "image": "IyrZ6fUXKZ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Dwarf weed incense sticks (stack of 11)",
           "id": "dwarfincensesticks11",
           "image": "kYdLZPVc5x.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Dwarven fish extractor",
           "id": "dwarvenfishextractor",
           "image": "oN8HWIo.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Dwarven stout (m) (noted)",
           "id": "dwarvenstoutmnoted",
           "image": "Anz8RJhAce.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Earth rune (stack)",
           "id": "earthrune1k",
           "image": "BaZYIcM.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Ectophial",
           "id": "ectophial",
           "image": "mqsH3xe.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16513,7 +16383,6 @@
           "name": "Elder logs",
           "id": "elderlogs",
           "image": "IilVMmp.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16534,7 +16403,6 @@
           "name": "Elder rune platebody + 4",
           "id": "elderruneplate4",
           "image": "orbVikx.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16604,7 +16472,6 @@
           "name": "Enchanted lyre",
           "id": "enchantedlyre",
           "image": "X0KALWt.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16635,7 +16502,6 @@
           "emoji_id": "641337470491033600",
           "emoji_server": "11",
           "image": "LWm3PJt.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16726,56 +16592,48 @@
           "name": "Extreme attack (4)",
           "id": "extattack",
           "image": "bbhu0Wx.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Extreme defence (4)",
           "id": "extdefence",
           "image": "DUhcOW3.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Extreme magic (4)",
           "id": "extmagic",
           "image": "SgGHcx0.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Extreme necromancy (4)",
           "id": "extnecro",
           "image": "ioK95Z8.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Extreme prayer flask (6)",
           "id": "extprayflask",
           "image": "YSj7H2I.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Extreme ranging (4)",
           "id": "extrange",
           "image": "SIxkkCF.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Extreme strength (4)",
           "id": "extstrength",
           "image": "7fRfsO4.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Falador teleport",
           "id": "faladorteleport(item)",
           "image": "IdYQdnl.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16796,21 +16654,18 @@
           "name": "Feather of Ma'at",
           "id": "maatfeathers1k",
           "image": "ZHuOtCr.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Fire orb",
           "id": "fireorb1noted",
           "image": "A6r373m.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Fire rune (stack)",
           "id": "firerune10k",
           "image": "rbZs9di.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16831,7 +16686,6 @@
           "name": "Fishing potion (4)",
           "id": "fishingpotion",
           "image": "VZsgXdV.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16845,7 +16699,6 @@
           "name": "Fort Forinthry Teleport",
           "id": "fortforinthryteleport",
           "image": "FHF6xM3.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16880,14 +16733,12 @@
           "name": "Fungal algae soup",
           "id": "fungaalgaesoup",
           "image": "OxpeKXr.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Fungal spore soup",
           "id": "fungalsporesoup",
           "image": "Wb8Mgob.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -16936,175 +16787,150 @@
           "name": "Gem bag (upgraded)",
           "id": "gembag",
           "image": "ODNlwIc.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Goblin village sphere",
           "id": "goblinvillagesphere",
           "image": "4FOxSHk.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Gold charm",
           "id": "goldcharm1",
           "image": "z9gFxyX.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Gold seal",
           "id": "goldseal(noted)",
           "image": "I74Bq3s.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Gold stone spirit",
           "id": "goldspirit",
           "image": "YkXeaHvRiP.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Gorajian mushroom",
           "id": "gorajianmushroom",
           "image": "swrloxf.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grand Exchange Teleport",
           "id": "grandexchangeteleport",
           "image": "HV7LkNR.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grand magic potion (6)",
           "id": "grandmagic",
           "image": "1cUQdhw.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grand seed pod",
           "id": "grandseedpod",
           "image": "TbTkcjH.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Greater flaming skull",
           "id": "greaterflamingskull",
           "image": "6u4DnJu.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Greater ghostly ink",
           "id": "greaterghostlyink",
           "image": "SDDTZJR.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Greater ritual candle",
           "id": "greaterritualcandle",
           "image": "ASibxkd.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Green charm",
           "id": "greencharm1",
           "image": "FuWsB0y.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Green firelighter",
           "id": "greenfirelighter",
           "image": "GvNLM7k.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grenwall spikes",
           "id": "grenwallspikes",
           "image": "QnPtp0D.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grimy avantoe",
           "id": "grimyavantoe1noted",
           "image": "EEsG2bq9ym.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grimy cadantine",
           "id": "grimycadantine1noted",
           "image": "reGWPkH5iC.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grimy dwarf weed",
           "id": "grimydwarfweed1noted",
           "image": "1UndjKAYRw.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grimy guam (noted)",
           "id": "grimyguamnoted",
           "image": "s4nDPaqRlM.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grimy irit",
           "id": "grimyirit1noted",
           "image": "1cQUDmUboe.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grimy lantadyme",
           "id": "grimylantadyme1noted",
           "image": "wvcl13Rllt.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grimy marrentill (noted)",
           "id": "grimymarrentillnoted",
           "image": "VSxuIdB6kF.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grimy tarromin (noted)",
           "id": "grimytarrominnoted",
           "image": "yPJ4nbCRYw.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Grimy toadflax",
           "id": "grimytoadflax1noted",
           "image": "ePgC4ZrAPp.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Gu'Tanoth Teleport",
           "id": "gutanothteleport",
           "image": "mmYFsu6.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17118,49 +16944,42 @@
           "name": "H.A.M. boots (noted)",
           "id": "hambootsnoted",
           "image": "DGGXVwFID7.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "H.A.M. cloak (noted)",
           "id": "hamcloaknoted",
           "image": "ZVQanKcmZh.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "H.A.M. gloves (noted)",
           "id": "hamglovesnoted",
           "image": "w8gFYQ04E4.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "H.A.M. hood (noted)",
           "id": "hamhoodnoted",
           "image": "M9VAl8u3No.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "H.A.M. logo (noted)",
           "id": "hamlogonoted",
           "image": "vMK6G79QPz.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "H.A.M. robe (noted)",
           "id": "hamrobenoted",
           "image": "VETNdM34FB.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "H.A.M. shirt (noted)",
           "id": "hamshirtnoted",
           "image": "My3XQFKlW3.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17181,7 +17000,6 @@
           "name": "Hellhound scroll (Soul Food)",
           "id": "hellhoundscrolls",
           "image": "zNZLlL3.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["hellhoundscroll", "soulfoodscroll"],
           "emoji_id": "922417969731088435",
@@ -17198,7 +17016,6 @@
           "name": "Hi-spec monocle",
           "id": "hispecmonocle",
           "image": "di9l8BrQmW.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": []
         },
@@ -17276,7 +17093,6 @@
           "name": "Infernal ashes",
           "id": "infernalashes1noted",
           "image": "UPLUhet.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17311,14 +17127,12 @@
           "name": "Invitation box",
           "id": "invitationbox",
           "image": "oQdFuSm.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Iron stone spirit",
           "id": "ironspirit",
           "image": "SDXuE2zX8x.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17332,14 +17146,12 @@
           "name": "Jangerberries",
           "id": "jangerberries",
           "image": "8ka7wAu.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Kal'gerion Demon scroll (Crit-i-Kal) (stack of 100)",
           "id": "kalgscrollsstack",
           "image": "vIatvqA.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": [
             "kalgscrollsstack20",
@@ -17352,7 +17164,6 @@
           "name": "Kal'gerion Demon scroll (Crit-i-Kal) (stack of 500)",
           "id": "kalgscrolls500",
           "image": "hjoH9xr.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17387,7 +17198,6 @@
           "name": "Khazard teleport",
           "id": "khazardteleport",
           "image": "MiKyECQ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17464,7 +17274,6 @@
           "name": "Kwuarm incense sticks (stack of 100)",
           "id": "kwuarmsticks100",
           "image": "ARLol7s.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["kwuarmincencesticks100"]
         },
@@ -17472,21 +17281,18 @@
           "name": "Law rune (stack)",
           "id": "lawrune100",
           "image": "MLCntzy.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Law rune (stack of 500)",
           "id": "lawrune500",
           "image": "3wrb0Um.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Leather body (noted)",
           "id": "leatherbodynoted",
           "image": "yC8q2cghR5.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17535,7 +17341,6 @@
           "name": "Lesser Demon scroll (Ring of Fire)",
           "id": "lesserdemonscrolls500",
           "image": "2SKjqYspC4.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17549,14 +17354,12 @@
           "name": "Lighthouse Teleport",
           "id": "lighthouseteleport",
           "image": "81jSXdP.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Lumbrdige teleport",
           "id": "lumbytele100",
           "image": "YSQatfJ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17640,7 +17443,6 @@
           "name": "Magic whistle",
           "id": "magicwhistle",
           "image": "CGKQgWV.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17773,7 +17575,6 @@
           "name": "Material manual (stack of 4)",
           "id": "materialmanual4",
           "image": "CLI66N4xb2.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17787,14 +17588,12 @@
           "name": "Meerkat scroll (Fetch Casket)",
           "id": "meerkatscrolls500",
           "image": "Dc1RbtE.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Meerkat scrolls (Fetch Casket)",
           "id": "meerkatscroll",
           "image": "WeCXPfh.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17808,7 +17607,6 @@
           "name": "Memory shard",
           "id": "memoryshard",
           "image": "9Sf9ugGYPr.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17822,7 +17620,6 @@
           "name": "Menaphos tablet",
           "id": "menaphostablet",
           "image": "P8Ap8Ga.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["menaphostablet1"]
         },
@@ -17844,7 +17641,6 @@
           "name": "Miscellania Teleport",
           "id": "miscellaniateleport",
           "image": "Ew6PDyN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17879,14 +17675,12 @@
           "name": "Mystical sand seed",
           "id": "mysticalsandseed",
           "image": "FmCfHlNLch.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Nature altar teleport",
           "id": "naturealtarteleport",
           "image": "qm02gPe.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -17956,28 +17750,24 @@
           "name": "Eastern anachronia teleport (item)",
           "id": "easternanachroniateleport",
           "image": "93sRx4RSK3.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "North-western anachronia teleport (item)",
           "id": "nwanachroniateleport",
           "image": "XLJvjJIgx1.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Northern lost grove teleport (item)",
           "id": "northernlostgroveteleport",
           "image": "A6NgrUVPcC.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Noted items",
           "id": "noteditems",
           "image": "TKRGiJ5.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18019,7 +17809,6 @@
           "name": "Oak wood spirit",
           "id": "oakwoodspirit",
           "image": "5xx8O1301h.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18103,14 +17892,12 @@
           "name": "Ogre flask (salt water) (6)",
           "id": "ogreflasksaltwater",
           "image": "aWWEV1l.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Ogre flask (thermal)",
           "id": "ogrethermal",
           "image": "6GKoFBO.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18124,35 +17911,30 @@
           "name": "Ourania teleport",
           "id": "ouraniateleport",
           "image": "a9CsKQI.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Overload (1)",
           "id": "overload1",
           "image": "nB8MUEL.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Overload salve (6)",
           "id": "overloadsalve",
           "image": "zw4obTi.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Pack Mammoth scroll (Mammoth Feast)",
           "id": "mammothscrolls",
           "image": "kOJa3qu.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Pack Yak scroll (Winter Storage)",
           "id": "yakscrolls",
           "image": "S5KrnxO.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18194,7 +17976,6 @@
           "name": "Perfect juju fishing potion (4)",
           "id": "perfectjujufishingpotion",
           "image": "70U9pJh.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18264,7 +18045,6 @@
           "name": "Phoenix Lair Teleport",
           "id": "phoenixlairteleport",
           "image": "pMN6RTG.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18285,84 +18065,72 @@
           "name": "Platypus",
           "id": "platypus",
           "image": "M9RIy7d.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Pollnivneach Teleport",
           "id": "pollnivneachteleport",
           "image": "AOVQ5Q9.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Pollnivneach tablet",
           "id": "pollnivneachtablet",
           "image": "uRrpo3Y.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Portable fairy ring (inactive)",
           "id": "fairyring",
           "image": "XCZuCaN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Potion reservoir (inactive)",
           "id": "potionreservoir2",
           "image": "af9O4EM.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Powerburst of acceleration (1)",
           "id": "accel1",
           "image": "itNElgJ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Powerburst of acceleration (4)",
           "id": "accel4",
           "image": "I6HFjyN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Powerburst of feats (1)",
           "id": "feats1",
           "image": "yuwYBjs.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Powerburst of masterstroke (1)",
           "id": "powerburstofmasterstroke(1)",
           "image": "XSZEqx9.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Powerburst of vitality (1)",
           "id": "vitality1",
           "image": "T6g4IsW.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Powerburst of vitality (4)",
           "id": "vitality4",
           "image": "n9C7iSA.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Powerful ghostly ink",
           "id": "powerfulghostlyink",
           "image": "gluVlJ8.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18376,21 +18144,18 @@
           "name": "Pure essence",
           "id": "pureessence1noted",
           "image": "jfijgZN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Purple firelighter",
           "id": "purplefirelighter",
           "image": "e3znHPZ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Puzzle box",
           "id": "puzzlebox",
           "image": "jiK1ZtB.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18411,56 +18176,48 @@
           "name": "Raw rocktail",
           "id": "rawrocktail",
           "image": "GauahOW.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Raw shark",
           "id": "rawshark",
           "image": "1aatevD.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Raw wild pie",
           "id": "rawwildpie",
           "image": "o0uIoLH.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Red firelighter",
           "id": "redfirelighter",
           "image": "f4SBGjv.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Regular ghostly ink",
           "id": "regularghostlyink",
           "image": "XgSpzkt.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Regular ritual candle",
           "id": "regularritualcandle",
           "image": "5BXbr5R.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Relleka tablet",
           "id": "rellekatablet",
           "image": "uRrpo3Y.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Rellekka tablet",
           "id": "rellekkatablet50",
           "image": "C4PPowi97M.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18474,7 +18231,6 @@
           "name": "Rimmington tablet",
           "id": "rimmingtontablet",
           "image": "uRrpo3Y.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18558,21 +18314,18 @@
           "name": "Ripper Demon scroll (Death From Above)",
           "id": "ripperscrolls",
           "image": "ML1c3oq.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Rocktail",
           "id": "rocktail",
           "image": "bopHhxT.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Rope",
           "id": "rope",
           "image": "knC1cK0Erd.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18587,14 +18340,12 @@
           "name": "Rusty sword (noted)",
           "id": "rustyswordnoted",
           "image": "48LoAovZte.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Saradomin brew flask (6)",
           "id": "sara",
           "image": "NTlFcpC.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18678,21 +18429,18 @@
           "name": "Shark",
           "id": "shark",
           "image": "qSP1R78.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Shark (noted)",
           "id": "shark1noted",
           "image": "zLMjsYjXpr.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Shattered Worlds teleport scroll",
           "id": "shatteredworldsteleportscroll",
           "image": "32yhm41.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18751,7 +18499,6 @@
           "name": "Slayer's staff (noted)",
           "id": "slayerstaffnoted",
           "image": "Y9XMyy9KEo.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18765,14 +18512,12 @@
           "name": "Small spiky iron salvage (noted)",
           "id": "smallspikyironsalvagenoted",
           "image": "bE08xrvqr2.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Small spiky steel salvage (noted)",
           "id": "smallspikysteelsalvagenoted",
           "image": "II0OpzwZdZ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18786,14 +18531,12 @@
           "name": "Soul rune (stack)",
           "id": "soulrune1k",
           "image": "I6H2Brv.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Spade",
           "id": "spade",
           "image": "3Hzb1UG.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18827,28 +18570,24 @@
           "name": "Spirit tree re-rooter (inactive)",
           "id": "spirittreere-rooter",
           "image": "Xrq18bn.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Spirit weed incense sticks (stack of 100)",
           "id": "spiritsticks100",
           "image": "YWaDJIE.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Spiritual prayer (6)",
           "id": "spiritual",
           "image": "PFLToHh.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Splintering arrow tips",
           "id": "splinteringarrowtip1",
           "image": "jHCeJqk.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18890,14 +18629,12 @@
           "name": "Steel studs (noted)",
           "id": "steelstudsnoted",
           "image": "ooMMGEuSJA.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Sticky bombs",
           "id": "sticky",
           "image": "mTBIIuw.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -18911,119 +18648,102 @@
           "name": "Summer pie",
           "id": "summerpie",
           "image": "gcW8ZyjRr8.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Summer pie (noted)",
           "id": "summerpie1noted",
           "image": "6zsCkFtqaN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super Guthix brew flask (6)",
           "id": "gbrew",
           "image": "dPf2fLt.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super Saradomin brew flask (6)",
           "id": "sbrew",
           "image": "xjiZl4Y.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super attack (1) (noted)",
           "id": "supatt1dosenoted",
           "image": "cYEC3xdoX3.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super attack (3)",
           "id": "supatk3dose",
           "image": "XfHaYVa.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super defence (1) (noted)",
           "id": "supdef1dosenoted",
           "image": "tfPSv6BCnN.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super defense (3)",
           "id": "supdef3dose",
           "image": "t3dDV6y.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super magic potion (1) (noted)",
           "id": "supmag1dosenoted",
           "image": "Id8NtO8Mlb.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super prayer flask (6)",
           "id": "superpray",
           "image": "2gndedF.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super prayer renewal potion (6)",
           "id": "prayrenewal",
           "image": "vSUpqbs.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super ranging potion (1) (noted)",
           "id": "supran1dosenoted",
           "image": "KrWNELlQQw.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super restore (1) (noted)",
           "id": "suprestore1dosenoted",
           "image": "AvcDiXb4cQ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super restore (4)",
           "id": "restore4",
           "image": "9GwrVt6.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super strength (1) (noted)",
           "id": "supstr1dosenoted",
           "image": "cwVpRHrvAH.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super strength (3)",
           "id": "supstr3dose",
           "image": "h0i7b8x.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Super warmaster's potion (6)",
           "id": "superwarmasterspotion6",
           "image": "jT497ai.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19219,14 +18939,12 @@
           "name": "Supreme overload potion (6)",
           "id": "supremeoverload",
           "image": "GZyBdRe.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Supreme ranging potion (6)",
           "id": "supremerangingpotion6",
           "image": "AkEN37H.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19240,14 +18958,12 @@
           "name": "Tai Bwo Wannai Teleport",
           "id": "taibwowannaiteleport",
           "image": "jgkom9X.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Taverly tablet",
           "id": "taverlytablet",
           "image": "uRrpo3Y.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19261,14 +18977,12 @@
           "name": "Tetracompass (powered)",
           "id": "tetracompasspowered",
           "image": "2IMu8rO9h1.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "The Heart teleport",
           "id": "theheartteleport",
           "image": "eirYlnU.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19282,21 +18996,18 @@
           "name": "Thread",
           "id": "thread",
           "image": "E9ffrzS.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Timber fungus soup",
           "id": "timberfungussoup",
           "image": "ylitEiS.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Tiny bladed steel salvage (noted)",
           "id": "tinybladedsteelsalvagenoted",
           "image": "N795ffqUOO.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19324,14 +19035,12 @@
           "name": "Toadflax potion (unfinished)",
           "id": "toadflaxpotionunf",
           "image": "2Z1zyYNAt6.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Torn grimoire page (stack)",
           "id": "grimpage10",
           "image": "KopqFpb.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["torngrimoirepage10", "grimpagestack"]
         },
@@ -19339,7 +19048,6 @@
           "name": "Torstol potion (unfinished)",
           "id": "torstolpotionunf",
           "image": "TVJp0NRZMq.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19360,21 +19068,18 @@
           "name": "Ugthanki dung",
           "id": "ugthankidung",
           "image": "xlJsLcmheD.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Uncut jade (noted)",
           "id": "uncutjadenoted",
           "image": "sCNz36ioDj.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Uncut opal (noted)",
           "id": "uncutopalnoted",
           "image": "2bjfEBU2FL.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19388,28 +19093,24 @@
           "name": "Unfinished rune helm (98%)",
           "id": "unfinishedrunehelm(98%)",
           "image": "XBHs2Zb.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Unfinished smithing item",
           "id": "unfinishedsmithingitem",
           "image": "8laCSlc.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Unicorn Stallion scroll (Healing Aura)",
           "id": "uniscrolls",
           "image": "0LwQ1N0.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Unpowered orb",
           "id": "unpoweredorb1noted",
           "image": "bXLKVTUk7G.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19465,7 +19166,6 @@
           "name": "Varrock teleport",
           "id": "varrocktele100",
           "image": "hRnhbj5.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19584,56 +19284,48 @@
           "name": "Water altar teleport",
           "id": "wateraltarteleport",
           "image": "BkETAoz.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Water rune (stack)",
           "id": "waterrune1k",
           "image": "lvD8hP6.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Waterfiend scroll (Straight Flush)",
           "id": "waterfiendscrolls",
           "image": "1VMCtlV5fb.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Weapon poison+++ (1)",
           "id": "poison1",
           "image": "hw7rKHz.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Weapon poison+++ (4)",
           "id": "poison4",
           "image": "CR06fbn.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Weapon poison+++ flask (6)",
           "id": "poison6",
           "image": "KyZkJoc.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Whetstone",
           "id": "whetstone",
           "image": "Uh2BO7T.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "White firelighter",
           "id": "whitefirelighter",
           "image": "tZnEbss.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19647,7 +19339,6 @@
           "name": "Wilder pie",
           "id": "wilderpie",
           "image": "3Dy2811xhQ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19689,7 +19380,6 @@
           "name": "Wood spirit",
           "id": "woodspirit",
           "image": "SmlhHZMIRH.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19710,7 +19400,6 @@
           "name": "XP Capacitor 5000 (Charging)",
           "id": "xpcapacitor5000charging",
           "image": "e0vL3ur.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19724,7 +19413,6 @@
           "name": "Zamorak brew (4)",
           "id": "zambrew4",
           "image": "WibUB0k.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19773,7 +19461,6 @@
           "name": "Waterskin",
           "id": "waterskin",
           "image": "ST0zXIdzcp.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19787,21 +19474,18 @@
           "name": "Potato cactus",
           "id": "potatocactus",
           "image": "YqMJwpYLHc.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Menaphite gift offering (medium)",
           "id": "menaphitegiftofferingmedium",
           "image": "QIYlL99G92.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Menaphite gift offering (small)",
           "id": "menaphitegiftofferingsmall",
           "image": "SZMjuQyTah.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19815,21 +19499,18 @@
           "name": "Large bladed adamant salvage",
           "id": "largebladedadamantsalvage",
           "image": "iTcnfQn9ij.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Extra fine sand",
           "id": "extrafinesand",
           "image": "oI3o2xrvpi.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Acadia wood spirit",
           "id": "acadiawoodspirit",
           "image": "X8C70ia6wo.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -19946,14 +19627,12 @@
           "id_aliases": ["barrowsammy"],
           "emoji_id": "1097517253056024647",
           "emoji_server": "37",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Barrows amulets (stack)",
           "id": "barrowsamuletstack",
           "image": "yQugioz.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "id_aliases": ["barrowsammystack"]
         },
@@ -20059,7 +19738,6 @@
           "id_aliases": ["dragonstone", "uncutdstone", "uncutdragonstone"],
           "emoji_id": "643507025602543638",
           "emoji_server": "25",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20067,7 +19745,6 @@
           "id": "elderoverload",
           "id_aliases": ["elderovl"],
           "image": "DGw6F36.png",
-          "preset_slot": 0,
           "preset_type": "item",
           "emoji_id": "841419289831800882",
           "emoji_server": "14"
@@ -20078,8 +19755,7 @@
           "id_aliases": ["ovl", "overload4"],
           "emoji_id": "689554436179361864",
           "emoji_server": "3",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Supreme overload salve",
@@ -20088,8 +19764,7 @@
           "emoji_id": "536257870178549781",
           "emoji_server": "3",
           "image": "HsYQ0qt.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Augmented enhanced Excalibur",
@@ -20223,7 +19898,6 @@
           "emoji_id": "1049230112849133589",
           "emoji_server": "36",
           "image": "x2G1m0Q.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20232,7 +19906,6 @@
           "emoji_id": "689551388463595590",
           "emoji_server": "3",
           "image": "TixXgDh.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20248,7 +19921,6 @@
           "id": "hydrix",
           "emoji_id": "1010485540874887218",
           "emoji_server": "34",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20256,7 +19928,6 @@
           "id": "onyx",
           "emoji_id": "1010485544188391424",
           "emoji_server": "34",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20266,7 +19937,6 @@
           "emoji_id": "892342110030798858",
           "emoji_server": "27",
           "image": "r84FkMD.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20292,7 +19962,6 @@
           "emoji_id": "1102531518741622854",
           "emoji_server": "38",
           "image": "9oDoU6T.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20302,7 +19971,6 @@
           "emoji_id": "854475161809190913",
           "emoji_server": "13",
           "image": "vBodqnM.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20312,7 +19980,6 @@
           "emoji_id": "864492695997513748",
           "emoji_server": "18",
           "image": "g4GKi54.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20322,7 +19989,6 @@
           "emoji_id": "642708657825644554",
           "emoji_server": "17",
           "image": "2uy0pnb.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20374,8 +20040,7 @@
           "name": "Vulnerabilty bombs",
           "id": "vulnbombs",
           "image": "2vI8jNm.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Wen arrows",
@@ -20408,7 +20073,6 @@
           "emoji_id": "854475441946230855",
           "aliases": [],
           "server": "12",
-          "preset_slot": 0,
           "preset_type": "familiar"
         },
         {
@@ -20417,7 +20081,6 @@
           "emoji_id": "854475442227642388",
           "aliases": [],
           "server": "12",
-          "preset_slot": 0,
           "preset_type": "familiar"
         },
         {
@@ -20479,24 +20142,21 @@
           "id": "nips",
           "id_aliases": ["dreadnips"],
           "image": "PzFKnJF.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Fellstalk incense sticks (stack)",
           "id": "fellstalksticks100",
           "id_aliases": ["fellstalkincensesticks100"],
           "image": "nK9EU1V.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Irit incense sticks (stack)",
           "id": "iritsticks100",
           "id_aliases": ["iritincensesticks100"],
           "image": "WCcKGSB.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Lantadyme incense sticks (stack)",
@@ -20507,111 +20167,97 @@
             "lantadymesticksstack"
           ],
           "image": "4n0C5gK.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Lucky Charm (Temple of Aminishi) (stack)",
           "id": "ed1luckycharmstack",
           "id_aliases": ["luckyed1stack", "luckycharmed1stack"],
           "image": "MKpOAOc.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Powder of penance (stack)",
           "id": "powderofpenance2",
           "id_aliases": ["penancepowder2"],
           "image": "w6hThUy.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Powder of protection (stack)",
           "id": "powderofprotectionstack",
           "id_aliases": ["protectionpowderstack", "powderofprotection2"],
           "image": "3SbxYpW.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Costume skipping ticket (stack)",
           "id": "costumeskipticketstack",
           "id_aliases": ["costumeskippingticketstack"],
           "image": "SazXdzN.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Knot skipping ticket (stack)",
           "id": "knotskipticketstack",
           "id_aliases": ["knotskippingticketstack"],
           "image": "HdBwZ61.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Lockbox skipping ticket (stack)",
           "id": "lockboxskipticketstack",
           "id_aliases": ["lockboxskippingticketstack"],
           "image": "I4qeyjI.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Puzzle box skipping ticket (stack)",
           "id": "puzzleskipticketstack",
           "id_aliases": ["puzzleboxskippingticketstack"],
           "image": "gsFc7Fw.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Tower skipping ticket (stack)",
           "id": "towerskipticketstack",
           "id_aliases": ["towerskippingticketstack"],
           "image": "Iyv2fmh.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Crystal key (noted)",
           "id": "crystalkeynoted",
           "id_aliases": ["ckeynoted", "crystalkey1noted"],
           "image": "ele52vp.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Divine charge (stack)",
           "id": "divinechargestack",
           "id_aliases": ["divchargestack"],
           "image": "h5QEOgi.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Magic logs (noted)",
           "id": "magiclogsnoted",
           "id_aliases": ["magiclogs1noted", "magiclognoted"],
           "image": "fEa8Qx8.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Magic notepaper (stack)",
           "id": "notepaperstack",
           "id_aliases": ["magicnotepaperstack", "1knote"],
           "image": "8r07LbS.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Magic notepaper (stack of 40)",
           "id": "notepaperstack40",
           "id_aliases": ["40note", "magicnotepaperstack40"],
           "image": "TNm1JRD.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20619,16 +20265,14 @@
           "id": "ushabtistack",
           "id_aliases": ["ushabti5"],
           "image": "HCif79X.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Vital spark drop enhancer (stack)",
           "id": "sparkenhancers",
           "id_aliases": ["sparkenhancerstack"],
           "image": "z9ssNId.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Slayer Wildcard (stack)",
@@ -20639,8 +20283,7 @@
             "wildcardstack"
           ],
           "image": "wspoQxZ.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Blood Reaver scroll (Blood Siphon) (stack)",
@@ -20651,23 +20294,20 @@
             "bloodreaverscrolls"
           ],
           "image": "3o2DaTu.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Dominion mines (stack)",
           "id": "minesstack",
           "id_aliases": ["2mines", "minestack"],
           "image": "MRHUme8.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Dwarf weed incense sticks (stack)",
           "id": "dwarfincensesticks",
           "id_aliases": ["dwarfincensesticksstack"],
           "image": "IyrZ6fUXKZ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20675,23 +20315,20 @@
           "id": "hellhoundscrolls500",
           "id_aliases": ["hellhoundscrollsstack", "soulfoodscrollstack"],
           "image": "rB1tPpW.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Hi-spec monocle (stack of 4)",
           "id": "hispecmonocle4",
           "id_aliases": ["hispecmonoclestack"],
           "image": "Tw99td6ffe.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Menaphos tablet (stack)",
           "id": "menaphostabletstack",
           "id_aliases": ["menaphostablet100"],
           "image": "uRrpo3Y.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20699,43 +20336,37 @@
           "id": "torstolincensesticks",
           "id_aliases": ["torstolincensesticks100", "torstolincensestickstack"],
           "image": "PpYdCr1.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Torstol incense stick",
           "id": "torstolincensestick",
           "image": "7JcYAKS.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Overload flask (6)",
           "id": "overload6",
           "id_aliases": ["ovl6"],
           "image": "gKnqcZ0.png",
-          "preset_type": "item",
-          "preset_slot": 0
+          "preset_type": "item"
         },
         {
           "name": "Animal furs",
           "id": "animalfurs",
           "image": "WnfDoPGeol.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Archaeologist's tea",
           "id": "archaeologiststea",
           "image": "MI6IWBcXMM.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Archaeology teleport (stack of 100)",
           "id": "archaeologyteleport100",
           "image": "WYm7p9h.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20743,56 +20374,48 @@
           "id": "bindingcontract200",
           "id_aliases": ["contracts"],
           "image": "KkIYNhk.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Chronotes",
           "id": "chronotes",
           "image": "XeeAFmbwYc.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Fossilised bone",
           "id": "fossilisedbone",
           "image": "AQDJQ237bb.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Goldrune",
           "id": "goldrune",
           "image": "atxmbmuhWn.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Leather scraps",
           "id": "leatherscraps",
           "image": "E1YHiUUp3o.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Malachite green",
           "id": "malachitegreen",
           "image": "RF6L6wCAcq.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Mark of the Kyzaj",
           "id": "markofthekyzaj",
           "image": "WaqinAEeOj.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Orthenglass",
           "id": "orthenglass",
           "image": "4TE1BJ3wrw.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20807,28 +20430,24 @@
           "name": "Samite silk",
           "id": "samitesilk",
           "image": "2EIarYO1N6.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Soapstone",
           "id": "soapstone",
           "image": "ddhYU7GGrP.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Tarpaulin sheet",
           "id": "tarpaulinsheet",
           "image": "iLJ1yHfsuO.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Third Age iron",
           "id": "thirdageiron",
           "image": "eqJ6HFFb9N.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
@@ -20844,70 +20463,60 @@
           "name": "Vellum",
           "id": "vellum",
           "image": "V5tBDCHHso.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Vulcanised rubber",
           "id": "vulcanisedrubber",
           "image": "BGN3ZCYfMI.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Warforged bronze",
           "id": "warforgedbronze",
           "image": "u9NVIIueGj.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "White oak",
           "id": "whiteoak",
           "image": "CuoXDeEpep.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Steel dagger",
           "id": "steeldagger",
           "image": "Z5C3h7aTBy.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Steel off hand dagger",
           "id": "steeloffhanddagger",
           "image": "ynnlOAT3M5.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Steel hatchet",
           "id": "steelhatchet",
           "image": "AyAyyWjVyZ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Steel pickaxe",
           "id": "steelpickaxe",
           "image": "3QAJnVJAzQ.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Lucky charm (Zamorakian Undercity)",
           "id": "ed4luckycharm",
           "image": "TCMttN6VBU.png",
-          "preset_slot": 0,
           "preset_type": "item"
         },
         {
           "name": "Yu'biusk clay",
           "id": "yubiuskclay",
           "image": "ccO5sxnLpT.png",
-          "preset_slot": 0,
           "preset_type": "item"
         }
       ]
