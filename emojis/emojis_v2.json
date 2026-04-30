@@ -10142,12 +10142,11 @@
         },
         {
           "name": "Pack mammoth pouch",
-          "id": "mammoth",
-          "id_aliases": ["packmammoth", "packmammothpouch"],
-          "emoji_id": "513195712146702337",
+          "id": "mammothpouch",
+          "emoji_id": "1499293961364308059",
           "emoji_server": "15",
-          "image": "z8NpfWG.png",
-          "preset_type": "familiar"
+          "preset_type": "familiar",
+          "id_aliases": ["mammoth"]          
         }
       ]
     },
