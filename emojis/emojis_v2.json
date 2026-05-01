@@ -9143,6 +9143,13 @@
           "emoji_server": "11"
         },
         {
+          "name": "Equilibrium cooldown",
+          "id": "equilibriumcooldown",
+          "id_aliases": ["eqcooldown"],
+          "emoji_id": "1499782738943803514",
+          "emoji_server": "43"
+        },
+        {
           "name": "Eruptive",
           "id": "eruptive",
           "id_aliases": ["er1", "er"],
