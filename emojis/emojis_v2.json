@@ -9145,7 +9145,7 @@
         {
           "name": "Equilibrium cooldown",
           "id": "equilibriumcooldown",
-          "id_aliases": ["eqcooldown",]
+          "id_aliases": ["eqcooldown"],
           "emoji_id": "1499782738943803514",
           "emoji_server": "43"
         },
