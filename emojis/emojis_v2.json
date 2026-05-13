@@ -1235,18 +1235,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Seasinger's hood",
-          "id": "seasingershood",
-          "emoji_id": "556583076050763776",
-          "emoji_server": "14"
-        },
-        {
-          "name": "Seasinger's robe bottom",
-          "id": "seasingersrobebottom",
-          "emoji_id": "556592058958348298",
-          "emoji_server": "12"
-        },
-        {
           "name": "Seasinger kiba",
           "id": "seasingerwand",
           "emoji_id": "1003947816525254685",
@@ -1369,13 +1357,43 @@
         },
         {
           "name": "Superior seasinger aonori",
-          "id": "superiorseasingeraonori",
-          "emoji_id": "556588694979739652",
+          "id": "supseasingeraonori",
+          "emoji_id": "1501857227399761950",
           "emoji_server": "13",
-          "image": "dZg2l83.png",
           "preset_slot": 6,
-          "preset_type": "item",
-          "id_aliases": ["supseasingergloves"]
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior seasinger asari",
+          "id": "supseasingerasari",
+          "emoji_id": "1501858266282721434",
+          "emoji_server": "43",
+          "preset_slot": 7,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior seasinger's hood",
+          "id": "supseasingershood",
+          "emoji_id": "1501855836119761068",
+          "emoji_server": "14",
+          "preset_slot": 1,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior seasinger's robe bottom",
+          "id": "supseasingersrobebottom",
+          "emoji_id": "1501856916861751357",
+          "emoji_server": "12",
+          "preset_slot": 3,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior seasinger's robe top",
+          "id": "supseasingersrobetop",
+          "emoji_id": "1501858060010913792",
+          "emoji_server": "43",
+          "preset_slot": 2,
+          "preset_type": "item"
         },
         {
           "name": "Superior Zuriel's hood",
@@ -18872,34 +18890,6 @@
           "name": "Superior rock-shell plate",
           "id": "superiorrockshellplate",
           "image": "NRFbRyjmuy.png",
-          "preset_slot": 2,
-          "preset_type": "item"
-        },
-        {
-          "name": "Superior seasinger asari",
-          "id": "supseasingerboots",
-          "image": "F7aZ8Cy.png",
-          "preset_slot": 7,
-          "preset_type": "item"
-        },
-        {
-          "name": "Superior seasinger's hood",
-          "id": "supseasingerhood",
-          "image": "CFMETzl.png",
-          "preset_slot": 1,
-          "preset_type": "item"
-        },
-        {
-          "name": "Superior seasinger's robe bottom",
-          "id": "supseasingerlegs",
-          "image": "uMH1Cg6.png",
-          "preset_slot": 3,
-          "preset_type": "item"
-        },
-        {
-          "name": "Superior seasinger's robe top",
-          "id": "supseasingertop",
-          "image": "4yR76OG.png",
           "preset_slot": 2,
           "preset_type": "item"
         },
