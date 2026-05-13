@@ -4581,10 +4581,44 @@
           "emoji_server": "13"
         },
         {
+          "name": "Superior tetsu body",
+          "id": "suptetsubody",
+          "emoji_id": "1501850304927371355",
+          "emoji_server": "14",
+          "preset_slot": 2,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior tetsu helm",
+          "id": "suptetsuhelm",
+          "emoji_id": "1501850471852150855",
+          "emoji_server": "14",
+          "preset_slot": 1,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior tetsu kogake",
+          "id": "suptetsukogake",
+          "emoji_id": "1501852418873495664",
+          "emoji_server": "43",
+          "preset_slot": 7,
+          "preset_type": "item"
+        },
+        {
           "name": "Superior tetsu kote",
-          "id": "superiortetsukote",
-          "emoji_id": "556588695071752202",
-          "emoji_server": "13"
+          "id": "suptetsukote",
+          "emoji_id": "1501852087267364945",
+          "emoji_server": "13",
+          "preset_slot": 6,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior tetsu platelegs",
+          "id": "suptetsuplatelegs",
+          "emoji_id": "1501851862146617444",
+          "emoji_server": "13",
+          "preset_slot": 3,
+          "preset_type": "item"
         },
         {
           "name": "Superior Vesta's chainbody",
@@ -4609,28 +4643,10 @@
           "id_aliases": ["tmaul"]
         },
         {
-          "name": "Tetsu body",
-          "id": "tetsubody",
-          "emoji_id": "556586038911565824",
-          "emoji_server": "14"
-        },
-        {
-          "name": "Tetsu helm",
-          "id": "tetsuhelm",
-          "emoji_id": "556583076029792256",
-          "emoji_server": "14"
-        },
-        {
           "name": "Tetsu katana",
           "id": "tetsumh",
           "emoji_id": "1003947812284813374",
           "emoji_server": "31"
-        },
-        {
-          "name": "Tetsu platelegs",
-          "id": "tetsuplatelegs",
-          "emoji_id": "556591275965546539",
-          "emoji_server": "13"
         },
         {
           "name": "Tetsu wakizashi",
