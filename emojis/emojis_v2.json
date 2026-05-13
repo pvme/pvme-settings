@@ -5751,16 +5751,16 @@
         },
         {
           "name": "Death Spark",
-          "id": "deathspark",
-          "id_aliases": ["dspark"],
+          "id": "deathsparkorsoulreave",
+          "id_aliases": ["deathspark", "dspark", "soulreave", "sreave"],
           "emoji_id": "1143642264850141205",
           "emoji_server": "40"
         },
         {
           "name": "Death Spark (charging)",
-          "id": "deathspark2",
-          "id_aliases": ["deathsparkcharging", "dspark2", "dsparkcharging"],
-          "emoji_id": "1143642268193009724",
+          "id": "deathsparkorsoulreave2",
+          "id_aliases": ["dspark2", "dsparkcharging", "sreave2"],
+          "emoji_id": "1502100068965285968",
           "emoji_server": "40"
         },
         {
