@@ -8517,6 +8517,13 @@
           "id_aliases": ["luckycharmed1", "luckyed1"]
         },
         {
+          "name": "Manuscript of Amascut",
+          "id": "manuscriptofamascut",
+          "emoji_id": "1504367470327238736",
+          "emoji_server": "43",
+          "preset_type": "item"
+        },
+        {
           "name": "Manuscript of Bik",
           "id": "manuscriptofbik",
           "emoji_id": "869284373701226626",
