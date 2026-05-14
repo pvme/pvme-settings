@@ -2586,24 +2586,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Death Lotus chaps",
-          "id": "deathlotuschaps",
-          "emoji_id": "556592056995151892",
-          "emoji_server": "12"
-        },
-        {
-          "name": "Death lotus chestplate",
-          "id": "deathlotus",
-          "emoji_id": "513204675948838922",
-          "emoji_server": "15"
-        },
-        {
-          "name": "Death lotus hood",
-          "id": "deathlotushood",
-          "emoji_id": "556582802670485505",
-          "emoji_server": "14"
-        },
-        {
           "name": "Deathspore arrows",
           "id": "deathsporearrows",
           "id_aliases": ["deathspores", "dspore"],
@@ -3262,6 +3244,46 @@
           "emoji_server": "15",
           "image": "AjoZkV0.png",
           "preset_slot": 4,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior Death Lotus chaps",
+          "id": "supdeathlotuschaps",
+          "emoji_id": "1501860463087063050",
+          "emoji_server": "12",
+          "preset_slot": 3,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior Death Lotus chestplate",
+          "id": "supdeathlotuschestplate",
+          "emoji_id": "1501859722071117874",
+          "emoji_server": "15",
+          "preset_slot": 2,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior Death Lotus hood",
+          "id": "supdeathlotushood",
+          "emoji_id": "1501860048819720243",
+          "emoji_server": "14",
+          "preset_slot": 1,
+          "preset_type": "item"
+        },
+        {
+          "name": "Superior Death Lotus tabi",
+          "id": "supdeathlotustabi",
+          "emoji_id": "1501861205008977950",
+          "emoji_server": "43",
+          "preset_slot": 7,
+          "preset_type": "item"
+        },        
+        {
+          "name": "Superior Death Lotus tekoh",
+          "id": "supdeathlotustekoh",
+          "emoji_id": "1501860964310716566",
+          "emoji_server": "43",
+          "preset_slot": 6,
           "preset_type": "item"
         },
         {
@@ -18817,20 +18839,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Superior Death Lotus chestplate",
-          "id": "superiordeathlotuschestplate",
-          "image": "6MIGkP1.png",
-          "preset_slot": 2,
-          "preset_type": "item"
-        },
-        {
-          "name": "Superior Death Lotus hood",
-          "id": "superiordeathlotushood",
-          "image": "ahIQK88.png",
-          "preset_slot": 1,
-          "preset_type": "item"
-        },
-        {
           "name": "Superior Dragon Rider boots",
           "id": "superiordragonriderboots",
           "image": "DeDRUdo.png",
@@ -18842,13 +18850,6 @@
           "id": "superiordragonridergloves",
           "image": "ayCUL0c.png",
           "preset_slot": 6,
-          "preset_type": "item"
-        },
-        {
-          "name": "Superior death lotus chaps",
-          "id": "lotuschaps",
-          "image": "E2kivaa.png",
-          "preset_slot": 3,
           "preset_type": "item"
         },
         {
