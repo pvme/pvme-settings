@@ -7517,6 +7517,14 @@
           "emoji_server": "30"
         },
         {
+          "name": "Chaotic grimoire",
+          "id": "chaoticgrimoire",
+          "emoji_id": "1503793164329156659",
+          "emoji_server": "43",
+          "preset_slot": 13,
+          "preset_type": "item"
+        },
+        {
           "name": "Dark Magic aura",
           "id": "darkmagic",
           "emoji_id": "643505652571963417",
@@ -8960,6 +8968,13 @@
           "id": "teci",
           "emoji_id": "641332337451204608",
           "emoji_server": "21"
+        },
+        {
+          "name": "Torn chaotic page",
+          "id": "tornchaoticpage",
+          "emoji_id": "1503793182821847200",
+          "emoji_server": "43",
+          "preset_type": "item"
         },
         {
           "name": "Torn grimoire page",
