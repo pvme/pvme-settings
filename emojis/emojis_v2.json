@@ -7880,6 +7880,12 @@
           "emoji_server": "34"
         },
         {
+          "name": "Rapid Restore",
+          "id": "rapidrestore",
+          "emoji_id": "1506466035547504822",
+          "emoji_server": "43"
+        },
+        {
           "name": "Rigour",
           "id": "rigour",
           "emoji_id": "1215399596239618118",
