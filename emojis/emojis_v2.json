@@ -3176,6 +3176,12 @@
           "id_aliases": ["murmur"]
         },
         {
+          "name": "Saradomin bow",
+          "id": "saradominbow",
+          "emoji_id": "1508822612049002627",
+          "emoji_server": "43"
+        },
+        {
           "name": "Seercull",
           "id": "seercull",
           "emoji_id": "643162166530146304",
