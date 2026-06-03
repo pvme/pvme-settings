@@ -7381,6 +7381,14 @@
           "preset_type": "item"
         },
         {
+          "name": "Ring of retribution (o)",
+          "id": "ringofretributiono",
+          "emoji_id": "1511668974734278667",
+          "emoji_server": "42",
+          "preset_slot": 11,
+          "preset_type": "item"
+        },
+        {
           "name": "Ring of stone",
           "id": "ringofstone",
           "emoji_id": "1029416868534046761",
