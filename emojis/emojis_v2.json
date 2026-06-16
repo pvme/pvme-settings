@@ -8031,6 +8031,14 @@
           "emoji_server": "30",
           "image": "spEwR2q.png",
           "preset_type": "relic"
+        },
+        {
+          "name": "Hungry Like the Wolf",
+          "id": "hungrylikethewolf",
+          "emoji_id": "1516269344106086492",
+          "emoji_server": "35",
+          "image": "aRFv6nSURv.png",
+          "preset_type": "relic"
         }
       ]
     },
