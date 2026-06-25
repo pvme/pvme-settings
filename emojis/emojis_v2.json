@@ -3396,8 +3396,8 @@
       "emojis": [
         {
           "name": "Ranged",
-          "id": "range",
-          "id_aliases": ["ranged"],
+          "id": "ranged",
+          "id_aliases": ["range"],
           "emoji_id": "580168050121113623",
           "emoji_server": "8"
         },
