@@ -10530,6 +10530,12 @@
           "emoji_server": "30"
         },
         {
+          "name": "Osseous",
+          "id": "osseoushead",
+          "emoji_id": "1521806141250732153",
+          "emoji_server": "43"
+        },
+        {
           "name": "Pthentraken",
           "id": "pthentraken",
           "emoji_id": "982264010839842916",
@@ -19659,6 +19665,13 @@
           "name": "Sticky Fingers",
           "id": "stickyfingers",
           "image": "KHLIxCJ.png",
+          "preset_type": "relic"
+        },
+        {
+          "name": "Hungry Like the Wolf",
+          "id": "hungrylikethewolf",
+          "emoji_id": "1516269344106086492",
+          "emoji_server": "35",
           "preset_type": "relic"
         }
       ]
