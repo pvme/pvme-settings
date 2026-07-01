@@ -19666,13 +19666,6 @@
           "id": "stickyfingers",
           "image": "KHLIxCJ.png",
           "preset_type": "relic"
-        },
-        {
-          "name": "Hungry Like the Wolf",
-          "id": "hungrylikethewolf",
-          "emoji_id": "1516269344106086492",
-          "emoji_server": "35",
-          "preset_type": "relic"
         }
       ]
     },
