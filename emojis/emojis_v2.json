@@ -7833,6 +7833,12 @@
           "emoji_server": "42"
         },
         {
+          "name": "Light Form",
+          "id": "lightform",
+          "emoji_id": "1521959208952529067",
+          "emoji_server": "43"
+        },
+        {
           "name": "Malevolence",
           "id": "malevolence",
           "emoji_id": "513190159416557573",
