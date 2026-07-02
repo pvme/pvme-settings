@@ -19923,14 +19923,15 @@
           "preset_type": "item"
         },
         {
-          "name": "EoF (or) - SGB",
+          "name": "EoF (blue)",
           "id": "eofblue",
           "id_aliases": ["essenceoffinalityblue"],
           "emoji_id": "780401412906680330",
           "emoji_server": "10",
           "image": "zAiXkJn.png",
           "preset_slot": 10,
-          "preset_type": "item"
+          "preset_type": "item",
+          "eof_spec": "SGB"
         },
         {
           "name": "EoF (or) - Zamorak bow",
