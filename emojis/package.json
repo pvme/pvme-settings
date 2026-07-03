@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "dedupe": "node scripts/eof-dedupe-ui.js"
+  }
+}

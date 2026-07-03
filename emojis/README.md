@@ -13,6 +13,12 @@ This folder contains the emoji definitions used across PvME tools, presets, and 
 
 ---
 
+## Dedupe UI
+
+From this folder, run `npm run dedupe`, then open `http://127.0.0.1:8787/`.
+
+---
+
 ## How to add a new emoji
 
 There are two supported ways to add an emoji. Choose **one** depending on where it needs to be used.

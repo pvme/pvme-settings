@@ -167,6 +167,7 @@
       border-radius: 8px;
       background: var(--panel);
       max-height: calc(100vh - 250px);
+      padding-top: 8px;
     }
     table {
       width: 100%;
@@ -210,10 +211,16 @@
       border-right: 0;
     }
     .emoji-title {
+      position: relative;
       display: grid;
       gap: 6px;
+      padding-top: 14px;
     }
     .keeper {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
       border-radius: 6px;
       background: var(--soft);
       color: var(--accent);
@@ -221,28 +228,31 @@
       font-size: 12px;
       font-weight: 800;
       width: max-content;
+      box-shadow: 0 0 0 1px var(--line);
     }
-    .preview {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+    .media-field {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 44px;
+      gap: 6px;
       align-items: center;
     }
-    .preview-item {
+    .media-preview {
       display: grid;
-      gap: 5px;
-      justify-items: center;
-      color: var(--muted);
-      font-size: 11px;
-    }
-    .preview img {
-      width: 56px;
-      height: 56px;
-      object-fit: contain;
+      place-items: center;
+      width: 44px;
+      height: 36px;
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       background: #f1f3f2;
-      padding: 4px;
+    }
+    .media-preview.disabled {
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .media-preview img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
     }
     .choice {
       display: grid;
@@ -263,6 +273,29 @@
       color: var(--muted);
       font-size: 13px;
       overflow-wrap: anywhere;
+    }
+    .wiki-field {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 36px;
+      gap: 6px;
+      align-items: center;
+    }
+    .wiki-link {
+      display: grid;
+      place-items: center;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--accent);
+      font-size: 16px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .wiki-link.disabled {
+      color: var(--muted);
+      pointer-events: none;
+      opacity: 0.55;
     }
     .merge-note {
       color: var(--muted);
@@ -353,7 +386,8 @@
     };
 
     const el = (id) => document.getElementById(id);
-    const preferredFields = ["name", "id", "emoji_id", "emoji_server", "image", "preset_type", "preset_slot", "id_aliases", "eof_spec"];
+    const hiddenFields = new Set(["aliases", "server", "emoji_server"]);
+    const preferredFields = ["name", "id", "id_aliases", "emoji_id", "image", "category", "preset_type", "preset_slot", "eof_spec"];
 
     async function request(path, options = {}) {
       const res = await fetch(path, {
@@ -371,7 +405,13 @@
       state.categories = next.categories || [];
       state.fields = next.fields || state.fields;
       el("meta").textContent = `${next.count} emojis in ${next.file}`;
-      await loadGroups(true);
+      const query = new URLSearchParams(window.location.search).get("q") || "";
+      el("searchBox").value = query;
+      if (query.trim()) {
+        await runSearch({ updateUrl: false });
+      } else {
+        await loadGroups(true);
+      }
       setStatus("Ready");
     }
 
@@ -400,9 +440,10 @@
       setStatus("Ready");
     }
 
-    async function runSearch() {
+    async function runSearch(options = {}) {
       const query = el("searchBox").value.trim();
       state.searchQuery = query;
+      if (options.updateUrl !== false) updateSearchUrl(query);
 
       if (!query) {
         await loadGroups(true);
@@ -422,6 +463,13 @@
       settleSelection();
       render();
       setStatus("Ready");
+    }
+
+    function updateSearchUrl(query) {
+      const url = new URL(window.location.href);
+      if (query) url.searchParams.set("q", query);
+      else url.searchParams.delete("q");
+      window.history.replaceState(null, "", url);
     }
 
     function appendRows(rows) {
@@ -548,20 +596,8 @@
           </thead>
           <tbody>
             <tr>
-              <td>image preview</td>
-              ${group.map((row) => `<td data-preview-uid="${row.uid}">${previewHtml(row.entry)}</td>`).join("")}
-            </tr>
-            <tr>
               <td>keep / remove</td>
               ${group.map((row) => `<td>${choiceHtml(row)}</td>`).join("")}
-            </tr>
-            <tr>
-              <td>category</td>
-              ${group.map((row) => `<td>${categorySelect(row)}</td>`).join("")}
-            </tr>
-            <tr>
-              <td>json path</td>
-              ${group.map((row) => `<td><div class="readonly">${escapeHtml(row.path || "")}</div></td>`).join("")}
             </tr>
             ${fields.map((field) => `<tr>
               <td>${escapeHtml(field)}</td>
@@ -575,10 +611,12 @@
 
     function comparisonFields(group) {
       const set = new Set(preferredFields);
-      for (const field of state.fields) set.add(field);
+      for (const field of state.fields) {
+        if (!hiddenFields.has(field)) set.add(field);
+      }
       for (const row of group) {
         for (const key of Object.keys(row.entry)) {
-          if (!set.has(key)) set.add(key);
+          if (!hiddenFields.has(key) && !set.has(key)) set.add(key);
         }
       }
       return [...set];
@@ -599,48 +637,43 @@
       </select>`;
     }
 
-    function previewHtml(entry) {
-      const previews = [];
-      if (entry.emoji_id) {
-        previews.push({
-          label: "Discord",
-          src: `https://cdn.discordapp.com/emojis/${encodeURIComponent(entry.emoji_id)}.webp`,
-        });
+    function mediaUrl(field, value) {
+      if (!value) return "";
+      if (field === "emoji_id") {
+        return `https://cdn.discordapp.com/emojis/${encodeURIComponent(value)}.webp`;
       }
-      if (entry.image) {
-        previews.push({
-          label: "PVME image",
-          src: `https://img.pvme.io/images/${encodeURIComponent(entry.image)}`,
-        });
+      if (field === "image") {
+        return `https://img.pvme.io/images/${encodeURIComponent(value)}`;
       }
-      if (!previews.length) return `<div class="readonly">No emoji_id or image field.</div>`;
-
-      return `<div class="preview">${previews.map((item) => `<a class="preview-item" href="${escapeAttr(item.src)}" target="_blank" rel="noreferrer">
-        <img src="${escapeAttr(item.src)}" alt="${escapeAttr(item.label)} preview" loading="lazy">
-        <span>${escapeHtml(item.label)}</span>
-      </a>`).join("")}</div>`;
+      return "";
     }
 
-    function liveEntryForUid(uid) {
-      const row = state.rows.find((item) => item.uid === uid);
-      const entry = { ...(row?.entry || {}) };
+    function mediaField(row, field, value) {
+      const text = value === undefined || value === null ? "" : String(value);
+      const src = mediaUrl(field, text);
+      const label = field === "emoji_id" ? "Open Discord emoji image" : "Open PVME image";
 
-      for (const input of document.querySelectorAll(`[data-uid="${cssEscape(uid)}"][data-field]`)) {
-        const field = input.dataset.field;
-        if (field === "emoji_id" || field === "image") {
-          const value = input.value.trim();
-          if (value) entry[field] = value;
-          else delete entry[field];
-        }
-      }
-
-      return entry;
+      return `<div class="media-field">
+        <input type="text" data-uid="${row.uid}" data-field="${field}" value="${escapeAttr(text)}">
+        <a class="media-preview ${src ? "" : "disabled"}" data-media-preview="${row.uid}:${field}" href="${escapeAttr(src || "#")}" target="_blank" rel="noreferrer" title="${escapeAttr(label)}" aria-label="${escapeAttr(label)}">
+          ${src ? `<img src="${escapeAttr(src)}" alt="${escapeAttr(label)}" loading="lazy">` : ""}
+        </a>
+      </div>`;
     }
 
-    function updatePreviewForUid(uid) {
-      const cell = document.querySelector(`[data-preview-uid="${cssEscape(uid)}"]`);
-      if (!cell) return;
-      cell.innerHTML = previewHtml(liveEntryForUid(uid));
+    function updateMediaPreviewForInput(input) {
+      const uid = input.dataset.uid;
+      const field = input.dataset.field;
+      const value = input.value.trim();
+      const src = mediaUrl(field, value);
+      const link = document.querySelector(`[data-media-preview="${cssEscape(uid)}:${cssEscape(field)}"]`);
+      if (!link) return;
+
+      link.href = src || "#";
+      link.classList.toggle("disabled", !src);
+      link.innerHTML = src
+        ? `<img src="${escapeAttr(src)}" alt="${escapeAttr(field === "emoji_id" ? "Open Discord emoji image" : "Open PVME image")}" loading="lazy">`
+        : "";
     }
 
     function updateColumnTitleForUid(uid) {
@@ -661,6 +694,24 @@
 
       if (nameEl) nameEl.textContent = name;
       if (idEl) idEl.textContent = id;
+      updateWikiLinkForUid(uid, "name", name);
+    }
+
+    function wikiUrl(name) {
+      return `https://runescape.wiki/w/${encodeURIComponent(name || "")}`;
+    }
+
+    function updateWikiLinkForUid(uid, field, name) {
+      const link = document.querySelector(`[data-wiki-link="${cssEscape(uid)}:${cssEscape(field)}"]`);
+      if (!link) return;
+
+      if (name) {
+        link.href = wikiUrl(name);
+        link.classList.remove("disabled");
+      } else {
+        link.href = "#";
+        link.classList.add("disabled");
+      }
     }
 
     function choiceHtml(row) {
@@ -681,6 +732,34 @@
 
     function fieldEditor(row, field) {
       const value = row.entry[field];
+      if (field === "name") {
+        const name = value === undefined || value === null ? "" : String(value);
+        return `<div class="wiki-field">
+          <input type="text" data-uid="${row.uid}" data-field="name" value="${escapeAttr(name)}">
+          <a class="wiki-link ${name ? "" : "disabled"}" data-wiki-link="${row.uid}:name" href="${escapeAttr(name ? wikiUrl(name) : "#")}" target="_blank" rel="noreferrer" title="Open RuneScape Wiki page" aria-label="Open RuneScape Wiki page">↗</a>
+        </div>`;
+      }
+
+      if (field === "eof_spec") {
+        const spec = value === undefined || value === null ? "" : String(value);
+        return `<div class="wiki-field">
+          <input type="text" data-uid="${row.uid}" data-field="eof_spec" value="${escapeAttr(spec)}">
+          <a class="wiki-link ${spec ? "" : "disabled"}" data-wiki-link="${row.uid}:eof_spec" href="${escapeAttr(spec ? wikiUrl(spec) : "#")}" target="_blank" rel="noreferrer" title="Open RuneScape Wiki page" aria-label="Open RuneScape Wiki page">↗</a>
+        </div>`;
+      }
+
+      if (field === "emoji_id" || field === "image") {
+        return mediaField(row, field, value);
+      }
+
+      if (field === "category") {
+        return categorySelect(row);
+      }
+
+      if (field === "preset_type") {
+        return presetTypeSelect(row, value);
+      }
+
       if (field === "preset_slot") {
         return presetSlotSelect(row, value);
       }
@@ -696,6 +775,15 @@
 
       const type = typeof value === "number" || field === "preset_slot" ? "number" : "text";
       return `<input type="${type}" data-uid="${row.uid}" data-field="${field}" value="${escapeAttr(value ?? "")}">`;
+    }
+
+    function presetTypeSelect(row, value) {
+      const current = value === undefined || value === null ? "" : String(value);
+      const types = ["", "item", "relic", "familiar"];
+
+      return `<select data-uid="${row.uid}" data-field="preset_type">
+        ${types.map((type) => `<option value="${escapeAttr(type)}" ${current === type ? "selected" : ""}>${escapeHtml(type)}</option>`).join("")}
+      </select>`;
     }
 
     function presetSlotSelect(row, value) {
@@ -907,11 +995,15 @@
       if (!input) return;
 
       if (input.dataset.field === "emoji_id" || input.dataset.field === "image") {
-        updatePreviewForUid(input.dataset.uid);
+        updateMediaPreviewForInput(input);
       }
 
       if (input.dataset.field === "name" || input.dataset.field === "id") {
         updateColumnTitleForUid(input.dataset.uid);
+      }
+
+      if (input.dataset.field === "eof_spec") {
+        updateWikiLinkForUid(input.dataset.uid, "eof_spec", input.value.trim());
       }
 
       scheduleFieldSave(input);
