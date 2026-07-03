@@ -107,6 +107,7 @@ function duplicateKey(entry) {
   const name = normalise(entry.name);
   const id = normalise(entry.id);
   const isEof = /\beof\b|essence of finality/i.test(name) || /^eof/i.test(id);
+  const isEofOr = isEof && (/\(\s*or\s*\)|\bor\b/.test(name) || /^eofor/.test(id));
 
   let key = name;
 
@@ -125,9 +126,14 @@ function duplicateKey(entry) {
   if (!key) {
     key = id
       .replace(/^eof/, "")
+      .replace(/^or/, "")
       .replace(/unorn$/, "")
       .replace(/u$/, "")
       .replace(/[^a-z0-9]+/g, "");
+  }
+
+  if (isEof) {
+    return `${isEofOr ? "eof-or" : "eof"}:${key || "plain"}`;
   }
 
   return key || "eof";
