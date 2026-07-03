@@ -594,13 +594,7 @@
         {
           "name": "Ganodermic poncho",
           "id": "ganobody",
-          "id_aliases": [
-            "ganodermictop",
-            "ganodermicbody",
-            "ganotop",
-            "ganodermicponcho",
-            "ganoponcho"
-          ],
+          "id_aliases": ["ganodermictop", "ganodermicbody", "ganotop", "ganodermicponcho", "ganoponcho"],
           "emoji_id": "1003947805611655208",
           "emoji_server": "31",
           "image": "Io6oIdr.png",
@@ -2276,11 +2270,7 @@
         {
           "name": "gconc",
           "id": "gconc",
-          "id_aliases": [
-            "greaterconc",
-            "greaterconcentrated",
-            "greaterconcentratedblast"
-          ],
+          "id_aliases": ["greaterconc", "greaterconcentrated", "greaterconcentratedblast"],
           "emoji_id": "1478063111104757760",
           "emoji_server": "46"
         },
@@ -2652,11 +2642,7 @@
         {
           "name": "Elite Dracolich Coif",
           "id": "edracocoif",
-          "id_aliases": [
-            "elitedracocoif",
-            "elitedracolichcoif",
-            "edracolichcoif"
-          ],
+          "id_aliases": ["elitedracocoif", "elitedracolichcoif", "edracolichcoif"],
           "emoji_id": "1179717359934640168",
           "emoji_server": "23",
           "image": "S1sjGOu.png",
@@ -2666,11 +2652,7 @@
         {
           "name": "Elite Dracolich boots",
           "id": "edracoboots",
-          "id_aliases": [
-            "elitedracoboots",
-            "elitedracolichboots",
-            "edracolichboots"
-          ],
+          "id_aliases": ["elitedracoboots", "elitedracolichboots", "edracolichboots"],
           "emoji_id": "1179717602151514123",
           "emoji_server": "41",
           "image": "07vxUMy.png",
@@ -2680,12 +2662,7 @@
         {
           "name": "Elite Dracolich hauberk",
           "id": "edracolichhauberk",
-          "id_aliases": [
-            "edracobody",
-            "edracolichbody",
-            "elitedracobody",
-            "elitedracolichbody"
-          ],
+          "id_aliases": ["edracobody", "edracolichbody", "elitedracobody", "elitedracolichbody"],
           "emoji_id": "1179717430436704306",
           "emoji_server": "24",
           "image": "M5jOHR3.png",
@@ -2695,12 +2672,7 @@
         {
           "name": "Elite Dracolich vambraces",
           "id": "edracolichvambs",
-          "id_aliases": [
-            "edracogloves",
-            "edracolichgloves",
-            "elitedracolichgloves",
-            "elitedracogloves"
-          ],
+          "id_aliases": ["edracogloves", "edracolichgloves", "elitedracolichgloves", "elitedracogloves"],
           "emoji_id": "1179717613769728100",
           "emoji_server": "41",
           "image": "zJ2WxLa.png",
@@ -2758,11 +2730,7 @@
         {
           "name": "Elite Robin Hood tunic",
           "id": "eliterobinhoodtunic",
-          "id_aliases": [
-            "erobinhoodbody",
-            "erobinhoodtunic",
-            "eliterobinhoodtop"
-          ],
+          "id_aliases": ["erobinhoodbody", "erobinhoodtunic", "eliterobinhoodtop"],
           "emoji_id": "556585903489810454",
           "emoji_server": "14",
           "image": "m1pJrXk.png",
@@ -3111,43 +3079,71 @@
           "name": "Pernix's quiver (red)",
           "id": "pernixsquiverred",
           "emoji_id": "923269339178758204",
-          "emoji_server": "29"
+          "emoji_server": "29",
+          "image": "uMJW8pU.png",
+          "preset_slot": 9,
+          "preset_type": "item",
+          "id_aliases": ["pernixquiverred"]
         },
         {
           "name": "Pernix's quiver (orange)",
           "id": "pernixsquiverorange",
           "emoji_id": "923269338851598367",
-          "emoji_server": "29"
+          "emoji_server": "29",
+          "image": "KYb4lnS.png",
+          "preset_slot": 9,
+          "preset_type": "item",
+          "id_aliases": ["pernixquiverorange"]
         },
         {
           "name": "Pernix's quiver (yellow)",
           "id": "pernixsquiveryellow",
           "emoji_id": "923269339136798800",
-          "emoji_server": "29"
+          "emoji_server": "29",
+          "image": "MCRkOPS.png",
+          "preset_slot": 9,
+          "preset_type": "item",
+          "id_aliases": ["pernixquiveryellow"]
         },
         {
           "name": "Pernix's quiver (green)",
           "id": "pernixsquivergreen",
           "emoji_id": "923269339325554688",
-          "emoji_server": "29"
+          "emoji_server": "29",
+          "image": "MG25Uow.png",
+          "preset_slot": 9,
+          "preset_type": "item",
+          "id_aliases": ["pernixquivergreen"]
         },
         {
           "name": "Pernix's quiver (blue)",
           "id": "pernixsquiverblue",
           "emoji_id": "923269339203903488",
-          "emoji_server": "29"
+          "emoji_server": "29",
+          "image": "X5AcgQh.png",
+          "preset_slot": 9,
+          "preset_type": "item",
+          "id_aliases": ["pernixquiverblue"]
         },
         {
           "name": "Pernix's quiver (purple)",
           "id": "pernixsquiverpurple",
           "emoji_id": "923269338885148714",
-          "emoji_server": "29"
+          "emoji_server": "29",
+          "image": "xt67uWC.png",
+          "preset_slot": 9,
+          "preset_type": "item",
+          "id_aliases": ["pernixquiverpurple"]
         },
         {
           "name": "Pernix's quiver (black)",
           "id": "pernixsquiverblack",
           "emoji_id": "923269339132608532",
-          "emoji_server": "29"
+          "emoji_server": "29",
+          "image": "JqXq1zD.png",
+          "preset_slot": 9,
+          "preset_type": "item",
+          "id_aliases": ["pernixquiverblack"]
         },
         {
           "name": "Red chinchompa",
@@ -3283,7 +3279,7 @@
           "emoji_server": "43",
           "preset_slot": 7,
           "preset_type": "item"
-        },        
+        },
         {
           "name": "Superior Death Lotus tekoh",
           "id": "supdeathlotustekoh",
@@ -3495,12 +3491,7 @@
         {
           "name": "Greater dazing Shot",
           "id": "mds",
-          "id_aliases": [
-            "gdazingshot",
-            "greaterdazing",
-            "greaterdazingshot",
-            "gdazing"
-          ],
+          "id_aliases": ["gdazingshot", "greaterdazing", "greaterdazingshot", "gdazing"],
           "emoji_id": "535541259033378827",
           "emoji_server": "17"
         },
@@ -3678,13 +3669,7 @@
         {
           "name": "deathsswiftness",
           "id": "deathsswiftness",
-          "id_aliases": [
-            "ds",
-            "swiftness",
-            "deathswift",
-            "deaths_swiftness",
-            "deathswiftness"
-          ],
+          "id_aliases": ["ds", "swiftness", "deathswift", "deaths_swiftness", "deathswiftness"],
           "emoji_id": "1478061862405931120",
           "emoji_server": "44"
         },
@@ -3704,12 +3689,7 @@
         {
           "name": "rangedbasic",
           "id": "rangedbasic",
-          "id_aliases": [
-            "rangedauto",
-            "ranged_basic",
-            "autoranged",
-            "basicranged"
-          ],
+          "id_aliases": ["rangedauto", "ranged_basic", "autoranged", "basicranged"],
           "emoji_id": "1478061858622537809",
           "emoji_server": "44"
         },
@@ -4160,13 +4140,21 @@
           "name": "Elder rune full helm +5",
           "id": "elderrunehelm5",
           "emoji_id": "556582802678743040",
-          "emoji_server": "14"
+          "emoji_server": "14",
+          "image": "2Mz4PUK.png",
+          "preset_slot": 1,
+          "preset_type": "item",
+          "id_aliases": ["elderrunehelm"]
         },
         {
           "name": "Elder rune gauntlets +5",
           "id": "elderrunegauntlets5",
           "emoji_id": "556588710456590336",
-          "emoji_server": "13"
+          "emoji_server": "13",
+          "image": "1t7JUu2.png",
+          "preset_slot": 6,
+          "preset_type": "item",
+          "id_aliases": ["elderrunegauntlets"]
         },
         {
           "name": "Elder rune platelegs",
@@ -5778,15 +5766,7 @@
         {
           "name": "Conjure Skeleton Warrior",
           "id": "conjureskeleton",
-          "id_aliases": [
-            "conjskele",
-            "conjureskele",
-            "conjskeleton",
-            "conjurewarrior",
-            "conjwarrior",
-            "conjurewar",
-            "conjwar"
-          ],
+          "id_aliases": ["conjskele", "conjureskele", "conjskeleton", "conjurewarrior", "conjwarrior", "conjurewar", "conjwar"],
           "emoji_id": "1159434516658651147",
           "emoji_server": "39"
         },
@@ -6729,7 +6709,7 @@
           "emoji_server": "36"
         },
         {
-          "name": "Essence of Finality (Ability)",
+          "name": "Essence of Finality",
           "id": "eofspec",
           "id_aliases": ["espec"],
           "emoji_id": "1257438999794946099",
@@ -7228,50 +7208,67 @@
           "emoji_server": "29"
         },
         {
-          "name": "Statius's warhammer EoF",
-          "id": "eofblacku",
+          "name": "EoF (black)",
           "emoji_id": "1260022289731158146",
-          "emoji_server": "41"
+          "emoji_server": "41",
+          "eof_spec": "Statius's warhammer",
+          "image": "jRuWtdl.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "id_aliases": ["eofblackunorn", "eofblacku"],
+          "id": "eofblack"
         },
         {
-          "name": "Essence of Finality (blue)",
-          "id": "eofblueu",
-          "emoji_id": "1260022291388174366",
-          "emoji_server": "41"
-        },
-        {
-          "name": "Essence of Finality (green)",
-          "id": "eofgreenu",
+          "name": "EoF (green)",
+          "id": "eofgreen",
           "emoji_id": "1260022283771314238",
-          "emoji_server": "41"
+          "emoji_server": "41",
+          "image": "8a6M64a.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "id_aliases": ["eofgreenunorn", "eofgreenu", "essenceoffinalitygreen"]
         },
         {
-          "name": "Essence of Finality (pink)",
-          "id": "eofpinku",
+          "name": "EoF (pink)",
+          "id": "eofpink",
           "emoji_id": "1260022282969940071",
-          "emoji_server": "41"
+          "emoji_server": "41",
+          "image": "tzIqWlO.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "id_aliases": ["eofpinkunorn", "eofpinku"]
         },
         {
-          "name": "Decimation EoF",
-          "id": "eofpurpleu",
+          "name": "EoF (purple)",
+          "id": "eofpurple",
           "emoji_id": "1260022282076553268",
-          "emoji_server": "41"
+          "emoji_server": "41",
+          "eof_spec": "Decimation",
+          "image": "5NxOiAg.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "id_aliases": ["eofpurpleunorn", "eofpurpleu"]
         },
         {
-          "name": "Essence of Finality amulet (red)",
-          "id": "eofredu",
+          "name": "EoF (red)",
+          "id": "eofred",
           "emoji_id": "1260022281229434951",
           "emoji_server": "41",
           "image": "yUkClNY.png",
           "preset_slot": 10,
           "preset_type": "item",
-          "id_aliases": ["eofredunorn"]
+          "id_aliases": ["eofredunorn", "eofredu"]
         },
         {
-          "name": "Dark bow EoF",
-          "id": "eofyellowu",
+          "name": "EoF (yellow)",
+          "id": "eofyellow",
           "emoji_id": "1260022280046645349",
-          "emoji_server": "41"
+          "emoji_server": "41",
+          "image": "YR6pLdv.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "id_aliases": ["eofyellowunorn", "eofyellowu", "essenceoffinalityyellow"],
+          "eof_spec": "Dark bow"
         },
         {
           "name": "Grace of the elves",
@@ -7453,6 +7450,121 @@
           "preset_slot": 11,
           "preset_type": "item",
           "id_aliases": ["zorgothssoulring"]
+        },
+        {
+          "name": "EoF (blue)",
+          "id": "eofblue",
+          "image": "CtZKC6Z.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "id_aliases": ["eofblueunorn", "eofblueu", "essenceoffinalityblue"],
+          "emoji_server": "41",
+          "emoji_id": "1260022291388174366",
+          "eof_spec": "Annihilation"
+        },
+        {
+          "name": "EoF (or)(blue)",
+          "id": "eoforblue",
+          "id_aliases": ["eofblueor"],
+          "emoji_id": "780401412906680330",
+          "emoji_server": "10",
+          "image": "zAiXkJn.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "eof_spec": "Seren godbow"
+        },
+        {
+          "name": "EoF",
+          "id": "eof",
+          "id_aliases": ["essenceoffinalityu", "eofu", "essenceoffinality"],
+          "emoji_id": "787526151978614824",
+          "emoji_server": "16",
+          "image": "UB0lAK8.png",
+          "preset_slot": 10,
+          "preset_type": "item"
+        },
+        {
+          "name": "EoF (or)",
+          "id": "eofor",
+          "id_aliases": ["essenceoffinalityor"],
+          "emoji_id": "745279787471470713",
+          "emoji_server": "10",
+          "image": "xPypDhQ.png",
+          "preset_slot": 10,
+          "preset_type": "item"
+        },
+        {
+          "name": "EoF (or)(black)",
+          "id": "eoforblack",
+          "id_aliases": ["essenceoffinalityorblack"],
+          "emoji_id": "780401412915855380",
+          "emoji_server": "10",
+          "image": "iZw3Uee.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "eof_spec": "Death guard (tier 90)"
+        },
+        {
+          "name": "EoF (or)(red)",
+          "id": "eoforred",
+          "id_aliases": ["eoforred"],
+          "emoji_id": "780401412839833601",
+          "emoji_server": "10",
+          "image": "JMC7t7Y.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "eof_spec": "Varanus's Mercy"
+        },
+        {
+          "name": "EoF (or)(pink)",
+          "id": "eofpinkor",
+          "id_aliases": ["eofpinkor"],
+          "emoji_id": "780401412865523722",
+          "emoji_server": "10",
+          "image": "MWLieOn.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "eof_spec": "ECB"
+        },
+        {
+          "name": "EoF (or)(yellow)",
+          "id": "eoforyellow",
+          "emoji_id": "780401412902223892",
+          "emoji_server": "10",
+          "image": "hiC7f5F.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "eof_spec": "Iban's staff",
+          "id_aliases": ["eoforyellow"]
+        },
+        {
+          "name": "EoF (or)(purple)",
+          "id": "eoforpurple",
+          "id_aliases": ["eofpurpleor"],
+          "emoji_id": "780401412936040478",
+          "emoji_server": "10",
+          "image": "nu7QSbh.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "eof_spec": "Guthix staff"
+        },
+        {
+          "name": "EoF (or)(green)",
+          "id": "eoforgreen",
+          "emoji_id": "780401412727242773",
+          "emoji_server": "10",
+          "image": "LhMlWmw.png",
+          "preset_slot": 10,
+          "preset_type": "item",
+          "eof_spec": "Gloomfire bow",
+          "id_aliases": ["eofgreenor"]
+        },
+        {
+          "name": "Necklace of Shadows",
+          "id": "necklaceofshadows",
+          "image": "CR0KP8tfqn.png",
+          "preset_slot": 10,
+          "preset_type": "item"
         }
       ]
     },
@@ -8103,11 +8215,7 @@
         {
           "name": "Ancient elven ritual shard",
           "id": "ancientshard",
-          "id_aliases": [
-            "ritualshard",
-            "elvenshard",
-            "ancientelvenritualshard"
-          ],
+          "id_aliases": ["ritualshard", "elvenshard", "ancientelvenritualshard"],
           "emoji_id": "656426717505650708",
           "emoji_server": "2",
           "image": "UURvGNW.png",
@@ -8639,10 +8747,13 @@
           "preset_type": "item"
         },
         {
-          "name": "Ogre flask (Thermal)",
+          "name": "Ogre flask (thermal)",
           "id": "thermalflask",
           "emoji_id": "689530593796423724",
-          "emoji_server": "3"
+          "emoji_server": "3",
+          "image": "6GKoFBO.png",
+          "preset_type": "item",
+          "id_aliases": ["ogrethermal"]
         },
         {
           "name": "Ogre flask (salt water)",
@@ -9680,7 +9791,7 @@
           "id": "ecliptic",
           "emoji_id": "1480620316467400714",
           "emoji_server": "42"
-        },        
+        },
         {
           "name": "Enhancing component",
           "id": "enhancingcomp",
@@ -9824,7 +9935,7 @@
           "id": "manufacturedcomp",
           "emoji_id": "1495031880964374688",
           "emoji_server": "43"
-        },        
+        },
         {
           "name": "Metallic parts",
           "id": "metallicparts",
@@ -9849,7 +9960,7 @@
           "id": "offcutcomp",
           "emoji_id": "1495031942918180974",
           "emoji_server": "43"
-        },        
+        },
         {
           "name": "Organic parts",
           "id": "organicparts",
@@ -10393,7 +10504,7 @@
           "id": "tumekensfragment",
           "emoji_id": "1497247315835224116",
           "emoji_server": "43"
-        },        
+        },
         {
           "name": "General Graardor",
           "id": "graardor",
@@ -10516,7 +10627,7 @@
           "id": "modestcrocodile",
           "emoji_id": "1497224428101173489",
           "emoji_server": "43"
-        },        
+        },
         {
           "name": "Nakatra",
           "id": "nakatra",
@@ -12343,6 +12454,41 @@
           "id": "warsretreatteleport",
           "emoji_id": "1032540079589163049",
           "emoji_server": "35"
+        },
+        {
+          "name": "Passage of the Abyss (green)",
+          "id": "passageoftheabyss(green)",
+          "image": "PDg2YBC.png",
+          "preset_slot": 13,
+          "preset_type": "item"
+        },
+        {
+          "name": "Sceptre of the gods",
+          "id": "sceptreofthegods",
+          "image": "E2dLUWN.png",
+          "preset_slot": 4,
+          "preset_type": "item"
+        },
+        {
+          "name": "Passage of the Abyss (yellow)",
+          "id": "passageoftheabyss(yellow)",
+          "image": "OD2ylaK.png",
+          "preset_slot": 13,
+          "preset_type": "item"
+        },
+        {
+          "name": "Passage of the Abyss (red)",
+          "id": "passageoftheabyss(red)",
+          "image": "Qp0s9G2.png",
+          "preset_slot": 13,
+          "preset_type": "item"
+        },
+        {
+          "name": "Passage of the Abyss (purple)",
+          "id": "passageoftheabyss(purple)",
+          "image": "4FnqALw.png",
+          "preset_slot": 13,
+          "preset_type": "item"
         }
       ]
     },
@@ -15758,11 +15904,7 @@
           "image": "uBbMQoy.png",
           "preset_slot": 9,
           "preset_type": "item",
-          "id_aliases": [
-            "bsa100",
-            "blackstonearrows100",
-            "blackstonearrowstack"
-          ]
+          "id_aliases": ["bsa100", "blackstonearrows100", "blackstonearrowstack"]
         },
         {
           "name": "Black stone arrows (stack of 1000)",
@@ -16531,20 +16673,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Elder rune full helm + 5",
-          "id": "elderrunehelm",
-          "image": "2Mz4PUK.png",
-          "preset_slot": 1,
-          "preset_type": "item"
-        },
-        {
-          "name": "Elder rune gauntlets + 5",
-          "id": "elderrunegauntlets",
-          "image": "1t7JUu2.png",
-          "preset_slot": 6,
-          "preset_type": "item"
-        },
-        {
           "name": "Elder rune platebody + 4",
           "id": "elderruneplate4",
           "image": "orbVikx.png",
@@ -16660,48 +16788,6 @@
           "name": "Enlightened amulet (c)",
           "id": "enlightenedamuletc",
           "image": "cr2oJs0.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "EoF - Dark bow",
-          "id": "eofyellowunorn",
-          "image": "YR6pLdv.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "EoF - Decimation",
-          "id": "eofpurpleunorn",
-          "image": "5NxOiAg.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "EoF - Statius's warhammer",
-          "id": "eofblackunorn",
-          "image": "jRuWtdl.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "Essence of Finality amulet (blue)",
-          "id": "eofblueunorn",
-          "image": "CtZKC6Z.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "Essence of Finality amulet (green)",
-          "id": "eofgreenunorn",
-          "image": "8a6M64a.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "Essence of Finality amulet (pink)",
-          "id": "eofpinkunorn",
-          "image": "tzIqWlO.png",
           "preset_slot": 10,
           "preset_type": "item"
         },
@@ -17298,12 +17384,7 @@
           "id": "kalgscrollsstack",
           "image": "vIatvqA.png",
           "preset_type": "item",
-          "id_aliases": [
-            "kalgscrollsstack20",
-            "kalgscrolls100",
-            "kalgscrollsstack100",
-            "kalgscrolls"
-          ]
+          "id_aliases": ["kalgscrollsstack20", "kalgscrolls100", "kalgscrollsstack100", "kalgscrolls"]
         },
         {
           "name": "Kal'gerion Demon scroll (Crit-i-Kal) (stack of 500)",
@@ -18040,12 +18121,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Ogre flask (thermal)",
-          "id": "ogrethermal",
-          "image": "6GKoFBO.png",
-          "preset_type": "item"
-        },
-        {
           "name": "Onyx bolts (e)",
           "id": "onyxboltse",
           "image": "sUAvNro.png",
@@ -18083,34 +18158,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Passage of the Abyss (green)",
-          "id": "passageoftheabyss(green)",
-          "image": "PDg2YBC.png",
-          "preset_slot": 13,
-          "preset_type": "item"
-        },
-        {
-          "name": "Passage of the Abyss (purple)",
-          "id": "passageoftheabyss(purple)",
-          "image": "4FnqALw.png",
-          "preset_slot": 13,
-          "preset_type": "item"
-        },
-        {
-          "name": "Passage of the Abyss (red)",
-          "id": "passageoftheabyss(red)",
-          "image": "Qp0s9G2.png",
-          "preset_slot": 13,
-          "preset_type": "item"
-        },
-        {
-          "name": "Passage of the Abyss (yellow)",
-          "id": "passageoftheabyss(yellow)",
-          "image": "OD2ylaK.png",
-          "preset_slot": 13,
-          "preset_type": "item"
-        },
-        {
           "name": "Passing bracelet",
           "id": "passingbracelet",
           "image": "aZvjBlt.png",
@@ -18128,55 +18175,6 @@
           "id": "pernixboots",
           "image": "OAzJuDb.png",
           "preset_slot": 7,
-          "preset_type": "item"
-        },
-        {
-          "name": "Pernix's Quiver (Black)",
-          "id": "pernixquiverblack",
-          "image": "JqXq1zD.png",
-          "preset_slot": 9,
-          "preset_type": "item"
-        },
-        {
-          "name": "Pernix's Quiver (Blue)",
-          "id": "pernixquiverblue",
-          "image": "X5AcgQh.png",
-          "preset_slot": 9,
-          "preset_type": "item"
-        },
-        {
-          "name": "Pernix's Quiver (Green)",
-          "id": "pernixquivergreen",
-          "image": "MG25Uow.png",
-          "preset_slot": 9,
-          "preset_type": "item"
-        },
-        {
-          "name": "Pernix's Quiver (Orange)",
-          "id": "pernixquiverorange",
-          "image": "KYb4lnS.png",
-          "preset_slot": 9,
-          "preset_type": "item"
-        },
-        {
-          "name": "Pernix's Quiver (Purple)",
-          "id": "pernixquiverpurple",
-          "image": "xt67uWC.png",
-          "preset_slot": 9,
-          "preset_type": "item"
-        },
-        {
-          "name": "Pernix's Quiver (Red)",
-          "id": "pernixquiverred",
-          "image": "uMJW8pU.png",
-          "preset_slot": 9,
-          "preset_type": "item"
-        },
-        {
-          "name": "Pernix's Quiver (Yellow)",
-          "id": "pernixquiveryellow",
-          "image": "MCRkOPS.png",
-          "preset_slot": 9,
           "preset_type": "item"
         },
         {
@@ -18491,13 +18489,6 @@
           "name": "Saradomin brew flask (6)",
           "id": "sara",
           "image": "NTlFcpC.png",
-          "preset_type": "item"
-        },
-        {
-          "name": "Sceptre of the gods",
-          "id": "sceptreofthegods",
-          "image": "E2dLUWN.png",
-          "preset_slot": 4,
           "preset_type": "item"
         },
         {
@@ -19617,13 +19608,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Necklace of Shadows",
-          "id": "necklaceofshadows",
-          "image": "CR0KP8tfqn.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
           "name": "Baby platypus",
           "id": "babyplatypus",
           "image": "iHJyarw.png",
@@ -19870,97 +19854,6 @@
           "emoji_server": "11",
           "image": "nC5xTAR.png",
           "preset_slot": 5,
-          "preset_type": "item"
-        },
-        {
-          "name": "EoF (or) - Iban's staff",
-          "id": "eofyellow",
-          "id_aliases": ["essenceoffinalityyellow"],
-          "emoji_id": "780401412902223892",
-          "emoji_server": "10",
-          "image": "hiC7f5F.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "EoF (or) - Death guard",
-          "id": "eofblack",
-          "id_aliases": ["essenceoffinalityblack"],
-          "emoji_id": "780401412915855380",
-          "emoji_server": "10",
-          "image": "iZw3Uee.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "EoF (or) - Dragon Claws",
-          "id": "eofred",
-          "id_aliases": ["essenceoffinalityred"],
-          "emoji_id": "780401412839833601",
-          "emoji_server": "10",
-          "image": "JMC7t7Y.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "EoF (or) - ECB",
-          "id": "eofpink",
-          "id_aliases": ["essenceoffinalitypink"],
-          "emoji_id": "780401412865523722",
-          "emoji_server": "10",
-          "image": "MWLieOn.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "EoF (or) - Zammy/Guthix staff",
-          "id": "eofpurple",
-          "id_aliases": ["essenceoffinalitypurple"],
-          "emoji_id": "780401412936040478",
-          "emoji_server": "10",
-          "image": "nu7QSbh.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "EoF (blue)",
-          "id": "eofblue",
-          "id_aliases": ["essenceoffinalityblue"],
-          "emoji_id": "780401412906680330",
-          "emoji_server": "10",
-          "image": "zAiXkJn.png",
-          "preset_slot": 10,
-          "preset_type": "item",
-          "eof_spec": "SGB"
-        },
-        {
-          "name": "EoF (or) - Zamorak bow",
-          "id": "eofgreen",
-          "id_aliases": ["essenceoffinalitygreen"],
-          "emoji_id": "780401412727242773",
-          "emoji_server": "10",
-          "image": "LhMlWmw.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "Essence of Finality amulet",
-          "id": "eofu",
-          "id_aliases": ["essenceoffinalityu"],
-          "emoji_id": "787526151978614824",
-          "emoji_server": "16",
-          "image": "UB0lAK8.png",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
-          "name": "Essence of Finality amulet (or)",
-          "id": "eof",
-          "id_aliases": ["essenceoffinality", "eofor"],
-          "emoji_id": "745279787471470713",
-          "emoji_server": "10",
-          "image": "xPypDhQ.png",
-          "preset_slot": 10,
           "preset_type": "item"
         },
         {
@@ -20258,11 +20151,7 @@
         {
           "name": "Lantadyme incense sticks (stack)",
           "id": "lantadymesticks100",
-          "id_aliases": [
-            "lantadymeincensesticks100",
-            "lantasticks100",
-            "lantadymesticksstack"
-          ],
+          "id_aliases": ["lantadymeincensesticks100", "lantasticks100", "lantadymesticksstack"],
           "image": "4n0C5gK.png",
           "preset_type": "item"
         },
@@ -20374,22 +20263,14 @@
         {
           "name": "Slayer Wildcard (stack)",
           "id": "wildcardsstack",
-          "id_aliases": [
-            "slayerwildcard100",
-            "slayerwildcardsstack",
-            "wildcardstack"
-          ],
+          "id_aliases": ["slayerwildcard100", "slayerwildcardsstack", "wildcardstack"],
           "image": "wspoQxZ.png",
           "preset_type": "item"
         },
         {
           "name": "Blood Reaver scroll (Blood Siphon) (stack)",
           "id": "reaverscrollsstack",
-          "id_aliases": [
-            "reaverscrolls500",
-            "bloodreaverscrollsstack",
-            "bloodreaverscrolls"
-          ],
+          "id_aliases": ["reaverscrolls500", "bloodreaverscrollsstack", "bloodreaverscrolls"],
           "image": "3o2DaTu.png",
           "preset_type": "item"
         },
