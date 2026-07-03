@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emoji Dedupe</title>
+  <style>
+    :root {
+      --bg: #f5f2ec;
+      --panel: #fff;
+      --ink: #172325;
+      --muted: #647174;
+      --line: #d9dedb;
+      --accent: #216f67;
+      --soft: #e5f2ee;
+      --danger: #9d392a;
+      --warn: #fff1d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.4;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      border-bottom: 1px solid var(--line);
+      background: rgba(245, 242, 236, 0.95);
+      backdrop-filter: blur(10px);
+    }
+    .bar, main {
+      width: min(1600px, calc(100vw - 32px));
+      margin: 0 auto;
+    }
+    .bar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: center;
+      padding: 14px 0;
+    }
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    h2 {
+      font-size: 15px;
+      letter-spacing: 0;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+    .meta, .small, .status {
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+    .status {
+      white-space: nowrap;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+      margin-bottom: 32px;
+    }
+    input, textarea, select, button {
+      font: inherit;
+    }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 9px;
+    }
+    textarea {
+      min-height: 64px;
+      resize: vertical;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    button {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+    button.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+    button.danger {
+      border-color: #d39286;
+      background: #fff8f6;
+      color: var(--danger);
+    }
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.55;
+    }
+    aside, .workspace {
+      min-width: 0;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 12px;
+    }
+    .sidebar {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+    .groups {
+      display: grid;
+      gap: 8px;
+    }
+    .group-button {
+      width: 100%;
+      display: grid;
+      gap: 5px;
+      text-align: left;
+    }
+    .group-button.active {
+      border-color: var(--accent);
+      background: var(--soft);
+      box-shadow: 0 0 0 2px rgba(33, 111, 103, 0.12);
+    }
+    .group-title {
+      font-weight: 800;
+    }
+    .name-list {
+      display: grid;
+      gap: 2px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .compare-head {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .table-wrap {
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      max-height: calc(100vh - 250px);
+    }
+    table {
+      width: 100%;
+      min-width: 860px;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+    th, td {
+      min-width: 250px;
+      max-width: 340px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 10px;
+      vertical-align: top;
+      background: #fff;
+    }
+    th:first-child, td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      min-width: 150px;
+      max-width: 150px;
+      background: #fbfaf7;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      background: #fbfaf7;
+    }
+    th:first-child {
+      z-index: 4;
+    }
+    tr:last-child td {
+      border-bottom: 0;
+    }
+    th:last-child, td:last-child {
+      border-right: 0;
+    }
+    .emoji-title {
+      display: grid;
+      gap: 6px;
+    }
+    .keeper {
+      border-radius: 6px;
+      background: var(--soft);
+      color: var(--accent);
+      padding: 5px 7px;
+      font-size: 12px;
+      font-weight: 800;
+      width: max-content;
+    }
+    .preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .preview-item {
+      display: grid;
+      gap: 5px;
+      justify-items: center;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .preview img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f1f3f2;
+      padding: 4px;
+    }
+    .choice {
+      display: grid;
+      gap: 8px;
+    }
+    .choice label {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .choice input {
+      width: auto;
+    }
+    .readonly {
+      color: var(--muted);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+    .merge-note {
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .json-error {
+      display: none;
+      margin-top: 8px;
+      border-radius: 6px;
+      background: var(--warn);
+      color: var(--danger);
+      padding: 8px 10px;
+      font-size: 13px;
+    }
+    .json-error.show {
+      display: block;
+    }
+    @media (max-width: 950px) {
+      .bar, main {
+        width: min(100vw - 20px, 760px);
+      }
+      .bar, main {
+        grid-template-columns: 1fr;
+      }
+      .table-wrap {
+        max-height: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div>
+        <h1>Emoji Dedupe</h1>
+        <div id="meta" class="meta"></div>
+      </div>
+      <div id="status" class="status">Loading</div>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <div class="panel">
+        <h2>Fuzzy search</h2>
+        <input id="searchBox" type="search" placeholder="Try: eof blue, dark bow, statius hammer">
+        <div id="searchSummary" class="small"></div>
+      </div>
+      <div class="panel">
+        <h2>Likely duplicate groups</h2>
+        <div id="groupSummary" class="small"></div>
+        <div class="actions" style="margin-top: 8px;">
+          <button id="loadMoreGroups" type="button">Load more groups</button>
+        </div>
+      </div>
+      <div id="groups" class="groups"></div>
+    </aside>
+
+    <section class="workspace">
+      <div class="panel compare-head">
+        <h2 id="compareTitle">Comparison</h2>
+        <div id="compareHint" class="small"></div>
+        <div class="actions">
+          <button id="mergeButton" class="primary" type="button" disabled>Merge only the ticked duplicates into the chosen keeper</button>
+          <button id="refresh" type="button">Refresh from JSON</button>
+        </div>
+      </div>
+      <div id="comparison"></div>
+    </section>
+  </main>
+
+  <script>
+    const state = {
+      rows: [],
+      groups: [],
+      categories: [],
+      fields: [],
+      selectedGroupIndex: 0,
+      groupOffset: 0,
+      groupLimit: 25,
+      totalGroups: 0,
+      mode: "groups",
+      searchQuery: "",
+      keeperUid: "",
+      removeUids: new Set(),
+      saveTimers: new Map(),
+      saveToken: 0,
+    };
+
+    const el = (id) => document.getElementById(id);
+    const preferredFields = ["name", "id", "emoji_id", "emoji_server", "image", "preset_type", "preset_slot", "id_aliases", "eof_spec"];
+
+    async function request(path, options = {}) {
+      const res = await fetch(path, {
+        headers: { "content-type": "application/json" },
+        ...options,
+      });
+      const body = await res.json();
+      if (!res.ok) throw new Error(body.error || "Request failed");
+      return body;
+    }
+
+    async function load() {
+      setStatus("Loading");
+      const next = await request("/api/state");
+      state.categories = next.categories || [];
+      state.fields = next.fields || state.fields;
+      el("meta").textContent = `${next.count} emojis in ${next.file}`;
+      await loadGroups(true);
+      setStatus("Ready");
+    }
+
+    async function loadGroups(reset = false) {
+      if (reset) {
+        state.rows = [];
+        state.groups = [];
+        state.selectedGroupIndex = 0;
+        state.groupOffset = 0;
+        state.totalGroups = 0;
+        state.mode = "groups";
+        state.searchQuery = "";
+        state.removeUids.clear();
+      }
+
+      setStatus("Loading groups");
+      const next = await request(`/api/groups?offset=${state.groupOffset}&limit=${state.groupLimit}`);
+      state.categories = next.categories || state.categories;
+      state.fields = next.fields || state.fields;
+      appendRows(next.rows || []);
+      state.groups.push(...(next.groups || []));
+      state.groupOffset += next.groups?.length || 0;
+      state.totalGroups = next.totalGroups || state.totalGroups;
+      settleSelection();
+      render();
+      setStatus("Ready");
+    }
+
+    async function runSearch() {
+      const query = el("searchBox").value.trim();
+      state.searchQuery = query;
+
+      if (!query) {
+        await loadGroups(true);
+        return;
+      }
+
+      setStatus("Searching");
+      const next = await request(`/api/search?q=${encodeURIComponent(query)}&limit=80`);
+      state.rows = next.rows || [];
+      state.groups = next.groups || [];
+      state.categories = next.categories || state.categories;
+      state.fields = next.fields || state.fields;
+      state.mode = "search";
+      state.selectedGroupIndex = 0;
+      state.totalGroups = state.groups.length;
+      state.removeUids.clear();
+      settleSelection();
+      render();
+      setStatus("Ready");
+    }
+
+    function appendRows(rows) {
+      const map = rowsByUid();
+      for (const row of rows) map.set(row.uid, row);
+      state.rows = [...map.values()];
+    }
+
+    function applyRowsPayload(next, options = {}) {
+      state.rows = next.rows || [];
+      state.groups = next.groups || [];
+      state.categories = next.categories || state.categories;
+      state.fields = next.fields || state.fields;
+      state.totalGroups = next.totalGroups || state.groups.length;
+      settleSelection();
+
+      if (options.preserveComparison) {
+        renderGroups();
+        renderHeader();
+      } else {
+        render();
+      }
+    }
+
+    function settleSelection() {
+      if (state.selectedGroupIndex >= state.groups.length) state.selectedGroupIndex = 0;
+
+      const group = currentGroup();
+      if (!group.some((row) => row.uid === state.keeperUid)) {
+        state.keeperUid = group[0]?.uid || "";
+      }
+
+      for (const uid of [...state.removeUids]) {
+        if (!group.some((row) => row.uid === uid) || uid === state.keeperUid) {
+          state.removeUids.delete(uid);
+        }
+      }
+    }
+
+    function render() {
+      renderGroups();
+      renderHeader();
+      renderComparison();
+    }
+
+    async function refreshCurrentView() {
+      if (state.mode === "search" && state.searchQuery) {
+        await runSearch();
+      } else {
+        await loadGroups(true);
+      }
+    }
+
+    function rowsByUid() {
+      return new Map(state.rows.map((row) => [row.uid, row]));
+    }
+
+    function currentGroup() {
+      const map = rowsByUid();
+      return (state.groups[state.selectedGroupIndex] || [])
+        .map((uid) => map.get(uid))
+        .filter(Boolean);
+    }
+
+    function renderGroups() {
+      const map = rowsByUid();
+      el("searchSummary").textContent = state.mode === "search"
+        ? `${state.rows.length} result${state.rows.length === 1 ? "" : "s"} for "${state.searchQuery}".`
+        : "Search across names, ids, aliases, and categories.";
+      el("groupSummary").textContent = state.mode === "search"
+        ? "Showing search results in the comparison table."
+        : state.groups.length
+          ? `Loaded ${state.groups.length} of ${state.totalGroups} likely duplicate groups.`
+          : "No likely duplicates loaded yet.";
+      el("loadMoreGroups").disabled = state.mode === "search" || state.groupOffset >= state.totalGroups;
+
+      el("groups").innerHTML = state.groups.map((group, index) => {
+        const rows = group.map((uid) => map.get(uid)).filter(Boolean);
+        const title = rows[0]?.duplicateKey || "similar";
+        return `<button class="group-button ${index === state.selectedGroupIndex ? "active" : ""}" type="button" data-group="${index}">
+          <span class="group-title">${escapeHtml(title)} (${rows.length})</span>
+          <span class="name-list">${rows.map((row) => `<span>${escapeHtml(row.entry.name || row.entry.id || "")}</span>`).join("")}</span>
+        </button>`;
+      }).join("");
+    }
+
+    function renderHeader() {
+      const group = currentGroup();
+      const keeper = group.find((row) => row.uid === state.keeperUid);
+      const removeCount = selectedRemoveCount();
+      const title = group[0]?.duplicateKey || "Comparison";
+
+      el("compareTitle").textContent = group.length
+        ? `Comparing: ${title}`
+        : "Comparison";
+
+      if (!group.length) {
+        el("compareHint").textContent = "Pick a likely duplicate group on the left.";
+      } else if (!keeper) {
+        el("compareHint").textContent = "Choose which emoji to keep.";
+      } else {
+        el("compareHint").textContent = `Keeper: "${keeper.entry.name || keeper.entry.id}". ${removeCount ? `Ready to merge ${removeCount} ticked duplicate${removeCount === 1 ? "" : "s"} into it.` : "Tick only duplicates of this exact emoji. Leave valid variants unticked."}`;
+      }
+
+      el("mergeButton").disabled = !state.keeperUid || removeCount < 1;
+    }
+
+    function renderComparison() {
+      const group = currentGroup();
+      if (!group.length) {
+        el("comparison").innerHTML = `<div class="panel small">No likely duplicate group selected.</div>`;
+        return;
+      }
+
+      const fields = comparisonFields(group);
+
+      el("comparison").innerHTML = `<div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Field</th>
+              ${group.map((row) => `<th>${columnHeader(row)}</th>`).join("")}
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>image preview</td>
+              ${group.map((row) => `<td data-preview-uid="${row.uid}">${previewHtml(row.entry)}</td>`).join("")}
+            </tr>
+            <tr>
+              <td>keep / remove</td>
+              ${group.map((row) => `<td>${choiceHtml(row)}</td>`).join("")}
+            </tr>
+            <tr>
+              <td>category</td>
+              ${group.map((row) => `<td>${categorySelect(row)}</td>`).join("")}
+            </tr>
+            <tr>
+              <td>json path</td>
+              ${group.map((row) => `<td><div class="readonly">${escapeHtml(row.path || "")}</div></td>`).join("")}
+            </tr>
+            ${fields.map((field) => `<tr>
+              <td>${escapeHtml(field)}</td>
+              ${group.map((row) => `<td>${fieldEditor(row, field)}</td>`).join("")}
+            </tr>`).join("")}
+          </tbody>
+        </table>
+      </div>
+      <div id="jsonError" class="json-error"></div>`;
+    }
+
+    function comparisonFields(group) {
+      const set = new Set(preferredFields);
+      for (const field of state.fields) set.add(field);
+      for (const row of group) {
+        for (const key of Object.keys(row.entry)) {
+          if (!set.has(key)) set.add(key);
+        }
+      }
+      return [...set];
+    }
+
+    function columnHeader(row) {
+      const isKeeper = row.uid === state.keeperUid;
+      return `<div class="emoji-title">
+        ${isKeeper ? `<span class="keeper">Kept on merge</span>` : ""}
+        <h3 data-title-name="${row.uid}">${escapeHtml(row.entry.name || row.entry.id || "")}</h3>
+        <div class="small" data-title-id="${row.uid}">${escapeHtml(row.entry.id || "")}</div>
+      </div>`;
+    }
+
+    function categorySelect(row) {
+      return `<select data-category-uid="${row.uid}">
+        ${state.categories.map((category) => `<option value="${category.index}" ${category.index === row.categoryIndex ? "selected" : ""}>${escapeHtml(category.name)}</option>`).join("")}
+      </select>`;
+    }
+
+    function previewHtml(entry) {
+      const previews = [];
+      if (entry.emoji_id) {
+        previews.push({
+          label: "Discord",
+          src: `https://cdn.discordapp.com/emojis/${encodeURIComponent(entry.emoji_id)}.webp`,
+        });
+      }
+      if (entry.image) {
+        previews.push({
+          label: "PVME image",
+          src: `https://img.pvme.io/images/${encodeURIComponent(entry.image)}`,
+        });
+      }
+      if (!previews.length) return `<div class="readonly">No emoji_id or image field.</div>`;
+
+      return `<div class="preview">${previews.map((item) => `<a class="preview-item" href="${escapeAttr(item.src)}" target="_blank" rel="noreferrer">
+        <img src="${escapeAttr(item.src)}" alt="${escapeAttr(item.label)} preview" loading="lazy">
+        <span>${escapeHtml(item.label)}</span>
+      </a>`).join("")}</div>`;
+    }
+
+    function liveEntryForUid(uid) {
+      const row = state.rows.find((item) => item.uid === uid);
+      const entry = { ...(row?.entry || {}) };
+
+      for (const input of document.querySelectorAll(`[data-uid="${cssEscape(uid)}"][data-field]`)) {
+        const field = input.dataset.field;
+        if (field === "emoji_id" || field === "image") {
+          const value = input.value.trim();
+          if (value) entry[field] = value;
+          else delete entry[field];
+        }
+      }
+
+      return entry;
+    }
+
+    function updatePreviewForUid(uid) {
+      const cell = document.querySelector(`[data-preview-uid="${cssEscape(uid)}"]`);
+      if (!cell) return;
+      cell.innerHTML = previewHtml(liveEntryForUid(uid));
+    }
+
+    function updateColumnTitleForUid(uid) {
+      const row = state.rows.find((item) => item.uid === uid);
+      const entry = { ...(row?.entry || {}) };
+
+      for (const input of document.querySelectorAll(`[data-uid="${cssEscape(uid)}"][data-field]`)) {
+        const field = input.dataset.field;
+        if (field === "name" || field === "id") {
+          entry[field] = input.value.trim();
+        }
+      }
+
+      const name = entry.name || entry.id || "";
+      const id = entry.id || "";
+      const nameEl = document.querySelector(`[data-title-name="${cssEscape(uid)}"]`);
+      const idEl = document.querySelector(`[data-title-id="${cssEscape(uid)}"]`);
+
+      if (nameEl) nameEl.textContent = name;
+      if (idEl) idEl.textContent = id;
+    }
+
+    function choiceHtml(row) {
+      const checked = state.removeUids.has(row.uid) ? "checked" : "";
+      const disabled = row.uid === state.keeperUid ? "disabled" : "";
+      const note = row.uid === state.keeperUid
+        ? "This column stays."
+        : checked
+          ? "This column will be removed after its useful data is copied."
+          : "Unticked columns stay as separate emojis.";
+      return `<div class="choice">
+        <label><input type="radio" name="keeper" data-keeper="${row.uid}" ${row.uid === state.keeperUid ? "checked" : ""}> Keep this emoji</label>
+        <label><input type="checkbox" data-remove="${row.uid}" ${checked} ${disabled}> Merge this duplicate into the keeper</label>
+        <div class="merge-note">${escapeHtml(note)}</div>
+        <button class="danger" type="button" data-delete="${row.uid}">Delete this emoji now</button>
+      </div>`;
+    }
+
+    function fieldEditor(row, field) {
+      const value = row.entry[field];
+      if (field === "preset_slot") {
+        return presetSlotSelect(row, value);
+      }
+
+      if (field === "id_aliases") {
+        const text = Array.isArray(value) ? value.join(", ") : "";
+        return `<textarea data-uid="${row.uid}" data-field="${field}" placeholder="Comma or newline separated aliases">${escapeHtml(text)}</textarea>`;
+      }
+
+      if (value && typeof value === "object") {
+        return `<textarea data-uid="${row.uid}" data-field="${field}" data-json="true">${escapeHtml(JSON.stringify(value, null, 2))}</textarea>`;
+      }
+
+      const type = typeof value === "number" || field === "preset_slot" ? "number" : "text";
+      return `<input type="${type}" data-uid="${row.uid}" data-field="${field}" value="${escapeAttr(value ?? "")}">`;
+    }
+
+    function presetSlotSelect(row, value) {
+      const slots = [
+        [1, "Helm"],
+        [2, "Body"],
+        [3, "Legs"],
+        [4, "Main-hand weapon"],
+        [5, "Off-hand weapon"],
+        [6, "Gloves"],
+        [7, "Boots"],
+        [8, "Aura"],
+        [9, "Ammo"],
+        [10, "Necklace"],
+        [11, "Ring"],
+        [12, "Cape"],
+        [13, "Pocket"],
+      ];
+      const current = value === undefined || value === null ? "" : String(value);
+
+      return `<select data-uid="${row.uid}" data-field="preset_slot">
+        <option value="" ${current === "" ? "selected" : ""}></option>
+        ${slots.map(([slot, label]) => `<option value="${slot}" ${current === String(slot) ? "selected" : ""}>${slot} - ${escapeHtml(label)}</option>`).join("")}
+      </select>`;
+    }
+
+    function scheduleFieldSave(input) {
+      const uid = input.dataset.uid;
+      clearTimeout(state.saveTimers.get(uid));
+      state.saveTimers.set(uid, setTimeout(() => saveField(input), 450));
+    }
+
+    async function saveField(input) {
+      const uid = input.dataset.uid;
+      const field = input.dataset.field;
+      const row = state.rows.find((item) => item.uid === uid);
+      if (!row) return;
+
+      try {
+        const entry = { ...row.entry };
+        const value = parseInputValue(input, row.entry[field], field);
+        if (value === undefined) delete entry[field];
+        else entry[field] = value;
+
+        hideError();
+        setStatus("Saving");
+        const next = await request(`/api/emoji/${uid}`, {
+          method: "PUT",
+          body: JSON.stringify({ entry }),
+        });
+        state.categories = next.categories || state.categories;
+        state.fields = next.fields || state.fields;
+        row.entry = entry;
+        renderGroups();
+        renderHeader();
+        setStatus("Saved");
+      } catch (err) {
+        showError(err.message);
+        setStatus("Fix field to save");
+      }
+    }
+
+    function parseInputValue(input, oldValue, field) {
+      const text = input.value.trim();
+      if (!text) return undefined;
+
+      if (field === "id_aliases") {
+        const aliases = text.split(/[,\n]/).map((alias) => alias.trim()).filter(Boolean);
+        return aliases.length ? [...new Set(aliases)] : undefined;
+      }
+
+      if (input.dataset.json === "true") return JSON.parse(text);
+      if (typeof oldValue === "number" || field === "preset_slot") return Number(text);
+      return text;
+    }
+
+    function chooseKeeper(uid) {
+      state.keeperUid = uid;
+      state.removeUids.delete(uid);
+      renderHeader();
+      renderComparison();
+    }
+
+    function selectedRemoveCount() {
+      return [...state.removeUids].filter((uid) => uid !== state.keeperUid).length;
+    }
+
+    async function deleteEmoji(uid) {
+      const row = state.rows.find((item) => item.uid === uid);
+      const name = row?.entry.name || row?.entry.id || "this emoji";
+      if (!confirm(`Delete "${name}" from emojis_v2.json? This cannot be undone by the UI.`)) return;
+
+      setStatus("Deleting");
+      await request(`/api/emoji/${uid}`, { method: "DELETE" });
+      state.removeUids.delete(uid);
+      await refreshCurrentView();
+      setStatus("Deleted");
+    }
+
+    async function mergeSelected() {
+      const sourceUids = [...state.removeUids].filter((uid) => uid !== state.keeperUid);
+      const keeper = state.rows.find((row) => row.uid === state.keeperUid);
+      if (!keeper || !sourceUids.length) return;
+
+      const name = keeper.entry.name || keeper.entry.id || "the chosen emoji";
+      if (!confirm(`Keep "${name}" and merge ${sourceUids.length} ticked duplicate${sourceUids.length === 1 ? "" : "s"} into it? Unticked columns will stay as separate emojis.`)) return;
+
+      setStatus("Merging");
+      const next = await request("/api/merge", {
+        method: "POST",
+        body: JSON.stringify({ targetUid: state.keeperUid, sourceUids }),
+      });
+      state.categories = next.categories || state.categories;
+      state.removeUids.clear();
+      await refreshCurrentView();
+      setStatus("Merged");
+    }
+
+    async function moveCategory(select) {
+      const uid = select.dataset.categoryUid;
+      const categoryIndex = Number(select.value);
+
+      try {
+        hideError();
+        setStatus("Moving");
+        const next = await request(`/api/move/${uid}`, {
+          method: "POST",
+          body: JSON.stringify({ categoryIndex }),
+        });
+        state.categories = next.categories || state.categories;
+        await refreshCurrentView();
+        setStatus("Moved");
+      } catch (err) {
+        showError(err.message);
+        setStatus("Move failed");
+      }
+    }
+
+    function setStatus(text) {
+      el("status").textContent = text;
+    }
+
+    function showError(message) {
+      const error = el("jsonError");
+      if (!error) return;
+      error.textContent = message;
+      error.classList.add("show");
+    }
+
+    function hideError() {
+      const error = el("jsonError");
+      if (error) error.classList.remove("show");
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[char]));
+    }
+
+    function escapeAttr(value) {
+      return escapeHtml(value).replace(/`/g, "&#96;");
+    }
+
+    function cssEscape(value) {
+      if (window.CSS && CSS.escape) return CSS.escape(String(value));
+      return String(value).replace(/["\\]/g, "\\$&");
+    }
+
+    document.addEventListener("click", (event) => {
+      const groupButton = event.target.closest("[data-group]");
+      const keeper = event.target.closest("[data-keeper]");
+      const remove = event.target.closest("[data-remove]");
+      const del = event.target.closest("[data-delete]");
+
+      if (groupButton) {
+        state.selectedGroupIndex = Number(groupButton.dataset.group);
+        const group = currentGroup();
+        state.keeperUid = group[0]?.uid || "";
+        state.removeUids.clear();
+        render();
+        return;
+      }
+
+      if (keeper) {
+        chooseKeeper(keeper.dataset.keeper);
+        return;
+      }
+
+      if (remove) {
+        if (remove.checked) state.removeUids.add(remove.dataset.remove);
+        else state.removeUids.delete(remove.dataset.remove);
+        renderHeader();
+        renderComparison();
+        return;
+      }
+
+      if (del) {
+        deleteEmoji(del.dataset.delete);
+      }
+    });
+
+    document.addEventListener("input", (event) => {
+      const input = event.target.closest("[data-uid][data-field]");
+      if (!input) return;
+
+      if (input.dataset.field === "emoji_id" || input.dataset.field === "image") {
+        updatePreviewForUid(input.dataset.uid);
+      }
+
+      if (input.dataset.field === "name" || input.dataset.field === "id") {
+        updateColumnTitleForUid(input.dataset.uid);
+      }
+
+      scheduleFieldSave(input);
+    });
+
+    document.addEventListener("change", (event) => {
+      const select = event.target.closest("[data-category-uid]");
+      if (select) {
+        moveCategory(select);
+        return;
+      }
+
+      const fieldInput = event.target.closest("[data-uid][data-field]");
+      if (fieldInput) scheduleFieldSave(fieldInput);
+    });
+
+    let searchTimer = null;
+    el("searchBox").addEventListener("input", () => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(runSearch, 250);
+    });
+
+    el("mergeButton").addEventListener("click", mergeSelected);
+    el("loadMoreGroups").addEventListener("click", () => loadGroups(false));
+    el("refresh").addEventListener("click", refreshCurrentView);
+
+    load().catch((err) => setStatus(err.message));
+  </script>
+</body>
+</html>
