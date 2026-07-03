@@ -7459,7 +7459,8 @@
           "preset_type": "item",
           "id_aliases": ["eofblueunorn", "eofblueu", "essenceoffinalityblue"],
           "emoji_server": "41",
-          "emoji_id": "1260022291388174366"
+          "emoji_id": "1260022291388174366",
+          "eof_spec": "Annihilation"
         },
         {
           "name": "EoF (or)(blue)",
