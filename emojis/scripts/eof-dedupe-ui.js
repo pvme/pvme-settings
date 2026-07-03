@@ -24,7 +24,41 @@ function loadJson() {
 }
 
 function saveJson() {
-  fs.writeFileSync(file, `${JSON.stringify(json, null, 2)}\n`);
+  fs.writeFileSync(file, `${stringifyJson(json)}\n`);
+}
+
+function stringifyJson(value, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const childIndent = "  ".repeat(depth + 1);
+
+  if (Array.isArray(value)) {
+    if (!value.length) return "[]";
+
+    if (value.every((item) => item === null || typeof item !== "object")) {
+      return `[${value.map((item) => JSON.stringify(item)).join(", ")}]`;
+    }
+
+    return `[\n${value
+      .map((item) => `${childIndent}${stringifyJson(item, depth + 1)}`)
+      .join(",\n")}\n${indent}]`;
+  }
+
+  if (value && typeof value === "object") {
+    const entries = Object.entries(value);
+    if (!entries.length) return "{}";
+
+    return `{\n${entries
+      .map(
+        ([key, item]) =>
+          `${childIndent}${JSON.stringify(key)}: ${stringifyJson(
+            item,
+            depth + 1
+          )}`
+      )
+      .join(",\n")}\n${indent}}`;
+  }
+
+  return JSON.stringify(value);
 }
 
 function send(res, status, body, type = "application/json") {
