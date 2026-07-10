@@ -20435,7 +20435,7 @@
           "emoji_server": "43",
           "preset_slot": 4,
           "preset_type": "item",
-          "id_aliases": ["vdagger", "varanus", "mercy"]
+          "id_aliases": ["vdagger", "varanusmercy", "varanus", "mercy"]
         },
         {
           "name": "Vellum",
