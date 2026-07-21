@@ -6420,6 +6420,24 @@
           "id_aliases": ["guildmastertonysmattock"]
         },
         {
+          "name": "Hatchet of bloom and blight",
+          "id": "hatchetofbloomandblight",
+          "id_aliases": ["bloomandblight"],
+          "emoji_id": "1529129033672167574",
+          "emoji_server": "43",
+          "preset_slot": 4,
+          "preset_type": "item"
+        },
+        {
+          "name": "Hatchet of ember and glade",
+          "id": "hatchetofemberandglade",
+          "id_aliases": ["emberandglade"],
+          "emoji_id": "1529131614867554405",
+          "emoji_server": "43",
+          "preset_slot": 4,
+          "preset_type": "item"
+        },
+        {
           "name": "Igneous Kal-Zuk",
           "id": "igneouskalzuk",
           "id_aliases": ["kalzuk"],
