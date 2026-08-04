@@ -647,6 +647,7 @@
           "emoji_id": "1390439136875253810",
           "emoji_server": "27",
           "image": "hxQ7DadacM.png",
+          "runes": ["bloodrune", "astralrune", "bodyrune", "soulrune"],
           "preset_slot": 9,
           "preset_type": "item"
         },
@@ -656,6 +657,7 @@
           "emoji_id": "1390439129275306164",
           "emoji_server": "27",
           "image": "1JjM2xHyOj.png",
+          "runes": ["chaosrune", "airrune", "waterrune", "firerune"],
           "preset_slot": 9,
           "preset_type": "item"
         },
@@ -665,6 +667,7 @@
           "emoji_id": "1390439138401980446",
           "emoji_server": "27",
           "image": "9F4FESqkFm.png",
+          "runes": ["timerune", "naturerune", "airrune", "earthrune"],
           "preset_slot": 9,
           "preset_type": "item"
         },
@@ -683,6 +686,7 @@
           "emoji_id": "1390439126519644271",
           "emoji_server": "27",
           "image": "cMrBUILe61.png",
+          "runes": ["deathrune", "earthrune", "lawrune", "cosmicrune"],
           "preset_slot": 9,
           "preset_type": "item"
         },
