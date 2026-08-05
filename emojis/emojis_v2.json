@@ -7934,6 +7934,12 @@
           "emoji_server": "42"
         },
         {
+          "name": "Eagle Eye",
+          "id": "eagleeye",
+          "emoji_id": "1534450943138205787",
+          "emoji_server": "47"
+        },
+        {
           "name": "Eclipsed Soul",
           "id": "eclipsedsoul",
           "emoji_id": "1285372688457797672",
@@ -7944,6 +7950,12 @@
           "id": "fortitude",
           "emoji_id": "537341748180025365",
           "emoji_server": "17"
+        },
+        {
+          "name": "Incredible Reflexes",
+          "id": "incrediblereflexes",
+          "emoji_id": "1534450888591147079",
+          "emoji_server": "47"
         },
         {
           "name": "Leech Magic Strength",
@@ -7980,6 +7992,12 @@
           "id": "malevolence",
           "emoji_id": "513190159416557573",
           "emoji_server": "1"
+        },
+        {
+          "name": "Mystic Might",
+          "id": "mysticmight",
+          "emoji_id": "1534451011286990908",
+          "emoji_server": "47"
         },
         {
           "name": "Overcharge",
@@ -12463,10 +12481,16 @@
           "emoji_server": "42"
         },
         {
-          "name": "Home teleport",
+          "name": "Home Teleport",
           "id": "hometeleport",
           "emoji_id": "1032540077764653076",
           "emoji_server": "35"
+        },
+        {
+          "name": "House Teleport",
+          "id": "houseteleportfree",
+          "emoji_id": "1534426786048249907",
+          "emoji_server": "47"
         },
         {
           "name": "North-western Anachronia Teleport",
@@ -15762,8 +15786,9 @@
         },
         {
           "name": "Arcane blood necklace",
-          "id": "mageblood",
-          "image": "WIvPDaE.png",
+          "id": "arcanebloodnecklace",
+          "emoji_id": "1534423189713715281",
+          "emoji_server": "47",
           "preset_slot": 10,
           "preset_type": "item"
         },
