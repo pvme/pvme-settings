@@ -342,6 +342,14 @@
           "preset_type": "item"
         },
         {
+          "name": "Arcane blood necklace",
+          "id": "arcanebloodnecklace",
+          "emoji_id": "1534423189713715281",
+          "emoji_server": "47",
+          "preset_slot": 10,
+          "preset_type": "item"
+        },
+        {
           "name": "Arcane spirit shield",
           "id": "arcanespiritshield",
           "emoji_id": "690976219612708954",
@@ -2782,6 +2790,14 @@
           "id_aliases": ["ely"]
         },
         {
+          "name": "Farsight blood necklace",
+          "id": "farsightbloodnecklace",
+          "emoji_id": "1534424164285415505",
+          "emoji_server": "47",
+          "preset_slot": 10,
+          "preset_type": "item"
+        },
+        {
           "name": "Flarefrost boots",
           "id": "flarefrost",
           "emoji_id": "513190159056109588",
@@ -3925,6 +3941,14 @@
           "emoji_server": "22",
           "image": "KujZsuF.png",
           "preset_slot": 4,
+          "preset_type": "item"
+        },
+        {
+          "name": "Brawler's blood necklace",
+          "id": "brawlersbloodnecklace",
+          "emoji_id": "1534423392827080714",
+          "emoji_server": "47",
+          "preset_slot": 10,
           "preset_type": "item"
         },
         {
@@ -5688,6 +5712,14 @@
           "preset_slot": 4,
           "preset_type": "item"
         },
+        {
+          "name": "Occultist's blood necklace",
+          "id": "occultistsbloodnecklace",
+          "emoji_id": "1534423579095990322",
+          "emoji_server": "47",
+          "preset_slot": 10,
+          "preset_type": "item"
+        },        
         {
           "name": "Omni guard",
           "id": "omniguard",
@@ -15785,14 +15817,6 @@
           "preset_type": "item"
         },
         {
-          "name": "Arcane blood necklace",
-          "id": "arcanebloodnecklace",
-          "emoji_id": "1534423189713715281",
-          "emoji_server": "47",
-          "preset_slot": 10,
-          "preset_type": "item"
-        },
-        {
           "name": "Archaeology journal",
           "id": "archaeologyjournal",
           "image": "8C3OhBk.png",
@@ -16087,13 +16111,6 @@
           "id": "bracersoftrials",
           "image": "qaiPCRu.png",
           "preset_slot": 6,
-          "preset_type": "item"
-        },
-        {
-          "name": "Brawler's blood necklace",
-          "id": "meleeblood",
-          "image": "8lhQpAu.png",
-          "preset_slot": 10,
           "preset_type": "item"
         },
         {
@@ -16922,13 +16939,6 @@
           "id": "farmingcape",
           "image": "u4Z7zDy.png",
           "preset_slot": 12,
-          "preset_type": "item"
-        },
-        {
-          "name": "Farsight blood necklace",
-          "id": "rangeblood",
-          "image": "YQRScqK.png",
-          "preset_slot": 10,
           "preset_type": "item"
         },
         {
