@@ -4,7 +4,7 @@ const MAPPING_URL = "https://prices.runescape.wiki/api/v2/rs/mapping";
 const LATEST_PRICES_URL = "https://prices.runescape.wiki/api/v2/rs/latest";
 const USER_AGENT =
   "pvme-settings-price-scraper/1.0 (https://github.com/pvme/pvme-settings)";
-const HEADER_ROW = ["Item name", "Item ID", "Sell price", "Buy price"];
+const HEADER_ROW = ["Item name", "Sell price", "Buy price", "Item ID"];
 const MINIMUM_ITEM_COUNT = 1000;
 const MONTH_NAMES = [
   "January",
@@ -54,9 +54,9 @@ function buildRows(mapping, latestPrices, updatedAt = new Date()) {
       const price = latestPrices.data[item.id];
       return [
         item.name,
-        item.id,
         priceOrBlank(price && price.low),
         priceOrBlank(price && price.high),
+        item.id,
       ];
     })
     .sort((left, right) => left[0].localeCompare(right[0]));
@@ -101,9 +101,9 @@ function validateRows(mapping, outputRows) {
 
   if (JSON.stringify(outputRows[2]) !== JSON.stringify([
     "Item name",
-    "Item ID",
     "Sell price",
     "Buy price",
+    "Item ID",
   ])) {
     throw new Error("Spreadsheet columns are not in the required order.");
   }
