@@ -3,3 +3,8 @@
 
 # VS code
 .vscode
+
+pvme_spreadsheet/config.json
+pvme_spreadsheet/credentials/
+
+node_modules/

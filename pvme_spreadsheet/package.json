@@ -1,0 +1,14 @@
+{
+  "name": "pvme-spreadsheet",
+  "version": "1.0.0",
+  "description": "Updates the PvME RuneScape price spreadsheet using the RuneScape Wiki GE API.",
+  "main": "prices_to_spreadsheet.js",
+  "type": "commonjs",
+  "scripts": {
+    "dry-run": "node prices_to_spreadsheet.js --dry-run",
+    "update": "node prices_to_spreadsheet.js"
+  },
+  "dependencies": {
+    "googleapis": "^174.0.0"
+  }
+}
