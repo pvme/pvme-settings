@@ -18,20 +18,28 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     >
     <link href="css/style.css" rel="stylesheet">
+    <script>window.__PVME_ASSET_MANIFEST__ = "__PVME_ASSET_MANIFEST_PATH__"; window.__PVME_CONTRIBUTION_ENDPOINT__ = __PVME_CONTRIBUTION_ENDPOINT_JSON__;</script>
   </head>
 
   <body>
-    <div class="container">
-      <div class="d-flex flex-row pt-1">
-        <div class="align-self-center">
-          <img width="60" height="60" src="https://pvme.io/assets/logo-no-bg.png">
-        </div>
-        <div class="align-self-center">
-          <h1 class="display-6 p-2">Settings</h1>
-        </div>
-        <div class="align-self-center vr m-2" style="height: 30px;"></div>
-
-        <nav class="align-self-center p-2">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header-row">
+          <a class="site-brand" href="#emojis" aria-label="PVME Settings home">
+            <img width="42" height="42" src="https://pvme.io/assets/logo-no-bg.png" alt="PVME">
+            <span>Settings</span>
+          </a>
+          <div class="input-group header-search">
+            <input
+              type="text"
+              class="search form-control"
+              id="search-emojis"
+              placeholder="Search icons"
+              aria-label="Search icons"
+            >
+            <span class="input-group-text" id="count-emojis">0</span>
+          </div>
+          <nav class="site-nav" aria-label="Settings navigation">
           <div class="nav nav-pills" role="tablist">
             <button
               class="nav-link active"
@@ -39,7 +47,7 @@
               data-bs-toggle="tab"
               data-bs-target="#nav-emojis"
               type="button"
-            >Emojis</button>
+            >Icons</button>
 
             <button
               class="nav-link"
@@ -49,33 +57,37 @@
               type="button"
             >Servers</button>
           </div>
-        </nav>
+          <button
+            class="btn btn-primary"
+            id="contribute"
+            data-bs-toggle="modal"
+            data-bs-target="#contribution-modal"
+            type="button"
+            disabled
+          >Add icons</button>
+          </nav>
+        </div>
       </div>
+    </header>
 
+    <main class="container site-content">
       <div class="tab-content">
         <div class="tab-pane show active" id="nav-emojis">
-          <div class="input-group mt-3">
-            <input
-              type="text"
-              class="search form-control"
-              id="search-emojis"
-              placeholder="Search Emoji"
-              style="max-width:23em"
-            >
-            <span class="input-group-text" id="count-emojis">0 emojis</span>
-          </div>
-
           <table id="table-emojis" class="table table-hover" style="table-layout: fixed;">
             <thead>
               <tr>
                 <th width="30%">Identity</th>
-                <th width="20%">Discord Emoji</th>
-                <th width="20%">PvME Image</th>
+                <th width="20%">Discord icon</th>
+                <th width="20%">PVME icon image</th>
                 <th width="15%">Preset Data</th>
               </tr>
             </thead>
             <tbody></tbody>
           </table>
+          <div id="emoji-pagination" class="emoji-pagination" hidden>
+            <button id="load-more-emojis" type="button" class="btn btn-outline-secondary"></button>
+            <span id="emoji-pagination-sentinel" aria-hidden="true"></span>
+          </div>
         </div>
 
         <div class="tab-pane" id="nav-servers">
@@ -83,12 +95,55 @@
             <thead>
               <tr>
                 <th>Server</th>
-                <th>Emojis</th>
+                <th>Icons</th>
                 <th>Discord</th>
               </tr>
             </thead>
             <tbody></tbody>
           </table>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal fade" id="contribution-modal" tabindex="-1" aria-labelledby="contribution-title" aria-hidden="true">
+      <div class="modal-dialog contribution-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+        <div class="modal-content contribution-shell">
+          <div class="modal-header contribution-header">
+            <div><h2 class="modal-title h5 mb-0" id="contribution-title">Add icons</h2><span class="small text-muted">Prepare a catalogue suggestion</span></div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body contribution-body">
+            <ol class="contribution-steps" aria-label="Contribution steps">
+              <li id="wizard-step-upload" class="active">Upload</li>
+              <li id="wizard-step-details">Review icons</li>
+              <li id="wizard-step-submit">Submit</li>
+            </ol>
+            <fieldset id="contribution-workspace">
+              <section id="contribution-step-upload" class="upload-stage">
+                <div class="upload-intro"><h3 class="h5">Add a screenshot</h3><p>Use an original PNG at 100% interface scale from a bank, preset, or inventory. Resized screenshots and worn-equipment views are not supported.</p></div>
+                <label class="upload-dropzone" for="screenshot-file"><span class="upload-dropzone-title">Upload, paste or drop a PNG</span><span>Up to 28 intact slots are detected and cleaned in your browser.</span><input id="screenshot-file" class="visually-hidden" type="file" accept="image/png" disabled></label>
+                <div id="crop-controls" hidden>
+                  <div class="crop-preview-wrap"><canvas id="screenshot-preview" aria-label="Screenshot preview with detected item slots. Drag to limit the included slots." role="img"></canvas></div>
+                  <div class="crop-tools"><span id="detected-slot-count" class="small text-muted" aria-live="polite"></span><button id="reset-crop" type="button" class="btn btn-sm btn-outline-secondary">Use all detected slots</button></div>
+                  <p class="small text-muted mb-0">Green slots are included. Drag across the image to limit them; the review list updates automatically.</p>
+                </div>
+              </section>
+              <section id="contribution-step-details" hidden>
+                <div class="review-workspace">
+                  <aside class="icon-collection" aria-label="Detected icons"><div class="collection-heading"><div><h3 class="h6 mb-0">Detected icons</h3><span id="review-summary" class="small text-muted"></span></div><button id="next-incomplete" type="button" class="btn btn-sm btn-outline-secondary">Next incomplete</button></div><div id="icon-thumbnails" class="icon-thumbnails"></div></aside>
+                  <section id="icon-editor" class="icon-editor" aria-live="polite"></section>
+                </div>
+              </section>
+              <section id="contribution-step-submit" hidden>
+                <div id="submission-summary" class="submission-summary"></div>
+                <div id="submission-form" class="submission-form"><label for="contributor-name" class="form-label">Discord or GitHub username</label><input id="contributor-name" class="form-control" maxlength="80" minlength="2" autocomplete="off" placeholder="Shown in the pull request"><p id="submission-availability" class="small text-muted mb-0">Submission is not connected yet. You can still prepare and download PNGs.</p></div>
+                <div id="submission-success" class="submission-success" hidden></div>
+              </section>
+            </fieldset>
+            <p id="visual-coverage" class="visually-hidden"></p>
+            <p id="contribution-status" role="status" aria-live="polite" class="contribution-status small mb-0"></p>
+          </div>
+          <div class="modal-footer contribution-footer"><span id="footer-progress" class="small text-muted"></span><div class="footer-actions"><button id="footer-back" type="button" class="btn btn-outline-secondary" hidden>Back</button><button id="footer-next-incomplete" type="button" class="btn btn-outline-secondary" hidden>Next incomplete</button><button id="footer-primary" type="button" class="btn btn-primary" disabled>Review icons</button></div></div>
         </div>
       </div>
     </div>

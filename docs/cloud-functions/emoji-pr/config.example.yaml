@@ -1,0 +1,9 @@
+# Copy outside the deployment source and fill in PUBLIC configuration only.
+# These values deliberately leave writes disabled.
+LIVE_ENABLED: "false"
+GITHUB_APP_ID: ""
+GITHUB_BASE_BRANCH: "master"
+GITHUB_STAGING_REPOSITORY: "rsnx222/pvme-settings"
+GITHUB_PRODUCTION_REPOSITORY: "pvme/pvme-settings"
+PRODUCTION_ORIGIN: "https://pvme.io"
+ALLOWED_ORIGINS: "http://127.0.0.1:8787,http://localhost:8787,https://pvme.io"

@@ -6,6 +6,7 @@ from pydantic import BaseModel, field_validator, ValidationError
 from pydantic import ValidationInfo
 import json
 import sys
+import unicodedata
 
 
 # ------------------------------------------------------------
@@ -19,6 +20,7 @@ class EmojiServer(BaseModel):
 class Emoji(BaseModel):
     name: str
     id: str
+    id_aliases: list[str] = []
 
     emoji_id: int | None = None
     emoji_server: int | None = None
@@ -158,6 +160,7 @@ def run_global_checks(data, lines, emoji_line_map):
     errors = []
 
     id_lines = {}
+    alias_owners = {}
     emoji_id_lines = {}
     server_lines = {}
     url_lines = {}
@@ -190,6 +193,10 @@ def run_global_checks(data, lines, emoji_line_map):
             line = find_line(lines, f'"id": "{eid}"')
 
             id_lines.setdefault(eid, []).append(line)
+            for identifier in [eid] + emoji.get("id_aliases", []):
+                key = unicodedata.normalize("NFKC", identifier).strip().lower()
+                # Existing self-aliases are redundant but not cross-item collisions.
+                alias_owners.setdefault(key, {})[(cat["name"], eid)] = line
 
             if emoji_id is not None:
                 emoji_id_lines.setdefault(emoji_id, []).append(line)
@@ -211,6 +218,12 @@ def run_global_checks(data, lines, emoji_line_map):
             )
 
     # EMOJI_ID duplicates
+    for value, owners in alias_owners.items():
+        if len(owners) > 1:
+            errors.append(
+                f"* ID or alias `{value}` belongs to multiple entries (lines {format_lines(list(owners.values()))})"
+            )
+
     for value, lines_list in emoji_id_lines.items():
         if len(lines_list) > 1:
             errors.append(

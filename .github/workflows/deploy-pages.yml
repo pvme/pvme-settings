@@ -1,0 +1,62 @@
+name: Build and deploy settings site
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'docs/**'
+      - 'emojis/emojis_v2.json'
+      - 'scripts/build-site.mjs'
+      - 'scripts/recognition-generator.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+    inputs:
+      refresh_images:
+        description: Refresh the recognition atlas from current image-host contents
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build catalogue snapshot and recognition atlas
+        run: npm run build:site
+        env:
+          # A public function URL, configured per repository/environment. It is
+          # deliberately a GitHub Actions variable rather than a secret.
+          CONTRIBUTION_ENDPOINT: ${{ vars.CONTRIBUTION_ENDPOINT }}
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

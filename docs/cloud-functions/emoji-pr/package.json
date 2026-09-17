@@ -1,0 +1,14 @@
+{
+  "name": "pvme-emoji-pr",
+  "private": true,
+  "type": "module",
+  "main": "index.mjs",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "functions-framework --target=submitEmojis", "preflight": "node preflight.mjs" },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^5.0.5",
+    "jsonc-parser": "^3.3.1",
+    "pngjs": "^7.0.0"
+  },
+  "overrides": { "cloudevents": { "uuid": "^11.1.1" } }
+}
