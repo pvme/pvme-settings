@@ -20,6 +20,10 @@ export function selectSearchEmoji() {
   $('#search-emojis').focus();
 }
 
+export function refreshEmojiHeaderCount() {
+  updateEmojiListStatus();
+}
+
 function emojiRow(emoji) {
   const aliasesText = emoji.id_aliases?.length ? emoji.id_aliases.join(', ') : '–';
   return `
@@ -73,8 +77,9 @@ function renderNextEmojiPage() {
 }
 
 function updateEmojiListStatus() {
+  if (document.getElementById('nav-servers')?.classList.contains('active')) return;
   const remaining = matchingEmojis.length - renderedCount;
-  $('#count-emojis').text(remaining ? `${matchingEmojis.length} emojis · ${renderedCount} shown` : `${matchingEmojis.length} emojis`);
+  $('#count-emojis').text(remaining ? `${matchingEmojis.length} icons · ${renderedCount} shown` : `${matchingEmojis.length} icons`);
   const controls = document.getElementById('emoji-pagination');
   const loadMore = document.getElementById('load-more-emojis');
   if (!controls || !loadMore) return;

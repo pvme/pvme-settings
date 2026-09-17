@@ -8,8 +8,8 @@ export function selectedPayload(cards, contributor) {
       id_aliases: card.id_aliases, png: card.icon };
     if (card.preset_type) {
       item.preset_type = card.preset_type;
-      if (card.preset_type === 'item') {
-        if (!Number.isInteger(card.preset_slot)) throw new Error('Choose an inventory slot for each inventory item.');
+      if (card.itemKind === 'worn') {
+        if (!Number.isInteger(card.preset_slot)) throw new Error('Choose a worn item slot for each worn item.');
         item.preset_slot = card.preset_slot;
       }
     }

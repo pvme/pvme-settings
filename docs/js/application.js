@@ -1,6 +1,8 @@
 import { populateServers } from './servers.js';
-import { populateEmojis, selectSearchEmoji } from './emojis.js';
+import { populateEmojis, refreshEmojiHeaderCount, selectSearchEmoji } from './emojis.js';
 import { initContributions } from './contribution/ui.mjs';
+
+let serverCount = 0;
 
 async function populateTables() {
   const configuredManifest = window.__PVME_ASSET_MANIFEST__;
@@ -21,6 +23,7 @@ async function populateTables() {
 
   populateEmojis(emojiServerTableData.emojis);
   populateServers(emojiServerTableData.servers);
+  serverCount = Object.keys(emojiServerTableData.servers).length;
   await initContributions(emojisJSON, assets);
 }
 
@@ -59,21 +62,31 @@ function getEmojiServerTableData(emojisJSON) {
 
 function parseHash() {
   const hash = window.location.hash.replace("#", "");
+  const queryParams = new URLSearchParams(window.location.search);
 
-  if (!hash) return { tab: "emojis", query: "" };
+  if (!hash) return { tab: "emojis", query: queryParams.get("q") || "" };
 
   const [tab, params] = hash.split("?");
-  const searchParams = new URLSearchParams(params || "");
+  const legacySearchParams = new URLSearchParams(params || "");
 
   return {
     tab: tab || "emojis",
-    query: searchParams.get("q") || ""
+    query: queryParams.get("q") || legacySearchParams.get("q") || ""
   };
 }
 
 function updateHash(tab, query) {
-  const newHash = `#${tab}${query ? `?q=${encodeURIComponent(query)}` : ""}`;
-  history.replaceState(null, "", newHash);
+  const url = new URL(window.location.href);
+  if (query) url.searchParams.set("q", query);
+  else url.searchParams.delete("q");
+  url.hash = tab;
+  history.replaceState(null, "", url);
+}
+
+function updateHeaderCount(tab) {
+  if (tab === 'servers') {
+    document.getElementById('count-emojis').textContent = `${serverCount} servers`;
+  }
 }
 
 function restoreStateFromURL() {
@@ -94,10 +107,13 @@ function restoreStateFromURL() {
 
   if (query && searchInput) {
     searchInput.value = query;
+    searchInput.dispatchEvent(new Event("input", { bubbles: true }));
   }
 
   if (tab === "emojis") {
     selectSearchEmoji();
+  } else {
+    updateHeaderCount(tab);
   }
 }
 
@@ -111,7 +127,13 @@ function setupTabListeners() {
 
       if (btn.id === "emojis") {
         selectSearchEmoji();
+      } else if (btn.id === "servers") {
+        updateHeaderCount(btn.id);
       }
+    });
+
+    btn.addEventListener("shown.bs.tab", () => {
+      if (btn.id === "emojis") refreshEmojiHeaderCount();
     });
   });
 }
@@ -131,7 +153,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   try { await populateTables(); }
   catch { document.getElementById('contribution-status').textContent = 'The catalogue could not load. Refresh the page before preparing contributions.'; }
 
+  setupSearchListener();
   restoreStateFromURL();
   setupTabListeners();
-  setupSearchListener();
 });

@@ -41,9 +41,8 @@ export function validateBatch(items, catalogue) {
     names.add(normal(item.name));
     const hasType = item.preset_type !== undefined, hasSlot = item.preset_slot !== undefined;
     if (hasType && !['item', 'relic', 'familiar'].includes(item.preset_type)) fail(400, 'Preset type is invalid.');
-    if (item.preset_type === 'item' && !hasSlot) fail(400, 'Choose an inventory slot for an inventory item.');
-    if (item.preset_type !== 'item' && hasSlot) fail(400, 'Preset slots are only used for inventory items.');
-    if (hasSlot && (!Number.isInteger(item.preset_slot) || item.preset_slot < 0 || item.preset_slot > 13)) fail(400, 'Inventory slot must be 0–13.');
+    if (item.preset_type !== 'item' && hasSlot) fail(400, 'Preset slots are only used for worn items.');
+    if (hasSlot && (!Number.isInteger(item.preset_slot) || item.preset_slot < 1 || item.preset_slot > 13)) fail(400, 'Worn item slot must be 1–13.');
     return { ...item, name: item.name.trim(), bytes: decodeIcon(item.png) };
   });
 }

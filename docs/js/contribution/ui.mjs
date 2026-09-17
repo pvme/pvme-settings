@@ -43,7 +43,7 @@ function draw() {
   }
   ctx.strokeStyle = '#aa8dff'; ctx.lineWidth = 2; ctx.strokeRect(box.x, box.y, box.w, box.h);
   const count = state.detectedSlots.length, selected = included.size;
-  $('detected-slot-count').textContent = count ? `${selected} of ${count} detected slots included` : 'No item slots detected yet.';
+  $('detected-slot-count').textContent = count ? `${selected} of ${count} detected slots included` : 'No icon slots detected yet.';
 }
 async function readScreenshot(file) {
   if (!file || file.type !== 'image/png' || file.size > 6 * 1024 * 1024) throw new Error('Choose an original PNG smaller than 6 MB. JPEG, WebP and resized images are not supported.');
@@ -65,7 +65,7 @@ async function openFile(file) {
     $('icon-thumbnails').replaceChildren(); $('icon-editor').replaceChildren();
     const canvas = $('screenshot-preview'); canvas.width = image.width; canvas.height = image.height;
     $('crop-controls').hidden = false; setRegion({ x: 0, y: 0, w: image.width, h: image.height });
-    showStep(); status('Finding item slots in this screenshot…'); identifySlots(image, revision);
+    showStep(); status('Finding icon slots in this screenshot…'); identifySlots(image, revision);
   } catch (error) { status(error.message); }
 }
 async function identifySlots(image, revision) {
@@ -74,14 +74,14 @@ async function identifySlots(image, revision) {
     const slots = await cleaner.extract(image, controller.signal);
     if (state.fileRevision !== revision || controller.signal.aborted) return;
     state.detectedSlots = slots; draw(); replaceCards(slotsInsideCrop(slots, region()));
-    status(slots.length ? `Prepared ${slots.length} detected icon${slots.length === 1 ? '' : 's'} for review.` : 'No item slots were detected. Check the screenshot requirements.');
+    status(slots.length ? `Prepared ${slots.length} detected icon${slots.length === 1 ? '' : 's'} for review.` : 'No icon slots were detected. Check the screenshot requirements.');
   } catch (error) {
     if (error.name === 'AbortError' || state.fileRevision !== revision) return;
-    state.detectedSlots = []; replaceCards([]); draw(); status('No item slots were detected. Check the screenshot requirements.');
+    state.detectedSlots = []; replaceCards([]); draw(); status('No icon slots were detected. Check the screenshot requirements.');
   }
 }
 function replaceCards(icons) {
-  state.cards = icons.slice(0, MAX_ICONS).map((icon, index) => ({ ...icon, selected: index < 10, name: '', id: '', idManual: false, category: '', id_aliases: [], preset_type: 'item', preset_slot: undefined, preview: 'cleaned', touched: {}, visual: null, showMoreVisual: false, showMoreNames: false, moreDetailsOpen: false }));
+  state.cards = icons.slice(0, MAX_ICONS).map((icon, index) => ({ ...icon, selected: index < 10, name: '', id: '', idManual: false, category: '', id_aliases: [], preset_type: 'item', itemKind: 'other', preset_slot: undefined, preview: 'cleaned', touched: {}, visual: null, showMoreVisual: false, showMoreNames: false, moreDetailsOpen: false }));
   state.activeIndex = 0; state.attemptedAdvance = false;
   state.cards.forEach(queueVisualMatches); renderReview(); updateFooter();
 }
@@ -91,7 +91,7 @@ function cardIssue(card) {
   if (!validId(card.id)) return ['id', 'Use 1–64 letters, digits, underscores or hyphens.'];
   if (!card.category) return ['category', 'Choose a category.'];
   if (card.id_aliases.length > 10 || card.id_aliases.some(id => !validId(id))) return ['aliases', 'Each alias needs a valid ID.'];
-  if (card.preset_type === 'item' && !Number.isInteger(card.preset_slot)) return ['slot', 'Choose an inventory slot.'];
+  if (card.itemKind === 'worn' && !Number.isInteger(card.preset_slot)) return ['slot', 'Choose a worn item slot.'];
   return null;
 }
 function selectionProblem(cards = includedCards()) {
@@ -149,9 +149,16 @@ function renderEditor() {
   const duplicates = element('section', '', 'duplicate-review');
   name.addEventListener('input', () => { card.name = name.value; card.touched.name = true; if (!card.idManual) { card.id = generatedId(card.name, card); id.value = card.id; } updateEditorAfterChange(card, duplicates); });
   name.addEventListener('blur', () => { card.touched.name = true; renderEditor(); }); field(essentials, 'Name', name, fieldError(card, 'name'), 'name', card);
-  const type = element('select'); type.className = 'form-select'; [['Item', 'item'], ['Relic', 'relic'], ['Familiar', 'familiar'], ['No type', '']].forEach(([label, value]) => type.append(new Option(label, value))); type.value = card.preset_type;
-  type.addEventListener('change', () => { card.preset_type = type.value; if (type.value !== 'item') card.preset_slot = undefined; renderEditor(); updateFooter(); });
-  field(essentials, 'Type of icon', type, '', 'type', card); root.append(essentials);
+  const type = element('select'); type.className = 'form-select'; [['Other item', 'other-item'], ['Worn item', 'worn-item'], ['Relic', 'relic'], ['Familiar', 'familiar'], ['No type', '']].forEach(([label, value]) => type.append(new Option(label, value)));
+  type.value = card.preset_type === 'item' ? `${card.itemKind || 'other'}-item` : card.preset_type;
+  type.addEventListener('change', () => { const worn = type.value === 'worn-item'; card.itemKind = worn ? 'worn' : 'other'; card.preset_type = ['other-item', 'worn-item'].includes(type.value) ? 'item' : type.value; if (!worn) card.preset_slot = undefined; renderEditor(); updateFooter(); });
+  field(essentials, 'Type of icon', type, '', 'type', card);
+  if (card.itemKind === 'worn') {
+    const slot = element('select'); slot.className = 'form-select'; slot.append(new Option('Choose worn item slot', ''));
+    ['Helm', 'Body', 'Legs', 'Main-hand weapon', 'Off-hand weapon', 'Gloves', 'Boots', 'Aura', 'Ammo', 'Necklace', 'Ring', 'Cape', 'Pocket'].forEach((label, index) => slot.append(new Option(label, index + 1)));
+    slot.value = Number.isInteger(card.preset_slot) ? card.preset_slot : ''; slot.addEventListener('change', () => { card.preset_slot = slot.value === '' ? undefined : Number(slot.value); card.touched.slot = true; renderEditor(); updateFooter(); }); field(essentials, 'Worn item slot', slot, fieldError(card, 'slot'), 'slot', card);
+  }
+  root.append(essentials);
   const idRow = element('div', '', 'editor-id-row'); id.addEventListener('input', () => { card.id = id.value; card.idManual = true; card.touched.id = true; updateEditorAfterChange(card, duplicates); }); id.addEventListener('blur', () => { card.touched.id = true; renderEditor(); }); field(idRow, 'Unique ID', id, fieldError(card, 'id'), 'id', card); root.append(idRow);
   root.append(duplicates); renderDuplicates(card, duplicates);
   const more = element('details', '', 'editor-more'); more.open = card.moreDetailsOpen; more.addEventListener('toggle', () => { card.moreDetailsOpen = more.open; }); more.append(element('summary', 'More details'));
@@ -160,11 +167,6 @@ function renderEditor() {
   category.addEventListener('change', () => { card.category = category.value; card.touched.category = true; card.moreDetailsOpen = true; renderEditor(); updateFooter(); }); field(detailGrid, 'Category', category, fieldError(card, 'category'), 'category', card);
   const aliases = element('input'); aliases.className = 'form-control form-control-sm'; aliases.maxLength = 650; aliases.autocomplete = 'off'; aliases.value = card.id_aliases.join(', '); aliases.placeholder = 'comma-separated aliases';
   aliases.addEventListener('input', () => { card.id_aliases = aliases.value.split(',').map(value => value.trim()).filter(Boolean); card.touched.aliases = true; updateEditorAfterChange(card, duplicates); }); aliases.addEventListener('blur', () => { card.touched.aliases = true; renderEditor(); }); field(detailGrid, 'Aliases', aliases, fieldError(card, 'aliases'), 'aliases', card);
-  if (card.preset_type === 'item') {
-    const slot = element('select'); slot.className = 'form-select form-select-sm'; slot.append(new Option('Choose inventory slot', ''));
-    ['Inventory', 'Helm', 'Body', 'Legs', 'Main-hand weapon', 'Off-hand weapon', 'Gloves', 'Boots', 'Aura', 'Ammo', 'Necklace', 'Ring', 'Cape', 'Pocket'].forEach((label, index) => slot.append(new Option(`${index}: ${label}`, index)));
-    slot.value = Number.isInteger(card.preset_slot) ? card.preset_slot : ''; slot.addEventListener('change', () => { card.preset_slot = slot.value === '' ? undefined : Number(slot.value); card.touched.slot = true; card.moreDetailsOpen = true; renderEditor(); updateFooter(); }); field(detailGrid, 'Inventory slot', slot, fieldError(card, 'slot'), 'slot', card);
-  }
   more.append(detailGrid); root.append(more);
 }
 function matchingIcon(entry) { return entry.icon || state.catalogue.find(icon => icon.id === entry.id); }
