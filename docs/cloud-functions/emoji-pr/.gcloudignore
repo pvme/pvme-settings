@@ -1,0 +1,9 @@
+.gcloudignore
+.git
+node_modules
+.env
+.env.*
+*.log
+README.md
+preflight.mjs
+config.example.yaml

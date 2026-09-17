@@ -1,16 +1,25 @@
-import { rawGithubJSONRequest } from './github.js';
 import { populateServers } from './servers.js';
 import { populateEmojis, selectSearchEmoji } from './emojis.js';
+import { initContributions } from './contribution/ui.mjs';
 
 async function populateTables() {
-  const emojisJSON = await rawGithubJSONRequest(
-    'https://raw.githubusercontent.com/pvme/pvme-settings/master/emojis/emojis_v2.json'
-  );
+  const configuredManifest = window.__PVME_ASSET_MANIFEST__;
+  const manifestPath = !configuredManifest || configuredManifest === '__PVME_ASSET_MANIFEST_PATH__'
+    ? 'recognition-fallback.manifest.json' : configuredManifest;
+  const manifestURL = new URL(manifestPath, window.location.href);
+  const manifestResponse = await fetch(manifestURL);
+  if (!manifestResponse.ok) throw new Error('The deployed asset manifest could not load.');
+  const manifest = await manifestResponse.json();
+  const catalogueResponse = await fetch(new URL(manifest.catalogue, manifestURL));
+  if (!catalogueResponse.ok) throw new Error('The deployed catalogue snapshot could not load.');
+  const emojisJSON = await catalogueResponse.json();
+  const assets = { recognition: new URL(manifest.recognition, manifestURL).href, catalogueHash: manifest.catalogueHash };
 
   const emojiServerTableData = getEmojiServerTableData(emojisJSON);
 
   populateEmojis(emojiServerTableData.emojis);
   populateServers(emojiServerTableData.servers);
+  await initContributions(emojisJSON, assets);
 }
 
 function getEmojiServerTableData(emojisJSON) {
@@ -68,10 +77,15 @@ function updateHash(tab, query) {
 function restoreStateFromURL() {
   const { tab, query } = parseHash();
 
-  const tabButton = document.getElementById(tab);
+  const tabButton = document.getElementById(tab === "contribute" ? "emojis" : tab);
   if (tabButton) {
     const bsTab = new bootstrap.Tab(tabButton);
     bsTab.show();
+  }
+
+  if (tab === "contribute") {
+    history.replaceState(null, "", "#emojis");
+    bootstrap.Modal.getOrCreateInstance(document.getElementById("contribution-modal")).show();
   }
 
   const searchInput = document.getElementById("search-emojis");
@@ -112,7 +126,8 @@ function setupSearchListener() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await populateTables();
+  try { await populateTables(); }
+  catch { document.getElementById('contribution-status').textContent = 'The catalogue could not load. Refresh the page before preparing contributions.'; }
 
   restoreStateFromURL();
   setupTabListeners();

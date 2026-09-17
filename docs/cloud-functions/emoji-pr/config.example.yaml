@@ -1,0 +1,7 @@
+# Copy outside the deployment source and fill in PUBLIC configuration only.
+# These values deliberately leave writes disabled. No upload host is assumed.
+LIVE_ENABLED: "false"
+IMAGE_STORE_CONFIRMED: "false"
+IMAGE_UPLOAD_URL: ""
+GITHUB_APP_ID: ""
+ALLOWED_ORIGIN: "https://pvme.io"

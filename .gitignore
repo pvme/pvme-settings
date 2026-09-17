@@ -3,3 +3,18 @@
 
 # VS code
 .vscode
+
+node_modules/
+__pycache__/
+.local-references/
+.env
+.env.*
+!.env.example
+
+# Static-site build output and recognition atlases are regenerated during builds.
+/dist/
+/docs/assets/
+/docs/images/recognition/
+
+# Local verification fixtures and test harnesses are not part of the site repository.
+/tests/
