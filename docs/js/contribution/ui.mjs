@@ -1,7 +1,7 @@
 import { createPresetIconContribution, MAX_ICONS } from './iconContribution.mjs';
 import { fuzzyMatches, loadAtlas, visualMatches } from './matching.mjs';
 import { contributionEndpoint } from './config.mjs';
-import { selectedPayload, sendBatch } from './client.mjs';
+import { imageUrlError, selectedPayload, sendBatch } from './client.mjs';
 
 const $ = id => document.getElementById(id);
 const cleaner = createPresetIconContribution(new URL('../../images/icon-cleanup', import.meta.url).href);
@@ -81,7 +81,7 @@ async function identifySlots(image, revision) {
   }
 }
 function replaceCards(icons) {
-  state.cards = icons.slice(0, MAX_ICONS).map((icon, index) => ({ ...icon, selected: index < 10, name: '', id: '', idManual: false, category: '', id_aliases: [], preset_type: 'item', itemKind: 'other', preset_slot: undefined, preview: 'cleaned', touched: {}, visual: null, showMoreVisual: false, showMoreNames: false, moreDetailsOpen: false }));
+  state.cards = icons.slice(0, MAX_ICONS).map((icon, index) => ({ ...icon, selected: index < 10, name: '', id: '', idManual: false, category: '', id_aliases: [], image_url: '', preset_type: 'item', itemKind: 'other', preset_slot: undefined, preview: 'cleaned', touched: {}, visual: null, showMoreVisual: false, showMoreNames: false }));
   state.activeIndex = 0; state.attemptedAdvance = false;
   state.cards.forEach(queueVisualMatches); renderReview(); updateFooter();
 }
@@ -158,15 +158,13 @@ function renderEditor() {
     ['Helm', 'Body', 'Legs', 'Main-hand weapon', 'Off-hand weapon', 'Gloves', 'Boots', 'Aura', 'Ammo', 'Necklace', 'Ring', 'Cape', 'Pocket'].forEach((label, index) => slot.append(new Option(label, index + 1)));
     slot.value = Number.isInteger(card.preset_slot) ? card.preset_slot : ''; slot.addEventListener('change', () => { card.preset_slot = slot.value === '' ? undefined : Number(slot.value); card.touched.slot = true; renderEditor(); updateFooter(); }); field(essentials, 'Worn item slot', slot, fieldError(card, 'slot'), 'slot', card);
   }
-  id.addEventListener('input', () => { card.id = id.value; card.idManual = true; card.touched.id = true; updateEditorAfterChange(card, duplicates); }); id.addEventListener('blur', () => { card.touched.id = true; renderEditor(); }); const idField = field(essentials, 'Unique ID', id, fieldError(card, 'id'), 'id', card); idField.classList.add('editor-id-field'); root.append(essentials);
-  root.append(duplicates); renderDuplicates(card, duplicates);
-  const more = element('details', '', 'editor-more'); more.open = card.moreDetailsOpen; more.addEventListener('toggle', () => { card.moreDetailsOpen = more.open; }); more.append(element('summary', 'More details'));
-  const detailGrid = element('div', '', 'detail-grid');
+  id.addEventListener('input', () => { card.id = id.value; card.idManual = true; card.touched.id = true; updateEditorAfterChange(card, duplicates); }); id.addEventListener('blur', () => { card.touched.id = true; renderEditor(); }); field(essentials, 'Unique ID', id, fieldError(card, 'id'), 'id', card);
   const category = element('select'); category.className = 'form-select'; category.append(new Option('Choose category', '')); state.categories.forEach(value => category.append(new Option(value, value))); category.value = card.category;
-  category.addEventListener('change', () => { card.category = category.value; card.touched.category = true; card.moreDetailsOpen = true; renderEditor(); updateFooter(); }); field(detailGrid, 'Category', category, fieldError(card, 'category'), 'category', card);
+  category.addEventListener('change', () => { card.category = category.value; card.touched.category = true; renderEditor(); updateFooter(); }); field(essentials, 'Category', category, fieldError(card, 'category'), 'category', card);
   const aliases = element('input'); aliases.className = 'form-control'; aliases.maxLength = 650; aliases.autocomplete = 'off'; aliases.value = card.id_aliases.join(', '); aliases.placeholder = 'comma-separated aliases';
-  aliases.addEventListener('input', () => { card.id_aliases = aliases.value.split(',').map(value => value.trim()).filter(Boolean); card.touched.aliases = true; updateEditorAfterChange(card, duplicates); }); aliases.addEventListener('blur', () => { card.touched.aliases = true; renderEditor(); }); field(detailGrid, 'Aliases', aliases, fieldError(card, 'aliases'), 'aliases', card);
-  more.append(detailGrid); root.append(more);
+  aliases.addEventListener('input', () => { card.id_aliases = aliases.value.split(',').map(value => value.trim()).filter(Boolean); card.touched.aliases = true; updateEditorAfterChange(card, duplicates); }); aliases.addEventListener('blur', () => { card.touched.aliases = true; renderEditor(); }); const aliasesField = field(essentials, 'Aliases (optional)', aliases, fieldError(card, 'aliases'), 'aliases', card); aliasesField.classList.add('editor-aliases-field');
+  root.append(essentials);
+  root.append(duplicates); renderDuplicates(card, duplicates);
 }
 function matchingIcon(entry) { return entry.icon || state.catalogue.find(icon => icon.id === entry.id); }
 function iconImage(icon) { const image = element('img'); image.width = 28; image.height = 28; image.alt = ''; image.loading = 'lazy'; image.className = 'match-image icon-preview'; image.src = icon.image ? `https://img.pvme.io/images/${encodeURIComponent(icon.image)}` : `https://cdn.discordapp.com/emojis/${encodeURIComponent(icon.emoji_id)}.png`; return image; }
@@ -188,8 +186,11 @@ function renderDuplicates(card, root) {
 function queueVisualMatches(card) { state.atlas.then(entries => visualMatches(card.icon, entries)).then(matches => { card.visual = matches; renderThumbnails(); if (state.cards[state.activeIndex] === card) renderEditor(); }).catch(() => { card.visual = []; if (state.cards[state.activeIndex] === card) renderEditor(); }); }
 function renderReview() { $('review-summary').textContent = `${readyCount()} of ${includedCards().length} ready`; renderThumbnails(); renderEditor(); }
 function renderSubmission() {
-  const root = $('submission-summary'); root.replaceChildren(); const included = includedCards(); root.append(element('h3', 'Review your suggestion', 'h5'), element('p', `${included.length} icon${included.length === 1 ? '' : 's'} will be included.`, 'text-muted mb-2'));
-  const list = element('div', '', 'submission-icons'); included.forEach(card => { const row = element('div', '', 'submission-icon'); const image = element('img'); image.src = card.icon; image.alt = ''; image.width = 38; image.height = 34; image.className = 'icon-preview'; row.append(image, element('span', card.name)); list.append(row); }); root.append(list);
+  const root = $('submission-summary'); root.replaceChildren(); const included = includedCards(); root.append(element('h3', 'Add your uploaded icon links', 'h5'), element('p', 'Download each PNG, upload it with the PVME Discord bot, then paste its public image URL here.', 'text-muted mb-3'));
+  const list = element('div', '', 'submission-icons'); included.forEach((card, index) => {
+    const row = element('section', '', 'submission-icon'); const heading = element('div', '', 'submission-icon-heading'); const image = element('img'); image.src = card.icon; image.alt = ''; image.width = 38; image.height = 34; image.className = 'icon-preview'; heading.append(image, element('strong', card.name)); const download = element('a', 'Download PNG', 'btn btn-sm btn-link'); download.href = card.icon; download.download = `${card.id || `icon-${index + 1}`}.png`; heading.append(download); row.append(heading);
+    const label = element('label', '', 'editor-field submission-url'); label.append(element('span', 'PVME image URL', 'field-label')); const input = element('input'); input.type = 'url'; input.className = 'form-control'; input.autocomplete = 'url'; input.placeholder = 'https://img.pvme.io/images/…png'; input.value = card.image_url; const message = element('span', card.touched.image_url && imageUrlError(card.image_url) ? imageUrlError(card.image_url) : '', 'field-error'); label.append(input, message); input.addEventListener('input', () => { card.image_url = input.value; card.touched.image_url = true; message.textContent = imageUrlError(card.image_url); updateFooter(); }); input.addEventListener('blur', () => { card.touched.image_url = true; message.textContent = imageUrlError(card.image_url); updateFooter(); }); row.append(label); list.append(row);
+  }); root.append(list);
   $('submission-form').hidden = !!state.successUrl; const success = $('submission-success'); success.hidden = !state.successUrl;
   if (state.successUrl) { const link = element('a', 'View pull request'); link.href = state.successUrl; link.target = '_blank'; link.rel = 'noopener'; success.replaceChildren('Suggestion submitted. ', link); }
 }
@@ -199,7 +200,7 @@ function updateFooter() {
   if (state.step === 'upload') { $('footer-progress').textContent = state.cards.length ? `${included.length} icon${included.length === 1 ? '' : 's'} selected` : 'Upload a screenshot to begin'; primary.textContent = 'Review icons'; primary.hidden = false; primary.disabled = !state.cards.length; }
   else if (state.step === 'details') { $('footer-progress').textContent = `${ready} of ${included.length} ready`; primary.textContent = 'Continue to submit'; primary.hidden = false; primary.disabled = !included.length; }
   else if (state.successUrl) { $('footer-progress').textContent = 'Submitted'; primary.hidden = true; }
-  else { $('footer-progress').textContent = `${included.length} icon${included.length === 1 ? '' : 's'} included`; primary.textContent = 'Send suggestion'; primary.hidden = false; const contributor = $('contributor-name').value.trim(); primary.disabled = !state.ready || state.submitting || !!problem || contributor.length < 2 || contributor.length > 80; }
+  else { $('footer-progress').textContent = `${included.length} icon${included.length === 1 ? '' : 's'} included`; primary.textContent = 'Send suggestion'; primary.hidden = false; const contributor = $('contributor-name').value.trim(), urlsReady = included.every(card => !imageUrlError(card.image_url)); primary.disabled = !state.ready || state.submitting || !!problem || !urlsReady || contributor.length < 2 || contributor.length > 80; }
 }
 function nextIncomplete() { const start = state.activeIndex; for (let offset = 1; offset <= state.cards.length; offset++) { const index = (start + offset) % state.cards.length; if (state.cards[index].selected && cardIssue(state.cards[index])) { focusCard(index); return; } } }
 function showStep() {
@@ -220,6 +221,11 @@ async function submit() {
 export async function initContributions(catalogue, assets = {}) {
   state.categories = catalogue.categories.map(category => category.name); state.catalogue = catalogue.categories.flatMap(category => category.emojis); state.assets = assets; $('screenshot-file').disabled = false; $('contribute').disabled = false;
   $('screenshot-file').addEventListener('change', event => { if (event.target.files[0]) openFile(event.target.files[0]); event.target.value = ''; });
+  const dropzone = $('screenshot-file').closest('.upload-dropzone'); let dragDepth = 0;
+  dropzone.addEventListener('dragenter', event => { if (!event.dataTransfer?.types.includes('Files')) return; event.preventDefault(); dragDepth++; dropzone.classList.add('is-dragging'); });
+  dropzone.addEventListener('dragover', event => { if (!event.dataTransfer?.types.includes('Files')) return; event.preventDefault(); event.dataTransfer.dropEffect = 'copy'; dropzone.classList.add('is-dragging'); });
+  dropzone.addEventListener('dragleave', event => { if (!event.dataTransfer?.types.includes('Files')) return; event.preventDefault(); if (--dragDepth <= 0) { dragDepth = 0; dropzone.classList.remove('is-dragging'); } });
+  dropzone.addEventListener('drop', event => { if (!event.dataTransfer?.files?.length) return; event.preventDefault(); dragDepth = 0; dropzone.classList.remove('is-dragging'); openFile(event.dataTransfer.files[0]); });
   document.addEventListener('paste', event => { if (!$('contribution-modal').classList.contains('show')) return; const file = [...event.clipboardData.items].find(item => item.kind === 'file')?.getAsFile(); if (file) { event.preventDefault(); openFile(file); } });
   const canvas = $('screenshot-preview'); let start;
   const point = event => { const rect = canvas.getBoundingClientRect(); return { x: Math.max(0, Math.min(canvas.width, Math.round((event.clientX - rect.left) * canvas.width / rect.width))), y: Math.max(0, Math.min(canvas.height, Math.round((event.clientY - rect.top) * canvas.height / rect.height))) }; };

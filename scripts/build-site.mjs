@@ -2,6 +2,7 @@ import { access, cp, mkdir, readFile, rename, rm, writeFile } from 'node:fs/prom
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { generateRecognition, sha256 } from './recognition-generator.mjs';
+import { loadLocalContributionEndpoint } from './local-env.mjs';
 
 const scriptRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -10,6 +11,7 @@ function withoutGeneratedAssets(source) {
 }
 
 export async function buildSite({ root = scriptRoot, fetchImpl = fetch } = {}) {
+  await loadLocalContributionEndpoint(root);
   const docs = resolve(root, 'docs'), cataloguePath = resolve(root, 'emojis/emojis_v2.json'), destination = resolve(root, 'dist');
   const staging = `${destination}.next-${process.pid}`;
   const previous = `${destination}.previous-${process.pid}`;
@@ -28,7 +30,10 @@ export async function buildSite({ root = scriptRoot, fetchImpl = fetch } = {}) {
     const manifestHash = sha256(JSON.stringify(manifest)).slice(0, 20);
     const manifestName = `site-manifest.${manifestHash}.json`;
     const marker = '__PVME_ASSET_MANIFEST_PATH__';
+    const endpointMarker = '__PVME_CONTRIBUTION_ENDPOINT_JSON__';
     if (index.split(marker).length !== 2) throw new Error('index.html must contain one asset-manifest marker.');
+    if (index.includes(endpointMarker) && index.split(endpointMarker).length !== 2) throw new Error('index.html must contain at most one contribution-endpoint marker.');
+    const renderedIndex = index.replace(marker, `assets/${manifestName}`).replace(endpointMarker, JSON.stringify(process.env.CONTRIBUTION_ENDPOINT || ''));
     await cp(docs, staging, { recursive: true, filter: withoutGeneratedAssets });
     const assets = resolve(staging, 'assets'); await mkdir(assets, { recursive: true });
     await Promise.all([
@@ -36,7 +41,7 @@ export async function buildSite({ root = scriptRoot, fetchImpl = fetch } = {}) {
       writeFile(resolve(assets, atlasName), recognition.png),
       writeFile(resolve(assets, metadataName), JSON.stringify(metadata)),
       writeFile(resolve(assets, manifestName), JSON.stringify(manifest)),
-      writeFile(resolve(staging, 'index.html'), index.replace(marker, `assets/${manifestName}`))
+      writeFile(resolve(staging, 'index.html'), renderedIndex)
     ]);
     let hadPrevious = true;
     try { await access(destination); } catch { hadPrevious = false; }

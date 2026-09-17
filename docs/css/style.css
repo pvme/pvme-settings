@@ -179,6 +179,7 @@ html {
 }
 .upload-dropzone:hover,
 .upload-dropzone:focus-within { border-color: #a98dff; background: #262532; }
+.upload-dropzone.is-dragging { border-color: #b69cff; background: #2d2a3b; box-shadow: inset 0 0 0 1px #b69cff; }
 .upload-dropzone-title { color: #f1efff; font-weight: 600; }
 .crop-preview-wrap { background: #121319; border: 1px solid #343540; border-radius: .5rem; }
 #screenshot-preview { max-width: 100%; height: auto; display: block; touch-action: none; cursor: crosshair; }
@@ -215,12 +216,10 @@ html {
 .comparison-toggle { display: flex; gap: .35rem; }
 .editor-essentials { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(180px, .8fr); column-gap: .9rem; row-gap: .45rem; }
 .editor-field { display: grid; gap: .25rem; min-width: 0; align-content: start; }
+.editor-aliases-field { grid-column: 1 / -1; }
 .field-label { color: #d8d8e0; font-size: .82rem; font-weight: 600; }
 .field-error { display: block; min-height: 1.1rem; color: #f0a7a7; font-size: .78rem; line-height: 1.1; }
 .field-error:empty { visibility: hidden; }
-.editor-more { margin-top: 1.25rem; color: #d4d3dd; }
-.editor-more summary { cursor: pointer; color: #bebccc; }
-.detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; padding-top: .85rem; }
 .duplicate-review { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid #3a3b46; }
 .duplicate-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; margin-bottom: .65rem; }
 .match-group { padding: .7rem 0; }
@@ -233,9 +232,12 @@ html {
 .submission-summary,
 .submission-form,
 .submission-success { max-width: 640px; margin: 0 auto 1.25rem; padding: 1.25rem; background: #22232b; border: 1px solid #343540; border-radius: .6rem; }
-.submission-icons { display: flex; flex-wrap: wrap; gap: .5rem; }
-.submission-icon { display: flex; align-items: center; gap: .4rem; max-width: 12rem; padding: .35rem; background: #1a1b21; border-radius: .35rem; font-size: .82rem; }
-.submission-icon span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.submission-icons { display: grid; gap: .75rem; }
+.submission-icon { display: grid; gap: .65rem; padding: .85rem; background: #1a1b21; border-radius: .45rem; }
+.submission-icon-heading { display: flex; align-items: center; gap: .55rem; min-width: 0; }
+.submission-icon-heading strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.submission-icon-heading .btn-link { margin-left: auto; padding: 0; }
+.submission-url .field-error { min-height: 1.1rem; }
 .contribution-footer { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .85rem 1.25rem; }
 .footer-actions { display: flex; gap: .5rem; }
 .contribution-status { color: #eab1b1; margin-top: 1rem; }
@@ -267,7 +269,8 @@ html {
   .contribution-steps { justify-content: space-between; gap: .5rem; font-size: .75rem; }
   .review-workspace { grid-template-columns: 1fr; }
   .icon-collection { order: 2; }
-  .editor-essentials, .detail-grid { grid-template-columns: 1fr; }
+  .editor-essentials { grid-template-columns: 1fr; }
+  .editor-aliases-field { grid-column: auto; }
   .contribution-footer { align-items: stretch; flex-direction: column; }
   .footer-actions { display: grid; grid-template-columns: 1fr 1fr; }
   .footer-actions .btn-primary { grid-column: span 2; }

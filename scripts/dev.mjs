@@ -4,6 +4,7 @@ import http from 'node:http';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildSite } from './build-site.mjs';
+import { loadLocalContributionEndpoint } from './local-env.mjs';
 
 const scriptRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.ico': 'image/x-icon' };
@@ -31,7 +32,9 @@ async function syncDocsChange(root, relativePath) {
   const source = path.join(docs, relativePath), target = path.join(destination, relativePath);
   if (relativePath === 'index.html') {
     const [html, manifestPath] = await Promise.all([readFile(source, 'utf8'), currentManifestPath(destination)]);
-    await writeFile(target, html.replace('__PVME_ASSET_MANIFEST_PATH__', manifestPath));
+    await writeFile(target, html
+      .replace('__PVME_ASSET_MANIFEST_PATH__', manifestPath)
+      .replace('__PVME_CONTRIBUTION_ENDPOINT_JSON__', JSON.stringify(process.env.CONTRIBUTION_ENDPOINT || '')));
     return;
   }
   try {
@@ -87,7 +90,8 @@ export function watchForChanges({ root = scriptRoot, reload, log = console.log }
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  await loadLocalContributionEndpoint(scriptRoot);
   const preview = createDevServer();
-  preview.server.listen(8787, preview.host, () => console.log('Local site: http://127.0.0.1:8787 (live reload; no submission endpoint configured)'));
+  preview.server.listen(8787, preview.host, () => console.log(`Local site: http://127.0.0.1:8787 (live reload; ${process.env.CONTRIBUTION_ENDPOINT ? 'staging submission enabled' : 'no submission endpoint configured'})`));
   watchForChanges({ reload: preview.reload });
 }

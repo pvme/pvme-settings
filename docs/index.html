@@ -18,7 +18,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     >
     <link href="css/style.css" rel="stylesheet">
-    <script>window.__PVME_ASSET_MANIFEST__ = "__PVME_ASSET_MANIFEST_PATH__";</script>
+    <script>window.__PVME_ASSET_MANIFEST__ = "__PVME_ASSET_MANIFEST_PATH__"; window.__PVME_CONTRIBUTION_ENDPOINT__ = __PVME_CONTRIBUTION_ENDPOINT_JSON__;</script>
   </head>
 
   <body>
@@ -121,7 +121,7 @@
             <fieldset id="contribution-workspace">
               <section id="contribution-step-upload" class="upload-stage">
                 <div class="upload-intro"><h3 class="h5">Add a screenshot</h3><p>Use an original PNG at 100% interface scale from a bank, preset, or inventory. Resized screenshots and worn-equipment views are not supported.</p></div>
-                <label class="upload-dropzone" for="screenshot-file"><span class="upload-dropzone-title">Upload or paste a PNG</span><span>Up to 28 intact slots are detected and cleaned in your browser.</span><input id="screenshot-file" class="visually-hidden" type="file" accept="image/png" disabled></label>
+                <label class="upload-dropzone" for="screenshot-file"><span class="upload-dropzone-title">Upload, paste or drop a PNG</span><span>Up to 28 intact slots are detected and cleaned in your browser.</span><input id="screenshot-file" class="visually-hidden" type="file" accept="image/png" disabled></label>
                 <div id="crop-controls" hidden>
                   <div class="crop-preview-wrap"><canvas id="screenshot-preview" aria-label="Screenshot preview with detected item slots. Drag to limit the included slots." role="img"></canvas></div>
                   <div class="crop-tools"><span id="detected-slot-count" class="small text-muted" aria-live="polite"></span><button id="reset-crop" type="button" class="btn btn-sm btn-outline-secondary">Use all detected slots</button></div>
