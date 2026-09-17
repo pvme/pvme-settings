@@ -24,5 +24,3 @@ Submission is intentionally unconfigured pending confirmation of the image-store
 The static build creates a local catalogue snapshot and matching recognition atlas together. `npm run build:site` writes the ignored `dist/` artifact with content-hashed assets; `npm run dev` rebuilds it before serving. The Pages workflow runs the same build on catalogue/generator changes and can be manually triggered to refresh image-host artwork.
 
 From the repository root, `npm ci`, `npm ci --prefix docs/cloud-functions/emoji-pr`, `npm test`, and `npm run dev` run local tests and serve the site. External writes are mocked in tests.
-
-`docs/recognition-fallback.*` is the checked-in catalogue and visual-matching snapshot used by direct `docs/` hosting. Run `npm run refresh:fallback-recognition` after a catalogue or image-host refresh to update it. Build deployments generate and use their own hashed snapshot instead.

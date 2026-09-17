@@ -4,8 +4,10 @@ import { initContributions } from './contribution/ui.mjs';
 
 async function populateTables() {
   const configuredManifest = window.__PVME_ASSET_MANIFEST__;
-  const manifestPath = !configuredManifest || configuredManifest === '__PVME_ASSET_MANIFEST_PATH__'
-    ? 'recognition-fallback.manifest.json' : configuredManifest;
+  if (!configuredManifest || configuredManifest === '__PVME_ASSET_MANIFEST_PATH__') {
+    throw new Error('This site must be served from its generated Pages build.');
+  }
+  const manifestPath = configuredManifest;
   const manifestURL = new URL(manifestPath, window.location.href);
   const manifestResponse = await fetch(manifestURL);
   if (!manifestResponse.ok) throw new Error('The deployed asset manifest could not load.');

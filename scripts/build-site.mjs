@@ -6,7 +6,7 @@ import { generateRecognition, sha256 } from './recognition-generator.mjs';
 const scriptRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 function withoutGeneratedAssets(source) {
-  return !source.includes('/images/recognition') && !source.includes('\\images\\recognition') && !source.includes('/assets') && !source.includes('\\assets') && !source.includes('/node_modules') && !source.includes('\\node_modules') && !source.includes('recognition-fallback.');
+  return !source.includes('/images/recognition') && !source.includes('\\images\\recognition') && !source.includes('/assets') && !source.includes('\\assets') && !source.includes('/node_modules') && !source.includes('\\node_modules');
 }
 
 export async function buildSite({ root = scriptRoot, fetchImpl = fetch } = {}) {
