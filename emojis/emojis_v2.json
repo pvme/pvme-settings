@@ -14228,6 +14228,12 @@
           "id": "yewlog",
           "emoji_id": "643122455451533325",
           "emoji_server": "22"
+        },
+        {
+          "name": "Spirit sapphire",
+          "id": "spirit_sapphire",
+          "image": "xsfAtbWabl.png",
+          "preset_type": "item"
         }
       ]
     },
