@@ -124,7 +124,7 @@ function renderThumbnails() {
 }
 function field(container, label, control, error, key, card) {
   const wrapper = element('label', '', 'editor-field'); wrapper.append(element('span', label, 'field-label'), control);
-  if (error && (state.attemptedAdvance || card.touched[key])) wrapper.append(element('span', error, 'field-error'));
+  const message = element('span', error && (state.attemptedAdvance || card.touched[key]) ? error : '', 'field-error'); message.setAttribute('aria-live', 'polite'); wrapper.append(message);
   container.append(wrapper); return wrapper;
 }
 function fieldError(card, key) { const issue = cardIssue(card); return issue?.[0] === key ? issue[1] : ''; }
@@ -145,7 +145,7 @@ function renderEditor() {
   hero.append(art, element('div', card.preview === 'original' ? 'Original slot' : 'Transparent PNG', 'small text-muted'), comparison, download); root.append(hero);
   const essentials = element('div', '', 'editor-essentials');
   const name = element('input'); name.className = 'form-control'; name.maxLength = 100; name.autocomplete = 'off'; name.value = card.name; name.placeholder = 'e.g. Ectoplasm';
-  const id = element('input'); id.className = 'form-control form-control-sm'; id.maxLength = 64; id.autocomplete = 'off'; id.value = card.id; id.placeholder = 'unique_id';
+  const id = element('input'); id.className = 'form-control'; id.maxLength = 64; id.autocomplete = 'off'; id.value = card.id; id.placeholder = 'unique_id';
   const duplicates = element('section', '', 'duplicate-review');
   name.addEventListener('input', () => { card.name = name.value; card.touched.name = true; if (!card.idManual) { card.id = generatedId(card.name, card); id.value = card.id; } updateEditorAfterChange(card, duplicates); });
   name.addEventListener('blur', () => { card.touched.name = true; renderEditor(); }); field(essentials, 'Name', name, fieldError(card, 'name'), 'name', card);
@@ -158,14 +158,13 @@ function renderEditor() {
     ['Helm', 'Body', 'Legs', 'Main-hand weapon', 'Off-hand weapon', 'Gloves', 'Boots', 'Aura', 'Ammo', 'Necklace', 'Ring', 'Cape', 'Pocket'].forEach((label, index) => slot.append(new Option(label, index + 1)));
     slot.value = Number.isInteger(card.preset_slot) ? card.preset_slot : ''; slot.addEventListener('change', () => { card.preset_slot = slot.value === '' ? undefined : Number(slot.value); card.touched.slot = true; renderEditor(); updateFooter(); }); field(essentials, 'Worn item slot', slot, fieldError(card, 'slot'), 'slot', card);
   }
-  root.append(essentials);
-  const idRow = element('div', '', 'editor-id-row'); id.addEventListener('input', () => { card.id = id.value; card.idManual = true; card.touched.id = true; updateEditorAfterChange(card, duplicates); }); id.addEventListener('blur', () => { card.touched.id = true; renderEditor(); }); field(idRow, 'Unique ID', id, fieldError(card, 'id'), 'id', card); root.append(idRow);
+  id.addEventListener('input', () => { card.id = id.value; card.idManual = true; card.touched.id = true; updateEditorAfterChange(card, duplicates); }); id.addEventListener('blur', () => { card.touched.id = true; renderEditor(); }); const idField = field(essentials, 'Unique ID', id, fieldError(card, 'id'), 'id', card); idField.classList.add('editor-id-field'); root.append(essentials);
   root.append(duplicates); renderDuplicates(card, duplicates);
   const more = element('details', '', 'editor-more'); more.open = card.moreDetailsOpen; more.addEventListener('toggle', () => { card.moreDetailsOpen = more.open; }); more.append(element('summary', 'More details'));
   const detailGrid = element('div', '', 'detail-grid');
-  const category = element('select'); category.className = 'form-select form-select-sm'; category.append(new Option('Choose category', '')); state.categories.forEach(value => category.append(new Option(value, value))); category.value = card.category;
+  const category = element('select'); category.className = 'form-select'; category.append(new Option('Choose category', '')); state.categories.forEach(value => category.append(new Option(value, value))); category.value = card.category;
   category.addEventListener('change', () => { card.category = category.value; card.touched.category = true; card.moreDetailsOpen = true; renderEditor(); updateFooter(); }); field(detailGrid, 'Category', category, fieldError(card, 'category'), 'category', card);
-  const aliases = element('input'); aliases.className = 'form-control form-control-sm'; aliases.maxLength = 650; aliases.autocomplete = 'off'; aliases.value = card.id_aliases.join(', '); aliases.placeholder = 'comma-separated aliases';
+  const aliases = element('input'); aliases.className = 'form-control'; aliases.maxLength = 650; aliases.autocomplete = 'off'; aliases.value = card.id_aliases.join(', '); aliases.placeholder = 'comma-separated aliases';
   aliases.addEventListener('input', () => { card.id_aliases = aliases.value.split(',').map(value => value.trim()).filter(Boolean); card.touched.aliases = true; updateEditorAfterChange(card, duplicates); }); aliases.addEventListener('blur', () => { card.touched.aliases = true; renderEditor(); }); field(detailGrid, 'Aliases', aliases, fieldError(card, 'aliases'), 'aliases', card);
   more.append(detailGrid); root.append(more);
 }

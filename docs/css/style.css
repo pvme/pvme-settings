@@ -213,11 +213,11 @@ html {
 .editor-hero { display: grid; justify-items: center; gap: .5rem; padding: 1.5rem 1rem; margin: 1rem 0; background: #1a1b21; border-radius: .5rem; }
 .editor-art { width: 190px; height: 170px; object-fit: contain; }
 .comparison-toggle { display: flex; gap: .35rem; }
-.editor-essentials { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(180px, .8fr); gap: .9rem; }
-.editor-id-row { max-width: 28rem; margin-top: .9rem; }
-.editor-field { display: grid; gap: .35rem; min-width: 0; }
+.editor-essentials { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(180px, .8fr); column-gap: .9rem; row-gap: .45rem; }
+.editor-field { display: grid; gap: .25rem; min-width: 0; align-content: start; }
 .field-label { color: #d8d8e0; font-size: .82rem; font-weight: 600; }
-.field-error { color: #f0a7a7; font-size: .78rem; }
+.field-error { display: block; min-height: 1.1rem; color: #f0a7a7; font-size: .78rem; line-height: 1.1; }
+.field-error:empty { visibility: hidden; }
 .editor-more { margin-top: 1.25rem; color: #d4d3dd; }
 .editor-more summary { cursor: pointer; color: #bebccc; }
 .detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; padding-top: .85rem; }
