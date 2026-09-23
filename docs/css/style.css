@@ -165,7 +165,6 @@ html {
 .contribution-steps li.complete { color: #a7d3b5; }
 .upload-stage { max-width: 780px; margin: 2rem auto; }
 .upload-intro h3 { color: #f3f2f8; }
-.upload-intro p { color: #babac4; max-width: 42rem; }
 .upload-dropzone {
   display: grid;
   gap: .35rem;
@@ -181,9 +180,15 @@ html {
 .upload-dropzone:focus-within { border-color: #a98dff; background: #262532; }
 .upload-dropzone.is-dragging { border-color: #b69cff; background: #2d2a3b; box-shadow: inset 0 0 0 1px #b69cff; }
 .upload-dropzone-title { color: #f1efff; font-weight: 600; }
+.upload-stage.has-screenshot .upload-dropzone { display: inline-grid; padding: .5rem .8rem; margin: .5rem 0 1rem; font-size: .875rem; }
+.upload-stage.has-screenshot .upload-dropzone-hint { display: none; }
+.upload-tips { margin-top: 1.25rem; }
+.upload-tips summary { cursor: pointer; width: fit-content; }
+.upload-tips summary:hover { color: #f1efff; }
+.upload-tips p { max-width: 42rem; margin: .65rem 0 0; }
 .crop-preview-wrap { background: #121319; border: 1px solid #343540; border-radius: .5rem; }
 #screenshot-preview { max-width: 100%; height: auto; display: block; touch-action: none; cursor: crosshair; }
-.crop-tools { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin: .75rem 0; }
+.crop-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; margin: .75rem 0; }
 .review-workspace { display: grid; grid-template-columns: minmax(220px, 29%) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
 .icon-collection { background: #202128; border: 1px solid #343540; border-radius: .6rem; padding: .75rem; }
 .collection-heading { display: flex; gap: .75rem; align-items: start; justify-content: space-between; padding: .25rem .25rem .75rem; }
@@ -241,6 +246,7 @@ html {
 .contribution-footer { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .85rem 1.25rem; }
 .footer-actions { display: flex; gap: .5rem; }
 .contribution-status { color: #eab1b1; margin-top: 1rem; }
+.contribution-status:empty { display: none; }
 #contribution-modal button:focus-visible,
 #contribution-modal input:focus-visible,
 #contribution-modal select:focus-visible,

@@ -1,4 +1,5 @@
 import { createPresetIconContribution, MAX_ICONS } from './iconContribution.mjs';
+import { slotBounds } from './slotGeometry.mjs';
 import { fuzzyMatches, loadAtlas, visualMatches } from './matching.mjs';
 import { contributionEndpoint } from './config.mjs';
 import { imageUrlError, selectedPayload, sendBatch } from './client.mjs';
@@ -28,7 +29,14 @@ function setRegion(box) { state.crop = box; draw(); }
 function includedCards() { return state.cards.filter(card => card.selected); }
 
 export function slotsInsideCrop(slots, box) {
-  return slots.filter(slot => slot.x >= box.x && slot.y >= box.y && slot.x + 38 <= box.x + box.w && slot.y + 34 <= box.y + box.h);
+  return slots.filter(slot => {
+    const { x, y, width, height } = slotBounds(slot);
+    return x >= box.x && y >= box.y && x + width <= box.x + box.w && y + height <= box.y + box.h;
+  });
+}
+export function drawSlotOutline(ctx, slot) {
+  const { x, y, width, height } = slotBounds(slot);
+  ctx.strokeRect(x + .5, y + .5, width - 1, height - 1);
 }
 function draw() {
   if (!state.image) return;
@@ -39,11 +47,14 @@ function draw() {
   for (const slot of state.detectedSlots) {
     ctx.strokeStyle = included.has(slot) ? '#8bc6a0' : 'rgba(180, 190, 210, .6)';
     ctx.lineWidth = included.has(slot) ? 2 : 1;
-    ctx.strokeRect(slot.x + .5, slot.y + .5, 37, 33);
+    drawSlotOutline(ctx, slot);
   }
   ctx.strokeStyle = '#aa8dff'; ctx.lineWidth = 2; ctx.strokeRect(box.x, box.y, box.w, box.h);
   const count = state.detectedSlots.length, selected = included.size;
-  $('detected-slot-count').textContent = count ? `${selected} of ${count} detected slots included` : 'No icon slots detected yet.';
+  $('detected-slot-count').textContent = count
+    ? (selected === count ? `${count} icon${count === 1 ? '' : 's'} found` : `${selected} of ${count} icons included`)
+    : '';
+  $('reset-crop').hidden = box.x === 0 && box.y === 0 && box.w === state.image.width && box.h === state.image.height;
 }
 async function readScreenshot(file) {
   if (!file || file.type !== 'image/png' || file.size > 6 * 1024 * 1024) throw new Error('Choose an original PNG smaller than 6 MB. JPEG, WebP and resized images are not supported.');
@@ -62,10 +73,13 @@ async function openFile(file) {
     const image = await readScreenshot(file);
     if (state.fileRevision !== revision) return;
     state.image = image; state.detectedSlots = []; state.cards = []; state.activeIndex = 0; state.step = 'upload'; state.attemptedAdvance = false; state.successUrl = null;
+    $('contribution-step-upload').classList.add('has-screenshot');
+    $('upload-title').textContent = 'Choose your icons';
+    $('upload-action').textContent = 'Replace screenshot';
     $('icon-thumbnails').replaceChildren(); $('icon-editor').replaceChildren();
     const canvas = $('screenshot-preview'); canvas.width = image.width; canvas.height = image.height;
     $('crop-controls').hidden = false; setRegion({ x: 0, y: 0, w: image.width, h: image.height });
-    showStep(); status('Finding icon slots in this screenshot…'); identifySlots(image, revision);
+    showStep(); status('Finding icons…'); identifySlots(image, revision);
   } catch (error) { status(error.message); }
 }
 async function identifySlots(image, revision) {
@@ -74,10 +88,10 @@ async function identifySlots(image, revision) {
     const slots = await cleaner.extract(image, controller.signal);
     if (state.fileRevision !== revision || controller.signal.aborted) return;
     state.detectedSlots = slots; draw(); replaceCards(slotsInsideCrop(slots, region()));
-    status(slots.length ? `Prepared ${slots.length} detected icon${slots.length === 1 ? '' : 's'} for review.` : 'No icon slots were detected. Check the screenshot requirements.');
+    status(slots.length ? '' : 'No icons found. Try a closer crop or check Screenshot tips.');
   } catch (error) {
     if (error.name === 'AbortError' || state.fileRevision !== revision) return;
-    state.detectedSlots = []; replaceCards([]); draw(); status('No icon slots were detected. Check the screenshot requirements.');
+    state.detectedSlots = []; replaceCards([]); draw(); status('No icons found. Try a closer crop or check Screenshot tips.');
   }
 }
 function replaceCards(icons) {
@@ -197,7 +211,7 @@ function renderSubmission() {
 function updateFooter() {
   const included = includedCards(), problem = selectionProblem(included), ready = readyCount(); const primary = $('footer-primary'), back = $('footer-back'), next = $('footer-next-incomplete');
   back.hidden = state.step === 'upload' || !!state.successUrl; next.hidden = state.step !== 'details' || !included.some(card => cardIssue(card));
-  if (state.step === 'upload') { $('footer-progress').textContent = state.cards.length ? `${included.length} icon${included.length === 1 ? '' : 's'} selected` : 'Upload a screenshot to begin'; primary.textContent = 'Review icons'; primary.hidden = false; primary.disabled = !state.cards.length; }
+  if (state.step === 'upload') { $('footer-progress').textContent = ''; primary.textContent = 'Review icons'; primary.hidden = false; primary.disabled = !state.cards.length; }
   else if (state.step === 'details') { $('footer-progress').textContent = `${ready} of ${included.length} ready`; primary.textContent = 'Continue to submit'; primary.hidden = false; primary.disabled = !included.length; }
   else if (state.successUrl) { $('footer-progress').textContent = 'Submitted'; primary.hidden = true; }
   else { $('footer-progress').textContent = `${included.length} icon${included.length === 1 ? '' : 's'} included`; primary.textContent = 'Send suggestion'; primary.hidden = false; const contributor = $('contributor-name').value.trim(), urlsReady = included.every(card => !imageUrlError(card.image_url)); primary.disabled = !state.ready || state.submitting || !!problem || !urlsReady || contributor.length < 2 || contributor.length > 80; }
@@ -231,9 +245,9 @@ export async function initContributions(catalogue, assets = {}) {
   const point = event => { const rect = canvas.getBoundingClientRect(); return { x: Math.max(0, Math.min(canvas.width, Math.round((event.clientX - rect.left) * canvas.width / rect.width))), y: Math.max(0, Math.min(canvas.height, Math.round((event.clientY - rect.top) * canvas.height / rect.height))) }; };
   canvas.addEventListener('pointerdown', event => { start = point(event); canvas.setPointerCapture?.(event.pointerId); });
   canvas.addEventListener('pointermove', event => { if (!start) return; const end = point(event); setRegion({ x: Math.min(start.x, end.x), y: Math.min(start.y, end.y), w: Math.abs(end.x - start.x), h: Math.abs(end.y - start.y) }); });
-  canvas.addEventListener('pointerup', () => { if (!start) return; start = null; const box = region(); if (box.w < 38 || box.h < 34) setRegion({ x: 0, y: 0, w: state.image.width, h: state.image.height }); replaceCards(slotsInsideCrop(state.detectedSlots, region())); status(`Prepared ${state.cards.length} detected icon${state.cards.length === 1 ? '' : 's'} from the selected area.`); });
+  canvas.addEventListener('pointerup', () => { if (!start) return; start = null; const box = region(); if (box.w < 2 || box.h < 2) setRegion({ x: 0, y: 0, w: state.image.width, h: state.image.height }); replaceCards(slotsInsideCrop(state.detectedSlots, region())); });
   canvas.addEventListener('pointercancel', () => { start = null; });
-  $('reset-crop').addEventListener('click', () => { setRegion({ x: 0, y: 0, w: state.image.width, h: state.image.height }); replaceCards(state.detectedSlots); status(`Prepared all ${state.cards.length} detected icon${state.cards.length === 1 ? '' : 's'}.`); });
+  $('reset-crop').addEventListener('click', () => { setRegion({ x: 0, y: 0, w: state.image.width, h: state.image.height }); replaceCards(state.detectedSlots); });
   $('footer-back').addEventListener('click', () => { state.step = state.step === 'submit' ? 'details' : 'upload'; showStep(); }); $('next-incomplete').addEventListener('click', nextIncomplete); $('footer-next-incomplete').addEventListener('click', nextIncomplete);
   $('footer-primary').addEventListener('click', () => { if (state.step === 'upload') { state.step = 'details'; showStep(); return; } if (state.step === 'details') { state.attemptedAdvance = true; const problem = selectionProblem(); if (problem) { renderReview(); updateFooter(); status(problem); return; } state.step = 'submit'; showStep(); return; } submit(); });
   $('contributor-name').addEventListener('input', updateFooter);

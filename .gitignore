@@ -16,5 +16,8 @@ __pycache__/
 /docs/assets/
 /docs/images/recognition/
 
-# Local verification fixtures and test harnesses are not part of the site repository.
-/tests/
+# Keep ad-hoc local diagnostics out of the repository; retain screenshot regressions.
+/tests/*
+!/tests/icon-alignment.test.mjs
+!/tests/icon-fixtures.mjs
+!/tests/fixtures/

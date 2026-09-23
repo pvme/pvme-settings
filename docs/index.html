@@ -120,13 +120,18 @@
             </ol>
             <fieldset id="contribution-workspace">
               <section id="contribution-step-upload" class="upload-stage">
-                <div class="upload-intro"><h3 class="h5">Add a screenshot</h3><p>Use an original PNG at 100% interface scale from a bank, preset, or inventory. Resized screenshots and worn-equipment views are not supported.</p></div>
-                <label class="upload-dropzone" for="screenshot-file"><span class="upload-dropzone-title">Upload, paste or drop a PNG</span><span>Up to 28 intact slots are detected and cleaned in your browser.</span><input id="screenshot-file" class="visually-hidden" type="file" accept="image/png" disabled></label>
+                <div class="upload-intro"><h3 id="upload-title" class="h5">Add a screenshot</h3></div>
+                <label class="upload-dropzone" for="screenshot-file"><span id="upload-action" class="upload-dropzone-title">Choose a screenshot</span><span class="upload-dropzone-hint">or paste or drop a PNG here</span><input id="screenshot-file" class="visually-hidden" type="file" accept="image/png" disabled></label>
                 <div id="crop-controls" hidden>
                   <div class="crop-preview-wrap"><canvas id="screenshot-preview" aria-label="Screenshot preview with detected item slots. Drag to limit the included slots." role="img"></canvas></div>
-                  <div class="crop-tools"><span id="detected-slot-count" class="small text-muted" aria-live="polite"></span><button id="reset-crop" type="button" class="btn btn-sm btn-outline-secondary">Use all detected slots</button></div>
-                  <p class="small text-muted mb-0">Green slots are included. Drag across the image to limit them; the review list updates automatically.</p>
+                  <div class="crop-tools"><span id="detected-slot-count" class="small text-muted" aria-live="polite"></span><button id="reset-crop" type="button" class="btn btn-sm btn-outline-secondary" hidden>Reset selection</button></div>
+                  <p class="small text-muted mb-0">Drag over the icons you want to keep. Green boxes are included.</p>
                 </div>
+                <details class="upload-tips small text-muted">
+                  <summary>Screenshot tips</summary>
+                  <p>Use an original PNG at 100% game interface scale, with complete icons and opaque backgrounds. Don't resize the image. Worn-equipment views aren't supported.</p>
+                  <p>Crop large screenshots to the icons you need: maximum 2048 pixels per side and 6 MB. Up to 28 icons can be detected; you can submit 10 at a time.</p>
+                </details>
               </section>
               <section id="contribution-step-details" hidden>
                 <div class="review-workspace">
