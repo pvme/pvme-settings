@@ -2045,6 +2045,12 @@
           "preset_type": "spell"
         },
         {
+          "name": "Sanguine offering",
+          "id": "sanguineoffering",
+          "emoji_id": "1554517864621539419",
+          "emoji_server": "47"
+        },
+        {
           "name": "Sapphire Aurora",
           "id": "sapphireaurora",
           "emoji_id": "995711033480069130",
@@ -7091,7 +7097,19 @@
           "id": "undeadslayercodex",
           "emoji_id": "1004453774494015519",
           "emoji_server": "33"
-        }
+        },
+        {
+          "name": "Vampyre Slayer ability",
+          "id": "vampyreslayer",
+          "emoji_id": "1554517443962081474",
+          "emoji_server": "47"
+        },
+        {
+          "name": "Vital Drain",
+          "id": "vitaldrain",
+          "emoji_id": "1554518117550395422",
+          "emoji_server": "47"
+        }        
       ]
     },
     {
