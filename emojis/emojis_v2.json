@@ -3420,7 +3420,9 @@
         },
         {
           "name": "Nightblood ring",
-          "id": "nightblood_ring",
+          "id": "nightbloodring",
+          "emoji_id": "1554604611174801490",
+          "emoji_server": "47",
           "image": "gO1sogED5w.png",
           "preset_type": "item",
           "preset_slot": 11,
