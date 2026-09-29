@@ -1,4 +1,5 @@
 import { detectFramedCells, detectFramedBookCells, detectUnframedBankCells, slotBounds } from './slotGeometry.mjs';
+import { detectGeResult } from './geResult.mjs';
 
 export const MAX_ICONS = 28;
 
@@ -180,6 +181,47 @@ export function createPresetIconContribution(assetBase) {
     }
     return { ...icon, data };
   }
+  function removeGePanelRail(icon) {
+    const data = new Uint8ClampedArray(icon.data);
+    // A compact GE result can leave a 1–3px vertical panel rail at the crop's
+    // left edge. It spans almost every row; item artwork does not.
+    for (let x = 0; x < Math.min(3, icon.width); x++) {
+      let opaque = 0;
+      for (let y = 0; y < icon.height; y++) if (data[(y * icon.width + x) * 4 + 3]) opaque++;
+      if (opaque < icon.height * .65) continue;
+      for (let y = 0; y < icon.height; y++) data[(y * icon.width + x) * 4 + 3] = 0;
+    }
+    return { ...icon, data };
+  }
+  function removeEnclosedGeSurface(original, cleaned) {
+    const colours = new Map();
+    for (let p = 0; p < original.data.length; p += 4) {
+      if (!original.data[p + 3]) continue;
+      const colour = [original.data[p], original.data[p + 1], original.data[p + 2]], key = colour.join(',');
+      const entry = colours.get(key) || { colour, count: 0 }; entry.count++; colours.set(key, entry);
+    }
+    const surface = [...colours.values()].sort((a, b) => b.count - a.count)[0]?.colour;
+    if (!surface) return cleaned;
+    const data = new Uint8ClampedArray(cleaned.data), seen = new Uint8Array(original.width * original.height);
+    const isSurface = index => [0, 1, 2].every(channel => Math.abs(original.data[index * 4 + channel] - surface[channel]) <= 3);
+    for (let start = 0; start < seen.length; start++) {
+      if (seen[start] || !isSurface(start)) continue;
+      const pixels = [start]; seen[start] = 1; let touchesEdge = false;
+      for (let cursor = 0; cursor < pixels.length; cursor++) {
+        const index = pixels[cursor], x = index % original.width, y = Math.floor(index / original.width);
+        if (!x || !y || x === original.width - 1 || y === original.height - 1) touchesEdge = true;
+        for (const [dx, dy] of [[-1, 0], [1, 0], [0, -1], [0, 1]]) {
+          const nx = x + dx, ny = y + dy, next = ny * original.width + nx;
+          if (nx >= 0 && ny >= 0 && nx < original.width && ny < original.height && !seen[next] && isSurface(next)) { seen[next] = 1; pixels.push(next); }
+        }
+      }
+      // The ring's hole is a closed patch of the fixed panel surface. Leave
+      // edge-connected surface to the normal cleanup, which preserves item
+      // colours that happen to be close to the panel hue.
+      if (!touchesEdge && pixels.length >= 8) for (const index of pixels) data[index * 4 + 3] = 0;
+    }
+    return { ...cleaned, data };
+  }
   function scoreCells(cells, width, height) {
     const occupied = cells.filter(cell => cell.count >= 4);
     return { occupied, score: occupied.reduce((total, cell) => total + Math.min(cell.count, 14) + 12 -
@@ -266,8 +308,19 @@ export function createPresetIconContribution(assetBase) {
     if (!best) return [];
     return cleanedGrid(source, best.occupied, best.pitchX, best.pitchY, signal);
   }
+  function extractGeResultRow(source) {
+    const bounds = detectGeResult(source);
+    if (!bounds) return [];
+    const { x, y, width, height } = bounds;
+    const original = slotAt(source, x, y, width, height);
+    // The detector's coloured core establishes geometry only. Clean the
+    // original crop so dark shadows and pale highlights remain part of the
+    // exported item rather than being discarded with the panel background.
+    const cleaned = removeGePanelRail(removeSmallEdgeComponents(removeEnclosedGeSurface(original, cleanConnectedBackground(original))));
+    return [{ x, y, width, height, layout: 'ge-result', original: png(original), icon: png(trimTransparent(cleaned)) }];
+  }
   async function extract(image, signal) {
-    if (image.width > 2048 || image.height > 2048) throw new Error('Crop the bank, preset or inventory screenshot to at most 2048 pixels on each side.');
+    if (image.width > 2048 || image.height > 2048) throw new Error('Crop the bank, preset, inventory or GE screenshot to at most 2048 pixels on each side.');
     const source = pixels(image), entries = await loadTemplates();
     for (const entry of entries) {
       const found = [];
@@ -309,7 +362,9 @@ export function createPresetIconContribution(assetBase) {
     });
     const bookIcons = await extractBookGrid(source, signal);
     if (bookIcons.length) return bookIcons;
-    throw new Error('No compatible bank, preset, inventory, prayer, spell or ability-book slots found. Use an original PNG at 100% interface scale with opaque backgrounds and full slot borders. Worn equipment is not supported.');
+    const geResults = extractGeResultRow(source);
+    if (geResults.length) return geResults;
+    throw new Error('No compatible bank, preset, inventory, GE, prayer, spell or ability-book slots found. Use an original PNG at 100% interface scale with opaque backgrounds and full slot borders. Worn equipment is not supported.');
   }
   async function read(file, signal) {
     if (file.type !== 'image/png' || file.size > 6 * 1024 * 1024) throw new Error('Choose an original PNG smaller than 6 MB.');

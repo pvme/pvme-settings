@@ -44,13 +44,48 @@ for (const [name, time, expected] of cases) {
 // deliberately excluded so tests work across encoder versions/platforms.
 for (const [name, time, expected] of [
   ['preset', '092037', 'f1d6b0bf05cf912e106e422f67cf0c1a88cda1d3fe26e10b0eb20b62b41d029d'],
-  ['inventory', '092052', '98faa9cf94c9468fdd387be3f671ad93c83fc56454f63af30f01ace52b2282e1'],
+  ['GE screenshot', '092052', '98faa9cf94c9468fdd387be3f671ad93c83fc56454f63af30f01ace52b2282e1'],
   ['prayer book', '092531', '279f4ce812842f035db7d0038c0fab651b9f7b4b49ab9c0a6c76afc83eb09b65']
 ]) {
   test(`${name}: retains original detection and PNG pixels`, async () => {
     assert.equal(await pixelHash(await cleaner.extract(await readFixture(time))), expected);
   });
 }
+test('GE screenshot: detects and cleans native GE slots', async () => {
+  const slots = await cleaner.extract(await readFixture('092052'));
+  assert.equal(slots.length, 6);
+  for (const slot of slots) {
+    assert.equal(slot.layout, 'ge');
+    assert.equal(slot.width, 38);
+    assert.equal(slot.height, 34);
+  }
+});
+test('compact GE result: preserves the full item while removing the panel', async () => {
+  const slots = await cleaner.extract(await readFixture('ge'));
+  assert.deepEqual(coordinates(slots), [{ x: 7, y: 16, width: 32, height: 30 }]);
+  assert.equal(slots[0].layout, 'ge-result');
+  assert.equal(await pixelHash(slots), '19396257c54e5eaa8c53c6142ded768e45f8871df95f7b7a5d3abcb6e3427728');
+  const image = await loadImage(slots[0].icon), canvas = createCanvas(image.width, image.height), context = canvas.getContext('2d');
+  context.drawImage(image, 0, 0);
+  const pixels = context.getImageData(0, 0, image.width, image.height).data;
+  assert(!pixels.some((value, index) => index % 4 === 0 && value === 82 && pixels[index + 1] === 76 && pixels[index + 2] === 73 && pixels[index + 3]), 'GE panel surface remains inside the ring');
+});
+test('GE search result: extracts artwork below row 34 in source coordinates', async () => {
+  const base = createCanvas(38, 34), sourceContext = base.getContext('2d');
+  // This GE surface deliberately differs from the legacy template and has a
+  // compact brown item on its otherwise muted panel background.
+  sourceContext.fillStyle = '#3b3731'; sourceContext.fillRect(0, 0, 38, 34);
+  sourceContext.fillStyle = '#9b5929'; sourceContext.fillRect(11, 8, 16, 17);
+  sourceContext.fillStyle = '#d09b62'; sourceContext.fillRect(14, 10, 10, 11);
+  const row = createCanvas(49, 63), context = row.getContext('2d');
+  context.fillStyle = '#3b3731'; context.fillRect(0, 0, 49, 63); context.drawImage(base, 0, 18);
+  context.fillStyle = '#171513'; context.fillRect(38, 0, 2, 34); context.fillStyle = '#c5c0ac'; context.fillRect(44, 12, 4, 10);
+  const slots = await cleaner.extract(row);
+  assert.equal(slots.length, 1);
+  const [bounds] = slots.map(slotBounds);
+  assert.deepEqual(bounds, { x: 10, y: 25, width: 18, height: 19 });
+  assert.equal(slots[0].layout, 'ge-result');
+});
 test('frontend outlines and crop inclusion use the extracted size', () => {
   const toolbelt = { x: 10, y: 22, width: 40, height: 40 }, skill = { x: 9, y: 3, width: 33, height: 32 };
   assert.deepEqual(slotsInsideCrop([toolbelt], { x: 10, y: 22, w: 38, h: 34 }), []);

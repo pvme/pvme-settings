@@ -5,7 +5,8 @@ Original RuneScape screenshots supplied by the user on 23 September 2026 for ico
 | toolbelt.png | 09:20:18 | 10 frames, 40×40, 45-pixel horizontal pitch |
 | bank.png | 09:20:29 | 7 unframed items with quantity labels |
 | preset.png | 09:20:37 | Preserve existing inventory-template output |
-| inventory.png | 09:20:52 | Preserve existing GE-template output |
+| inventory.png | 09:20:52 | 6 native Grand Exchange (GE) slots, 38×34 |
+| ge.png | — | Compact GE result screenshot with textured panel, drop shadow, and left UI rail |
 | skill-guide.png | 09:21:07 | 8 frames, 33×32, 41-pixel vertical pitch; layered background |
 | prayer-book.png | 09:25:31 | Preserve existing book output and circular artwork |
 | spell-book.png | 09:26:27 | 9 independent 32×32 frames, 43px columns and 34px rows |
