@@ -3417,6 +3417,16 @@
           "preset_slot": 4,
           "preset_type": "item",
           "id_aliases": ["zaryte"]
+        },
+        {
+          "name": "Nightblood ring",
+          "id": "nightblood_ring",
+          "image": "gO1sogED5w.png",
+          "preset_type": "item",
+          "preset_slot": 11,
+          "id_aliases": [
+            "nightblood"
+          ]
         }
       ]
     },
