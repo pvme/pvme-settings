@@ -8651,6 +8651,13 @@
           "preset_type": "item"
         },
         {
+          "name": "Extreme antisanguine flask",
+          "id": "extremeantisanguineflask",
+          "image": "GrHZqTBtfZ.png",
+          "preset_slot": 0,
+          "preset_type": "item",
+        },
+        {
           "name": "Extreme attack",
           "id": "extremeattack",
           "emoji_id": "1133056073339785349",
@@ -9235,6 +9242,13 @@
           "emoji_server": "47",
           "preset_slot": 0,
           "preset_type": "item"
+        },
+        {
+          "name": "Super antisanguine flask",
+          "id": "superantisanguineflask",
+          "image": "c7dwaBSP5f.png",
+          "preset_slot": 0,
+          "preset_type": "item",
         },
         {
           "name": "Super Guthix rest",
@@ -15777,6 +15791,13 @@
           "id": "renewal6",
           "image": "Swtl8pP.png",
           "preset_type": "item"
+        },
+        {
+          "name": "Adrenaline renewal potion (1)",
+          "id": "adrenrenewal1",
+          "image": "GrHZqTBtfZ.png",
+          "preset_slot": 0,
+          "preset_type": "item",
         },
         {
           "name": "Adrenaline renewal potion (4)",
