@@ -74,8 +74,8 @@ Each emoji is defined as a structured object with a stable, unique identifier.
 | emoji_server | Yes                   | Discord server ID                     |
 | image        | emoji_id and/or image | Image filename hosted at img.pvme.io  |
 | [preset_slot](#preset-slot-reference)  | No | Equipment / inventory slot index |
-| preset_type  | No                    | `item` / `relic` / `familiar`         |
 | id_aliases   | No                    | Alternative IDs for matching          |
+| preset_type  | No                    | `item` / `relic` / `familiar` / `prayer` |
 
 ## Preset slot reference
 

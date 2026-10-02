@@ -6012,6 +6012,8 @@
         {
           "name": "Ruination",
           "id": "ruination",
+          "id_aliases": ["necromancy99"],
+          "preset_type": "prayer",
           "emoji_id": "1137940996391452772",
           "emoji_server": "39"
         },
@@ -6024,6 +6026,8 @@
         {
           "name": "Sorrow",
           "id": "sorrow",
+          "id_aliases": ["necromancy95"],
+          "preset_type": "prayer",
           "emoji_id": "1137941003895046284",
           "emoji_server": "39"
         },
@@ -7942,150 +7946,179 @@
         {
           "name": "Affliction",
           "id": "affliction",
+          "preset_type": "prayer",
+          "id_aliases": ["magic99"],
           "emoji_id": "513190158468907008",
           "emoji_server": "1"
         },
         {
           "name": "Anguish",
           "id": "anguish",
+          "preset_type": "prayer",
+          "id_aliases": ["ranged95"],
           "emoji_id": "583429936665198592",
           "emoji_server": "19"
         },
         {
           "name": "Augury",
           "id": "augury",
+          "preset_type": "prayer",
           "emoji_id": "1084799720926478437",
           "emoji_server": "37"
         },
         {
           "name": "Berserker (prayer)",
           "id": "berserkerprayer",
+          "preset_type": "prayer",
           "emoji_id": "1132202074147409991",
           "emoji_server": "16"
         },
         {
           "name": "Dark Form",
           "id": "darkform",
+          "preset_type": "prayer",
           "emoji_id": "659122103269982228",
           "emoji_server": "2"
         },
         {
           "name": "Deflect magic",
           "id": "deflectmage",
+          "preset_type": "prayer",
           "emoji_id": "544195487926845462",
           "emoji_server": "11"
         },
         {
           "name": "Deflect melee",
           "id": "deflectmelee",
+          "preset_type": "prayer",
           "emoji_id": "544195488447201300",
           "emoji_server": "11"
         },
         {
           "name": "Deflect missiles",
           "id": "deflectrange",
+          "preset_type": "prayer",
           "emoji_id": "544195488317046812",
           "emoji_server": "11"
         },
         {
           "name": "Desolation",
           "id": "desolation",
+          "preset_type": "prayer",
+          "id_aliases": ["ranged99"],
           "emoji_id": "513190159018098713",
           "emoji_server": "1"
         },
         {
           "name": "Divine Rage",
           "id": "divinerage",
+          "preset_type": "prayer",
           "emoji_id": "1285372247665803264",
           "emoji_server": "42"
         },
         {
           "name": "Eagle Eye",
           "id": "eagleeye",
+          "preset_type": "prayer",
           "emoji_id": "1534450943138205787",
           "emoji_server": "47"
         },
         {
           "name": "Eclipsed Soul",
           "id": "eclipsedsoul",
+          "preset_type": "prayer",
           "emoji_id": "1285372688457797672",
           "emoji_server": "42"
         },
         {
           "name": "Fortitude",
           "id": "fortitude",
+          "preset_type": "prayer",
           "emoji_id": "537341748180025365",
           "emoji_server": "17"
         },
         {
           "name": "Incredible Reflexes",
           "id": "incrediblereflexes",
+          "preset_type": "prayer",
           "emoji_id": "1534450888591147079",
           "emoji_server": "47"
         },
         {
           "name": "Leech Magic Strength",
           "id": "leechmagicstrength",
+          "preset_type": "prayer",
           "emoji_id": "1392980672980975717",
           "emoji_server": "42"
         },
         {
           "name": "Leech Melee Strength",
           "id": "leechmeleestrength",
+          "preset_type": "prayer",
           "emoji_id": "1392980732602875914",
           "emoji_server": "42"
         },
         {
           "name": "Leech Necromancy Strength",
           "id": "leechnecromancystrength",
+          "preset_type": "prayer",
           "emoji_id": "1392985027201208350",
           "emoji_server": "42"
         },
         {
           "name": "Leech Ranged Strength",
           "id": "leechrangedstrength",
+          "preset_type": "prayer",
           "emoji_id": "1392980767050567742",
           "emoji_server": "42"
         },
         {
           "name": "Light Form",
           "id": "lightform",
+          "preset_type": "prayer",
           "emoji_id": "1521959208952529067",
           "emoji_server": "43"
         },
         {
           "name": "Malevolence",
           "id": "malevolence",
+          "preset_type": "prayer",
+          "id_aliases": ["melee99"],
           "emoji_id": "513190159416557573",
           "emoji_server": "1"
         },
         {
           "name": "Mystic Might",
           "id": "mysticmight",
+          "preset_type": "prayer",
           "emoji_id": "1534451011286990908",
           "emoji_server": "47"
         },
         {
           "name": "Overcharge",
           "id": "overcharge",
+          "preset_type": "prayer",
           "emoji_id": "1344313901189431296",
           "emoji_server": "42"
         },
         {
           "name": "Overpowering Force",
           "id": "overpoweringforce",
+          "preset_type": "prayer",
           "emoji_id": "1344313902808174712",
           "emoji_server": "42"
         },
         {
           "name": "Piety",
           "id": "piety",
+          "preset_type": "prayer",
           "emoji_id": "1215399597581533264",
           "emoji_server": "41"
         },
         {
           "name": "Protect from Magic",
           "id": "protectfrommagic",
+          "preset_type": "prayer",
           "id_aliases": ["protectmagic"],
           "emoji_id": "1052551456835768351",
           "emoji_server": "36"
@@ -8093,6 +8126,7 @@
         {
           "name": "Protect from Melee",
           "id": "protectfrommelee",
+          "preset_type": "prayer",
           "id_aliases": ["protectmelee"],
           "emoji_id": "1052551452788269127",
           "emoji_server": "36"
@@ -8100,6 +8134,7 @@
         {
           "name": "Protect from Missiles",
           "id": "protectfrommissiles",
+          "preset_type": "prayer",
           "id_aliases": ["protectmissiles", "protectrange"],
           "emoji_id": "1052551455078367313",
           "emoji_server": "36"
@@ -8107,6 +8142,7 @@
         {
           "name": "Protect item",
           "id": "protectitem",
+          "preset_type": "prayer",
           "id_aliases": ["itemprotect"],
           "emoji_id": "1010486261682810891",
           "emoji_server": "34"
@@ -8114,54 +8150,65 @@
         {
           "name": "Rapid Restore",
           "id": "rapidrestore",
+          "preset_type": "prayer",
           "emoji_id": "1506466035547504822",
           "emoji_server": "43"
         },
         {
           "name": "Rigour",
           "id": "rigour",
+          "preset_type": "prayer",
           "emoji_id": "1215399596239618118",
           "emoji_server": "41"
         },
         {
           "name": "Soul Link",
           "id": "soullink",
+          "preset_type": "prayer",
           "emoji_id": "989442220484616242",
           "emoji_server": "31"
         },
         {
           "name": "Soulsplit",
           "id": "soulsplit",
+          "preset_type": "prayer",
           "emoji_id": "615613924506599497",
           "emoji_server": "20"
         },
         {
           "name": "Steel Skin",
           "id": "steelskin",
+          "preset_type": "prayer",
           "emoji_id": "1365820216545902642",
           "emoji_server": "42"
         },
         {
           "name": "Torment",
           "id": "torment",
+          "preset_type": "prayer",
+          "id_aliases": ["magic95"],
           "emoji_id": "583429936958930964",
           "emoji_server": "19"
         },
         {
           "name": "Turmoil",
           "id": "turmoil",
+          "preset_type": "prayer",
+          "id_aliases": ["melee95"],
           "emoji_id": "583429936606347280",
           "emoji_server": "19"
         },
         {
           "name": "Ultimate Strength",
           "id": "ultimatestrength",
+          "preset_type": "prayer",
           "emoji_id": "1344313898068738151",
           "emoji_server": "42"
         },
         {
           "name": "Wrath",
           "id": "wrath",
+          "preset_type": "prayer",
           "emoji_id": "848803062700703784",
           "emoji_server": "14"
         }
