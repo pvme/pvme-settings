@@ -4275,6 +4275,14 @@
           "emoji_server": "8"
         },
         {
+          "name": "Havensilver halberd +2",
+          "id": "havensilverhalberd2",
+          "emoji_id": "1555692252213547139",
+          "emoji_server": "47",
+          "preset_slot": 4,
+          "preset_type": "item"
+        },
+        {
           "name": "Igneous Kal-Ket",
           "id": "igneouskalket",
           "id_aliases": ["kalket"],
@@ -8635,6 +8643,14 @@
           "emoji_server": "17"
         },
         {
+          "name": "Extreme antisanguine",
+          "id": "extremeantisanguine",
+          "emoji_id": "1555692068079149147",
+          "emoji_server": "47",
+          "preset_slot": 0,
+          "preset_type": "item"
+        },
+        {
           "name": "Extreme attack",
           "id": "extremeattack",
           "emoji_id": "1133056073339785349",
@@ -9211,6 +9227,14 @@
           "id": "superantipoison",
           "emoji_id": "841409588884406272",
           "emoji_server": "13"
+        },
+        {
+          "name": "Super antisanguine",
+          "id": "superantisanguine",
+          "emoji_id": "1555692002727829514",
+          "emoji_server": "47",
+          "preset_slot": 0,
+          "preset_type": "item"
         },
         {
           "name": "Super Guthix rest",
