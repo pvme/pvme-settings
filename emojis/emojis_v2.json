@@ -9248,7 +9248,7 @@
           "id": "superantisanguineflask",
           "image": "c7dwaBSP5f.png",
           "preset_slot": 0,
-          "preset_type": "item",
+          "preset_type": "item"
         },
         {
           "name": "Super Guthix rest",
@@ -15797,7 +15797,7 @@
           "id": "adrenrenewal1",
           "image": "GrHZqTBtfZ.png",
           "preset_slot": 0,
-          "preset_type": "item",
+          "preset_type": "item"
         },
         {
           "name": "Adrenaline renewal potion (4)",
