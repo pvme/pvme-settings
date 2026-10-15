@@ -2917,6 +2917,22 @@
           "emoji_server": "8"
         },
         {
+          "name": "Malachi's claw",
+          "id": "malachisclaw",
+          "emoji_id": "1560139473314906151",
+          "emoji_server": "47",
+          "preset_slot": 5,
+          "preset_type": "item"
+        },
+        {
+          "name": "Malachi's tooth",
+          "id": "malachistooth",
+          "emoji_id": "1560137984848691200",
+          "emoji_server": "47",
+          "preset_slot": 4,
+          "preset_type": "item"
+        },
+        {
           "name": "Masterwork bow",
           "id": "masterworkbow",
           "emoji_id": "1359114183186321575",
