@@ -12932,6 +12932,12 @@
           "id": "mediumclues",
           "image": "kCt8i0F.png",
           "preset_type": "item"
+        },
+        {
+          "name": "Sextant",
+          "id": "sextant",
+          "image": "EfKQHJarYC.png",
+          "preset_type": "item"
         }
       ]
     },
