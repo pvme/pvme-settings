@@ -8,7 +8,7 @@ on:
       - 'pvme_spreadsheet/**'
 
   schedule:
-    - cron: '0 1 * * *' # once per day
+    - cron: '19 * * * *' # once every hour (xx:19)
 
 defaults:
   run:
@@ -34,7 +34,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: update pvme-spreadsheet
-        run: python pvme_spreadsheet.py    
+        run: python pvme_spreadsheet.py
 
       - name: deploy build artifacts
         uses: s0/git-publish-subdir-action@develop
