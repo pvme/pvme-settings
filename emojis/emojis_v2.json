@@ -6151,6 +6151,15 @@
           "id_aliases": ["vos", "volley"],
           "emoji_id": "1159435029592686642",
           "emoji_server": "39"
+        },
+        {
+          "name": "Invoke Arisen Flesh",
+          "id": "invokearisenflesh",
+          "image": "3WNDkHgTYw.png",
+          "preset_type": "item",
+          "id_aliases": [
+            "invokeflesh"
+          ]
         }
       ]
     },
