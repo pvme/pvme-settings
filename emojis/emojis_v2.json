@@ -6154,7 +6154,7 @@
         },
         {
           "name": "Invoke Arisen Flesh",
-          "id": "invoke_arisen_flesh",
+          "id": "invokearisenflesh",
           "image": "3WNDkHgTYw.png",
           "preset_type": "item",
           "id_aliases": [
