@@ -1,6 +1,7 @@
 import { fail, MAX_BODY } from './catalogue.mjs';
 import { appClient, repositoryConfig } from './github.mjs';
 import { validateEnvelope, submitBatch } from './submission.mjs';
+import { handleDiscord } from './discord.mjs';
 
 export function configured(env) {
   return env.LIVE_ENABLED === 'true' &&
@@ -14,14 +15,16 @@ export function createHandler({ env = process.env, request = fetch, getGithub = 
   return async (req, res) => {
     res.set('Cache-Control', 'no-store');
     res.set('Vary', 'Origin');
+    const path = req.path.replace(/\/$/, '') || '/';
+    const botRoute = path === '/bot/catalogue' || path === '/bot/submit';
     try {
+      if (botRoute) return await handleDiscord(req, res, { env, request, getGithub });
       const origin = req.get('origin');
       if (!allowedOrigins(env).has(origin)) fail(403, 'Origin not allowed.');
       res.set('Access-Control-Allow-Origin', origin);
       res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
       res.set('Access-Control-Allow-Headers', 'Content-Type');
       if (req.method === 'OPTIONS') return res.status(204).send('');
-      const path = req.path.replace(/\/$/, '') || '/';
       if (req.method === 'GET' && path === '/config') return res.json({ enabled: !!configured(env),
         reason: configured(env) ? '' : 'Submission is not connected yet. GitHub App access and the public function configuration must be verified.' });
       if (req.method !== 'POST' || path !== '/submit') fail(404, 'Route not found.');
@@ -35,9 +38,11 @@ export function createHandler({ env = process.env, request = fetch, getGithub = 
       return res.status(201).json(result);
     } catch (error) {
       const status = error.status || 500;
-      // Do not log request bodies, PNGs or credentials.
-      if (status >= 500 && status !== 503) console.error('Icon submission failed', { status, message: error.message });
-      return res.status(status).json({ error: status >= 500 ? 'Submission could not finish. The service may need configuration; contact a maintainer before retrying.' : error.message });
+      // Do not log request bodies, PNGs or credentials. Expose only these fixed operational reasons.
+      const botReason = error.message === 'Google identity verification is temporarily unavailable.' ? error.message
+        : error.message?.startsWith('BOT_EMOJI_GUILDS must ') ? 'Invalid BOT_EMOJI_GUILDS configuration.' : 'Authenticated bot request failed.';
+      if (status >= 500 && (status !== 503 || botRoute)) console.error('Icon submission failed', { status, message: botRoute ? botReason : error.message });
+      return res.status(status).json({ error: botRoute && status === 503 ? botReason : status >= 500 ? 'Submission could not finish. The service may need configuration; contact a maintainer before retrying.' : error.message });
     }
   };
 }

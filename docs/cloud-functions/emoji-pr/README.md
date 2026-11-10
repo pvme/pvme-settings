@@ -63,3 +63,37 @@ Local requests from `http://127.0.0.1:8787` or `http://localhost:8787` route to 
 From repository root: `npm ci`, `npm ci --prefix docs/cloud-functions/emoji-pr`, then `npm test`. Tests inject mock GitHub and public-image responses; no external writes occur. `python -m unittest discover -s tests -p 'test_*.py'` checks the alias validator (requires pydantic). `npm run dev` serves the site at `http://127.0.0.1:8787`; `npm --prefix docs/cloud-functions/emoji-pr start` starts the HTTP function, disabled by default.
 
 The Functions Framework CloudEvents dependency uses uuid; an override to compatible CommonJS uuid 11.1.1+ avoids its older buffer-bounds advisory. Verify framework startup when updating it.
+
+## Authenticated bot submissions
+
+The existing `submitEmojis` deployment also serves `GET /bot/catalogue` and
+`POST /bot/submit`; public `/submit` keeps its existing schema and behavior.
+Bot submissions add exact Discord `emoji_id`/`emoji_server` metadata through the
+same App client, catalogue validators, appender and PR writer. No new GitHub key.
+The catalogue response sends original JSON, preserving large numeric IDs.
+
+The deployment remains public for the website: **IAM does not isolate bot routes**.
+Bot access instead requires a verified Google-signed service-account ID token
+(signature, issuer, audience, email and expiry). CORS/Origin never authenticate it.
+Accept this application-level boundary before deploying; bot routes default off.
+Configure these additional values alongside the existing App/web settings:
+
+- `BOT_ENABLED=true` only after review; unset/false disables bot routes.
+- `BOT_AUDIENCE`: existing function base URL; `BOT_CALLER_EMAIL`: authorised service account.
+- `BOT_APPLICATION_ID`, `BOT_COMMAND_GUILD_ID`: confirmed Discord application/source guild.
+- `BOT_EMOJI_GUILDS`: JSON object mapping positive server numbers to Discord guild IDs.
+- `GITHUB_REPOSITORY`: explicit bot target, `rsnx222/pvme-settings` for staging or
+  `pvme/pvme-settings` for production. Browser Origin and payloads cannot select it;
+  existing web staging/production routing remains independent.
+
+Deploy the existing `submitEmojis` entry point after configuration/security review.
+Use staging first: confirm App access and an existing category, then make one
+reviewed authenticated request. PRs change only `emojis/emojis_v2.json`, using a
+unique branch targeting master; no direct master write or automatic merge occurs.
+The bot must use the new `/bot/*` paths and accept only the configured repo's PR URL.
+Caller tokens are short-lived: renewal is a caller responsibility, not automatic.
+A failed response can follow a successful write; check for a PR before resubmitting.
+
+Offline checks: install the existing root/function dependencies, run `npm test`
+and `node --test tests/discord-bot.test.mjs`, then the Python catalogue validator.
+Tests mock external requests; do not run live preflight or deployment as a test.

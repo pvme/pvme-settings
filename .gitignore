@@ -21,3 +21,5 @@ __pycache__/
 !/tests/icon-alignment.test.mjs
 !/tests/icon-fixtures.mjs
 !/tests/fixtures/
+
+!/tests/discord-bot.test.mjs
