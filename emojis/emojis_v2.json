@@ -20304,7 +20304,7 @@
           "id": "shadownihil",
           "emoji_id": "854475441946230855",
           "aliases": [],
-          "server": "12",
+          "emoji_server": "12",
           "preset_type": "familiar"
         },
         {
@@ -20312,7 +20312,7 @@
           "id": "smokenihil",
           "emoji_id": "854475442227642388",
           "aliases": [],
-          "server": "12",
+          "emoji_server": "12",
           "preset_type": "familiar"
         },
         {
