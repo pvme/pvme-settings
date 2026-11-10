@@ -35,7 +35,7 @@ export function decodeIcon(value) {
   return decodeIconBytes(Buffer.from(value.slice(22), 'base64'));
 }
 
-export function validateBatch(items, catalogue) {
+export function validateBatch(items, catalogue, { allowMissingImage = false } = {}) {
   if (!Array.isArray(items) || items.length < 1 || items.length > 10) fail(400, 'Select between 1 and 10 icons.');
   const ids = new Set(), names = new Set();
   for (const category of catalogue.categories) for (const icon of category.emojis) {
@@ -59,7 +59,7 @@ export function validateBatch(items, catalogue) {
     if (hasType && !['item', 'relic', 'familiar'].includes(item.preset_type)) fail(400, 'Preset type is invalid.');
     if (item.preset_type !== 'item' && hasSlot) fail(400, 'Preset slots are only used for worn items.');
     if (hasSlot && (!Number.isInteger(item.preset_slot) || item.preset_slot < 1 || item.preset_slot > 13)) fail(400, 'Worn item slot must be 1–13.');
-    return { ...item, name: item.name.trim(), image_filename: imageFilename(item.image_url) };
+    return { ...item, name: item.name.trim(), ...(allowMissingImage && item.image_url === undefined ? {} : { image_filename: imageFilename(item.image_url) }) };
   });
 }
 
@@ -70,11 +70,17 @@ export function appendEntries(text, items) {
   for (let index = 0; index < catalogue.categories.length; index++) {
     const entries = items.flatMap(item => {
       if (item.category !== catalogue.categories[index].name) return [];
-      const entry = { name: item.name, id: item.id, image: imageFilename(item.image_url) };
+      const entry = { name: item.name, id: item.id };
+      if (item.image_url !== undefined) entry.image = imageFilename(item.image_url);
+      if (item.emoji_id !== undefined) {
+        if (typeof item.emoji_id !== 'string' || !/^\d{17,20}$/.test(item.emoji_id) || !Number.isSafeInteger(item.emoji_server) || item.emoji_server < 1) fail(400, 'Invalid Discord emoji metadata.');
+        entry.emoji_id = item.emoji_id;
+        entry.emoji_server = item.emoji_server;
+      }
       if (item.preset_type !== undefined) entry.preset_type = item.preset_type;
       if (item.preset_slot !== undefined) entry.preset_slot = item.preset_slot;
       if (item.id_aliases.length) entry.id_aliases = item.id_aliases;
-      return [JSON.stringify(entry, null, 2)];
+      return [JSON.stringify(entry, null, 2).replace(/"emoji_id": "(\d{17,20})"/, '"emoji_id": $1')];
     });
     if (!entries.length) continue;
     const node = findNodeAtLocation(tree, ['categories', index, 'emojis']);
