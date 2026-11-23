@@ -14399,6 +14399,12 @@
           "id": "spirit_sapphire",
           "image": "xsfAtbWabl.png",
           "preset_type": "item"
+        },
+        {
+          "name": "Expansive pouch",
+          "id": "expansive_pouch",
+          "image": "U7Ge5bINls.png",
+          "preset_type": "item"
         }
       ]
     },
